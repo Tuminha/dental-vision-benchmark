@@ -32,28 +32,20 @@
   "desc": "Primary dentition and permanent dentition ( Maxilla and Mandible )"
  },
  {
-  "file": "leaf_morphology_tooth_chloranthoid.jpg",
+  "file": "permanent_maxillary_teeth_by_rokaya_yahia_june_2.jpg",
   "bucket": "anatomy",
-  "license": "Public domain",
-  "title": "File:Leaf morphology tooth chloranthoid.png",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Leaf_morphology_tooth_chloranthoid.png",
-  "desc": "Morfolog\u00eda de la hoja. Diente cloranthoide. Seg\u00fan Judd et al. (2007) Plant Systematics, a "
+  "license": "CC BY-SA 4.0",
+  "title": "File:Permanent maxillary Teeth - by Rokaya Yahia June 2015.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Permanent_maxillary_Teeth_-_by_Rokaya_Yahia_June_2015.jpg",
+  "desc": "\u0623\u0633\u0645\u0627\u0621 \u0627\u0644\u0623\u0633\u0646\u0627\u0646 \u0641\u0649 \u0627\u0644\u0641\u0643 \u0627\u0644\u0639\u0644\u0648\u0649 \u0644\u0644\u0625\u0646\u0633\u0627\u0646 Permanent teeth of right half of upper dental arch"
  },
  {
-  "file": "leaf_morphology_tooth_malvoid.jpg",
+  "file": "teeth_types_colored.jpg",
   "bucket": "anatomy",
-  "license": "Public domain",
-  "title": "File:Leaf morphology tooth malvoid.png",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Leaf_morphology_tooth_malvoid.png",
-  "desc": "Morfolog\u00eda de la hoja. Diente malvoide. Seg\u00fan Judd et al. (2007) Plant Systematics, a phyl"
- },
- {
-  "file": "leaf_morphology_tooth_rosoid.jpg",
-  "bucket": "anatomy",
-  "license": "Public domain",
-  "title": "File:Leaf morphology tooth rosoid.png",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Leaf_morphology_tooth_rosoid.png",
-  "desc": "Morfolog\u00eda de la hoja. Diente rosoide. Seg\u00fan Judd et al. (2007) Plant Systematics, a phylo"
+  "license": "CC BY-SA 4.0",
+  "title": "File:Teeth types colored.png",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Teeth_types_colored.png",
+  "desc": "Human teeth types colored: incisors ; canines ; premolars ; molars ."
  },
  {
   "file": "depiction_of_a_periodontitis_patient.jpg",
@@ -104,12 +96,12 @@
   "desc": "Line diagram of a tooth showing the gingiva, bone, periodontal ligament with a scale showi"
  },
  {
-  "file": "canine_gingivitis.jpg",
+  "file": "gingivitida.jpg",
   "bucket": "perio",
-  "license": "CC BY-SA 4.0",
-  "title": "File:Canine Gingivitis.jpg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Canine_Gingivitis.jpg",
-  "desc": "The redness and inflammation of the gumline are classic signs of gingivitis"
+  "license": "CC BY 3.0",
+  "title": "File:Gingivitida.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Gingivitida.jpg",
+  "desc": "Gingivitida"
  },
  {
   "file": "smoothsurfacecaries02.jpg",
@@ -192,14 +184,6 @@
   "desc": "Removed sapphire blade type implant"
  },
  {
-  "file": "dr_ihab_hanna_teaching_in_a_dental_implants_live.jpg",
-  "bucket": "implant",
-  "license": "CC0",
-  "title": "File:Dr.Ihab Hanna teaching in a dental implants live surgeries Course.jpg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Dr.Ihab_Hanna_teaching_in_a_dental_implants_live_surgeries_Course.jpg",
-  "desc": "Dr.Ihab Hanna teaching in a dental implants live surgeries Course in his center called RWC"
- },
- {
   "file": "gum_model.jpg",
   "bucket": "implant",
   "license": "Public domain",
@@ -222,6 +206,14 @@
   "title": "File:Screw implant mandibular bone at arrow.jpg",
   "descurl": "https://commons.wikimedia.org/wiki/File:Screw_implant_mandibular_bone_at_arrow.jpg",
   "desc": "Screw implant mandibular bone prior to abutment and crown."
+ },
+ {
+  "file": "single_crown_implant.jpg",
+  "bucket": "implant",
+  "license": "CC BY-SA 3.0",
+  "title": "File:Single crown implant.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Single_crown_implant.jpg",
+  "desc": "dental implant with the abutment and crown attached"
  },
  {
   "file": "blausen_0774_rootcanal.jpg",
@@ -264,36 +256,12 @@
   "desc": "Tooth #30, the lower right first molar, with incomplete endodontic therapy: the mesial roo"
  },
  {
-  "file": "caudal_hook_in_horse_teeth.jpg",
-  "bucket": "ortho",
-  "license": "CC BY-SA 4.0",
-  "title": "File:Caudal hook in horse teeth.svg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Caudal_hook_in_horse_teeth.svg",
-  "desc": "Caudal hook malocclusion in horse teeth"
- },
- {
-  "file": "rostral_hook_in_horse_teeth.jpg",
-  "bucket": "ortho",
-  "license": "CC BY-SA 4.0",
-  "title": "File:Rostral hook in horse teeth.svg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Rostral_hook_in_horse_teeth.svg",
-  "desc": "Rostral hook in horse teeth"
- },
- {
   "file": "gipsabguss_gebiss.jpg",
   "bucket": "ortho",
   "license": "CC0",
   "title": "File:Gipsabguss Gebiss.jpg",
   "descurl": "https://commons.wikimedia.org/wiki/File:Gipsabguss_Gebiss.jpg",
   "desc": "Plaster casts of the dentition of an adult woman before and after orthodontic treatment. L"
- },
- {
-  "file": "patient_with_apert_syndrome.jpg",
-  "bucket": "ortho",
-  "license": "CC BY 2.0",
-  "title": "File:Patient with Apert syndrome.jpg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Patient_with_Apert_syndrome.jpg",
-  "desc": "Patient with Apert syndrome. Extraorally: Hypertelorism, vertical excess of the lower thir"
  },
  {
   "file": "overjet_overbite.jpg",
@@ -352,14 +320,6 @@
   "desc": "Intra-oral photograph showing gross carious lesions, severe chronic periodontal disease an"
  },
  {
-  "file": "right_aspect_of_human_maxilla_highlighting_large.jpg",
-  "bucket": "clinical_photo",
-  "license": "CC0",
-  "title": "File:Right aspect of human maxilla highlighting large deposits of dental calculus.png",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Right_aspect_of_human_maxilla_highlighting_large_deposits_of_dental_calculus.png",
-  "desc": "This image is of a human skeleton from the Tlatelolco D.F. collection with the identifier "
- },
- {
   "file": "sarro.jpg",
   "bucket": "clinical_photo",
   "license": "CC0",
@@ -400,14 +360,6 @@
   "desc": "amalgam leaflet"
  },
  {
-  "file": "us_air_force_usaf_captain_capt_michael_suhler_do.jpg",
-  "bucket": "restorative",
-  "license": "Public domain",
-  "title": "File:US Air Force (USAF) Captain (CAPT) Michael Suhler, Doctor, Advanced General Dentist, 31st Dental Squadron, performs Amalgam build-up on the lower right tooth of USAF STAFF Sergeant - DPLA - 0cbbec59afb30ce4bbc3569de4470080.jpeg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:US_Air_Force_(USAF)_Captain_(CAPT)_Michael_Suhler,_Doctor,_Advanced_General_Dentist,_31st_Dental_Squadron,_performs_Amalgam_build-up_on_the_lower_right_tooth_of_USAF_STAFF_Sergeant_-_DPLA_-_0cbbec59afb30ce4bbc3569de4470080.jpeg",
-  "desc": "The original finding aid described this photograph as: Base: Aviano Air Base State: Porden"
- },
- {
   "file": "dental_restoration.jpg",
   "bucket": "restorative",
   "license": "CC BY-SA 3.0",
@@ -416,11 +368,19 @@
   "desc": "Dental restoration using composite bonding."
  },
  {
-  "file": "us_navy_050113_n_5313a_096_dental_technician_3rd.jpg",
+  "file": "zmo0594_001.jpg",
   "bucket": "restorative",
-  "license": "Public domain",
-  "title": "File:US Navy 050113-N-5313A-096 Dental Technician 3rd Class Desmond Mahone of College Park, Ga., right, assists Capt. Mike Rocklin of Chesapeake, Va., places a filling in a patient's tooth in the Dental Department.jpg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:US_Navy_050113-N-5313A-096_Dental_Technician_3rd_Class_Desmond_Mahone_of_College_Park,_Ga.,_right,_assists_Capt._Mike_Rocklin_of_Chesapeake,_Va.,_places_a_filling_in_a_patient%27s_tooth_in_the_Dental_Department.jpg",
-  "desc": "Atlantic Ocean (Jan. 13, 2005) - Dental Technician 3rd Class Desmond Mahone of College Par"
+  "license": "CC BY-SA 3.0",
+  "title": "File:ZMO0594-001.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:ZMO0594-001.jpg",
+  "desc": "Tooth to be filled with composite"
+ },
+ {
+  "file": "zmo0594_006.jpg",
+  "bucket": "restorative",
+  "license": "CC BY-SA 3.0",
+  "title": "File:ZMO0594-006.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:ZMO0594-006.jpg",
+  "desc": "Bonding applicated, tooth ready for filling"
  }
 ]

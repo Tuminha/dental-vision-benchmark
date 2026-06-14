@@ -45,7 +45,10 @@ DENTAL_TERMS = ["dental", "dentit", "dentin", "tooth", "teeth", "gingiv", "perio
                 "abrasion", "erosion", "attrition", "restoration", "filling", "crown", "abutment"]
 BLOCK_TERMS = ["whale", "dinosaur", "brachiosaur", "argyrosaur", "bolosaur", "titanosaur", "sauropod",
                "holotype", "fossil", "reptile", "skeletal restoration", "composite skeletal", "scale diagram",
-               "logo", "brand mark", "trademark"]
+               "logo", "brand mark", "trademark",
+               # off-topic matches that share a dental word (leaf "tooth", animal dentition, scene photos)
+               "leaf morphology", "plant systematics", "horse", "equine", "apert", "human skeleton",
+               "air force", "us navy", "canine gingivitis", "teaching in", "live surgeries"]
 
 
 def strip(s: str) -> str:
