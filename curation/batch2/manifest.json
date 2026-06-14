@@ -24,20 +24,36 @@
   "desc": "Cross section showing parts of en:tooth : 1. Enamel, 2. Dentine, 3. Pulp, 4. Gum, 5. Cemen"
  },
  {
-  "file": "toothed_whale_sound_production.jpg",
-  "bucket": "anatomy",
-  "license": "CC BY-SA 4.0",
-  "title": "File:Toothed whale sound production.svg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Toothed_whale_sound_production.svg",
-  "desc": "Created with Inkscape"
- },
- {
   "file": "deciduous_permanent_teeth.jpg",
   "bucket": "anatomy",
   "license": "CC BY-SA 4.0",
   "title": "File:Deciduous permanent teeth.svg",
   "descurl": "https://commons.wikimedia.org/wiki/File:Deciduous_permanent_teeth.svg",
   "desc": "Primary dentition and permanent dentition ( Maxilla and Mandible )"
+ },
+ {
+  "file": "leaf_morphology_tooth_chloranthoid.jpg",
+  "bucket": "anatomy",
+  "license": "Public domain",
+  "title": "File:Leaf morphology tooth chloranthoid.png",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Leaf_morphology_tooth_chloranthoid.png",
+  "desc": "Morfolog\u00eda de la hoja. Diente cloranthoide. Seg\u00fan Judd et al. (2007) Plant Systematics, a "
+ },
+ {
+  "file": "leaf_morphology_tooth_malvoid.jpg",
+  "bucket": "anatomy",
+  "license": "Public domain",
+  "title": "File:Leaf morphology tooth malvoid.png",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Leaf_morphology_tooth_malvoid.png",
+  "desc": "Morfolog\u00eda de la hoja. Diente malvoide. Seg\u00fan Judd et al. (2007) Plant Systematics, a phyl"
+ },
+ {
+  "file": "leaf_morphology_tooth_rosoid.jpg",
+  "bucket": "anatomy",
+  "license": "Public domain",
+  "title": "File:Leaf morphology tooth rosoid.png",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Leaf_morphology_tooth_rosoid.png",
+  "desc": "Morfolog\u00eda de la hoja. Diente rosoide. Seg\u00fan Judd et al. (2007) Plant Systematics, a phylo"
  },
  {
   "file": "depiction_of_a_periodontitis_patient.jpg",
@@ -64,12 +80,36 @@
   "desc": "1 Total loss of attachment (clinical attachment loss, CAL) 2 Gingival recession 3 Probing "
  },
  {
-  "file": "gv_black.jpg",
-  "bucket": "caries",
+  "file": "gingival_sulcus.jpg",
+  "bucket": "perio",
   "license": "Public domain",
-  "title": "File:GV-BLACK.JPG",
-  "descurl": "https://commons.wikimedia.org/wiki/File:GV-BLACK.JPG",
-  "desc": "GV Black Classifications"
+  "title": "File:Gingival sulcus.PNG",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Gingival_sulcus.PNG",
+  "desc": "Gingival and periodontal pockets are extensions of the gingival sulcus, which exists in he"
+ },
+ {
+  "file": "line_diagram_of_gingivitis.jpg",
+  "bucket": "perio",
+  "license": "CC BY-SA 4.0",
+  "title": "File:Line diagram of Gingivitis.png",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Line_diagram_of_Gingivitis.png",
+  "desc": "Line diagram of a tooth showing the gingiva, bone, periodontal ligament with a scale showi"
+ },
+ {
+  "file": "periodontal_ligament_normal_pocket_depth.jpg",
+  "bucket": "perio",
+  "license": "CC BY-SA 4.0",
+  "title": "File:Periodontal ligament normal pocket depth.png",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Periodontal_ligament_normal_pocket_depth.png",
+  "desc": "Line diagram of a tooth showing the gingiva, bone, periodontal ligament with a scale showi"
+ },
+ {
+  "file": "canine_gingivitis.jpg",
+  "bucket": "perio",
+  "license": "CC BY-SA 4.0",
+  "title": "File:Canine Gingivitis.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Canine_Gingivitis.jpg",
+  "desc": "The redness and inflammation of the gumline are classic signs of gingivitis"
  },
  {
   "file": "smoothsurfacecaries02.jpg",
@@ -104,12 +144,84 @@
   "desc": "A rough sketch that is part of a series on how smooth surface dental caries progresses thr"
  },
  {
-  "file": "bolosaurus_teeth_cross_section.jpg",
+  "file": "blausen_0864_toothdecay_ar.jpg",
+  "bucket": "caries",
+  "license": "Public domain",
+  "title": "File:Blausen 0864 ToothDecay-ar.svg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Blausen_0864_ToothDecay-ar.svg",
+  "desc": "\u0645\u0642\u0637\u0639 \u0637\u0648\u0644\u064a \u0644\u0644\u0633\u0646"
+ },
+ {
+  "file": "diagram_of_tooth_erosion.jpg",
+  "bucket": "caries",
+  "license": "CC BY-SA 4.0",
+  "title": "File:Diagram of tooth erosion.png",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Diagram_of_tooth_erosion.png",
+  "desc": "Diagram showing comparison between a healthy tooth and one with decay"
+ },
+ {
+  "file": "ferruleeffectdentistry.jpg",
+  "bucket": "caries",
+  "license": "CC BY-SA 4.0",
+  "title": "File:FerruleEffectDentistry.gif",
+  "descurl": "https://commons.wikimedia.org/wiki/File:FerruleEffectDentistry.gif",
+  "desc": "As with the bristles of a broom, which are grasped by a ferrule when attached to the broom"
+ },
+ {
+  "file": "runningroom.jpg",
   "bucket": "implant",
-  "license": "CC BY 4.0",
-  "title": "File:Bolosaurus teeth cross section.png",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Bolosaurus_teeth_cross_section.png",
-  "desc": "Figure 9. Cross-sectional and longitudinal views of the dentary teeth of Bolosaurus . A: d"
+  "license": "Attribution",
+  "title": "File:Runningroom.png",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Runningroom.png",
+  "desc": "Implant platforms are circular in nature and generally exhibit a diameter of 3-6 mm, depen"
+ },
+ {
+  "file": "zahnimplantat.jpg",
+  "bucket": "implant",
+  "license": "CC BY-SA 4.0",
+  "title": "File:Zahnimplantat.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Zahnimplantat.jpg",
+  "desc": "Dental implant"
+ },
+ {
+  "file": "bladetype_dental_implant.jpg",
+  "bucket": "implant",
+  "license": "CC BY-SA 4.0",
+  "title": "File:Bladetype dental implant.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Bladetype_dental_implant.jpg",
+  "desc": "Removed sapphire blade type implant"
+ },
+ {
+  "file": "dr_ihab_hanna_teaching_in_a_dental_implants_live.jpg",
+  "bucket": "implant",
+  "license": "CC0",
+  "title": "File:Dr.Ihab Hanna teaching in a dental implants live surgeries Course.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Dr.Ihab_Hanna_teaching_in_a_dental_implants_live_surgeries_Course.jpg",
+  "desc": "Dr.Ihab Hanna teaching in a dental implants live surgeries Course in his center called RWC"
+ },
+ {
+  "file": "gum_model.jpg",
+  "bucket": "implant",
+  "license": "Public domain",
+  "title": "File:Gum model.JPG",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Gum_model.JPG",
+  "desc": "This is gum model which is usd for making crown for dental implant"
+ },
+ {
+  "file": "screw_implant_mandibular_bone.jpg",
+  "bucket": "implant",
+  "license": "CC BY-SA 4.0",
+  "title": "File:Screw implant mandibular bone.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Screw_implant_mandibular_bone.jpg",
+  "desc": "Screw implant mandibular bone prior to abutment and crown."
+ },
+ {
+  "file": "screw_implant_mandibular_bone_at_arrow.jpg",
+  "bucket": "implant",
+  "license": "CC BY-SA 4.0",
+  "title": "File:Screw implant mandibular bone at arrow.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Screw_implant_mandibular_bone_at_arrow.jpg",
+  "desc": "Screw implant mandibular bone prior to abutment and crown."
  },
  {
   "file": "blausen_0774_rootcanal.jpg",
@@ -136,12 +248,52 @@
   "desc": "Vertical section of a tooth in situ. X 15. c is placed in the pulp cavity, opposite the ne"
  },
  {
-  "file": "ferruleeffectdentistry.jpg",
+  "file": "human_tooth_ku.jpg",
   "bucket": "endo",
+  "license": "CC BY 4.0",
+  "title": "File:Human tooth ku.png",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Human_tooth_ku.png",
+  "desc": "This longitudinal section through a molar in its alveolar socket shows the relationships b"
+ },
+ {
+  "file": "30partialendo.jpg",
+  "bucket": "endo",
+  "license": "Public domain",
+  "title": "File:-30partialendo.JPG",
+  "descurl": "https://commons.wikimedia.org/wiki/File:-30partialendo.JPG",
+  "desc": "Tooth #30, the lower right first molar, with incomplete endodontic therapy: the mesial roo"
+ },
+ {
+  "file": "caudal_hook_in_horse_teeth.jpg",
+  "bucket": "ortho",
   "license": "CC BY-SA 4.0",
-  "title": "File:FerruleEffectDentistry.gif",
-  "descurl": "https://commons.wikimedia.org/wiki/File:FerruleEffectDentistry.gif",
-  "desc": "As with the bristles of a broom, which are grasped by a ferrule when attached to the broom"
+  "title": "File:Caudal hook in horse teeth.svg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Caudal_hook_in_horse_teeth.svg",
+  "desc": "Caudal hook malocclusion in horse teeth"
+ },
+ {
+  "file": "rostral_hook_in_horse_teeth.jpg",
+  "bucket": "ortho",
+  "license": "CC BY-SA 4.0",
+  "title": "File:Rostral hook in horse teeth.svg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Rostral_hook_in_horse_teeth.svg",
+  "desc": "Rostral hook in horse teeth"
+ },
+ {
+  "file": "gipsabguss_gebiss.jpg",
+  "bucket": "ortho",
+  "license": "CC0",
+  "title": "File:Gipsabguss Gebiss.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Gipsabguss_Gebiss.jpg",
+  "desc": "Plaster casts of the dentition of an adult woman before and after orthodontic treatment. L"
+ },
+ {
+  "file": "patient_with_apert_syndrome.jpg",
+  "bucket": "ortho",
+  "license": "CC BY 2.0",
+  "title": "File:Patient with Apert syndrome.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Patient_with_Apert_syndrome.jpg",
+  "desc": "Patient with Apert syndrome. Extraorally: Hypertelorism, vertical excess of the lower thir"
  },
  {
   "file": "overjet_overbite.jpg",
@@ -152,12 +304,12 @@
   "desc": "Frontteeth: overjet and overbite"
  },
  {
-  "file": "eritro.jpg",
-  "bucket": "pathology",
-  "license": "Public domain",
-  "title": "File:Eritro.jpg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Eritro.jpg",
-  "desc": "Eritroleucoplasia"
+  "file": "sever_crowding_of_teeth.jpg",
+  "bucket": "ortho",
+  "license": "CC BY-SA 4.0",
+  "title": "File:Sever Crowding of teeth.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Sever_Crowding_of_teeth.jpg",
+  "desc": "Severe dental crowding as a result to small arch length and large tooth size discrepancy."
  },
  {
   "file": "leukoplakia.jpg",
@@ -168,14 +320,6 @@
   "desc": "Title Leukoplakia Description Gum damage caused by leukoplakia (with white patches shown)."
  },
  {
-  "file": "leukoplakia02_04_06.jpg",
-  "bucket": "pathology",
-  "license": "CC BY-SA 3.0",
-  "title": "File:Leukoplakia02-04-06.jpg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Leukoplakia02-04-06.jpg",
-  "desc": "Photo taken of patient, who will remain anonymous, treated at the University of Tennessee "
- },
- {
   "file": "nih_doc_16_homogenousleukoplakia.jpg",
   "bucket": "pathology",
   "license": "Public domain",
@@ -184,91 +328,99 @@
   "desc": "These images are part of the 2013 publication from the NIH \"Detecting Oral Cancer: A Guide"
  },
  {
-  "file": "nih_doc_17_leukoplakia.jpg",
+  "file": "human_tongue_infected_with_oral_candidiasis.jpg",
   "bucket": "pathology",
-  "license": "Public domain",
-  "title": "File:NIH DOC 17 Leukoplakia.jpg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:NIH_DOC_17_Leukoplakia.jpg",
-  "desc": "These images are part of the 2013 publication from the NIH \"Detecting Oral Cancer: A Guide"
- },
- {
-  "file": "disclose_tv_logo_white.jpg",
-  "bucket": "clinical_photo",
-  "license": "CC BY-SA 4.0",
-  "title": "File:Disclose.tv Logo - White.png",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Disclose.tv_Logo_-_White.png",
-  "desc": "Disclose.tv logo, with brand mark and brand name."
- },
- {
-  "file": "plaque_disclosing_gel.jpg",
-  "bucket": "clinical_photo",
-  "license": "CC BY-SA 4.0",
-  "title": "File:Plaque Disclosing Gel.png",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Plaque_Disclosing_Gel.png",
-  "desc": "Plaque Disclosing Gel: Before and After"
- },
- {
-  "file": "plaque_disclosing_tablets.jpg",
-  "bucket": "clinical_photo",
-  "license": "CC BY-SA 4.0",
-  "title": "File:Plaque Disclosing Tablets.jpg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Plaque_Disclosing_Tablets.jpg",
-  "desc": "Disclosing tablets with Colgate disclosing tablets"
- },
- {
-  "file": "post_plaque_disclosing.jpg",
-  "bucket": "clinical_photo",
-  "license": "CC BY-SA 4.0",
-  "title": "File:Post plaque disclosing.jpg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Post_plaque_disclosing.jpg",
-  "desc": "Photo of Dentition after Plaque Disclosing"
- },
- {
-  "file": "dental_pulp_of_a_stained_and_decalcified_tooth.jpg",
-  "bucket": "clinical_photo",
-  "license": "CC BY-SA 4.0",
-  "title": "File:Dental Pulp of a stained and decalcified tooth.png",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Dental_Pulp_of_a_stained_and_decalcified_tooth.png",
-  "desc": "A decalcified longitudinal section through a molar tooth stained with methylene blue. Note"
- },
- {
-  "file": "endo_tx_hemi.jpg",
-  "bucket": "restorative",
   "license": "CC BY-SA 3.0",
-  "title": "File:Endo TX hemi.jpg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Endo_TX_hemi.jpg",
-  "desc": "Tooth with amalgam filling, cutting lines for Hemisektion marked."
+  "title": "File:Human tongue infected with oral candidiasis.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Human_tongue_infected_with_oral_candidiasis.jpg",
+  "desc": "Thrush in a child who had taken antibiotics."
  },
  {
-  "file": "tms_amalgam.jpg",
-  "bucket": "restorative",
-  "license": "CC BY-SA 3.0",
-  "title": "File:Tms-Amalgam.PNG",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Tms-Amalgam.PNG",
-  "desc": "Amalgam filling with parapulpal pin"
+  "file": "oral_pseudomembranous_candidiasis_on_the_dorsum_.jpg",
+  "bucket": "pathology",
+  "license": "CC0",
+  "title": "File:Oral pseudomembranous candidiasis on the dorsum of the tongue of a 59-year-old male (third week of RT for a squamous cell carcinoma of the floor of the mouth, T3N0M0, daily dose 1.8 Gy).png",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Oral_pseudomembranous_candidiasis_on_the_dorsum_of_the_tongue_of_a_59-year-old_male_(third_week_of_RT_for_a_squamous_cell_carcinoma_of_the_floor_of_the_mouth,_T3N0M0,_daily_dose_1.8_Gy).png",
+  "desc": "Oral pseudomembranous candidiasis on the dorsum of the tongue"
  },
  {
-  "file": "argyrosaurus_scale_diagram_svg_steveoc86_001.jpg",
-  "bucket": "restorative",
+  "file": "caries_periodontal_disease_calculus.jpg",
+  "bucket": "clinical_photo",
   "license": "CC BY-SA 4.0",
-  "title": "File:Argyrosaurus-Scale-Diagram-SVG-Steveoc86-001.svg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Argyrosaurus-Scale-Diagram-SVG-Steveoc86-001.svg",
-  "desc": "A hypothetical scale diagram showing the holotype specimen of the titanosaur Argyrosaurus "
+  "title": "File:Caries, Periodontal disease, calculus.png",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Caries,_Periodontal_disease,_calculus.png",
+  "desc": "Intra-oral photograph showing gross carious lesions, severe chronic periodontal disease an"
  },
  {
-  "file": "brachiosaurus_composite_skeletal.jpg",
-  "bucket": "restorative",
-  "license": "CC BY 4.0",
-  "title": "File:Brachiosaurus Composite Skeletal.svg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Brachiosaurus_Composite_Skeletal.svg",
-  "desc": "Skeletal restoration \u2018\u2019Brachiosaurus\u2019\u2019 FMNH P 25107 (Holotype): This is the most complete "
+  "file": "right_aspect_of_human_maxilla_highlighting_large.jpg",
+  "bucket": "clinical_photo",
+  "license": "CC0",
+  "title": "File:Right aspect of human maxilla highlighting large deposits of dental calculus.png",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Right_aspect_of_human_maxilla_highlighting_large_deposits_of_dental_calculus.png",
+  "desc": "This image is of a human skeleton from the Tlatelolco D.F. collection with the identifier "
  },
  {
-  "file": "brachiosaurus_composite_matthew_1915.jpg",
+  "file": "sarro.jpg",
+  "bucket": "clinical_photo",
+  "license": "CC0",
+  "title": "File:Sarro.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Sarro.jpg",
+  "desc": "Male 20-year-old model. Plenty of tartar formed in the lingual part of his lower anterior "
+ },
+ {
+  "file": "amalgam.jpg",
   "bucket": "restorative",
   "license": "Public domain",
-  "title": "File:Brachiosaurus composite Matthew 1915.jpg",
-  "descurl": "https://commons.wikimedia.org/wiki/File:Brachiosaurus_composite_Matthew_1915.jpg",
-  "desc": "The Largest Known Dinosaur. Sketch reconstruction of Brachiosaurus , from the specimens in"
+  "title": "File:Amalgam.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Amalgam.jpg",
+  "desc": "Example Amalgam"
+ },
+ {
+  "file": "amalgam_filling.jpg",
+  "bucket": "restorative",
+  "license": "CC BY-SA 3.0",
+  "title": "File:Amalgam filling.JPG",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Amalgam_filling.JPG",
+  "desc": "Amalgam filling.JPG"
+ },
+ {
+  "file": "amalgam_filling_hemi.jpg",
+  "bucket": "restorative",
+  "license": "CC BY-SA 3.0",
+  "title": "File:Amalgam filling hemi.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Amalgam_filling_hemi.jpg",
+  "desc": "Tooth with amalgam filling, cutting line for Hemisektion marked."
+ },
+ {
+  "file": "filling_amalgam.jpg",
+  "bucket": "restorative",
+  "license": "CC BY-SA 3.0",
+  "title": "File:Filling amalgam.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Filling_amalgam.jpg",
+  "desc": "amalgam leaflet"
+ },
+ {
+  "file": "us_air_force_usaf_captain_capt_michael_suhler_do.jpg",
+  "bucket": "restorative",
+  "license": "Public domain",
+  "title": "File:US Air Force (USAF) Captain (CAPT) Michael Suhler, Doctor, Advanced General Dentist, 31st Dental Squadron, performs Amalgam build-up on the lower right tooth of USAF STAFF Sergeant - DPLA - 0cbbec59afb30ce4bbc3569de4470080.jpeg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:US_Air_Force_(USAF)_Captain_(CAPT)_Michael_Suhler,_Doctor,_Advanced_General_Dentist,_31st_Dental_Squadron,_performs_Amalgam_build-up_on_the_lower_right_tooth_of_USAF_STAFF_Sergeant_-_DPLA_-_0cbbec59afb30ce4bbc3569de4470080.jpeg",
+  "desc": "The original finding aid described this photograph as: Base: Aviano Air Base State: Porden"
+ },
+ {
+  "file": "dental_restoration.jpg",
+  "bucket": "restorative",
+  "license": "CC BY-SA 3.0",
+  "title": "File:Dental Restoration.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:Dental_Restoration.jpg",
+  "desc": "Dental restoration using composite bonding."
+ },
+ {
+  "file": "us_navy_050113_n_5313a_096_dental_technician_3rd.jpg",
+  "bucket": "restorative",
+  "license": "Public domain",
+  "title": "File:US Navy 050113-N-5313A-096 Dental Technician 3rd Class Desmond Mahone of College Park, Ga., right, assists Capt. Mike Rocklin of Chesapeake, Va., places a filling in a patient's tooth in the Dental Department.jpg",
+  "descurl": "https://commons.wikimedia.org/wiki/File:US_Navy_050113-N-5313A-096_Dental_Technician_3rd_Class_Desmond_Mahone_of_College_Park,_Ga.,_right,_assists_Capt._Mike_Rocklin_of_Chesapeake,_Va.,_places_a_filling_in_a_patient%27s_tooth_in_the_Dental_Department.jpg",
+  "desc": "Atlantic Ocean (Jan. 13, 2005) - Dental Technician 3rd Class Desmond Mahone of College Par"
  }
 ]

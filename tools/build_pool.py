@@ -1,7 +1,8 @@
 """Fetch a larger, bucket-balanced pool of candidate dental images for review.
 
-Searches Wikimedia Commons across buckets, keeps openly-licensed images with a
-description, downloads and downscales them (so the repo stays light), and writes a
+Searches Wikimedia Commons across buckets, keeps openly-licensed images that pass a
+dental-relevance filter (raw keyword search drags in dinosaurs/whales/logos via words
+like "composite" or "disclosing"), downloads and downscales them, and writes a
 manifest. These land in curation/batch2/ for the click-to-review widget; only the
 ones you keep get promoted into data/images/.
 """
@@ -21,21 +22,30 @@ API = "https://commons.wikimedia.org/w/api.php"
 UA = "dental-vision-benchmark/0.2 (research; cisco@periospot.com)"
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "curation/batch2"
-PER_BUCKET = 5
+PER_BUCKET = 7
 MAXW = 380
 
 BUCKETS = {
-    "anatomy": ["tooth anatomy diagram", "primary deciduous teeth diagram", "tooth morphology cusp diagram", "periodontium anatomy diagram"],
-    "perio": ["periodontitis diagram", "gingival recession diagram", "periodontal pocket probing diagram", "healthy gingiva diagram"],
-    "caries": ["dental caries classification diagram", "smooth surface caries diagram", "rampant caries", "caries stages diagram"],
-    "implant": ["dental implant components diagram", "implant abutment crown diagram", "peri-implantitis diagram", "implant bone diagram"],
-    "endo": ["root canal treatment diagram", "periapical abscess diagram", "pulp anatomy diagram", "endodontic diagram"],
-    "ortho": ["malocclusion class diagram", "dental crossbite diagram", "overbite overjet diagram", "teeth crowding diagram"],
-    "pathology": ["oral leukoplakia", "oral candidiasis mouth", "geographic tongue", "gingival hyperplasia"],
-    "clinical_photo": ["intraoral photograph dentition", "dental plaque disclosing", "tooth staining discoloration", "edentulous mouth"],
-    "restorative": ["amalgam filling tooth diagram", "composite restoration diagram", "dental crown preparation diagram", "dental bridge diagram"],
-    "eruption": ["tooth eruption sequence diagram", "mixed dentition diagram"],
+    "anatomy": ["tooth anatomy diagram", "primary deciduous teeth diagram", "tooth morphology diagram", "periodontium anatomy diagram", "dental arch teeth diagram"],
+    "perio": ["periodontitis diagram", "gingival recession diagram", "periodontal pocket diagram", "healthy gingiva diagram", "gingivitis teeth"],
+    "caries": ["dental caries classification diagram", "smooth surface caries diagram", "occlusal caries diagram", "caries stages diagram", "tooth decay diagram"],
+    "implant": ["dental implant diagram", "dental implant abutment crown", "peri-implantitis diagram", "osseointegration implant"],
+    "endo": ["root canal treatment diagram", "periapical abscess diagram", "tooth pulp anatomy diagram", "endodontic therapy molar"],
+    "ortho": ["malocclusion diagram teeth", "dental crossbite", "overbite overjet diagram", "teeth crowding malocclusion"],
+    "pathology": ["oral leukoplakia mouth", "oral candidiasis mouth", "geographic tongue", "gingival hyperplasia mouth"],
+    "clinical_photo": ["intraoral photograph teeth gingiva", "dental plaque disclosing teeth", "tooth staining discoloration teeth", "dental calculus teeth"],
+    "restorative": ["dental amalgam filling tooth", "dental composite filling tooth", "dental crown preparation tooth", "dental inlay onlay tooth"],
+    "eruption": ["tooth eruption sequence diagram", "mixed dentition teeth diagram"],
 }
+
+DENTAL_TERMS = ["dental", "dentit", "dentin", "tooth", "teeth", "gingiv", "periodont", "perio", "caries", "carious",
+                "enamel", "pulp", "oral", "mouth", "implant", "occlus", "malocclus", "plaque", "calculus",
+                "leukoplakia", "erythroplakia", "candidias", "endodont", "molar", "incisor", "premolar",
+                "root canal", "amalgam", "denture", "gum", "gums", "recession", "abscess", "fluorosis",
+                "abrasion", "erosion", "attrition", "restoration", "filling", "crown", "abutment"]
+BLOCK_TERMS = ["whale", "dinosaur", "brachiosaur", "argyrosaur", "bolosaur", "titanosaur", "sauropod",
+               "holotype", "fossil", "reptile", "skeletal restoration", "composite skeletal", "scale diagram",
+               "logo", "brand mark", "trademark"]
 
 
 def strip(s: str) -> str:
@@ -47,7 +57,12 @@ def ok_license(l: str) -> bool:
     return any(k in l for k in ["cc by", "cc0", "public domain", "attribution", "cc-by"])
 
 
-def search(q: str, limit: int = 5) -> list[dict]:
+def relevant(title: str, desc: str) -> bool:
+    blob = f"{title} {desc}".lower()
+    return any(t in blob for t in DENTAL_TERMS) and not any(b in blob for b in BLOCK_TERMS)
+
+
+def search(q: str, limit: int = 6) -> list[dict]:
     params = {"action": "query", "format": "json", "generator": "search",
               "gsrsearch": f"{q} filetype:bitmap|drawing", "gsrnamespace": "6", "gsrlimit": str(limit),
               "prop": "imageinfo", "iiprop": "url|extmetadata", "iiurlwidth": "700"}
@@ -59,11 +74,13 @@ def search(q: str, limit: int = 5) -> list[dict]:
         ext = ii.get("extmetadata") or {}
         lic = strip((ext.get("LicenseShortName") or {}).get("value", ""))
         thumb = ii.get("thumburl")
+        title = p.get("title", "")
         desc = strip((ext.get("ImageDescription") or {}).get("value", ""))
-        if not thumb or not ok_license(lic) or not desc:
+        if not thumb or not ok_license(lic) or not relevant(title, desc):
             continue
-        out.append({"title": p.get("title"), "license": lic, "thumburl": thumb,
-                    "descurl": ii.get("descriptionurl") or ii.get("url"), "desc": desc[:90]})
+        out.append({"title": title, "license": lic, "thumburl": thumb,
+                    "descurl": ii.get("descriptionurl") or ii.get("url"),
+                    "desc": (desc or re.sub(r"^File:|\.[a-z0-9]+$", "", title))[:90]})
     return out
 
 
