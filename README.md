@@ -43,6 +43,18 @@ scores the same on the control; a model that memorized the original drops.
   control.
 - **Judge agreement** — primary judge vs an independent second judge.
 
+## First results (v1, draft ground truth)
+
+First full run: 90 images, six models, two independent judges. Full table and caveats in
+[`results/leaderboard.md`](results/leaderboard.md). Top line:
+
+- **Gemini 3.1 Pro leads (67%)**, with Claude Opus 4.8 (63%) and Qwen3.7 Plus (60%) close behind.
+- **GPT-5.5 sits mid-pack (50%)**, notably not the leader even though GPT topped the sibling *text* dental benchmark. Best-at-text is not best-at-vision.
+- **Llama 4 Maverick (23%) and GLM-4.6V (30%) trail.**
+- The real gap is **clinical photos**: every model reads diagrams better than real mouths, and the weak models collapse on photos (16-32%) while Gemini holds (66%).
+
+Scores are on draft ground truth and are directional pending clinician sign-off; the ranking is more robust than the absolute percentages.
+
 ## The lineup
 
 The latest vision-capable model of each family (verified image-capable on OpenRouter):
@@ -77,18 +89,16 @@ python tools/build_credits.py
 
 ## Status
 
-**v0.2, draft. Do not cite.** The current item set is a 7-image smoke test with
-DRAFT ground truth. The numbers in `results/` prove the pipeline works; they are not
-a result. The roadmap to a real v1:
+**v1 candidate, ground truth still DRAFT (clinician sign-off pending). Not for citation yet.**
+The dataset is 90 dental images plus a memorization control, across ~16 buckets (anatomy,
+periodontics, caries, implants, endodontics, orthodontics/occlusion, oral pathology,
+restorative, tooth wear, developmental anomalies, mucosal lesions, trauma, TMJ/salivary,
+prosthetics). Diagrams and clinical photos only; radiographs are deliberately out of scope
+for v1. Ground truth (`must_identify` / `must_avoid` / caption / severity) was authored per
+image and is being signed off in [`VALIDATION.md`](VALIDATION.md).
 
-- [ ] Clinician sign-off on every item's ground truth (a `VALIDATION.md`, as in the
-      sibling text benchmark).
-- [ ] Expand to 30 to 40 images across buckets (anatomy, perio, caries, implants,
-      clinical photos and figures from open-access articles), chosen for readable
-      ground truth and mostly unlabeled.
-- [ ] Grow the private control subset (own or paywalled images, never redistributed)
-      to quantify memorization properly.
-- [ ] Report confidence intervals; the top of a small leaderboard is noise.
+Roadmap: clinician sign-off → first published leaderboard → optional expansion toward ~120
+via open-access journal figures → bootstrap confidence intervals.
 
 ## Dataset and licensing
 
