@@ -1,0 +1,117 @@
+{
+  "_about": "Dental vision benchmark item set (v0.2, DRAFT ground truth pending clinician sign-off). Each item is an openly-licensed dental image with clinician-style ground truth (must_identify / must_avoid) instead of the raw web caption. Models are shown the image with NO caption and NO web access. 'modality' is the coarse image-type axis. Items with is_control=true are transformed copies of a public image used to measure training-data memorization (a model that truly reads the image should score the same on the control; a model that memorized the original should drop).",
+  "items": [
+    {
+      "id": "anat-01",
+      "image": "data/images/tooth_anatomy.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "a cross-section / internal structure of a tooth",
+        "enamel",
+        "dentin",
+        "pulp (pulp chamber, root canal, or nerves and blood vessels)",
+        "crown and root",
+        "surrounding gum (gingiva) and alveolar bone"
+      ],
+      "must_avoid": ["calling it a radiograph (x-ray) or a clinical photograph"],
+      "reference_caption": "Tooth Anatomy: cross-section showing enamel, dentin, pulp, crown, root, root canal, gums, bone, and nerves and blood vessels.",
+      "source": {"title": "File:Blausen 0863 ToothAnatomy 02.png", "url": "https://commons.wikimedia.org/wiki/File:Blausen_0863_ToothAnatomy_02.png", "license": "CC BY 3.0", "attribution": "Blausen.com staff (2014)"}
+    },
+    {
+      "id": "perio-mild-01",
+      "image": "data/images/perio_mild.png",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": "mild",
+      "must_identify": [
+        "a tooth shown in a periodontal cross-section / schematic (not a real photo or x-ray)",
+        "gingiva (gum) margin",
+        "alveolar bone level",
+        "periodontal ligament",
+        "a periodontal pocket or pocket-depth measurement"
+      ],
+      "must_avoid": ["describing it as severe or advanced periodontitis", "describing the periodontium as completely healthy with no disease"],
+      "reference_caption": "Line diagram of a tooth showing the gingiva, bone, periodontal ligament with a scale showing the pocket depth of mild periodontitis.",
+      "source": {"title": "File:Mild periodontitis.png", "url": "https://commons.wikimedia.org/wiki/File:Mild_periodontitis.png", "license": "CC BY-SA 4.0"}
+    },
+    {
+      "id": "perio-severe-01",
+      "image": "data/images/perio_severe.png",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": "severe",
+      "must_identify": [
+        "a tooth shown in a periodontal cross-section / schematic (not a real photo or x-ray)",
+        "gingiva (gum) margin",
+        "alveolar bone level",
+        "periodontal ligament",
+        "a deep periodontal pocket / significant pocket-depth or attachment loss"
+      ],
+      "must_avoid": ["describing it as mild or early periodontitis", "describing the periodontium as completely healthy with no disease"],
+      "reference_caption": "Line diagram of a tooth showing the gingiva, bone, periodontal ligament with a scale showing the pocket depth of severe periodontitis.",
+      "source": {"title": "File:Severe periodontitis.png", "url": "https://commons.wikimedia.org/wiki/File:Severe_periodontitis.png", "license": "CC BY-SA 4.0"}
+    },
+    {
+      "id": "caries-01",
+      "image": "data/images/caries.png",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "a cross-section diagram / illustration of a tooth (not a radiograph or clinical photo)",
+        "dental caries / a cavity / tooth decay",
+        "the lesion on the crown / occlusal (biting) surface",
+        "decay extending into the dentin (toward the pulp)",
+        "the pulp / root canal system"
+      ],
+      "must_avoid": ["describing the tooth as healthy with no decay", "calling it a radiograph or a clinical photograph"],
+      "reference_caption": "Diagram of dental caries: a tooth in cross-section with a carious lesion on the crown extending through enamel into dentin toward the pulp.",
+      "source": {"title": "File:202402 Dental Caries.svg", "url": "https://commons.wikimedia.org/wiki/File:202402_Dental_Caries.svg", "license": "CC BY 4.0"}
+    },
+    {
+      "id": "photo-intraoral-01",
+      "image": "data/images/intraoral_photo.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "a clinical intraoral photograph (a real photo, not a diagram or x-ray)",
+        "teeth (molars / premolars visible on both sides)",
+        "the tongue",
+        "the palate (roof of the mouth) and/or uvula / soft palate / throat",
+        "gingiva (gums)"
+      ],
+      "must_avoid": ["calling it a diagram/illustration or a radiograph"],
+      "reference_caption": "A clinical intraoral photograph of an open mouth showing teeth, tongue, palate, uvula and surrounding oral soft tissues.",
+      "source": {"title": "File:Detailed view of the inside of the human mouth.jpg", "url": "https://commons.wikimedia.org/wiki/File:Detailed_view_of_the_inside_of_the_human_mouth.jpg", "license": "CC0"}
+    },
+    {
+      "id": "anat-01-control",
+      "image": "data/images/tooth_anatomy_control.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": true,
+      "control_of": "anat-01",
+      "transform": "horizontal flip + 12% center crop (defeats exact-image memorization; clinical content unchanged)",
+      "expected_severity": null,
+      "must_identify": [
+        "a cross-section / internal structure of a tooth",
+        "enamel",
+        "dentin",
+        "pulp (pulp chamber, root canal, or nerves and blood vessels)",
+        "crown and root",
+        "surrounding gum (gingiva) and alveolar bone"
+      ],
+      "must_avoid": ["calling it a radiograph (x-ray) or a clinical photograph"],
+      "reference_caption": "Tooth Anatomy (transformed control): cross-section showing enamel, dentin, pulp, crown, root, root canal, gums, bone, and nerves and blood vessels.",
+      "source": {"title": "Derived from File:Blausen 0863 ToothAnatomy 02.png", "url": "https://commons.wikimedia.org/wiki/File:Blausen_0863_ToothAnatomy_02.png", "license": "CC BY 3.0", "attribution": "Blausen.com staff (2014), transformed for memorization control"}
+    }
+  ]
+}
