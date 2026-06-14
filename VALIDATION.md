@@ -101,3 +101,73 @@ Full rubrics (`must_identify` / `must_avoid` / caption) live in `data/items.json
 | `zmo0594_001` | zmo0594_001.jpg | clinical_photo | - |  | [ ] |
 | `zmo0594_006` | zmo0594_006.jpg | clinical_photo | - |  | [ ] |
 | `anat-01-control` | tooth_anatomy_control.png | diagram | - | control | [ ] |
+
+---
+
+## Round 2 additions (24 items, DRAFT)
+
+**Weak / reconsider:**
+- `acute_necrotising_ulcerative_gingivitis` — The image content (palatal/oropharyngeal erythema with spots and a coated, inflamed tongue) does not match the item id or hint of acute necrotising ulcerative gingivitis, which involves the marginal gingiva with punched-out necrotic papillae; the depicted diagnosis is non-specific and ambiguous, so this is a poor ground-truth item for that label and should be re-imaged or re-labeled.
+- `prummelklammer` — It is a crude, unlabeled hand-drawn schematic whose exact clasp subtype (e.g., specifically a Prümmel clasp versus a generic bar/Roach clasp) is not reliably readable from the drawing, so grading the precise nomenclature is ambiguous.
+- `treatment_steps_for_feldspathic_vm9_porcel` — It is a multi-panel before/intermediate/after procedure montage of an esthetic crown workflow rather than a single image with one clear finding, so a no-caption description is hard to grade consistently against ground truth.
+- `new_nanocomposites_may_mean_more_durable_t` — The image is a clear, well-lit macro of an isolated tooth, but the key claim implied by the hint (a calcium-phosphate nanocomposite filling) is not visually distinguishable from natural enamel — a tooth-colored restoration on a tooth-colored crown has no obvious margin at this resolution. The arrow tells the viewer where to look but not what they are seeing, so a model cannot be fairly graded on identifying the restoration material; gradable content is limited to image type, tooth/occlusal view, and the presence of an annotation arrow.
+- `packable_composite_placed_in_a_lower_right` — The tooth-colored composite restoration is not crisply demarcated from the surrounding enamel and stained fissures, so the specific diagnosis (class I composite in a lower-right first molar) is hard to confirm from the image alone and is easily confused with a sealant, simple staining, or early occlusal discoloration. The image is genuinely a clinical intraoral macro of mandibular molars with tooth-colored restorative material and stained fissures, which is gradable at the level of modality, tooth type/region, and material color, but tooth-number and restoration-class specificity should not be pass-gated.
+- `dental_veneer` — The image is a clean, well-lit macro of ceramic restorations, but the exact restoration class is ambiguous from this single ex vivo view (thin veneer vs full anterior crown), and the isolated lab-specimen presentation differs from a typical clinical veneer case, so grading should reward identifying 'anterior ceramic/porcelain restoration on dark background, ex vivo' rather than penalizing veneer-vs-crown distinctions.
+
+**Severity-gated (confirm the grade is readable):**
+- `dental_caries_cavity_2_cropped` — advanced
+- `dental_caries_cavity_1` — advanced
+- `bellingham_fluorosis_3` — moderate fluorosis
+
+**Open questions:**
+- `dental_quadrants` — Confirm whether the depicted dentition should be read as the full permanent (adult) set of 32 teeth versus an unspecified count, since the cross lines emphasize quadrant division more than exact tooth number.
+- `diagram_illustrating_coronal_and_apical_fo` — Confirm whether the magenta apical zones should be described strictly as the apical portion of the dental follicle (developmental sac) versus the developing periodontal/root-investing tissue, since the figure's terminology is research-specific.
+- `suunad` — Whether to require the model to recognize the labels are specifically Estonian (vs. simply identifying the correct surface/direction concepts in any language) for full credit.
+- `tooth_picturewlabels` — Confirm the buccal/lingual and mesial/distal assignments are consistent with the diagram's right-side orientation (i.e., that the paracone/metacone sit buccally and protocone/hypocone lingually as labeled) rather than a mirrored layout.
+- `acute_necrotising_ulcerative_gingivitis` — Was the intended image a marginal-gingiva view of ANUG that got swapped for this palate/oropharynx/tongue photo? A senior clinician should confirm whether to re-source an actual NUG gingival image or relabel this item to the oropharyngeal/lingual condition it truly depicts.
+- `dental_caries_cavity_2_cropped` — Confirm tooth identity (likely a maxillary first premolar) and whether the white/metallic glint at the distal margin should be read as a residual amalgam/restoration versus a moisture/light reflection.
+- `dental_caries_cavity_1` — Confirm the exact tooth type/position (molar vs premolar) and whether the central darkened area represents pure carious cavitation versus possible pulp exposure or a pre-existing failed restoration.
+- `alveolprog` — Confirm whether the dentition stage should be graded as primary vs. early mixed dentition, and whether to require the specific etiology (thumb sucking/tongue thrust) for a pass or accept "anterior open bite with incisor proclination" since the habit itself is inferred, not directly visible.
+- `erosive_lichen_planus` — Severity is not clearly gradeable from this single view; a senior clinician should confirm whether the lesion is best labeled erosive vs atrophic oral lichen planus and whether biopsy/differential (e.g., lichenoid reaction, MMP) is warranted.
+- `lichen_planus_fig7` — Confirm whether the lateral-tongue lesion should be graded as predominantly reticular versus showing an atrophic/erosive component, and whether the lower-lip involvement is genuine lichen planus or a separate finding, since this affects the expected diagnostic specificity.
+- `herpes_blisters_on_lips_in_a_47_year_old_w` — Whether to accept a generic answer of "vesicular/ulcerative lip lesion" or to require the specific herpes labialis (cold sore) diagnosis for a full pass.
+- `bellingham_fluorosis_3` — Severity grade is a judgment call: the brown staining plus opacities suggest at least moderate fluorosis, but confirm whether visible surface irregularity/pitting warrants grading this as severe (TF/Dean's index) rather than moderate.
+- `nankali_post_a_fractured_tooth` — Confirm the post type: the hatched cylinder reads as a threaded/screw-retained post, but it could be intended as a generic serrated/parallel post — confirm whether the ground truth should require "threaded/screw" specifically or accept any intracanal post.
+- `wortel_fractuur` — Confirm whether the fracture pattern should be characterized specifically as a vertical root fracture versus a transverse/horizontal root fracture, since the exact fracture plane is hard to read from the ex-vivo orientation.
+- `prummelklammer` — Confirm whether the drawing should be graded as the specific Prümmel-Klammer (a particular wrought-wire/bar clasp design) or accepted more broadly as any removable partial denture clasp/retainer engaging an abutment tooth.
+- `detached_dental_crown_flat_front` — Confirm whether the two dark grey-blue internal projections are best described as retained post/core or metal-substructure remnants versus the crown's own metal coping showing through, and confirm the restoration type is PFM rather than an all-ceramic crown with a metal post.
+- `treatment_steps_for_feldspathic_vm9_porcel` — Confirm whether panel 3 shows a definitive post-and-core/abutment build-up versus simple crown preparations, and whether the final restorations are full crowns or veneers, since the exact restoration type cannot be stated with certainty from the photo alone.
+- `temporomandibular_joint_number` — Confirm the intended identity of the red structures (numbered 1 and 2) anteriorly — whether they represent the lateral pterygoid muscle, the superficial temporal/maxillary vessels, or both — and whether the model should be expected to name them specifically.
+- `eb1911_mouth_and_salivary_glands` — Whether to require the model to name all three major glands AND their specific ducts for full credit, or accept correct identification of the salivary-gland anatomy theme with the parotid/Stensen's duct alone.
+- `geographic_tongue` — A few subtle shallow grooves are visible, so coexisting mild fissured tongue cannot be fully excluded, but it is not the dominant finding and should not be required.
+- `mouth_parotid_gland_nih_bioart_654` — The hint says "parotid," but the schematic depicts generic serous-predominant salivary gland tissue; the diagram itself does not clearly specify parotid versus another major gland.
+- `new_nanocomposites_may_mean_more_durable_t` — Whether the arrow indicates a placed restoration (e.g., a tooth-colored composite filling) versus a natural enamel feature cannot be resolved from the image alone; the hint suggests a calcium-phosphate nanocomposite filling but this is not visually confirmable.
+- `packable_composite_placed_in_a_lower_right` — Is the central brown-yellow area in the middle panel a placed tooth-colored restoration (composite/sealant) margin, or simply stained/discolored intact occlusal enamel? Confirming the exact tooth (lower right first molar) and class I designation would require the original clinical record.
+- `dental_veneer` — Whether these are thin labial veneers versus full-coverage anterior crowns cannot be determined with certainty from this view; the full facial contour and incisal wrap suggest they could be either, and exact restoration type is ambiguous.
+
+| Item | Image | Modality | Severity gate | Flag | Sign-off |
+|---|---|---|---|---|---|
+| `dental_quadrants` | dental_quadrants.png | diagram | - |  | [ ] |
+| `diagram_illustrating_coronal_and_apical_fo` | diagram_illustrating_coronal_and_apical_fo.png | diagram | - |  | [ ] |
+| `suunad` | suunad.png | diagram | - |  | [ ] |
+| `tooth_picturewlabels` | tooth_picturewlabels.jpg | diagram | - |  | [ ] |
+| `acute_necrotising_ulcerative_gingivitis` | acute_necrotising_ulcerative_gingivitis.jpg | clinical_photo | - | weak | [ ] |
+| `dental_caries_cavity_2_cropped` | dental_caries_cavity_2_cropped.jpg | clinical_photo | advanced |  | [ ] |
+| `dental_caries_cavity_1` | dental_caries_cavity_1.jpg | clinical_photo | advanced |  | [ ] |
+| `alveolprog` | alveolprog.jpg | clinical_photo | - |  | [ ] |
+| `erosive_lichen_planus` | erosive_lichen_planus.jpg | clinical_photo | - |  | [ ] |
+| `lichen_planus_fig7` | lichen_planus_fig7.jpg | clinical_photo | - |  | [ ] |
+| `herpes_blisters_on_lips_in_a_47_year_old_w` | herpes_blisters_on_lips_in_a_47_year_old_w.jpg | diagram | - |  | [ ] |
+| `bellingham_fluorosis_3` | bellingham_fluorosis_3.jpg | clinical_photo | moderate fluorosis |  | [ ] |
+| `nankali_post_a_fractured_tooth` | nankali_post_a_fractured_tooth.jpg | diagram | - |  | [ ] |
+| `wortel_fractuur` | wortel_fractuur.jpg | clinical_photo | - |  | [ ] |
+| `prummelklammer` | prummelklammer.jpg | diagram | - | weak | [ ] |
+| `detached_dental_crown_flat_front` | detached_dental_crown_flat_front.jpg | clinical_photo | - |  | [ ] |
+| `treatment_steps_for_feldspathic_vm9_porcel` | treatment_steps_for_feldspathic_vm9_porcel.jpg | clinical_photo | - | weak | [ ] |
+| `temporomandibular_joint_number` | temporomandibular_joint_number.png | diagram | - |  | [ ] |
+| `eb1911_mouth_and_salivary_glands` | eb1911_mouth_and_salivary_glands.jpg | diagram | - |  | [ ] |
+| `geographic_tongue` | geographic_tongue.jpg | clinical_photo | - |  | [ ] |
+| `mouth_parotid_gland_nih_bioart_654` | mouth_parotid_gland_nih_bioart_654.png | diagram | - |  | [ ] |
+| `new_nanocomposites_may_mean_more_durable_t` | new_nanocomposites_may_mean_more_durable_t.jpg | clinical_photo | - | weak | [ ] |
+| `packable_composite_placed_in_a_lower_right` | packable_composite_placed_in_a_lower_right.jpg | clinical_photo | - | weak | [ ] |
+| `dental_veneer` | dental_veneer.jpg | clinical_photo | - | weak | [ ] |

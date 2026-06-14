@@ -1359,6 +1359,628 @@
       }
     },
     {
+      "id": "dental_quadrants",
+      "image": "data/images/dental_quadrants.png",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a schematic line-drawing/diagram of the human dentition, not a clinical photo or radiograph",
+        "Teeth are shown from the occlusal (biting-surface) view of both dental arches",
+        "A vertical midline and a horizontal line divide the dentition into four quadrants (upper right, upper left, lower right, lower left)",
+        "The upper (maxillary) and lower (mandibular) full arches are both depicted, representing a complete permanent dentition"
+      ],
+      "must_avoid": [
+        "Calling it a radiograph/X-ray or a clinical photograph",
+        "Describing any pathology, decay, or disease (the diagram is healthy/anatomical only)",
+        "Claiming visible text labels, tooth numbers, or quadrant names are present"
+      ],
+      "reference_caption": "An unlabeled schematic line-drawing diagram showing the occlusal view of the full human (permanent) dentition, with a vertical and horizontal line dividing both the upper and lower arches into the four dental quadrants.",
+      "source": {
+        "title": "File:Dental quadrants.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3ADental_quadrants.png",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Quercus solaris"
+      }
+    },
+    {
+      "id": "diagram_illustrating_coronal_and_apical_fo",
+      "image": "data/images/diagram_illustrating_coronal_and_apical_fo.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an anatomical/developmental diagram (semi-transparent rendering of a mandible/jaw), not a radiograph or clinical photo",
+        "It shows unerupted/developing teeth each enclosed by a dental follicle that is color-coded into two zones",
+        "The coronal follicle segment (orange/coral, over the crown) is distinguished from the apical follicle segment (magenta/purple, around the root/apical region), as the text labels state",
+        "Individual teeth are labeled by type (Second Molar, Second Premolar, First Premolar, Canine)"
+      ],
+      "must_avoid": [
+        "Calling this an X-ray, CBCT, or clinical intraoral photograph",
+        "Interpreting the colored follicle zones as a pathology/lesion (e.g., dentigerous cyst, tumor, abscess) rather than normal anatomical follicle segments",
+        "Mislabeling the structures as erupted teeth with periodontal disease or bone loss"
+      ],
+      "reference_caption": "A labeled anatomical diagram of a semi-transparent mandible showing unerupted teeth (Second Molar, Second Premolar, First Premolar, Canine), each surrounded by a dental follicle color-coded into a coronal follicle segment (orange, over the crown) and an apical follicle segment (magenta, around the root).",
+      "source": {
+        "title": "File:Diagram illustrating coronal and apical follicle segments of right-unerupted teeth for quantitative analysis.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3ADiagram_illustrating_coronal_and_apical_follicle_segments_of_right-unerupted_teeth_for_quantitative_analysis.png",
+        "license": "CC BY 4.0",
+        "attribution": "Sarrafpour B, Swain M, Li Q, Zoellner H"
+      }
+    },
+    {
+      "id": "suunad",
+      "image": "data/images/suunad.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a schematic/line-drawing diagram (not a photograph or radiograph) showing both dental arches from an occlusal view: the upper arch (labeled ULEMINE HAMBAKAAR) and the lower arch (ALUMINE HAMBAKAAR)",
+        "It teaches tooth surfaces and directional/positional terminology: labial (Labiaalne), buccal (Bukaalne), palatal (Palatinaalne), lingual (Lingvaalne), and the mesial (Mesiaalne) / distal (Distaalne) directions indicated by arrows",
+        "One quadrant of teeth is numbered 1 through 8, sequencing from the central incisor anteriorly to the third molar posteriorly",
+        "Labels are in Estonian; this is a healthy/normal anatomy and orientation reference plate, not depicting any disease or pathology"
+      ],
+      "must_avoid": [
+        "Calling it a photograph, radiograph/X-ray, or panoramic image rather than a line-drawing diagram",
+        "Inventing a disease, pathology, or abnormality (e.g. caries, periodontitis, malocclusion) - the figure shows normal anatomy and surface terminology only",
+        "Mislabeling the surface/direction terms, e.g. swapping palatal vs lingual, buccal vs labial, or mesial vs distal"
+      ],
+      "reference_caption": "A labeled schematic occlusal-view diagram of the upper and lower dental arches (in Estonian) illustrating tooth surfaces and directional terminology - labial, buccal, palatal, lingual, mesial, and distal - with one quadrant numbered 1 to 8 from central incisor to third molar.",
+      "source": {
+        "title": "File:Suunad.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3ASuunad.png",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Eleri Valliste"
+      }
+    },
+    {
+      "id": "tooth_picturewlabels",
+      "image": "data/images/tooth_picturewlabels.jpg",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a schematic occlusal-view diagram (line drawing) of a maxillary (upper) molar crown, not a photograph or radiograph",
+        "The four primary cusps are color-coded and labeled: paracone (green, mesiobuccal), metacone (magenta, distobuccal), protocone (yellow, mesiolingual), and hypocone (blue, distolingual)",
+        "Orientation labels mark the surfaces/directions: mesial, distal, buccal, and lingual",
+        "It depicts normal/healthy crown morphology with occlusal grooves and fossae, with no disease, caries, or pathology shown"
+      ],
+      "must_avoid": [
+        "Calling this a photograph, radiograph/X-ray, or clinical intraoral image",
+        "Identifying it as a mandibular (lower) molar or premolar rather than an upper molar",
+        "Inventing a disease, caries lesion, or pathology when the diagram only shows normal cusp anatomy"
+      ],
+      "reference_caption": "A labeled occlusal-view schematic of an upper (maxillary) molar crown showing its four cusps color-coded and named, the paracone, metacone, protocone, and hypocone, with mesial, distal, buccal, and lingual orientation labels.",
+      "source": {
+        "title": "File:Tooth Picturewlabels.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ATooth_Picturewlabels.jpg",
+        "license": "Public domain",
+        "attribution": "Thelsmotto at en.wikipedia"
+      }
+    },
+    {
+      "id": "acute_necrotising_ulcerative_gingivitis",
+      "image": "data/images/acute_necrotising_ulcerative_gingivitis.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a clinical intraoral photograph taken with the mouth wide open, showing the soft palate, oropharynx/uvular region, and the posterior dorsal surface of the tongue (not the marginal gingiva)",
+        "The soft palate / posterior oropharyngeal mucosa shows scattered erythematous macules or papules (small red spots, an enanthem-like change) on a reddened background",
+        "The dorsal tongue is erythematous with prominent fungiform papillae and a whitish-grey coating, indicating mucosal inflammation rather than a normal tongue",
+        "The findings are inflammatory/erythematous oropharyngeal and lingual mucosal changes (consistent with a viral pharyngitis/enanthem picture); the image does NOT show punched-out, necrotic interdental gingival ulceration"
+      ],
+      "must_avoid": [
+        "Diagnosing acute necrotising ulcerative gingivitis (ANUG/NUG) or describing necrotic, punched-out interdental papillae with a grey pseudomembrane on the gingiva \u2014 those marginal-gingiva features are not visible in this palate/oropharynx/tongue view",
+        "Calling the mucosa normal/healthy when there is clear palatal and lingual erythema with spots and a coated tongue",
+        "Misidentifying the modality as a diagram or X-ray; this is a real color clinical photograph"
+      ],
+      "reference_caption": "Intraoral clinical photograph (mouth open) of the soft palate, oropharynx, and posterior dorsal tongue showing scattered erythematous spots on the palatal mucosa and an erythematous, white-coated tongue with prominent papillae, consistent with inflammatory oropharyngeal mucosal change (e.g., viral pharyngitis/enanthem) rather than necrotising ulcerative gingivitis.",
+      "source": {
+        "title": "File:Acute necrotising ulcerative gingivitis.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AAcute_necrotising_ulcerative_gingivitis.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Dr.mohan m.muthal"
+      }
+    },
+    {
+      "id": "dental_caries_cavity_2_cropped",
+      "image": "data/images/dental_caries_cavity_2_cropped.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": "advanced",
+      "must_identify": [
+        "This is an intraoral clinical photograph of maxillary (upper) teeth and gingiva",
+        "One tooth shows extensive (advanced) dental caries with a large, dark/blackened cavitated lesion and gross breakdown of the crown",
+        "The carious cavity exposes deeper tooth structure (dentin/pulp chamber level destruction), not just superficial enamel",
+        "Adjacent teeth and the surrounding pink gingiva are comparatively intact/less affected"
+      ],
+      "must_avoid": [
+        "Calling the destroyed/carious tooth healthy or normal",
+        "Identifying the image as a radiograph/X-ray or an illustration/diagram instead of a clinical photo",
+        "Misreading the dark cavitation as merely surface staining, a filling, or a normal pit/fissure rather than a destructive carious lesion"
+      ],
+      "reference_caption": "Intraoral clinical photograph of the maxillary arch showing a single tooth with advanced dental caries, a large dark cavitated lesion and gross crown destruction, while the neighboring teeth and pink gingiva appear comparatively intact.",
+      "source": {
+        "title": "File:Dental Caries Cavity 2 (cropped).JPG",
+        "url": "https://commons.wikimedia.org/wiki/File%3ADental_Caries_Cavity_2_%28cropped%29.JPG",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Suyash.dwivedi"
+      }
+    },
+    {
+      "id": "dental_caries_cavity_1",
+      "image": "data/images/dental_caries_cavity_1.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": "advanced",
+      "must_identify": [
+        "This is an intraoral clinical photograph (close-up macro shot inside the mouth), not a diagram or radiograph",
+        "A posterior tooth (molar/premolar) is the subject, with the lip and cheek mucosa visible at the margins",
+        "There is a large cavitated carious lesion on the occlusal/coronal surface, with a frank cavity (loss of tooth structure)",
+        "The lesion shows brown-to-black discoloration and softened/demineralized dentin extending into dentin (advanced/deep caries)"
+      ],
+      "must_avoid": [
+        "Calling the tooth healthy/intact or describing only surface staining with no cavitation",
+        "Misidentifying the modality as a radiograph/X-ray or an illustration/diagram",
+        "Diagnosing it as a non-carious finding such as an existing amalgam/composite filling, fracture only, or simple food impaction"
+      ],
+      "reference_caption": "Intraoral clinical close-up photograph of a posterior tooth (molar/premolar) showing an advanced cavitated dental caries lesion, with a deep central cavity, brown-black discoloration, and softened carious dentin extending into the dentin.",
+      "source": {
+        "title": "File:Dental Caries Cavity 1.JPG",
+        "url": "https://commons.wikimedia.org/wiki/File%3ADental_Caries_Cavity_1.JPG",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Suyash.dwivedi"
+      }
+    },
+    {
+      "id": "alveolprog",
+      "image": "data/images/alveolprog.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an intraoral clinical photograph, a lateral/buccal view of the teeth in occlusion (not an X-ray or diagram)",
+        "An anterior open bite: the upper and lower incisors fail to meet vertically while the posterior teeth are in contact",
+        "Proclined/flared and protrusive upper anterior teeth (dentoalveolar protrusion / alveolar prognathism), consistent with a digit-sucking or tongue-thrust habit",
+        "Young/developing dentition (mixed or early dentition appearance, i.e. a child or adolescent)"
+      ],
+      "must_avoid": [
+        "Calling the occlusion normal/healthy or missing the anterior open bite",
+        "Misidentifying the modality as a radiograph, panoramic film, or illustration/diagram",
+        "Diagnosing the open bite as caries, periodontal bone loss, or a missing/extracted tooth rather than a vertical malocclusion"
+      ],
+      "reference_caption": "Lateral intraoral clinical photograph of a developing dentition showing an anterior open bite with proclined, protrusive upper incisors (dentoalveolar protrusion/alveolar prognathism), the classic occlusal pattern of a thumb-sucking and tongue-thrust habit.",
+      "source": {
+        "title": "File:Alveolprog.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AAlveolprog.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Giorgio_Fiorelli ( talk ) ( Uploads )"
+      }
+    },
+    {
+      "id": "erosive_lichen_planus",
+      "image": "data/images/erosive_lichen_planus.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an intraoral clinical photograph of the maxillary arch / hard palate (head tilted back, image rotated), not a radiograph or diagram",
+        "Mucosal disease is present: a central area of erythematous (red, raw/atrophic) mucosa with surrounding white keratotic changes",
+        "White reticular / lace-like striae or white patches are seen admixed with the red areas on the palatal mucosa",
+        "Findings are consistent with an erosive/atrophic oral lichen planus (lichenoid mucositis) type lesion rather than normal mucosa"
+      ],
+      "must_avoid": [
+        "Calling the mucosa normal/healthy or describing it as an unremarkable palate",
+        "Misidentifying the modality as an X-ray, panoramic radiograph, or illustration/diagram",
+        "Confidently diagnosing it as candidiasis, leukoplakia, or carcinoma without acknowledging the lichenoid (white striae + erythema/erosion) pattern"
+      ],
+      "reference_caption": "Intraoral clinical photograph of the maxillary hard palate showing a central erythematous, atrophic/erosive mucosal area surrounded by white reticular striae and keratotic patches, consistent with erosive (atrophic) oral lichen planus.",
+      "source": {
+        "title": "File:Erosive lichen planus.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AErosive_lichen_planus.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Syed Wali Peeran"
+      }
+    },
+    {
+      "id": "lichen_planus_fig7",
+      "image": "data/images/lichen_planus_fig7.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an intraoral/perioral clinical photograph of the tongue (lateral/ventral border) and lower lip, mouth partly open",
+        "White lace-like reticular striae and whitish patches (Wickham-striae pattern) on the lateral tongue mucosa, with some background mucosal erythema",
+        "Findings are consistent with oral lichen planus (a chronic mucocutaneous/lichenoid mucosal condition), the reticular white-striated pattern being characteristic"
+      ],
+      "must_avoid": [
+        "Calling the mucosa normal/healthy or dismissing the white striae as plaque/food debris or coated tongue",
+        "Misdiagnosing as oral candidiasis, leukoplakia, or geographic tongue as the sole/primary reading without noting the reticular lichenoid pattern",
+        "Describing it as a diagram, illustration, or radiograph rather than a clinical photograph"
+      ],
+      "reference_caption": "Intraoral clinical photograph of the lateral and ventral tongue and lower lip showing white reticular (Wickham) striae and whitish patches with background erythema, consistent with oral lichen planus.",
+      "source": {
+        "title": "File:Lichen Planus Fig7.tiff",
+        "url": "https://commons.wikimedia.org/wiki/File%3ALichen_Planus_Fig7.tiff",
+        "license": "CC BY 3.0",
+        "attribution": "Department of Dermatology, Mayo clinic, Rochester, Minnesota"
+      }
+    },
+    {
+      "id": "herpes_blisters_on_lips_in_a_47_year_old_w",
+      "image": "data/images/herpes_blisters_on_lips_in_a_47_year_old_w.jpg",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a watercolour illustration/painting (not a clinical photograph) of the lips and perioral region",
+        "A cluster of small vesicles/blisters at the vermilion border and adjacent skin, some ruptured into erosions with crusting",
+        "Findings are consistent with herpes labialis (recurrent herpes simplex, a cold sore), a vesiculo-erosive lesion of the lip"
+      ],
+      "must_avoid": [
+        "Calling this a real clinical photograph",
+        "Describing the lips as healthy/normal",
+        "Diagnosing an unrelated lesion such as angular cheilitis, mucocele, squamous cell carcinoma, or actinic keratosis"
+      ],
+      "reference_caption": "Watercolour illustration of the lips showing a cluster of small blisters and crusted erosions at the vermilion border and perioral skin, consistent with herpes labialis (a cold sore from recurrent herpes simplex infection).",
+      "source": {
+        "title": "File:Herpes blisters on lips in a 47-year old woman with herpes l Wellcome V0036368EB.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AHerpes_blisters_on_lips_in_a_47-year_old_woman_with_herpes_l_Wellcome_V0036368EB.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "see source page"
+      }
+    },
+    {
+      "id": "bellingham_fluorosis_3",
+      "image": "data/images/bellingham_fluorosis_3.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": "moderate fluorosis",
+      "must_identify": [
+        "Intraoral clinical photograph (close-up) of the anterior teeth, showing upper and lower incisors",
+        "Developmental enamel defect affecting multiple teeth symmetrically, with diffuse chalky/opaque white mottling of the enamel",
+        "Brown/yellow-brown discoloration (staining) overlying the mottled enamel, most pronounced on the maxillary central incisors",
+        "Findings are consistent with dental fluorosis (mottled enamel from excess fluoride during tooth development)"
+      ],
+      "must_avoid": [
+        "Describing the teeth as healthy/normal or attributing the brown areas merely to extrinsic stain or poor hygiene",
+        "Misdiagnosing as dental caries/decay, tetracycline staining, or amelogenesis imperfecta as the primary read without acknowledging fluorosis",
+        "Calling this a radiograph, diagram, or illustration rather than a clinical photograph"
+      ],
+      "reference_caption": "Close-up intraoral clinical photograph of the anterior teeth showing diffuse white enamel mottling with brown staining across multiple incisors, consistent with moderate dental fluorosis from excessive fluoride exposure during enamel formation.",
+      "source": {
+        "title": "File:Bellingham fluorosis 3.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ABellingham_fluorosis_3.jpg",
+        "license": "Public domain",
+        "attribution": "Editmore"
+      }
+    },
+    {
+      "id": "nankali_post_a_fractured_tooth",
+      "image": "data/images/nankali_post_a_fractured_tooth.jpg",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a schematic line-drawing of a single tooth shown in longitudinal cross-section (not a photo or radiograph)",
+        "A horizontal (transverse) root fracture line crosses the root, dividing it into a coronal fragment and an apical fragment",
+        "An intracanal post/dowel (drawn with screw threads, a threaded or screw-type post) is seated down the root canal and spans across the fracture line",
+        "A coronal core/restoration build-up is shown in the crown, retained by the post"
+      ],
+      "must_avoid": [
+        "Calling it a clinical photograph or an X-ray/radiograph instead of a schematic diagram",
+        "Describing the tooth as intact/healthy with no fracture",
+        "Misreading the fracture as a vertical root fracture or as caries rather than a horizontal/transverse root fracture"
+      ],
+      "reference_caption": "Schematic longitudinal cross-section of a tooth with a horizontal (transverse) root fracture, in which a threaded intracanal post is placed through the root canal across the fracture line to retain the coronal fragment and support a core build-up.",
+      "source": {
+        "title": "File:Nankali Post. A fractured tooth.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ANankali_Post._A_fractured_tooth.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Ali nankali at English Wikipedia"
+      }
+    },
+    {
+      "id": "wortel_fractuur",
+      "image": "data/images/wortel_fractuur.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a clinical photograph of an extracted tooth specimen resting on a teal surgical drape (not a radiograph or diagram)",
+        "The crowned coronal portion carries a metal-ceramic / porcelain-fused-to-metal restoration with a visible metal collar at the margin",
+        "The tooth has fractured and separated into a crown-bearing coronal fragment and a detached root fragment (root fracture)",
+        "Fresh blood / soft-tissue remnants on the root surface indicate the specimen was just surgically extracted"
+      ],
+      "must_avoid": [
+        "Calling it a radiograph, X-ray, diagram, or illustration",
+        "Describing it as an intact, healthy, or unrestored tooth",
+        "Misidentifying the crown as a dental implant or implant abutment"
+      ],
+      "reference_caption": "Clinical photograph of an extracted, crowned (metal-ceramic) tooth that has undergone a root fracture, shown as separated coronal and root fragments with fresh blood on a teal surgical drape.",
+      "source": {
+        "title": "File:Wortel fractuur.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AWortel_fractuur.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Sloterdijk Tandzorg Kliniek"
+      }
+    },
+    {
+      "id": "prummelklammer",
+      "image": "data/images/prummelklammer.jpg",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a schematic line-drawing/illustration, not a clinical photograph or radiograph",
+        "It shows a single tooth (gray) being embraced by a gold/metal clasp or retainer arm that wraps around the tooth crown",
+        "The metal component is a removable partial denture clasp/retainer for an abutment tooth, with a connector/stem extending toward the denture base (saddle)",
+        "The clasp arm approaches and engages the tooth, consistent with a cast/wrought clasp retaining a partial denture (a bar/gingivally-approaching style clasp)"
+      ],
+      "must_avoid": [
+        "Calling this a real clinical photograph or an X-ray/radiograph",
+        "Identifying the gold structure as caries, calculus, a gold crown/filling, or natural tooth anatomy rather than a metal clasp/retainer",
+        "Claiming it depicts a dental implant or fixed bridge framework rather than a removable partial denture clasp"
+      ],
+      "reference_caption": "Schematic line drawing of a removable partial denture clasp (a gingivally-approaching bar-type / Pr\u00fcmmel-style clasp) in gold, with its retentive arm embracing a single abutment tooth and a connector extending downward toward the denture base.",
+      "source": {
+        "title": "File:PrummelKlammer.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3APrummelKlammer.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Robert Prummel"
+      }
+    },
+    {
+      "id": "detached_dental_crown_flat_front",
+      "image": "data/images/detached_dental_crown_flat_front.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a clinical photograph of a single detached/dislodged artificial dental crown (a restoration, not a natural tooth), shown isolated against a plain white background",
+        "The crown is viewed from its underside (intaglio/fitting surface), which is hollow/cup-shaped and was previously cemented over a prepared tooth",
+        "It is a ceramic-veneered metal restoration (porcelain-fused-to-metal type): a tooth-colored ceramic outer rim with a dark metal margin/collar and grey metal showing internally",
+        "Set/hardened cement and dark metal substructure or post/core remnants are retained inside the hollow crown, consistent with the crown having come off the tooth"
+      ],
+      "must_avoid": [
+        "Calling this a natural/whole tooth or describing it as a tooth still in the mouth rather than a detached artificial crown",
+        "Describing it as a radiograph, diagram, or illustration rather than a clinical photograph",
+        "Misidentifying it as a dental implant, abutment, or denture/bridge instead of a single crown"
+      ],
+      "reference_caption": "Clinical photograph of a single detached porcelain-fused-to-metal dental crown viewed from its hollow underside (intaglio surface), showing a tooth-colored ceramic rim with a dark metal margin and retained set cement plus metal/core remnants inside, isolated on a white background.",
+      "source": {
+        "title": "File:Detached-dental-crown-flat-front.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ADetached-dental-crown-flat-front.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Wikimpan"
+      }
+    },
+    {
+      "id": "treatment_steps_for_feldspathic_vm9_porcel",
+      "image": "data/images/treatment_steps_for_feldspathic_vm9_porcel.jpg",
+      "modality": "clinical_photo",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a multi-panel intraoral clinical photograph series (panels numbered 1-5) documenting the treatment sequence for restoring the two maxillary central incisors",
+        "Early panels show the failing/old situation: discolored compromised central incisors with marginal gingival inflammation, and in the pre-op view a small gingival swelling/fistula above the teeth",
+        "An intermediate panel shows the teeth prepared down to abutments/cores (one with a light post-and-core, the other a darker prepared stump) prior to definitive crowns",
+        "Final panel shows the completed restorations: two natural-appearing anterior crowns/veneers on the central incisors with restored shape and shade"
+      ],
+      "must_avoid": [
+        "Calling this a single static intraoral photo or a radiograph/X-ray rather than a numbered multi-step treatment montage",
+        "Describing the dentition as healthy and unrestored, ignoring the inflamed gingiva, discolored teeth, and prepared abutments",
+        "Misidentifying the restored teeth as posterior teeth or as dental implants rather than crowns/restorations on natural maxillary central incisors"
+      ],
+      "reference_caption": "A five-panel intraoral clinical photo series showing the step-by-step restoration of the two maxillary central incisors, from discolored failing teeth with gingival inflammation, through tooth preparation to abutments/cores, to the final natural-looking anterior crowns.",
+      "source": {
+        "title": "File:Treatment Steps for Feldspathic VM9 Porcelain Crowns.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ATreatment_Steps_for_Feldspathic_VM9_Porcelain_Crowns.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "AmirAttallah"
+      }
+    },
+    {
+      "id": "temporomandibular_joint_number",
+      "image": "data/images/temporomandibular_joint_number.png",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an illustrated/schematic anatomy diagram (not a photograph or radiograph) of the temporomandibular joint (TMJ) shown in sagittal/cross-section",
+        "It depicts NORMAL TMJ anatomy with the parts marked by numbers (1-13) rather than text labels",
+        "Key joint structures are shown: the rounded mandibular condyle (yellow), the temporal bone with the glenoid/mandibular fossa and articular eminence above it, and the biconcave articular disc sitting between them and dividing the upper and lower joint spaces",
+        "Surrounding/associated structures are indicated, including the joint capsule and anterior soft tissue (musculature such as the lateral pterygoid and/or vascular structures, shown in red)"
+      ],
+      "must_avoid": [
+        "Calling this a radiograph/CT/MRI or a real clinical photograph rather than an illustrated diagram",
+        "Describing it as a diseased or pathological joint (e.g., disc displacement, osteoarthritis, ankylosis) when it depicts normal anatomy",
+        "Misidentifying the joint as something other than the TMJ (e.g., a generic synovial limb joint or a dental/tooth diagram)"
+      ],
+      "reference_caption": "A numbered schematic sagittal-section diagram of normal temporomandibular joint anatomy, showing the mandibular condyle, the temporal bone glenoid fossa and articular eminence, the interposed biconcave articular disc dividing the upper and lower joint compartments, the joint capsule, and adjacent soft tissue/musculature, with structures identified by numbers rather than text labels.",
+      "source": {
+        "title": "File:Temporomandibular joint number.svg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ATemporomandibular_joint_number.svg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Temporomandibular_joint.png : Frank Gaillard derivative work: Micha\u0142 Komorniczak ( talk ) This is a retouched picture , which means that it has been digitally altered from its original version. Modifications: Vectorazing . The original can be viewed here: Temporomandibular joint.png : . Modifications made by M.Komorniczak ."
+      }
+    },
+    {
+      "id": "eb1911_mouth_and_salivary_glands",
+      "image": "data/images/eb1911_mouth_and_salivary_glands.jpg",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a labeled anatomical illustration / line-engraving (not a photograph) of a lateral view of the head and oral region",
+        "It depicts the major salivary glands and their ducts: parotid gland with Stensen's (parotid) duct, submaxillary/submandibular gland with Wharton's duct, and sublingual gland with the duct of Bartholin/duct of sublingual gland",
+        "Relevant musculoskeletal/oral structures are shown and named, including the masseter (cut), mylohyoid muscle, anterior belly of digastric, hyoid bone, lower border of mandible, and the teeth/tongue"
+      ],
+      "must_avoid": [
+        "Calling this a clinical photograph or a radiograph/X-ray",
+        "Describing it as showing disease or pathology (it is normal anatomy)",
+        "Misidentifying the glands, e.g. labeling the parotid as the submandibular or confusing the ducts"
+      ],
+      "reference_caption": "A labeled black-and-white anatomical engraving of a lateral view of the head showing the three major salivary glands and their ducts (parotid with Stensen's duct, submaxillary/submandibular with Wharton's duct, and sublingual with the duct of Bartholin), together with named oral and cervical structures such as the masseter, mylohyoid, anterior belly of digastric, hyoid bone, and mandible.",
+      "source": {
+        "title": "File:EB1911 Mouth and Salivary Glands.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AEB1911_Mouth_and_Salivary_Glands.jpg",
+        "license": "Public domain",
+        "attribution": "From A. Birmingham Cunningham's Text Book of Anatomy ."
+      }
+    },
+    {
+      "id": "geographic_tongue",
+      "image": "data/images/geographic_tongue.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Intraoral clinical photograph of the protruded dorsal tongue (anterior view, mouth open, no labels or annotations)",
+        "Multiple irregular, map-like (annular to serpiginous) lesions on the dorsum with smooth, depapillated red patches reflecting loss of filiform papillae",
+        "Lesions outlined by slightly raised, curved whitish/yellow-white serpentine borders, giving the classic migrating geographic pattern",
+        "Diagnosis consistent with geographic tongue (benign migratory glossitis), a benign inflammatory condition; remainder of the tongue retains normal papillae"
+      ],
+      "must_avoid": [
+        "Calling it oral candidiasis (thrush), leukoplakia, lichen planus, or any premalignant/malignant lesion",
+        "Interpreting the white serpiginous borders as a wipeable plaque, ulceration, or coating",
+        "Describing it as a hairy tongue, fissured-tongue-only, or a deep-fungal/infectious process requiring antifungals"
+      ],
+      "reference_caption": "Clinical photograph of the protruded dorsal tongue showing multiple map-like depapillated red patches bordered by raised white serpiginous margins, characteristic of geographic tongue (benign migratory glossitis).",
+      "source": {
+        "title": "File:Geographic tongue.JPG",
+        "url": "https://commons.wikimedia.org/wiki/File%3AGeographic_tongue.JPG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Martanopue"
+      }
+    },
+    {
+      "id": "mouth_parotid_gland_nih_bioart_654",
+      "image": "data/images/mouth_parotid_gland_nih_bioart_654.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a labeled educational microanatomy/histology schematic (NIH BioArt style) of salivary gland tissue, not a gross anatomy view or a radiograph",
+        "Secretory end-piece architecture is shown: rounded acini (serous acinus) draining into a branching duct system",
+        "The intralobular/excretory duct hierarchy is depicted and labeled: intercalated duct, striated duct (striated ductal epithelium), and excretory duct (excretory ductal epithelium)",
+        "Cellular and stromal components are labeled, including myoepithelial cells around acini, adipocytes, fibroblasts, and connective-tissue/immune and vascular cells (e.g., mast cell, macrophage, endothelial cell, smooth muscle)",
+        "A microscopic scale is indicated by a 50 \u00b5m scale bar, confirming this is tissue-level (microscopic) rather than organ-level anatomy"
+      ],
+      "must_avoid": [
+        "Calling this an X-ray, sialogram, ultrasound, CT/MRI, or any radiographic/clinical photograph",
+        "Describing it as gross anatomy of the mouth, face, or whole parotid gland with ducts like Stensen's duct opening into the oral cavity",
+        "Reading it as a pathology/tumor specimen or assigning a disease diagnosis (e.g., sialadenitis, neoplasm) when it depicts normal glandular microanatomy"
+      ],
+      "reference_caption": "Labeled NIH BioArt-style histology schematic of salivary (parotid) gland microanatomy, showing serous acini with surrounding myoepithelial cells draining through intercalated, striated, and excretory ducts, set within stroma containing adipocytes, fibroblasts, vascular and immune cells, with a 50 \u00b5m scale bar.",
+      "source": {
+        "title": "File:Mouth Parotid Gland (NIH BioArt 654).svg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AMouth_Parotid_Gland_%28NIH_BioArt_654%29.svg",
+        "license": "CC BY 4.0",
+        "attribution": "BioArt"
+      }
+    },
+    {
+      "id": "new_nanocomposites_may_mean_more_durable_t",
+      "image": "data/images/new_nanocomposites_may_mean_more_durable_t.jpg",
+      "modality": "clinical_photo",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Macro/close-up clinical photograph of a single extracted (or isolated ex-vivo) human posterior tooth, almost certainly a molar, photographed on a dark/black background as a laboratory or research specimen rather than an intraoral image",
+        "Occlusal (biting-surface) view: cusps, occlusal fissures/grooves and marginal ridges are visible across the crown",
+        "A superimposed white annotation arrow points down to the central occlusal area, indicating the image is an annotated figure highlighting one specific site (e.g., a restoration, fissure, or surface feature)",
+        "The crown surface shows wet/glossy highlights and irregular texture; a restored area or central filling cannot be confidently distinguished from natural enamel at this resolution, so any restoration should be described tentatively"
+      ],
+      "must_avoid": [
+        "Calling this a radiograph/X-ray, a diagram, or an intraoral in-situ photo \u2014 it is a macro photo of an isolated tooth on a dark background",
+        "Asserting a specific diagnosis (caries, fracture, failing restoration) or specifying the restorative material (e.g., calcium-phosphate nanocomposite) as a visual certainty \u2014 the material and pathology are not verifiable from the image alone",
+        "Naming a precise tooth number/quadrant as certain \u2014 orientation on an isolated extracted tooth cannot be reliably established"
+      ],
+      "reference_caption": "Annotated macro photograph of an extracted human molar viewed from the occlusal surface against a dark background, with a white arrow marking a central occlusal site, consistent with a laboratory/research specimen figure.",
+      "source": {
+        "title": "File:New Nanocomposites May Mean More Durable Tooth Fillings.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ANew_Nanocomposites_May_Mean_More_Durable_Tooth_Fillings.jpg",
+        "license": "Public domain",
+        "attribution": "National Institute of Standards and Technology"
+      }
+    },
+    {
+      "id": "packable_composite_placed_in_a_lower_right",
+      "image": "data/images/packable_composite_placed_in_a_lower_right.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Intraoral clinical macro/close-up photograph (three-panel collage) of mandibular posterior teeth (molars), shown on the occlusal surface; a mouth mirror rim and a periodontal/dental probe tip are visible in the center panel",
+        "Tooth-colored (composite/resin) occlusal restorative material blending with the enamel on a molar occlusal surface, consistent with a class I occlusal composite restoration rather than amalgam (no metallic/silver material present)",
+        "Stained pits and fissures / occlusal grooves on the molars (brown-to-dark discoloration along the central groove and fossae), most visible in the left and right panels",
+        "Otherwise glossy, hydrated enamel with intact marginal ridges; no frank cavitation, no large open carious lesion, and no soft-tissue swelling evident"
+      ],
+      "must_avoid": [
+        "Calling this a radiograph/X-ray, an illustration, or a diagram (it is an intraoral clinical photograph)",
+        "Describing the restoration as a metal/amalgam (silver) filling or a crown/onlay; the material is tooth-colored",
+        "Over-diagnosing frank/deep caries, an abscess, or periodontal disease from these macro views when only stained fissures and a tooth-colored restoration are reliably visible"
+      ],
+      "reference_caption": "Intraoral macro clinical photographs (three-panel collage) of mandibular posterior molars showing a tooth-colored (composite) class I occlusal restoration blending with the enamel, alongside stained occlusal pits and fissures, with a mouth mirror and probe tip visible.",
+      "source": {
+        "title": "File:Packable composite placed in a lower right 6 (Simple class 1).jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3APackable_composite_placed_in_a_lower_right_6_%28Simple_class_1%29.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ibrahim nooh"
+      }
+    },
+    {
+      "id": "dental_veneer",
+      "image": "data/images/dental_veneer.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a close-up photograph of two ceramic/porcelain dental laboratory restorations (not an intraoral image), shown ex vivo on a black/dark background",
+        "The restorations are anterior (incisor-shaped) all-ceramic prosthetics with high translucency and characteristic bluish/grey incisal edges typical of porcelain",
+        "No oral structures (gingiva, tongue, adjacent teeth) and no model/die are visible; the specimens are isolated against the dark background",
+        "The left specimen shows a distinct internal facial outline/window or layering detail, consistent with a fabrication or build-up view of the restoration"
+      ],
+      "must_avoid": [
+        "Calling this an intraoral clinical photograph or claiming the restoration is cemented in the mouth",
+        "Describing it as an X-ray, radiograph, or diagram",
+        "Asserting these are natural extracted teeth rather than fabricated ceramic restorations"
+      ],
+      "reference_caption": "Close-up photograph of two translucent anterior all-ceramic dental restorations (porcelain veneers/crowns) on a black background, shown as laboratory specimens with characteristic bluish incisal translucency.",
+      "source": {
+        "title": "File:Dental veneer.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ADental_veneer.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Clausgast"
+      }
+    },
+    {
       "id": "anat-01-control",
       "image": "data/images/tooth_anatomy_control.png",
       "modality": "diagram",
