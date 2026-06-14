@@ -1,10 +1,10 @@
-"""Fetch a larger, bucket-balanced pool of candidate dental images for review.
+"""Fetch a large, bucket-balanced pool of candidate dental images for review.
 
-Searches Wikimedia Commons across buckets, keeps openly-licensed images that pass a
-dental-relevance filter (raw keyword search drags in dinosaurs/whales/logos via words
-like "composite" or "disclosing"), downloads and downscales them, and writes a
-manifest. These land in curation/batch2/ for the click-to-review widget; only the
-ones you keep get promoted into data/images/.
+Searches Wikimedia Commons across many dental subtopics, keeps openly-licensed
+images that pass a dental-relevance filter, downloads and downscales them, and
+writes a manifest. These land in curation/round2/ for the click-to-review widget;
+only the ones you keep get promoted into data/images/. Excludes everything already
+in data/items.json plus a few previously-rejected files.
 """
 from __future__ import annotations
 
@@ -21,34 +21,54 @@ from PIL import Image
 API = "https://commons.wikimedia.org/w/api.php"
 UA = "dental-vision-benchmark/0.2 (research; cisco@periospot.com)"
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "curation/batch2"
-PER_BUCKET = 7
+OUT = ROOT / "curation/round2"
+PER_BUCKET = 4
 MAXW = 380
 
 BUCKETS = {
-    "anatomy": ["tooth anatomy diagram", "primary deciduous teeth diagram", "tooth morphology diagram", "periodontium anatomy diagram", "dental arch teeth diagram"],
-    "perio": ["periodontitis diagram", "gingival recession diagram", "periodontal pocket diagram", "healthy gingiva diagram", "gingivitis teeth"],
-    "caries": ["dental caries classification diagram", "smooth surface caries diagram", "occlusal caries diagram", "caries stages diagram", "tooth decay diagram"],
-    "implant": ["dental implant diagram", "dental implant abutment crown", "peri-implantitis diagram", "osseointegration implant"],
-    "endo": ["root canal treatment diagram", "periapical abscess diagram", "tooth pulp anatomy diagram", "endodontic therapy molar"],
-    "ortho": ["malocclusion diagram teeth", "dental crossbite", "overbite overjet diagram", "teeth crowding malocclusion"],
-    "pathology": ["oral leukoplakia mouth", "oral candidiasis mouth", "geographic tongue", "gingival hyperplasia mouth"],
-    "clinical_photo": ["intraoral photograph teeth gingiva", "dental plaque disclosing teeth", "tooth staining discoloration teeth", "dental calculus teeth"],
-    "restorative": ["dental amalgam filling tooth", "dental composite filling tooth", "dental crown preparation tooth", "dental inlay onlay tooth"],
-    "eruption": ["tooth eruption sequence diagram", "mixed dentition teeth diagram"],
+    "anatomy": ["tooth morphology diagram", "dental arch quadrants diagram", "tooth surfaces diagram"],
+    "perio_disease": ["periodontal furcation diagram", "gingival enlargement mouth", "necrotizing ulcerative gingivitis", "periodontal abscess"],
+    "caries_stages": ["occlusal caries diagram", "root caries tooth", "rampant caries teeth", "early childhood caries"],
+    "tooth_wear": ["dental abrasion tooth", "dental erosion teeth", "dental attrition wear", "abfraction tooth"],
+    "endo": ["periapical abscess diagram", "pulpitis tooth diagram", "apical periodontitis diagram", "pulp polyp tooth"],
+    "ortho_occlusion": ["anterior crossbite teeth", "open bite malocclusion", "deep bite occlusion", "posterior crossbite"],
+    "oral_pathology": ["oral lichen planus", "oral squamous cell carcinoma mouth", "oral leukoplakia tongue", "erythroplakia mouth"],
+    "mucosal": ["oral candidiasis tongue", "herpes labialis lip", "angular cheilitis", "oral mucocele lip"],
+    "developmental": ["dental fluorosis teeth", "enamel hypoplasia teeth", "amelogenesis imperfecta teeth", "supernumerary tooth"],
+    "trauma": ["tooth fracture diagram", "dental crown fracture", "enamel fracture tooth", "tooth luxation diagram"],
+    "prostho": ["dental crown types diagram", "dental bridge diagram", "dental veneer diagram", "post and core tooth"],
+    "implant_surgery": ["dental sinus lift diagram", "dental bone graft diagram", "guided bone regeneration dental", "implant abutment diagram"],
+    "restorative_classes": ["GV Black cavity classification", "dental inlay onlay diagram", "class II cavity preparation tooth", "dental composite layering"],
+    "gingiva": ["healthy gingiva anatomy diagram", "attached gingiva mucogingival", "frenum frenectomy diagram", "gingival recession classification"],
+    "calculus_plaque": ["dental calculus subgingival diagram", "dental biofilm plaque diagram", "supragingival calculus teeth"],
+    "discoloration": ["tooth discoloration tetracycline", "intrinsic tooth staining teeth", "extrinsic tooth stain teeth"],
+    "eruption": ["tooth eruption chart", "mixed dentition development diagram", "teething eruption sequence"],
+    "tongue": ["geographic tongue", "fissured tongue", "black hairy tongue", "ankyloglossia tongue tie"],
+    "tmj_salivary": ["temporomandibular joint anatomy diagram", "TMJ disc displacement diagram", "salivary gland anatomy mouth", "sialolith salivary stone"],
+    "perio_health": ["periodontal probing depth diagram", "clinical attachment level diagram", "bleeding on probing gingiva"],
+    "restoration_photo": ["composite filling tooth", "dental veneers teeth", "dental crown cemented tooth"],
 }
 
 DENTAL_TERMS = ["dental", "dentit", "dentin", "tooth", "teeth", "gingiv", "periodont", "perio", "caries", "carious",
                 "enamel", "pulp", "oral", "mouth", "implant", "occlus", "malocclus", "plaque", "calculus",
                 "leukoplakia", "erythroplakia", "candidias", "endodont", "molar", "incisor", "premolar",
                 "root canal", "amalgam", "denture", "gum", "gums", "recession", "abscess", "fluorosis",
-                "abrasion", "erosion", "attrition", "restoration", "filling", "crown", "abutment"]
+                "abrasion", "erosion", "attrition", "abfraction", "restoration", "filling", "crown", "abutment",
+                "tongue", "palate", "jaw", "mandib", "maxilla", "salivary", "temporomandibular", "tmj",
+                "frenum", "veneer", "bridge", "lip", "cheilitis", "herpes", "lichen planus", "fracture",
+                "avulsion", "luxation", "eruption", "furcation", "mucocele", "hypoplasia", "amelogenesis",
+                "supernumerary", "sialolith", "ankyloglossia", "vestibule", "alveolar", "cementum"]
 BLOCK_TERMS = ["whale", "dinosaur", "brachiosaur", "argyrosaur", "bolosaur", "titanosaur", "sauropod",
                "holotype", "fossil", "reptile", "skeletal restoration", "composite skeletal", "scale diagram",
-               "logo", "brand mark", "trademark",
-               # off-topic matches that share a dental word (leaf "tooth", animal dentition, scene photos)
-               "leaf morphology", "plant systematics", "horse", "equine", "apert", "human skeleton",
-               "air force", "us navy", "canine gingivitis", "teaching in", "live surgeries"]
+               "logo", "brand mark", "trademark", "leaf morphology", "plant systematics", "horse", "equine",
+               "apert", "human skeleton", "air force", "us navy", "canine gingivitis", "teaching in",
+               "live surgeries", "snake", "shark", "comb", "gear", "saw blade"]
+EXTRA_EXCLUDE = {
+    "File:Gum model.JPG", "File:Screw implant mandibular bone.jpg", "File:Screw implant mandibular bone at arrow.jpg",
+    "File:Bladetype dental implant.jpg", "File:Human tongue infected with oral candidiasis.jpg", "File:Sarro.jpg",
+    "File:Gipsabguss Gebiss.jpg", "File:Amalgam filling.JPG", "File:Amalgam filling hemi.jpg",
+    "File:Dental Caries Pathogenesis .jpg", "File:30partialendo.JPG", "File:-30partialendo.JPG",
+}
 
 
 def strip(s: str) -> str:
@@ -70,7 +90,10 @@ def search(q: str, limit: int = 6) -> list[dict]:
               "gsrsearch": f"{q} filetype:bitmap|drawing", "gsrnamespace": "6", "gsrlimit": str(limit),
               "prop": "imageinfo", "iiprop": "url|extmetadata", "iiurlwidth": "700"}
     req = urllib.request.Request(f"{API}?{urllib.parse.urlencode(params)}", headers={"User-Agent": UA})
-    d = json.load(urllib.request.urlopen(req, timeout=30))
+    try:
+        d = json.load(urllib.request.urlopen(req, timeout=30))
+    except Exception:  # noqa: BLE001
+        return []
     out = []
     for p in (d.get("query") or {}).get("pages", {}).values():
         ii = (p.get("imageinfo") or [{}])[0]
@@ -110,10 +133,7 @@ def save_downscaled(url: str, dst: Path) -> bool:
 
 def main() -> None:
     OUT.mkdir(parents=True, exist_ok=True)
-    exclude = set()
-    cj = ROOT / "data/candidates.json"
-    if cj.exists():
-        exclude |= {c["title"] for c in json.loads(cj.read_text())}
+    exclude = set(EXTRA_EXCLUDE)
     for it in json.loads((ROOT / "data/items.json").read_text())["items"]:
         exclude.add(it["source"]["title"])
 
