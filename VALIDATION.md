@@ -171,3 +171,44 @@ Full rubrics (`must_identify` / `must_avoid` / caption) live in `data/items.json
 | `new_nanocomposites_may_mean_more_durable_t` | new_nanocomposites_may_mean_more_durable_t.jpg | clinical_photo | - | weak | [ ] |
 | `packable_composite_placed_in_a_lower_right` | packable_composite_placed_in_a_lower_right.jpg | clinical_photo | - | weak | [ ] |
 | `dental_veneer` | dental_veneer.jpg | clinical_photo | - | weak | [ ] |
+
+---
+
+## Round 3 additions (13 items, DRAFT)
+
+**Weak / reconsider:**
+- `dens_evaginatus` — Crude hand-drawn study sketch: the title word makes the diagnosis nearly self-labeling, and the line drawing is ambiguous enough that the projecting tubercle could be read as a root or an unrelated cusp without the caption, so it tests reading the label more than recognizing the lesion. Faint mirror-image bleed-through from the reverse page adds visual noise.
+- `non_carious_cervical_lesion` — The view is a real, well-exposed lateral intraoral photo, but it is a wide buccal occlusion shot rather than a close-up of a single tooth, so the defining feature of the labeled diagnosis (a wedge-shaped/notched cervical lesion) is not crisply resolvable. Cervical color change, gingival recession, and incisal wear are visible, but a model cannot reliably distinguish a true non-carious cervical lesion from cervical staining, recession, or early cervical caries at this magnification. A tighter, well-lit close-up of the affected cervical region (ideally with a probe or labeling) would make this a clean item.
+
+**Severity-gated (confirm the grade is readable):**
+- `connective_tissue_graft_to_implant` — moderate recession defect
+- `hyperdontia_genetically_inherited_developm` — severe crowding
+- `periodontitis_01` — advanced (severe) periodontitis
+
+**Open questions:**
+- `pulp_cap` — The exact capping material is not specified by the diagram, so the model cannot be expected to name it (e.g. calcium hydroxide vs MTA).
+- `connective_tissue_graft_to_implant` — Is the affected unit an implant-supported crown versus a natural tooth crown, and which specific tooth position is it? This cannot be determined from the single photo without a radiograph or chart.
+- `four_mandibular_implants_with_novaloc_abut` — The exact attachment system/brand (Novaloc vs LOCATOR vs ball) cannot be confirmed from the image alone; the dark coating is consistent with Novaloc but is not definitive.
+- `dens_evaginatus` — The sketch does not specify tooth type or location, so the model cannot reliably state whether a premolar (classic dens evaginatus / Leong's tubercle) or an anterior tooth (talon cusp variant) is intended.
+- `hyperdontia_genetically_inherited_developm` — Is the darkened maxillary anterior tooth a non-vital/traumatized tooth or simply an impacted/ectopic supernumerary showing through thin mucosa?
+- `maxillary_tori` — The torus is fairly low/flat in this view; it is possible to read it as a normal palatal vault with a prominent median raphe rather than a discrete torus, so reasonable descriptions emphasizing a midline palatal bony prominence should be accepted.
+- `non_carious_cervical_lesion` — Which specific tooth carries the non-carious cervical lesion, and is its etiology abfraction, erosion, abrasion, or a combination (not determinable from this single lateral view)?
+- `periodontium` — Because the letters A–K have no accompanying key, the exact intended structure for each individual letter cannot be verified from the image alone; grading should reward correct identification of the structures present rather than a specific letter-to-structure mapping.
+- `periodontitis_01` — Is the extracted tooth in panel B the same heavily-involved molar seen in panel A (most consistent interpretation), and was it extracted due to hopeless periodontal prognosis?
+- `human_tooth_diagram_gu` — Whether the illustration is intended to depict a specific tooth type (e.g., molar) or a generic tooth; the section shows what reads as a single root, so tooth-type claims should not be pass-gating.
+
+| Item | Image | Modality | Severity gate | Flag | Sign-off |
+|---|---|---|---|---|---|
+| `pulp_cap` | pulp_cap.png | diagram | - |  | [ ] |
+| `connective_tissue_graft_to_implant` | connective_tissue_graft_to_implant.gif | clinical_photo | moderate recession defect |  | [ ] |
+| `four_mandibular_implants_with_novaloc_abut` | four_mandibular_implants_with_novaloc_abut.jpg | clinical_photo | - |  | [ ] |
+| `examples_of_tooth_staining` | examples_of_tooth_staining.jpg | clinical_photo | - |  | [ ] |
+| `dens_evaginatus` | dens_evaginatus.jpg | diagram | - | weak | [ ] |
+| `hyperdontia_genetically_inherited_developm` | hyperdontia_genetically_inherited_developm.jpg | clinical_photo | severe crowding |  | [ ] |
+| `maxillary_tori` | maxillary_tori.jpg | clinical_photo | - |  | [ ] |
+| `non_carious_cervical_lesion` | non_carious_cervical_lesion.jpg | clinical_photo | - | weak | [ ] |
+| `periodontium` | periodontium.png | diagram | - |  | [ ] |
+| `molar_relationship` | molar_relationship.jpg | diagram | - |  | [ ] |
+| `periodontitis_01` | periodontitis_01.jpg | clinical_photo | advanced (severe) periodontitis |  | [ ] |
+| `human_tooth_diagram_gu` | human_tooth_diagram_gu.png | diagram | - |  | [ ] |
+| `tooth_structure_and_dental_tissues_with_th` | tooth_structure_and_dental_tissues_with_th.png | diagram | - |  | [ ] |

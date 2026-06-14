@@ -1981,6 +1981,350 @@
       }
     },
     {
+      "id": "pulp_cap",
+      "image": "data/images/pulp_cap.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a labeled anatomical diagram (illustration) of a tooth shown in longitudinal cross-section within its bony socket, not a photograph or radiograph",
+        "The crown region (bracket 1) and the root region within the alveolar bone (bracket 2) are delineated, with the pulp chamber and pulp horns (label 5) and the neurovascular bundle (red/blue/yellow strands) running through the pulp into the root canals and periapex",
+        "A grey/silver restorative material (label 3) is placed in the coronal/occlusal portion of the tooth, overlying the pulp",
+        "At the interface between the restoration and the pulp there is a small distinct capping/protective material element (label 4) placed over an exposed pulp horn, depicting a direct pulp cap (sedative/protective lining over the pulp exposure)",
+        "Surrounding supporting structures are shown: alveolar bone (stippled tan), periodontal ligament space, and gingiva at the cervical margin"
+      ],
+      "must_avoid": [
+        "Do not call this a radiograph, X-ray, photograph, or intraoral clinical photo; it is a schematic illustration",
+        "Do not describe it as a root canal / endodontic obturation, an implant, or simple caries; the key concept is a pulp-capping material placed over an exposed/near-exposed pulp beneath a restoration",
+        "Do not invent a specific tooth number, named material (e.g. MTA, calcium hydroxide), or a periapical lesion that is not depicted"
+      ],
+      "reference_caption": "Labeled cross-sectional diagram of a tooth showing a direct pulp cap, where a small protective/sedative capping material (4) is placed over an exposed pulp horn beneath a coronal restoration (3), with the crown (1), root in alveolar bone (2), and pulp/neurovascular tissue (5) indicated.",
+      "source": {
+        "title": "File:Pulp cap.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3APulp_cap.png",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Ian Furst , Goran tek-en"
+      }
+    },
+    {
+      "id": "connective_tissue_graft_to_implant",
+      "image": "data/images/connective_tissue_graft_to_implant.gif",
+      "modality": "clinical_photo",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": "moderate recession defect",
+      "must_identify": [
+        "Intraoral clinical photograph, buccal/lateral view of posterior teeth/crowns, explicitly labeled 'PRE-OP' (pre-operative baseline)",
+        "Gingival/mucosal recession at the marginal gingiva indicated by the black arrowhead, with exposure of a dark restoration margin, abutment, or root surface",
+        "A black arrowhead marker pointing to the recession defect at the gingival margin",
+        "Crowned/restored posterior teeth showing a marginal soft-tissue/esthetic deficiency at the indicated unit"
+      ],
+      "must_avoid": [
+        "Describing this as the post-operative or healed result of a graft, or claiming a connective tissue graft is visible in the image (this is the PRE-OP baseline showing the defect, not the graft)",
+        "Calling it a radiograph/X-ray or any 3D/CBCT image",
+        "Asserting with certainty that the affected unit is a dental implant or naming a specific tooth number; the implant nature cannot be confirmed from the photo alone"
+      ],
+      "reference_caption": "Pre-operative intraoral clinical photograph (buccal view of posterior crowns) with a black arrowhead marking gingival recession and an exposed dark margin at the gingival aspect of one restored unit, representing the baseline defect before mucogingival/soft-tissue graft surgery.",
+      "source": {
+        "title": "File:Connective tissue graft to implant.gif",
+        "url": "https://commons.wikimedia.org/wiki/File%3AConnective_tissue_graft_to_implant.gif",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Coronation Dental Specialty Group"
+      }
+    },
+    {
+      "id": "four_mandibular_implants_with_novaloc_abut",
+      "image": "data/images/four_mandibular_implants_with_novaloc_abut.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Intraoral clinical photograph (occlusal/anterior view) of an edentulous mandibular anterior ridge with attached gingiva and a midline frenum visible",
+        "Four dental implants placed in the interforaminal anterior mandible, each restored at the soft-tissue level with a stud-type overdenture attachment abutment (ball/LOCATOR-style retentive attachments, here dark anodized/coated, consistent with Novaloc abutments)",
+        "These are abutment-level retentive components for an implant-retained removable overdenture, not crowns, bars, or a fixed prosthesis",
+        "Soft tissue (peri-implant mucosa) appears healthy/pink with no overt swelling, suppuration, or marked inflammation around the abutments"
+      ],
+      "must_avoid": [
+        "Calling this a radiograph/X-ray or a panoramic image",
+        "Describing the dark abutments as carious teeth, natural teeth, amalgam fillings, or fixed crowns/bridge abutments",
+        "Claiming a bar overdenture or a fixed full-arch (All-on-4) prosthesis is present when only individual stud attachments are shown"
+      ],
+      "reference_caption": "Intraoral photograph of an edentulous anterior mandible showing four interforaminal implants fitted with stud-type (Novaloc/LOCATOR-style) attachment abutments to retain a removable overdenture, with cheek/lip retractors at the lower margin.",
+      "source": {
+        "title": "File:Four mandibular implants with Novaloc abutments.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AFour_mandibular_implants_with_Novaloc_abutments.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ian Furst"
+      }
+    },
+    {
+      "id": "examples_of_tooth_staining",
+      "image": "data/images/examples_of_tooth_staining.jpg",
+      "modality": "clinical_photo",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "A multi-panel composite of intraoral clinical photographs (11 labeled anterior/frontal views) illustrating different causes of tooth discoloration and staining",
+        "It contrasts EXTRINSIC stains (smoking, wine, food deposits) with INTRINSIC discoloration (e.g., tetracycline staining, fluorosis, non-vital/pulpal discoloration, age-related yellowing, genetic)",
+        "Several panels show non-staining causes labeled as such: caries/decay, orthodontic (post-bracket) white spot lesions, and amalgam/restoration-related grey discoloration",
+        "Each panel carries a printed text label identifying the cause (Smoking stains, Wine stain, Food stain, Age yellowing, Decay, Orthodontic white spot lesions, Mild fluorosis, Amalgam restoration stains, Tetracycline, Genetic, Non-vital discoloration)"
+      ],
+      "must_avoid": [
+        "Do not call this a radiograph or X-ray; these are color intraoral clinical photographs",
+        "Do not describe it as a single-patient case or one clinical view; it is a labeled teaching montage of multiple patients/causes",
+        "Do not reduce it to only extrinsic stains (smoking/wine/food) and ignore the intrinsic and restorative/caries panels that are also shown"
+      ],
+      "reference_caption": "A labeled multi-panel figure of intraoral clinical photographs illustrating diverse causes of tooth discoloration, spanning extrinsic stains (smoking, wine, food), intrinsic discoloration (tetracycline, fluorosis, age yellowing, non-vital/genetic) and related changes (caries, orthodontic white spot lesions, amalgam staining).",
+      "source": {
+        "title": "File:Examples of tooth staining.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AExamples_of_tooth_staining.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Clifton M.Carey"
+      }
+    },
+    {
+      "id": "dens_evaginatus",
+      "image": "data/images/dens_evaginatus.jpg",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a hand-drawn schematic diagram (line sketch), not a clinical photograph or radiograph",
+        "Title text 'DENS EVAGINATUS' labels the figure",
+        "A single tooth crown is drawn in outline within a circle representing a magnified/close-up view",
+        "An accessory cusp / tubercle (small pointed projection) arises from the occlusal-lingual surface of the tooth, the defining feature of dens evaginatus"
+      ],
+      "must_avoid": [
+        "Calling this a radiograph or an intraoral clinical photo",
+        "Diagnosing dens invaginatus (dens in dente) or talon cusp as the primary label, or confusing the outward tubercle with an inward invagination",
+        "Inventing radiographic detail such as a pulp horn extending into the tubercle, root canals, or periapical findings not visibly drawn"
+      ],
+      "reference_caption": "Hand-drawn, titled schematic of dens evaginatus, showing a tooth crown with an accessory cusp-like tubercle projecting from its surface within a magnified circular inset.",
+      "source": {
+        "title": "File:Dens evaginatus.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ADens_evaginatus.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Veeresh likhitha"
+      }
+    },
+    {
+      "id": "hyperdontia_genetically_inherited_developm",
+      "image": "data/images/hyperdontia_genetically_inherited_developm.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": "severe crowding",
+      "must_identify": [
+        "Intraoral clinical photograph of a wide-open mouth with cheek retracted by a finger, showing the maxillary and mandibular anterior dentition plus the dorsum of the tongue and floor of mouth",
+        "Supernumerary (extra) teeth / increased tooth count in the anterior segments, i.e. hyperdontia, with extra teeth erupting out of the normal arch line",
+        "Severe anterior crowding, rotation and ectopic/palatal-lingual eruption of teeth caused by the excess tooth number and lack of space",
+        "At least one discolored, grayish/purple maxillary anterior tooth suggesting possible non-vitality, trauma or impaction-related change"
+      ],
+      "must_avoid": [
+        "Calling this a radiograph or X-ray (it is a color intraoral photograph)",
+        "Diagnosing it as a simple missing-tooth (hypodontia/oligodontia) or normal aligned dentition, when the finding is EXTRA teeth with crowding",
+        "Over-reading the dark tooth as a definite abscess/necrosis or naming a specific syndrome without support"
+      ],
+      "reference_caption": "Intraoral clinical photograph showing hyperdontia, with supernumerary anterior teeth producing severe crowding and ectopic eruption in both the upper and lower arches.",
+      "source": {
+        "title": "File:Hyperdontia - Genetically inherited development of overcomplete teeth. 4.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AHyperdontia_-_Genetically_inherited_development_of_overcomplete_teeth._4.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "100Camomille"
+      }
+    },
+    {
+      "id": "maxillary_tori",
+      "image": "data/images/maxillary_tori.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Intraoral clinical photograph of the maxilla viewed from below (occlusal/upturned view of the hard palate), showing maxillary posterior and anterior teeth bilaterally and the palatal vault",
+        "Torus palatinus: a bony exostosis arising along the midline (median palatine raphe) of the hard palate, here a relatively flat/low lobulated ridge covered by normal-appearing intact mucosa",
+        "The swelling is in the midline of the hard palate and continuous with the palatine bone, consistent with a benign developmental bony overgrowth (exostosis), not a soft-tissue mass or pathology",
+        "Palatal rugae are visible anteriorly and the overlying mucosa appears normal in color with no ulceration, erythema, or surface breakdown"
+      ],
+      "must_avoid": [
+        "Calling it a tumor, neoplasm, abscess, cyst, or malignant/precancerous lesion",
+        "Mistaking the midline bony elevation for a mandibular torus, soft-tissue swelling, or palatal pathology such as necrotizing sialometaplasia or papillary hyperplasia",
+        "Describing it as a radiograph or X-ray"
+      ],
+      "reference_caption": "Intraoral photograph of the hard palate showing a torus palatinus, a benign midline bony exostosis along the median palatine raphe covered by normal mucosa, with maxillary teeth and palatal rugae visible.",
+      "source": {
+        "title": "File:Maxillary tori.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AMaxillary_tori.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "No machine-readable author provided. Kozlovsk~commonswiki assumed (based on copyright claims)."
+      }
+    },
+    {
+      "id": "non_carious_cervical_lesion",
+      "image": "data/images/non_carious_cervical_lesion.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Intraoral clinical photograph: lateral (buccal) view of the dentition in occlusion/maximum intercuspation, with the cheek retracted",
+        "Permanent dentition with maxillary and mandibular teeth in contact; canine and premolar/molar region visible in lateral profile",
+        "Cervical-region findings near the gingival margins (color change/possible cervical wear or recession) consistent with a non-carious cervical lesion case",
+        "Incisal/occlusal wear with flattened edges and a small interdental gap, suggesting attrition and tooth-surface loss"
+      ],
+      "must_avoid": [
+        "Calling this a radiograph or X-ray (it is a color clinical photo)",
+        "Diagnosing frank cervical caries or a cavity when the cervical change is non-carious/wear-related and not clearly carious",
+        "Asserting a definitive abfraction vs erosion vs abrasion etiology that cannot be confirmed from a single lateral photo"
+      ],
+      "reference_caption": "Lateral intraoral clinical photograph of the dentition in occlusion (cheek retracted) showing cervical-region changes and incisal/occlusal wear consistent with a non-carious cervical lesion presentation.",
+      "source": {
+        "title": "File:Non carious cervical lesion.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ANon_carious_cervical_lesion.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Tarandeep kaur"
+      }
+    },
+    {
+      "id": "periodontium",
+      "image": "data/images/periodontium.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Image type: a schematic anatomy/histology cross-section diagram of the periodontium (tooth-supporting apparatus) showing a tooth and its surrounding structures, with letter labels (A through K) but no printed legend/key",
+        "Hard dental tissues: enamel (blue-striped cap of the crown), dentin (the large pale-yellow tooth body), and cementum (thin layer covering the root surface)",
+        "Periodontal soft tissue and attachment: the gingiva (pink tissue at right) with gingival margin/sulcus, and the band of gingival/periodontal fibers running between the root and the gingiva/bone near the cementoenamel junction",
+        "Tooth-supporting structures: the periodontal ligament (the narrow space/fiber layer between the root surface and bone) and the alveolar bone (the trabecular/spongy bone, cream-colored, supporting the root)",
+        "Neurovascular supply depicted as blood vessels (a red artery and blue vein) coursing apically on the left side of the periodontal ligament/pulp region"
+      ],
+      "must_avoid": [
+        "Calling this a radiograph, X-ray, or clinical intraoral photograph \u2014 it is an illustrated schematic/diagram",
+        "Misidentifying the blue-striped crown cap as anything other than enamel (e.g., calling it calculus, plaque, or a restoration)",
+        "Inventing a specific legend/answer key for the letters (A\u2013K) as if the labels were defined in the image, or asserting a disease/pathology \u2014 this is normal healthy anatomy, not periodontitis or bone loss"
+      ],
+      "reference_caption": "A labeled schematic cross-section of the healthy periodontium, showing the tooth (enamel, dentin, cementum) and its supporting structures, the gingiva with gingival/periodontal fibers, the periodontal ligament, and the alveolar bone, with letter labels A\u2013K but no printed legend.",
+      "source": {
+        "title": "File:Periodontium.svg",
+        "url": "https://commons.wikimedia.org/wiki/File%3APeriodontium.svg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Goran tek-en"
+      }
+    },
+    {
+      "id": "molar_relationship",
+      "image": "data/images/molar_relationship.jpg",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an illustrated dental diagram (not a photo or radiograph) comparing the three Angle classes of molar relationship, with three panels labeled Class I, Class II, and Class III.",
+        "Each panel shows a maxillary (upper) first molar occluding against a mandibular (lower) first molar, with a red reference line through the maxillary mesiobuccal cusp and a blue reference line through the mandibular buccal groove (per the legend).",
+        "Class I: the mesiobuccal cusp of the maxillary first molar aligns with / sits in the buccal (mesiobuccal) groove of the mandibular first molar (normal/neutrocclusion molar relationship).",
+        "Class II: the mandibular molar is positioned more distally (posteriorly) so the maxillary mesiobuccal cusp falls mesial to the mandibular buccal groove (distocclusion).",
+        "Class III: the mandibular molar is positioned more mesially (anteriorly) so the maxillary mesiobuccal cusp falls distal to the mandibular buccal groove (mesiocclusion)."
+      ],
+      "must_avoid": [
+        "Do not call this a radiograph, photograph, or intraoral clinical photo; it is a schematic illustration.",
+        "Do not reverse the definitions of Class II and Class III (Class II = mandible distal/posterior; Class III = mandible mesial/anterior).",
+        "Do not describe this as an incisor, canine, or skeletal classification; it specifically depicts the Angle molar (first molar) relationship."
+      ],
+      "reference_caption": "An illustrated comparative diagram of Angle's classification of molar relationship, showing Class I, Class II, and Class III, where a red line marks the maxillary first molar mesiobuccal cusp and a blue line marks the mandibular first molar buccal groove.",
+      "source": {
+        "title": "File:Molar relationship.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AMolar_relationship.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Rjmedink"
+      }
+    },
+    {
+      "id": "periodontitis_01",
+      "image": "data/images/periodontitis_01.jpg",
+      "modality": "clinical_photo",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": "advanced (severe) periodontitis",
+      "must_identify": [
+        "Intraoral clinical photograph (panel A) of posterior teeth paired with an extracted multi-rooted molar shown on a surgical drape (panel B); labels A and B are present",
+        "Heavy yellow-brown supragingival and subgingival calculus and plaque deposits on the crowns and exposed root surfaces",
+        "Gingival recession with exposed root surfaces and clinical attachment loss; the gingiva shows redness/inflammation consistent with periodontal disease",
+        "Findings are consistent with chronic, advanced (severe) periodontitis; the extracted molar (panel B) carries calculus extending onto the roots and into the furcation, indicating deep periodontal involvement"
+      ],
+      "must_avoid": [
+        "Describing this as a radiograph/X-ray or any other imaging modality (it is a color clinical photograph)",
+        "Calling it healthy gingiva or merely mild gingivitis, or attributing the root deposits to simple caries/staining rather than calculus and attachment loss",
+        "Inventing precise probing depths, specific tooth numbers, or a definitive periodontitis stage/grade not visible from the photo alone"
+      ],
+      "reference_caption": "Intraoral photograph (A) of posterior teeth with heavy calculus, plaque, gingival recession and inflammation alongside the corresponding extracted multi-rooted molar (B) bearing calculus on its roots, consistent with chronic advanced periodontitis with attachment loss.",
+      "source": {
+        "title": "File:Periodontitis 01.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3APeriodontitis_01.jpg",
+        "license": "CC BY 4.0",
+        "attribution": "Francisco B. Teixeira, Miki T. Saito, Filipe C. Matheus, Rui D. Prediger, Elizabeth S. Yamada, Cristiane S. F. Maia, Rafael R. Lima1"
+      }
+    },
+    {
+      "id": "human_tooth_diagram_gu",
+      "image": "data/images/human_tooth_diagram_gu.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an illustrated anatomical diagram (cross-section / longitudinal section) of a human tooth in situ, not a photograph or radiograph",
+        "The three labeled regions, marked by leader lines and Gujarati text, are the crown (\u0aac\u0ab9\u0abe\u0ab0 \u0aa6\u0ac7\u0a96\u0abe\u0aa4\u0acb \u0aad\u0abe\u0a97, 'the part seen outside'), the neck/cervical region (\u0ab5\u0a9a\u0acd\u0a9a\u0ac7\u0aa8\u0acb \u0aad\u0abe\u0a97, 'the middle part'), and the root (\u0aa6\u0abe\u0a82\u0aa4\u0aa8\u0ac1\u0a82 \u0aae\u0ac2\u0ab3, 'the root of the tooth')",
+        "Internal tissue layers are depicted: outer enamel over the crown (honeycomb/mesh texture), underlying dentin (orange, radiating), and a central pulp chamber/canal with vessels (yellow core with red)",
+        "Supporting structures are shown: gingiva/soft tissue (red) around the neck and the tooth set within trabecular alveolar bone (mottled pattern, lower right)",
+        "The tooth depicted is healthy/normal anatomy with no caries, fracture, or pathology indicated"
+      ],
+      "must_avoid": [
+        "Reading the Gujarati labels as a different language or mistranslating them (they label crown, neck, and root, not specific tissues like enamel/dentin/pulp)",
+        "Calling this a radiograph, X-ray, photograph, or histology slide",
+        "Inventing a pathology or diagnosis (caries, abscess, periodontitis) that is not present in this normal-anatomy illustration"
+      ],
+      "reference_caption": "A labeled anatomical illustration showing a longitudinal cross-section of a healthy human tooth set in alveolar bone, with Gujarati labels marking its three regions: the crown (the visible portion), the neck (cervical region), and the root.",
+      "source": {
+        "title": "File:Human tooth diagram-gu.svg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AHuman_tooth_diagram-gu.svg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "KDS4444 Gujarati titles: Nizil Shah"
+      }
+    },
+    {
+      "id": "tooth_structure_and_dental_tissues_with_th",
+      "image": "data/images/tooth_structure_and_dental_tissues_with_th.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a labeled educational/research schematic of tooth anatomy, not a clinical photograph or radiograph; it pairs a whole-tooth cross-section (left) with three magnified histology-style insets (A, B, C)",
+        "The cross-section labels the hard and soft tissues and supporting apparatus: enamel, dentin, dental pulp, gingiva, alveolar bone, periodontal ligament, cementum, and the neurovascular (apical) bundle entering the root",
+        "Inset A details the pulp-dentin interface/odontoblast layer: odontoblast and odontoblast process, the cell-free zone (of Weil), the cell-rich zone, and pre-odontoblasts",
+        "Inset B shows the pulp core cell populations: fibroblasts, blood vessel, pericyte, nerve fiber, and dental pulp stem cells (DPSCs)",
+        "Inset C contrasts acellular (primary) cementum versus cellular (secondary) cementum, including cementocytes and their processes",
+        "The figure's theme is the location of dental/stem-cell populations (e.g., DPSCs, cementocytes) within the tooth and periodontium"
+      ],
+      "must_avoid": [
+        "Calling this a radiograph/X-ray or an intraoral clinical photo (it is a drawn schematic with histology insets)",
+        "Mislabeling the layers, e.g., swapping enamel and dentin, or confusing periodontal ligament with alveolar bone or cementum",
+        "Inventing a disease/diagnosis (caries, periodontitis, abscess) \u2014 the figure depicts normal anatomy and cell biology, not pathology"
+      ],
+      "reference_caption": "Labeled educational schematic of tooth structure and supporting tissues (enamel, dentin, pulp, cementum, periodontal ligament, alveolar bone, gingiva, neurovascular bundle), with three magnified insets mapping cell populations: the odontoblast layer and cell-free/cell-rich zones (A), pulp fibroblasts, vessels, pericytes, nerves and DPSCs (B), and acellular versus cellular cementum with cementocytes (C).",
+      "source": {
+        "title": "File:Tooth structure and dental tissues with the respective stem cell populations.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3ATooth_structure_and_dental_tissues_with_the_respective_stem_cell_populations.png",
+        "license": "CC BY 4.0",
+        "attribution": "Baranova, J.; B\u00fcchner, D.; G\u00f6tz, W.; Schulze, M.; Tobiasch, E."
+      }
+    },
+    {
       "id": "anat-01-control",
       "image": "data/images/tooth_anatomy_control.png",
       "modality": "diagram",

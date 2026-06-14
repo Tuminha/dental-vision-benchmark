@@ -17,17 +17,14 @@ API = "https://commons.wikimedia.org/w/api.php"
 UA = "dental-vision-benchmark/0.2 (research; cisco@periospot.com)"
 ROOT = Path(__file__).resolve().parents[1]
 IMG = ROOT / "data/images"
-MANIFEST = ROOT / "curation/round2/manifest.json"
+MANIFEST = ROOT / "curation/round3/manifest.json"
 
-KEEP = """dental_quadrants.jpg diagram_illustrating_coronal_and_apical_follicle.jpg suunad.jpg
-tooth_picturewlabels.jpg acute_necrotising_ulcerative_gingivitis.jpg dental_caries_cavity_2_cropped.jpg
-dental_caries_cavity_1.jpg alveolprog.jpg erosive_lichen_planus.jpg lichen_planus_fig7.jpg
-herpes_blisters_on_lips_in_a_47_year_old_woman_w.jpg bellingham_fluorosis_3.jpg
-nankali_post_a_fractured_tooth.jpg wortel_fractuur.jpg prummelklammer.jpg
-detached_dental_crown_flat_front.jpg treatment_steps_for_feldspathic_vm9_porcelain_cr.jpg
-geographic_tongue.jpg temporomandibular_joint_number.jpg eb1911_mouth_and_salivary_glands.jpg
-mouth_parotid_gland_nih_bioart_654.jpg new_nanocomposites_may_mean_more_durable_tooth_f.jpg
-packable_composite_placed_in_a_lower_right_6_sim.jpg dental_veneer.jpg""".split()
+KEEP = """pulp_cap.jpg connective_tissue_graft_to_implant.jpg
+four_mandibular_implants_with_novaloc_abutments.jpg examples_of_tooth_staining.jpg
+dens_evaginatus.jpg taurodontism.jpg hyperdontia_genetically_inherited_development_of.jpg
+maxillary_tori.jpg non_carious_cervical_lesion.jpg periodontium.jpg molar_relationship.jpg
+periodontitis_01.jpg human_tooth_diagram_gu.jpg
+tooth_structure_and_dental_tissues_with_the_resp.jpg""".split()
 
 
 def strip(s: str) -> str:
