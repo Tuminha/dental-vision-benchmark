@@ -2,9 +2,8 @@
 
 Searches Wikimedia Commons across many dental subtopics, keeps openly-licensed
 images that pass a dental-relevance filter, downloads and downscales them, and
-writes a manifest. These land in curation/round2/ for the click-to-review widget;
-only the ones you keep get promoted into data/images/. Excludes everything already
-in data/items.json plus a few previously-rejected files.
+writes a manifest into curation/round3/ for the click-to-review widget. Excludes
+everything already in data/items.json plus a few previously-rejected files.
 """
 from __future__ import annotations
 
@@ -21,32 +20,35 @@ from PIL import Image
 API = "https://commons.wikimedia.org/w/api.php"
 UA = "dental-vision-benchmark/0.2 (research; cisco@periospot.com)"
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / "curation/round2"
-PER_BUCKET = 4
+OUT = ROOT / "curation/round3"
+PER_BUCKET = 3
 MAXW = 380
 
 BUCKETS = {
-    "anatomy": ["tooth morphology diagram", "dental arch quadrants diagram", "tooth surfaces diagram"],
-    "perio_disease": ["periodontal furcation diagram", "gingival enlargement mouth", "necrotizing ulcerative gingivitis", "periodontal abscess"],
-    "caries_stages": ["occlusal caries diagram", "root caries tooth", "rampant caries teeth", "early childhood caries"],
-    "tooth_wear": ["dental abrasion tooth", "dental erosion teeth", "dental attrition wear", "abfraction tooth"],
-    "endo": ["periapical abscess diagram", "pulpitis tooth diagram", "apical periodontitis diagram", "pulp polyp tooth"],
-    "ortho_occlusion": ["anterior crossbite teeth", "open bite malocclusion", "deep bite occlusion", "posterior crossbite"],
-    "oral_pathology": ["oral lichen planus", "oral squamous cell carcinoma mouth", "oral leukoplakia tongue", "erythroplakia mouth"],
-    "mucosal": ["oral candidiasis tongue", "herpes labialis lip", "angular cheilitis", "oral mucocele lip"],
-    "developmental": ["dental fluorosis teeth", "enamel hypoplasia teeth", "amelogenesis imperfecta teeth", "supernumerary tooth"],
-    "trauma": ["tooth fracture diagram", "dental crown fracture", "enamel fracture tooth", "tooth luxation diagram"],
-    "prostho": ["dental crown types diagram", "dental bridge diagram", "dental veneer diagram", "post and core tooth"],
-    "implant_surgery": ["dental sinus lift diagram", "dental bone graft diagram", "guided bone regeneration dental", "implant abutment diagram"],
-    "restorative_classes": ["GV Black cavity classification", "dental inlay onlay diagram", "class II cavity preparation tooth", "dental composite layering"],
-    "gingiva": ["healthy gingiva anatomy diagram", "attached gingiva mucogingival", "frenum frenectomy diagram", "gingival recession classification"],
-    "calculus_plaque": ["dental calculus subgingival diagram", "dental biofilm plaque diagram", "supragingival calculus teeth"],
-    "discoloration": ["tooth discoloration tetracycline", "intrinsic tooth staining teeth", "extrinsic tooth stain teeth"],
-    "eruption": ["tooth eruption chart", "mixed dentition development diagram", "teething eruption sequence"],
-    "tongue": ["geographic tongue", "fissured tongue", "black hairy tongue", "ankyloglossia tongue tie"],
-    "tmj_salivary": ["temporomandibular joint anatomy diagram", "TMJ disc displacement diagram", "salivary gland anatomy mouth", "sialolith salivary stone"],
-    "perio_health": ["periodontal probing depth diagram", "clinical attachment level diagram", "bleeding on probing gingiva"],
-    "restoration_photo": ["composite filling tooth", "dental veneers teeth", "dental crown cemented tooth"],
+    "endo": ["root canal obturation gutta percha", "pulp stone diagram", "internal root resorption tooth", "pulp capping diagram"],
+    "perio_surgery": ["free gingival graft diagram", "periodontal flap surgery diagram", "connective tissue graft dental", "vertical bone defect periodontal"],
+    "implant_surgery": ["dental implant placement diagram", "all-on-4 dental implants", "implant overdenture diagram", "ridge augmentation dental"],
+    "discoloration": ["tetracycline tooth staining", "black stain teeth children", "intrinsic tooth discoloration", "amalgam tattoo gingiva"],
+    "developmental_anomaly": ["dens invaginatus tooth", "talon cusp tooth", "taurodontism tooth", "fusion gemination teeth"],
+    "missing_extra_teeth": ["mesiodens supernumerary tooth", "hypodontia missing teeth", "hyperdontia extra teeth", "natal teeth newborn"],
+    "oral_lesions": ["oral fibroma mouth", "oral papilloma mouth", "pyogenic granuloma gingiva", "oral melanotic macule"],
+    "vesiculobullous": ["mucous membrane pemphigoid oral", "pemphigus vulgaris oral", "aphthous major ulcer mouth", "erythema multiforme lips"],
+    "tori_exostoses": ["torus palatinus", "mandibular tori", "buccal exostosis dental"],
+    "caries_types": ["interproximal caries tooth", "secondary recurrent caries", "cervical caries tooth", "arrested caries"],
+    "restorative2": ["dental fissure sealant", "glass ionomer restoration tooth", "stainless steel crown pediatric tooth", "dental bonding tooth"],
+    "tooth_wear2": ["dental erosion teeth", "bruxism attrition teeth", "abfraction cervical lesion tooth"],
+    "ortho_appliance": ["dental braces brackets teeth", "clear aligner teeth", "orthodontic retainer teeth", "palatal expander dental"],
+    "ortho_problem": ["dental diastema midline gap", "class III malocclusion teeth", "dental crowding teeth", "deep overbite teeth"],
+    "occlusion_anatomy": ["curve of Spee dental diagram", "periodontal ligament fibers diagram", "gingival fibers diagram", "dental occlusion diagram"],
+    "prostho2": ["complete denture teeth", "removable partial denture clasp", "dental bridge pontic diagram", "dental post core diagram"],
+    "mucosal2": ["denture stomatitis palate", "median rhomboid glossitis tongue", "oral hairy leukoplakia tongue", "nicotinic stomatitis palate"],
+    "salivary_tmj2": ["ranula floor of mouth", "mucocele lower lip", "temporomandibular joint disc diagram", "sialadenitis salivary gland"],
+    "pediatric": ["pulpotomy primary tooth", "space maintainer dental", "early childhood caries baby teeth", "fluoride varnish teeth"],
+    "gingiva2": ["drug induced gingival hyperplasia", "frenum attachment mouth diagram", "gingival recession tooth", "attached gingiva diagram"],
+    "anatomy2": ["dentinal tubules diagram", "cementum tooth diagram", "deciduous teeth eruption chart", "tooth eruption ages diagram"],
+    "perio_classification": ["furcation involvement diagram", "horizontal vertical bone loss periodontal", "tooth mobility periodontal", "periodontal probing diagram"],
+    "abscess": ["periapical abscess tooth diagram", "periodontal abscess gum", "dental sinus tract gum"],
+    "crack": ["cracked tooth diagram", "enamel crack tooth", "tooth crown fracture classification"],
 }
 
 DENTAL_TERMS = ["dental", "dentit", "dentin", "tooth", "teeth", "gingiv", "periodont", "perio", "caries", "carious",
@@ -57,12 +59,17 @@ DENTAL_TERMS = ["dental", "dentit", "dentin", "tooth", "teeth", "gingiv", "perio
                 "tongue", "palate", "jaw", "mandib", "maxilla", "salivary", "temporomandibular", "tmj",
                 "frenum", "veneer", "bridge", "lip", "cheilitis", "herpes", "lichen planus", "fracture",
                 "avulsion", "luxation", "eruption", "furcation", "mucocele", "hypoplasia", "amelogenesis",
-                "supernumerary", "sialolith", "ankyloglossia", "vestibule", "alveolar", "cementum"]
+                "supernumerary", "sialolith", "ankyloglossia", "vestibule", "alveolar", "cementum",
+                "sealant", "bracket", "aligner", "retainer", "clasp", "graft", "flap", "resorption",
+                "obturation", "gutta", "pulpotomy", "fluoride", "diastema", "bruxism", "torus", "tori",
+                "glossitis", "stomatitis", "fibroma", "papilloma", "granuloma", "ranula", "pemphig",
+                "exostosis", "mesiodens", "taurodont", "invaginatus", "talon", "dilaceration", "pontic"]
 BLOCK_TERMS = ["whale", "dinosaur", "brachiosaur", "argyrosaur", "bolosaur", "titanosaur", "sauropod",
                "holotype", "fossil", "reptile", "skeletal restoration", "composite skeletal", "scale diagram",
                "logo", "brand mark", "trademark", "leaf morphology", "plant systematics", "horse", "equine",
                "apert", "human skeleton", "air force", "us navy", "canine gingivitis", "teaching in",
-               "live surgeries", "snake", "shark", "comb", "gear", "saw blade"]
+               "live surgeries", "snake", "shark", "comb", "gear", "saw blade", "fracture rates",
+               "syndrome facial", "deardorff"]
 EXTRA_EXCLUDE = {
     "File:Gum model.JPG", "File:Screw implant mandibular bone.jpg", "File:Screw implant mandibular bone at arrow.jpg",
     "File:Bladetype dental implant.jpg", "File:Human tongue infected with oral candidiasis.jpg", "File:Sarro.jpg",
