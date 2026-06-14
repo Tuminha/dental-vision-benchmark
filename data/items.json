@@ -16,9 +16,16 @@
         "crown and root",
         "surrounding gum (gingiva) and alveolar bone"
       ],
-      "must_avoid": ["calling it a radiograph (x-ray) or a clinical photograph"],
+      "must_avoid": [
+        "calling it a radiograph (x-ray) or a clinical photograph"
+      ],
       "reference_caption": "Tooth Anatomy: cross-section showing enamel, dentin, pulp, crown, root, root canal, gums, bone, and nerves and blood vessels.",
-      "source": {"title": "File:Blausen 0863 ToothAnatomy 02.png", "url": "https://commons.wikimedia.org/wiki/File:Blausen_0863_ToothAnatomy_02.png", "license": "CC BY 3.0", "attribution": "Blausen.com staff (2014)"}
+      "source": {
+        "title": "File:Blausen 0863 ToothAnatomy 02.png",
+        "url": "https://commons.wikimedia.org/wiki/File:Blausen_0863_ToothAnatomy_02.png",
+        "license": "CC BY 3.0",
+        "attribution": "Blausen.com staff (2014)"
+      }
     },
     {
       "id": "perio-mild-01",
@@ -34,9 +41,16 @@
         "periodontal ligament",
         "a periodontal pocket or pocket-depth measurement"
       ],
-      "must_avoid": ["describing it as severe or advanced periodontitis", "describing the periodontium as completely healthy with no disease"],
+      "must_avoid": [
+        "describing it as severe or advanced periodontitis",
+        "describing the periodontium as completely healthy with no disease"
+      ],
       "reference_caption": "Line diagram of a tooth showing the gingiva, bone, periodontal ligament with a scale showing the pocket depth of mild periodontitis.",
-      "source": {"title": "File:Mild periodontitis.png", "url": "https://commons.wikimedia.org/wiki/File:Mild_periodontitis.png", "license": "CC BY-SA 4.0"}
+      "source": {
+        "title": "File:Mild periodontitis.png",
+        "url": "https://commons.wikimedia.org/wiki/File:Mild_periodontitis.png",
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
       "id": "perio-severe-01",
@@ -52,9 +66,16 @@
         "periodontal ligament",
         "a deep periodontal pocket / significant pocket-depth or attachment loss"
       ],
-      "must_avoid": ["describing it as mild or early periodontitis", "describing the periodontium as completely healthy with no disease"],
+      "must_avoid": [
+        "describing it as mild or early periodontitis",
+        "describing the periodontium as completely healthy with no disease"
+      ],
       "reference_caption": "Line diagram of a tooth showing the gingiva, bone, periodontal ligament with a scale showing the pocket depth of severe periodontitis.",
-      "source": {"title": "File:Severe periodontitis.png", "url": "https://commons.wikimedia.org/wiki/File:Severe_periodontitis.png", "license": "CC BY-SA 4.0"}
+      "source": {
+        "title": "File:Severe periodontitis.png",
+        "url": "https://commons.wikimedia.org/wiki/File:Severe_periodontitis.png",
+        "license": "CC BY-SA 4.0"
+      }
     },
     {
       "id": "caries-01",
@@ -70,9 +91,16 @@
         "decay extending into the dentin (toward the pulp)",
         "the pulp / root canal system"
       ],
-      "must_avoid": ["describing the tooth as healthy with no decay", "calling it a radiograph or a clinical photograph"],
+      "must_avoid": [
+        "describing the tooth as healthy with no decay",
+        "calling it a radiograph or a clinical photograph"
+      ],
       "reference_caption": "Diagram of dental caries: a tooth in cross-section with a carious lesion on the crown extending through enamel into dentin toward the pulp.",
-      "source": {"title": "File:202402 Dental Caries.svg", "url": "https://commons.wikimedia.org/wiki/File:202402_Dental_Caries.svg", "license": "CC BY 4.0"}
+      "source": {
+        "title": "File:202402 Dental Caries.svg",
+        "url": "https://commons.wikimedia.org/wiki/File:202402_Dental_Caries.svg",
+        "license": "CC BY 4.0"
+      }
     },
     {
       "id": "photo-intraoral-01",
@@ -88,9 +116,1247 @@
         "the palate (roof of the mouth) and/or uvula / soft palate / throat",
         "gingiva (gums)"
       ],
-      "must_avoid": ["calling it a diagram/illustration or a radiograph"],
+      "must_avoid": [
+        "calling it a diagram/illustration or a radiograph"
+      ],
       "reference_caption": "A clinical intraoral photograph of an open mouth showing teeth, tongue, palate, uvula and surrounding oral soft tissues.",
-      "source": {"title": "File:Detailed view of the inside of the human mouth.jpg", "url": "https://commons.wikimedia.org/wiki/File:Detailed_view_of_the_inside_of_the_human_mouth.jpg", "license": "CC0"}
+      "source": {
+        "title": "File:Detailed view of the inside of the human mouth.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:Detailed_view_of_the_inside_of_the_human_mouth.jpg",
+        "license": "CC0"
+      }
+    },
+    {
+      "id": "basic_anatomy_tooth",
+      "image": "data/images/basic_anatomy_tooth.jpg",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a labeled anatomical cross-section (longitudinal section) diagram of a single multi-rooted tooth, not a clinical photo or radiograph",
+        "It divides the tooth into crown and root regions, with the root apex indicated at the bottom",
+        "It labels the hard tissue layers from outside in: enamel (covering the crown), dentin with dentinal tubules, and cementum (covering the root)",
+        "It shows the central dental pulp (containing blood vessels, nerves and stroma) within the pulp chamber and root canals"
+      ],
+      "must_avoid": [
+        "Describing it as a real photograph or an X-ray/radiograph",
+        "Claiming the tooth shows caries, decay or any disease (it depicts a healthy tooth)",
+        "Confusing the layers, e.g. calling the outer crown layer cementum or the root covering enamel"
+      ],
+      "reference_caption": "Labeled cross-sectional anatomy diagram of a healthy multi-rooted tooth, identifying crown and root, enamel, dentin and dentinal tubules, cementum, dental pulp (blood vessels, nerves and stroma) and the root apex.",
+      "source": {
+        "title": "File:Basic anatomy tooth.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ABasic_anatomy_tooth.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "w:user:Time3000 and w:user:Ian Furst"
+      }
+    },
+    {
+      "id": "blausen_0864_toothdecay",
+      "image": "data/images/blausen_0864_toothdecay.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a labeled illustration/diagram of a tooth in cross-section within its supporting tissues, not a clinical photo or radiograph",
+        "It depicts dental caries (tooth decay): dark carious lesions eroding the crown, including a smooth-surface cavity and a pit-and-fissure cavity",
+        "It labels normal structures (enamel, dentin, pulp chamber with blood vessels and nerves, cementum, gingiva, jaw bone)",
+        "The decay is shown extending inward, reaching the dentin and toward the pulp, with labels for root cavity decay"
+      ],
+      "must_avoid": [
+        "Calling the tooth healthy or failing to mention caries/decay",
+        "Describing it as a real intraoral photograph or radiograph",
+        "Misreading the carious cavities as normal fissures or as a filling/restoration"
+      ],
+      "reference_caption": "English-labeled cross-sectional illustration of a tooth affected by dental caries, showing smooth-surface and pit-and-fissure cavities eroding the enamel and dentin toward the pulp, with labeled enamel, dentin, pulp, cementum, gingiva and jaw bone.",
+      "source": {
+        "title": "File:Blausen 0864 ToothDecay.svg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ABlausen_0864_ToothDecay.svg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "KDS4444"
+      }
+    },
+    {
+      "id": "blausen_0864_toothdecay_croatian_hr",
+      "image": "data/images/blausen_0864_toothdecay_croatian_hr.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a labeled illustration/diagram of a tooth in cross-section within its supporting tissues, not a clinical photo or radiograph",
+        "The labels are in Croatian (e.g. caklina = enamel, dentin, pulpa, cement, gingiva, celjusna kost = jaw bone, kvarenje = decay)",
+        "It depicts dental caries (tooth decay): dark carious lesions eroding the crown, including smooth-surface and pit-and-fissure cavities",
+        "It labels normal structures including enamel, dentin, pulp with blood vessels and nerves, cementum, gingiva and jaw bone"
+      ],
+      "must_avoid": [
+        "Calling the tooth healthy or omitting the caries/decay",
+        "Describing it as a real intraoral photograph or radiograph",
+        "Asserting the labels are in English (they are in Croatian)"
+      ],
+      "reference_caption": "Croatian-labeled cross-sectional illustration of a tooth affected by dental caries, showing smooth-surface and pit-and-fissure carious cavities eroding enamel and dentin toward the pulp, with structures labeled in Croatian (caklina, dentin, pulpa, cement, gingiva, celjusna kost).",
+      "source": {
+        "title": "File:Blausen 0864 ToothDecay Croatian HR.svg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ABlausen_0864_ToothDecay_Croatian_HR.svg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "User:KDS4444"
+      }
+    },
+    {
+      "id": "access_toothbrush_for_use_with_mini_dental",
+      "image": "data/images/access_toothbrush_for_use_with_mini_dental.jpg",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a stylized product illustration (not a clinical photo) shown inside a circular blue medallion",
+        "It depicts a toothbrush head with splayed/cupped bristles wrapping around a small metallic ball-shaped element",
+        "The metallic sphere represents the ball abutment of a mini dental implant (an O-ball attachment), with the brush designed to clean around it"
+      ],
+      "must_avoid": [
+        "Describing it as a real intraoral photograph or radiograph of a mouth",
+        "Calling the metallic ball a natural tooth or a normal tooth crown",
+        "Inventing a disease or diagnosis (this is a hygiene-device illustration, not a pathology image)"
+      ],
+      "reference_caption": "Stylized product illustration of a specialty toothbrush whose cupped bristles encircle the ball abutment of a mini dental implant to clean around the attachment.",
+      "source": {
+        "title": "File:Access toothbrush for use with Mini Dental Implants.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AAccess_toothbrush_for_use_with_Mini_Dental_Implants.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Roderick Dailey"
+      }
+    },
+    {
+      "id": "full_implant_restoration",
+      "image": "data/images/full_implant_restoration.gif",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an illustration/schematic (not a clinical photo or radiograph) of a partially edentulous posterior arch",
+        "It shows multiple dental implants placed in the alveolar bone/gingiva in an edentulous span, with abutments protruding above the gum",
+        "A multi-unit fixed prosthesis (a bridge of several crowns) is depicted being seated onto the implant abutments to restore the missing teeth",
+        "Natural teeth remain adjacent to the implant-supported restoration"
+      ],
+      "must_avoid": [
+        "Describing it as a real photograph or radiograph",
+        "Calling it a single-tooth implant or a removable denture rather than an implant-supported multi-unit fixed restoration",
+        "Mistaking the implants/abutments for natural tooth roots"
+      ],
+      "reference_caption": "Illustration of an implant-supported fixed restoration in a partially edentulous posterior arch, with several implants and abutments in the bone receiving a multi-unit bridge of crowns alongside remaining natural teeth.",
+      "source": {
+        "title": "File:Full-implant-restoration.gif",
+        "url": "https://commons.wikimedia.org/wiki/File%3AFull-implant-restoration.gif",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Aperez2966"
+      }
+    },
+    {
+      "id": "110216ek08",
+      "image": "data/images/110216ek08.jpg",
+      "modality": "clinical_photo",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Intraoral clinical photograph of the maxillary (upper) arch taken with cheek/lip retractors, occlusal view looking up at the palate",
+        "Mixed dentition in a child (around 7 years), with primary teeth labelled in FDI numbering (51-55 and 61-65) and erupting permanent first molars (16, 26) and a permanent central incisor (11)",
+        "Text labels are present and identify a narrow and deep/high-vaulted palate ('Palais etroit et profond') and the tongue ('Langue')"
+      ],
+      "must_avoid": [
+        "Calling this a diagram or illustration rather than a real photograph",
+        "Describing it as the mandibular/lower arch instead of the maxillary/upper arch",
+        "Claiming it shows an adult permanent dentition rather than a child's mixed dentition"
+      ],
+      "reference_caption": "Labelled intraoral occlusal photograph of a child's maxillary arch in mixed dentition (FDI-numbered primary teeth 51-55/61-65 with erupting permanent molars 16/26 and incisor 11), annotated to highlight a narrow and high/deep palatal vault.",
+      "source": {
+        "title": "File:110216ek08.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3A110216ek08.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Occlusion"
+      }
+    },
+    {
+      "id": "zahnfehlstellung_angle_klasse_ii_1",
+      "image": "data/images/zahnfehlstellung_angle_klasse_ii_1.jpg",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Hand-drawn line diagram/schematic showing teeth in lateral (profile) view in occlusion within a jaw outline",
+        "It depicts a malocclusion: the upper anterior teeth sit well ahead of the lower anterior teeth, producing increased overjet (proclined upper incisors), consistent with Angle Class II division 1",
+        "Red vertical reference lines are drawn to mark the antero-posterior discrepancy between the upper and lower incisor/canine positions"
+      ],
+      "must_avoid": [
+        "Calling this a real clinical photograph or radiograph rather than a line drawing",
+        "Describing it as a normal/ideal Class I occlusion",
+        "Calling it an anterior crossbite or Class III (the upper teeth are ahead of, not behind, the lower teeth)"
+      ],
+      "reference_caption": "Hand-drawn lateral line diagram of teeth in occlusion with red marker lines, illustrating an Angle Class II division 1 malocclusion in which the upper incisors are positioned anterior to the lowers with increased overjet.",
+      "source": {
+        "title": "File:Zahnfehlstellung Angle-Klasse II-1.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AZahnfehlstellung_Angle-Klasse_II-1.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Dr. Georg Risse at de.wikipedia"
+      }
+    },
+    {
+      "id": "aphthous_stomatitis_in_the_mouth",
+      "image": "data/images/aphthous_stomatitis_in_the_mouth.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Clinical close-up photograph of the lip/labial mucosa with the lower lip everted to expose the inner mucosal surface",
+        "A small shallow oral ulcer on the labial mucosa with a yellowish-white (fibrin/pseudomembranous) base and a surrounding erythematous (red) halo, consistent with a minor aphthous ulcer (canker sore)"
+      ],
+      "must_avoid": [
+        "Calling the mucosa healthy or normal with no lesion",
+        "Calling it a diagram or illustration rather than a real photograph",
+        "Confidently diagnosing it as oral cancer, a vesicle/herpetic lesion, or leukoplakia"
+      ],
+      "reference_caption": "Clinical photograph of an everted lower lip showing a small shallow ulcer with a yellow-white base and red halo on the labial mucosa, consistent with a minor aphthous ulcer.",
+      "source": {
+        "title": "File:Aphthous Stomatitis in the mouth.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AAphthous_Stomatitis_in_the_mouth.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "RaydenAG"
+      }
+    },
+    {
+      "id": "aphthous_stomatitis",
+      "image": "data/images/aphthous_stomatitis.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Clinical close-up photograph of the tongue (ventral/lateral surface), with a finger retracting tissue to expose the lesions",
+        "Multiple round to oval ulcers with whitish-yellow (fibrin) centres and erythematous halos on the mucosa, consistent with aphthous ulcers / aphthous stomatitis"
+      ],
+      "must_avoid": [
+        "Describing the mucosa as healthy with no lesions",
+        "Calling it a diagram or illustration rather than a real photograph",
+        "Confidently diagnosing it as oral cancer, candidiasis, or leukoplakia"
+      ],
+      "reference_caption": "Clinical photograph of the tongue mucosa showing several round white-centred ulcers with red halos, consistent with aphthous stomatitis (recurrent aphthous ulcers).",
+      "source": {
+        "title": "File:Aphthous stomatitis.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AAphthous_stomatitis.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Fox9113"
+      }
+    },
+    {
+      "id": "calculus_2",
+      "image": "data/images/calculus_2.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Intraoral macro clinical photograph of natural teeth at the gumline (cervical region) with the adjacent gingiva visible",
+        "Yellow-brown hard deposits at the cervical thirds of the teeth along the gingival margin, consistent with dental calculus (tartar)"
+      ],
+      "must_avoid": [
+        "Calling the teeth clean/healthy with no deposits",
+        "Calling it a diagram or illustration rather than a real photograph",
+        "Misidentifying the deposits as dental caries, a restoration, or simple staining rather than calculus"
+      ],
+      "reference_caption": "Close-up intraoral photograph showing yellow-brown dental calculus deposits along the cervical margins of teeth at the gumline.",
+      "source": {
+        "title": "File:Calculus-2.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ACalculus-2.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Michael Ottenbruch"
+      }
+    },
+    {
+      "id": "mandibularanteriorcalculus",
+      "image": "data/images/mandibularanteriorcalculus.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an intraoral clinical photograph, not a diagram or radiograph",
+        "It shows the lingual surfaces of the lower (mandibular) anterior teeth, viewed from behind/below",
+        "There are heavy yellow-brown hard deposits of dental calculus (tartar) coating the lingual aspects of the teeth near the gumline",
+        "The deposits are consistent with supragingival (and likely subgingival) calculus accumulation in the lower anterior lingual region, a typical site near the salivary duct openings"
+      ],
+      "must_avoid": [
+        "Calling this a diagram, illustration, or X-ray/radiograph",
+        "Describing the teeth as clean/healthy or ignoring the calculus deposits",
+        "Mislabeling the calculus as caries, fillings, or fluorosis rather than tartar/calculus stain"
+      ],
+      "reference_caption": "Intraoral clinical photograph of the lingual surfaces of the mandibular anterior teeth showing heavy yellow-brown supragingival dental calculus (tartar) deposits along the gingival margins.",
+      "source": {
+        "title": "File:MandibularAnteriorCalculus.JPG",
+        "url": "https://commons.wikimedia.org/wiki/File%3AMandibularAnteriorCalculus.JPG",
+        "license": "Public domain",
+        "attribution": "DRosenbach at English Wikipedia"
+      }
+    },
+    {
+      "id": "human_tooth_diagram_en",
+      "image": "data/images/human_tooth_diagram_en.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a labeled cross-sectional (longitudinal) diagram of a tooth, drawn as a molar within its supporting tissues",
+        "It identifies the hard dental tissues: enamel (outer crown layer), dentin, and cementum",
+        "It shows the internal pulp chamber containing blood vessels and nerves",
+        "It labels the surrounding structures: gingiva (gum) and jaw/alveolar bone",
+        "It divides the tooth into the three regions crown, neck (cervix), and root via brackets on the right"
+      ],
+      "must_avoid": [
+        "Calling this a clinical photograph or radiograph",
+        "Describing it as a diseased tooth (it depicts normal/healthy anatomy)",
+        "Confusing the labeled layers (e.g., calling dentin enamel or labeling the pulp as the root canal filling)"
+      ],
+      "reference_caption": "Labeled cross-sectional diagram of a healthy molar showing enamel, dentin, cementum, the pulp chamber with blood vessels and nerves, the surrounding gingiva and jaw bone, and the crown, neck, and root regions.",
+      "source": {
+        "title": "File:Human tooth diagram-en.svg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AHuman_tooth_diagram-en.svg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "KDS4444"
+      }
+    },
+    {
+      "id": "tooth_2_psf",
+      "image": "data/images/tooth_2_psf.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a black-and-white line-drawing (schematic) of a tooth shown in two sectional views",
+        "View 1 (left) is a longitudinal/vertical section of a multi-rooted tooth showing distinct concentric layers and the internal cavity",
+        "View 2 (right) is a transverse/cross section of the tooth showing the layered structure around a central cavity with two openings",
+        "The drawing carries letter labels (A, B, C, D) pointing to the different tooth layers and the pulp cavity, but does not spell out the structure names in words"
+      ],
+      "must_avoid": [
+        "Calling this a photograph or radiograph",
+        "Claiming the image names structures in words (the labels are letters A-D only)",
+        "Inventing a specific disease/diagnosis; this is normal sectional anatomy"
+      ],
+      "reference_caption": "Black-and-white line diagram of a tooth in longitudinal section (1) and transverse section (2), with letter labels A-D marking the concentric tooth layers and the central pulp cavity.",
+      "source": {
+        "title": "File:Tooth 2 (PSF).png",
+        "url": "https://commons.wikimedia.org/wiki/File%3ATooth_2_%28PSF%29.png",
+        "license": "Public domain",
+        "attribution": "Pearson Scott Foresman"
+      }
+    },
+    {
+      "id": "tooth_section_numbered",
+      "image": "data/images/tooth_section_numbered.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a numbered cross-sectional diagram of a tooth in its socket, drawn as a multi-rooted molar",
+        "Numbered callouts (1-10) point to the enamel, dentin, and pulp internally and to the gingiva, cementum, and surrounding alveolar bone externally",
+        "The internal red and blue lines depict the blood vessels (and nerve) running through the pulp and periodontal tissues",
+        "Brackets on the left (9 and 10) group the structures into the crown and root regions of the tooth"
+      ],
+      "must_avoid": [
+        "Calling this a clinical photograph or radiograph",
+        "Describing it as a diseased or decayed tooth (it shows normal anatomy)",
+        "Claiming the parts are named in words (only numbers 1-10 are shown, with no on-image legend)"
+      ],
+      "reference_caption": "Numbered cross-sectional diagram of a healthy molar in its socket, with callouts 1-10 marking enamel, dentin, pulp, gingiva, cementum, alveolar bone, blood vessels/nerve, and the crown and root regions.",
+      "source": {
+        "title": "File:Tooth Section numbered.svg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ATooth_Section_numbered.svg",
+        "license": "Public domain",
+        "attribution": "Jak"
+      }
+    },
+    {
+      "id": "deciduous_permanent_teeth",
+      "image": "data/images/deciduous_permanent_teeth.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a labeled occlusal-view diagram of the human dental arches comparing two dentitions",
+        "It shows the maxilla (upper) and mandible (lower) arches, with the smaller deciduous/primary dentition on the left and the larger full permanent dentition on the right",
+        "Tooth types are labeled by name: central incisor, lateral incisor, canine, first and second premolars, and first, second, and third molars",
+        "It also labels the palate in the maxillary arches",
+        "The permanent dentition includes premolars and third molars that are absent in the deciduous set, illustrating the difference between the two"
+      ],
+      "must_avoid": [
+        "Calling this a clinical photograph or radiograph",
+        "Describing it as a single arch or a single dentition rather than a deciduous-vs-permanent comparison",
+        "Misreading the labeled tooth types (e.g., calling premolars molars or mislabeling the canine)"
+      ],
+      "reference_caption": "Labeled occlusal-view diagram comparing the deciduous (primary) and permanent dentitions in the maxilla and mandible, naming the incisors, canine, premolars, and molars and indicating the palate.",
+      "source": {
+        "title": "File:Deciduous permanent teeth.svg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ADeciduous_permanent_teeth.svg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Maksim Vectorization: Mrmw"
+      }
+    },
+    {
+      "id": "periodontal_ligament_normal_pocket_depth",
+      "image": "data/images/periodontal_ligament_normal_pocket_depth.png",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a line/schematic diagram of a tooth in longitudinal cross-section within its supporting tissues, not a photograph or radiograph",
+        "It depicts the periodontium: the gingiva (red outline), the alveolar bone crest (brown/gold line), and the periodontal ligament shown as hatched fibres running between root and bone",
+        "A measurement scale (three dots/markers) at the gingival margin indicates the pocket/sulcus depth being represented",
+        "The configuration shows a healthy periodontium with a normal (shallow) sulcus depth, with gingival margin and bone crest near the cementoenamel junction and no attachment loss"
+      ],
+      "must_avoid": [
+        "Do not describe this as a real clinical photograph or an X-ray/radiograph",
+        "Do not call it diseased, e.g. periodontitis or deep periodontal pocketing with bone loss when it depicts a normal/healthy pocket depth"
+      ],
+      "reference_caption": "Schematic line diagram of a tooth in cross-section showing the gingiva, alveolar bone, and periodontal ligament with a depth scale at the gingival margin representing a normal (healthy) sulcus/pocket depth.",
+      "source": {
+        "title": "File:Periodontal ligament normal pocket depth.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3APeriodontal_ligament_normal_pocket_depth.png",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ian Furst"
+      }
+    },
+    {
+      "id": "gingivitida",
+      "image": "data/images/gingivitida.jpg",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a 3D-rendered medical illustration (not a real intraoral photograph) of a multi-rooted tooth shown in cross-section within its socket",
+        "It shows the supporting structures: alveolar bone (cancellous/trabecular pattern), gingiva, root(s) with pulp/root canals and apical blood vessels",
+        "A band of brown/tan calculus and plaque deposit is present at the cervical region (around the neck of the tooth)",
+        "The gingiva is reddened/inflamed, consistent with gingivitis / gingival inflammation from the cervical deposits"
+      ],
+      "must_avoid": [
+        "Do not present this as a real clinical photograph of a patient's mouth",
+        "Do not describe the gingiva as healthy and deposit-free; it shows calculus/plaque with marginal inflammation",
+        "Do not over-call it as advanced periodontitis with marked alveolar bone loss; the bone support appears largely intact"
+      ],
+      "reference_caption": "Three-dimensional rendered illustration of a tooth in cross-section within bone and gingiva, with cervical calculus/plaque deposits and reddened, inflamed marginal gingiva depicting gingivitis.",
+      "source": {
+        "title": "File:Gingivitida.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AGingivitida.jpg",
+        "license": "CC BY 3.0",
+        "attribution": "D-institut"
+      }
+    },
+    {
+      "id": "smoothsurfacecaries02",
+      "image": "data/images/smoothsurfacecaries02.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": "early / enamel-confined caries",
+      "must_identify": [
+        "This is a simple hand-drawn line sketch of a tooth in cross-section, not a photograph",
+        "It carries text labels reading 'enamel', 'dentin', and 'pulp' identifying the tooth layers",
+        "A small black triangular/wedge-shaped lesion on the outer (smooth) enamel surface represents an early carious lesion",
+        "At this stage the lesion is small and confined to the enamel, having not yet reached the dentin"
+      ],
+      "must_avoid": [
+        "Do not call it a photograph or radiograph",
+        "Do not describe the tooth as healthy/intact with no caries; an enamel lesion is drawn",
+        "Do not overstate the depth as reaching the pulp or causing pulp involvement at this early stage"
+      ],
+      "reference_caption": "Hand-drawn cross-sectional sketch of a tooth labelled enamel, dentin, and pulp, showing a small black wedge of early smooth-surface caries confined to the enamel.",
+      "source": {
+        "title": "File:Smoothsurfacecaries02.PNG",
+        "url": "https://commons.wikimedia.org/wiki/File%3ASmoothsurfacecaries02.PNG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "No machine-readable author provided. Dozenist assumed (based on copyright claims)."
+      }
+    },
+    {
+      "id": "smoothsurfacecaries03",
+      "image": "data/images/smoothsurfacecaries03.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a simple hand-drawn line sketch of a tooth in cross-section, not a photograph",
+        "It carries text labels reading 'enamel', 'dentin', and 'pulp' identifying the tooth layers",
+        "A black triangular/wedge-shaped carious lesion on the outer enamel surface is shown, larger than in the earlier sketch of the series",
+        "The lesion has progressed deeper through the enamel toward/reaching the dentino-enamel junction"
+      ],
+      "must_avoid": [
+        "Do not call it a photograph or radiograph",
+        "Do not describe the tooth as healthy/intact with no caries",
+        "Do not overstate the lesion as extending into the pulp/causing pulpal exposure at this stage"
+      ],
+      "reference_caption": "Hand-drawn cross-sectional sketch of a tooth labelled enamel, dentin, and pulp, showing a black wedge of smooth-surface caries that has progressed through the enamel toward the dentino-enamel junction.",
+      "source": {
+        "title": "File:Smoothsurfacecaries03.PNG",
+        "url": "https://commons.wikimedia.org/wiki/File%3ASmoothsurfacecaries03.PNG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "No machine-readable author provided. Dozenist assumed (based on copyright claims)."
+      }
+    },
+    {
+      "id": "smoothsurfacecaries04",
+      "image": "data/images/smoothsurfacecaries04.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a simple hand-drawn line sketch of a tooth in cross-section, not a photograph",
+        "It carries text labels reading 'enamel', 'dentin', and 'pulp' identifying the tooth layers",
+        "A black carious lesion on the outer enamel surface is shown, larger and broader than in the earlier sketches of the series",
+        "The lesion has advanced past the enamel and is spreading/undermining into the underlying dentin"
+      ],
+      "must_avoid": [
+        "Do not call it a photograph or radiograph",
+        "Do not describe the tooth as healthy/intact with no caries",
+        "Do not overstate the lesion as having reached or exposed the pulp at this stage"
+      ],
+      "reference_caption": "Hand-drawn cross-sectional sketch of a tooth labelled enamel, dentin, and pulp, showing an enlarging black smooth-surface carious lesion that has extended past the enamel and is spreading into the dentin.",
+      "source": {
+        "title": "File:Smoothsurfacecaries04.PNG",
+        "url": "https://commons.wikimedia.org/wiki/File%3ASmoothsurfacecaries04.PNG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "No machine-readable author provided. Dozenist assumed (based on copyright claims)."
+      }
+    },
+    {
+      "id": "blausen_0774_rootcanal",
+      "image": "data/images/blausen_0774_rootcanal.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a colored cross-sectional illustration (diagram) of a tooth, not a photograph",
+        "It depicts endodontic (root canal) treatment in progress, with a cleaning file/instrument inserted down the root canal",
+        "A rubber dam (green clamp/sheet) isolates the tooth, and the surrounding gingiva and alveolar bone are shown",
+        "A periapical lesion / area of infection is shown at the root apex (consistent with the label 'Removing Infected Pulp')"
+      ],
+      "must_avoid": [
+        "Describing it as a real clinical photograph or radiograph",
+        "Calling it a healthy tooth with no pathology or no treatment",
+        "Misidentifying it as an implant or a simple anatomy cross-section"
+      ],
+      "reference_caption": "Labeled color cross-sectional diagram of a tooth undergoing root canal therapy: a cleaning file is inserted into the canal under rubber-dam isolation to remove infected pulp, with a periapical lesion at the apex.",
+      "source": {
+        "title": "File:Blausen 0774 RootCanal.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3ABlausen_0774_RootCanal.png",
+        "license": "CC BY 3.0",
+        "attribution": "BruceBlaus . When using this image in external sources it can be cited as: Blausen.com staff (2014). \" Medical gallery of Blausen Medical 2014 \". WikiJournal of Medicine 1 (2). DOI : 10.15347/wjm/2014.010 . ISSN 2002-4436 ."
+      }
+    },
+    {
+      "id": "root_canal_illustration_molar",
+      "image": "data/images/root_canal_illustration_molar.png",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a schematic multi-panel (four-stage) illustration/diagram of a molar in cross-section within bone and gingiva, not a photograph",
+        "It depicts the sequence of root canal (endodontic) therapy",
+        "Stages shown include a decayed/infected tooth with a periapical lesion, access drilling with a handpiece/bur, cleaning/shaping the canals with an endodontic file, and final obturation/filling with placement of a crown",
+        "A periapical lesion at the root apex is visible in the earlier panels and resolves in the final restored panel"
+      ],
+      "must_avoid": [
+        "Describing it as a real clinical photograph or radiograph",
+        "Calling it a single static healthy-tooth anatomy diagram with no procedure shown",
+        "Misidentifying the procedure as an extraction or implant placement"
+      ],
+      "reference_caption": "Unlabeled four-panel diagram demonstrating the steps of root canal treatment on a molar: an infected tooth with a periapical lesion, access drilling, canal filing with an endodontic file, and final obturation with a crown.",
+      "source": {
+        "title": "File:Root Canal Illustration Molar.svg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ARoot_Canal_Illustration_Molar.svg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Original version by Jeremy Kemp ; SVG conversion by Jellocube27 ."
+      }
+    },
+    {
+      "id": "gray1005",
+      "image": "data/images/gray1005.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a black-and-white anatomical/histological illustration (engraving) of a vertical section through a tooth, not a clinical photograph",
+        "It shows the layered internal structure of the tooth, including enamel with radial striations at the crown and the central pulp cavity",
+        "Surrounding mineralized tissue (dentin/bone) is depicted with the characteristic stippled trabecular pattern",
+        "The figure carries reference numbers/letters (e.g., 1-5 and 'c') indicating labeled structures rather than named text labels"
+      ],
+      "must_avoid": [
+        "Describing it as a real photograph, radiograph, or microscope photomicrograph",
+        "Misidentifying it as a modern color anatomy diagram or a clinical intra-oral image",
+        "Claiming it shows a disease or pathology when it is a normal histologic/anatomic section"
+      ],
+      "reference_caption": "Black-and-white anatomical engraving (Gray's Anatomy style) of a vertical section through a tooth, showing enamel with radial striations, the central pulp cavity, and surrounding dentin/bone, with numbered reference markers.",
+      "source": {
+        "title": "File:Gray1005.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3AGray1005.png",
+        "license": "Public domain",
+        "attribution": "Henry Vandyke Carter"
+      }
+    },
+    {
+      "id": "human_tooth_ku",
+      "image": "data/images/human_tooth_ku.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a labeled color cross-sectional anatomy diagram of a (molar) tooth, not a photograph",
+        "It shows the main tooth layers: enamel, dentin, and the central pulp with its blood vessels and nerves",
+        "Supporting/periodontal structures are shown and labeled, including cementum, periodontal ligament, gingiva, and alveolar bone",
+        "The crown and root regions are distinguished, and the text labels are in a non-English language (Kurdish), testing OCR plus structure recognition"
+      ],
+      "must_avoid": [
+        "Describing it as a real clinical photograph or radiograph",
+        "Calling it a diseased tooth (it is a normal/healthy anatomy diagram)",
+        "Asserting the labels are English or inventing English label names not present"
+      ],
+      "reference_caption": "Labeled color cross-sectional anatomy diagram of a human molar (labels in Kurdish) showing enamel, dentin, pulp with vessels and nerves, cementum, periodontal ligament, gingiva, and supporting bone, with crown and root distinguished.",
+      "source": {
+        "title": "File:Human tooth ku.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3AHuman_tooth_ku.png",
+        "license": "CC BY 4.0",
+        "attribution": "https://openstax.org"
+      }
+    },
+    {
+      "id": "leukoplakia",
+      "image": "data/images/leukoplakia.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an intraoral clinical photograph of the anterior mandibular region, showing the lower incisors and the floor of the mouth / ventral tissues",
+        "A whitish, greyish-white keratotic mucosal change is present on the soft tissue (floor of mouth / sublingual mucosa) rather than a normal pink mucosa",
+        "The white lesion is consistent with leukoplakia, a white patch that cannot be wiped off and is a potentially malignant / premalignant mucosal condition"
+      ],
+      "must_avoid": [
+        "Calling the oral mucosa normal or healthy with no lesion",
+        "Describing it as a diagram or illustration rather than a real photograph",
+        "Confidently calling the white area food debris, a denture, or simple plaque that can be wiped away"
+      ],
+      "reference_caption": "Intraoral clinical photograph of the lower anterior teeth and floor of the mouth showing a diffuse whitish keratotic mucosal lesion consistent with oral leukoplakia.",
+      "source": {
+        "title": "File:Leukoplakia.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ALeukoplakia.jpg",
+        "license": "Public domain",
+        "attribution": "Unknown photographer"
+      }
+    },
+    {
+      "id": "nih_doc_16_homogenousleukoplakia",
+      "image": "data/images/nih_doc_16_homogenousleukoplakia.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an intraoral clinical photograph of the floor of the mouth / ventral oral mucosa with the lower teeth visible at the bottom",
+        "A well-demarcated, flat, uniformly white plaque is present on the mucosa",
+        "The lesion is consistent with homogeneous oral leukoplakia, a potentially malignant white patch that does not rub off"
+      ],
+      "must_avoid": [
+        "Describing the mucosa as normal/healthy with no lesion",
+        "Calling it a diagram, illustration, or radiograph instead of a clinical photograph",
+        "Diagnosing it as an ulcer, candidiasis (wipe-off white plaque), or food debris"
+      ],
+      "reference_caption": "Intraoral clinical photograph showing a well-defined homogeneous white plaque on the floor-of-mouth/ventral mucosa, consistent with homogeneous oral leukoplakia.",
+      "source": {
+        "title": "File:NIH DOC 16 HomogenousLeukoplakia.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ANIH_DOC_16_HomogenousLeukoplakia.jpg",
+        "license": "Public domain",
+        "attribution": "BodyParts3D/Anatomography"
+      }
+    },
+    {
+      "id": "caries_periodontal_disease_calculus",
+      "image": "data/images/caries_periodontal_disease_calculus.png",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an intraoral clinical photograph of a dentition showing advanced, neglected oral disease",
+        "Multiple teeth are grossly carious or broken down to retained roots/stumps with extensive coronal destruction",
+        "There are heavy dental calculus (tartar) deposits and signs of severe periodontal disease (inflamed gingiva, attachment loss)"
+      ],
+      "must_avoid": [
+        "Describing the mouth as healthy or only mildly affected",
+        "Calling it a diagram or illustration rather than a real photograph",
+        "Reducing it to a single isolated cavity while ignoring the gross destruction, calculus, and periodontal involvement"
+      ],
+      "reference_caption": "Intraoral clinical photograph showing gross carious destruction with retained roots, heavy calculus deposits, and severe periodontal disease across the dentition.",
+      "source": {
+        "title": "File:Caries, Periodontal disease, calculus.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3ACaries%2C_Periodontal_disease%2C_calculus.png",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Warren Schneider"
+      }
+    },
+    {
+      "id": "amalgam",
+      "image": "data/images/amalgam.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a close-up photograph of a single (extracted/isolated) molar tooth viewed from the occlusal/biting surface",
+        "A silver-grey metallic (dental amalgam) restoration/filling is present in the occlusal surface of the tooth",
+        "The surrounding tooth structure is the white/cream natural crown with the metallic filling set into it"
+      ],
+      "must_avoid": [
+        "Describing the metallic restoration as a cavity/caries or as decay",
+        "Calling the silver filling a tooth-coloured composite, gold, or a crown",
+        "Describing this as a diagram or radiograph rather than a photograph of a tooth"
+      ],
+      "reference_caption": "Close-up photograph of a single molar tooth with a silver-grey dental amalgam restoration in its occlusal surface.",
+      "source": {
+        "title": "File:Amalgam.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AAmalgam.jpg",
+        "license": "Public domain",
+        "attribution": "Ulrich Birkhoff"
+      }
+    },
+    {
+      "id": "filling_amalgam",
+      "image": "data/images/filling_amalgam.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a close-up photograph of several posterior teeth (molars/premolars) viewed from the occlusal surface",
+        "Each tooth carries a silver-grey metallic dental amalgam restoration on its occlusal/biting surface",
+        "The metallic fillings are set into the surrounding natural white tooth structure"
+      ],
+      "must_avoid": [
+        "Calling the silver-grey amalgam fillings caries/decay or open cavities",
+        "Misidentifying the restorations as tooth-coloured composite, gold, or crowns",
+        "Describing the image as a leaflet, diagram, or radiograph rather than a photograph of teeth"
+      ],
+      "reference_caption": "Close-up photograph of several posterior teeth, each restored with a silver-grey dental amalgam filling on the occlusal surface.",
+      "source": {
+        "title": "File:Filling amalgam.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AFilling_amalgam.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Enzo Carretta"
+      }
+    },
+    {
+      "id": "ferruleeffectdentistry",
+      "image": "data/images/ferruleeffectdentistry.gif",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a schematic/diagram illustrating the ferrule effect in restorative dentistry",
+        "It shows a prepared natural tooth core (yellow) with a crown or restoration (dark) seated over it and gingiva at the base",
+        "Labeled measurement arrows indicate the required ferrule dimensions: at least ~2 mm of vertical tooth structure height and at least ~1 mm of width/wall thickness encircled by the crown",
+        "A real pencil is placed alongside purely as a size/scale reference"
+      ],
+      "must_avoid": [
+        "Calling it a real intraoral clinical photograph of a tooth",
+        "Interpreting it as a dental implant or a caries/decay illustration rather than a crown-on-tooth ferrule concept"
+      ],
+      "reference_caption": "Labeled schematic of the ferrule effect, showing a crown enveloping at least 2 mm of vertical height and 1 mm of wall thickness of prepared tooth structure, with a pencil shown for scale.",
+      "source": {
+        "title": "File:FerruleEffectDentistry.gif",
+        "url": "https://commons.wikimedia.org/wiki/File%3AFerruleEffectDentistry.gif",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Oiguodala"
+      }
+    },
+    {
+      "id": "runningroom",
+      "image": "data/images/runningroom.png",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a clinical/intraoral image of two adjacent teeth with an edentulous (toothless) gap between them",
+        "A graphic overlay of green dashed vertical lines and double-headed arrows annotates the available mesiodistal space/distance to the neighboring teeth",
+        "It illustrates the concept of mesiodistal 'running room' or space available between adjacent teeth for an implant or implant-supported crown",
+        "A metallic implant platform/restorative component is visible at the bottom of the gap"
+      ],
+      "must_avoid": [
+        "Describing it as a pure line-drawing diagram with no photographic content",
+        "Calling the gap a healthy/normal intact dentition or missing the edentulous space",
+        "Inventing a specific named pathology or diagnosis not shown"
+      ],
+      "reference_caption": "Annotated intraoral image of an edentulous space between two adjacent teeth, with overlaid lines and arrows marking the available mesiodistal distance (running room) for an implant restoration.",
+      "source": {
+        "title": "File:Runningroom.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3ARunningroom.png",
+        "license": "Attribution",
+        "attribution": "Drosenbach"
+      }
+    },
+    {
+      "id": "zahnimplantat",
+      "image": "data/images/zahnimplantat.jpg",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a cross-sectional illustration/schematic of an endosseous dental implant placed in the jaw",
+        "It depicts a threaded titanium implant fixture surrounded by bone and overlying gingiva/soft tissue",
+        "It carries numbered labels (1, 2, 3) pointing to the surrounding structures such as gingiva, bone, and the implant"
+      ],
+      "must_avoid": [
+        "Calling it a real clinical photograph or a radiograph/X-ray",
+        "Describing it as a natural tooth root rather than a threaded implant",
+        "Asserting a specific disease such as peri-implantitis when only normal anatomy is shown"
+      ],
+      "reference_caption": "Labeled cross-sectional diagram of a threaded dental implant osseointegrated in bone beneath the gingiva, with numbered callouts to the surrounding tissues.",
+      "source": {
+        "title": "File:Zahnimplantat.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AZahnimplantat.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "ISebestyen"
+      }
+    },
+    {
+      "id": "single_crown_implant",
+      "image": "data/images/single_crown_implant.jpg",
+      "modality": "clinical_photo",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a photograph of an assembled single-tooth dental implant restoration shown out of the mouth against a blue background",
+        "Three components are present and text-labeled: the threaded titanium IMPLANT fixture, the metal ABUTMENT (middle connector), and the tooth-colored ceramic CROWN",
+        "It demonstrates how the crown attaches to the abutment which connects to the implant fixture"
+      ],
+      "must_avoid": [
+        "Calling it an in-situ intraoral photo or an X-ray rather than a benchtop photo of the components",
+        "Misidentifying the parts (e.g. confusing the abutment with the implant or the crown)",
+        "Describing it as a natural tooth"
+      ],
+      "reference_caption": "Photograph of a single-unit dental implant assembly labeled IMPLANT, ABUTMENT, and CROWN, showing the threaded fixture, the connecting abutment, and the ceramic crown.",
+      "source": {
+        "title": "File:Single crown implant.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ASingle_crown_implant.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Coronation Dental Specialty Group"
+      }
+    },
+    {
+      "id": "permanent_maxillary_teeth_by_rokaya_yahia_",
+      "image": "data/images/permanent_maxillary_teeth_by_rokaya_yahia_.jpg",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a hand-drawn anatomical illustration (pencil sketch), not a clinical photograph or radiograph",
+        "It shows one quadrant of the permanent maxillary (upper) dentition viewed from the occlusal/palatal aspect, specifically the right half of the upper arch as the Arabic title states",
+        "It depicts the full set of 8 permanent teeth in the quadrant in sequence: central incisor, lateral incisor, canine, first and second premolars, and first, second, and third molars (the third molar being the wisdom tooth)",
+        "Each tooth is named with a leader-line text label (the labels are in Arabic)"
+      ],
+      "must_avoid": [
+        "Calling it a clinical photograph, intraoral photo, or radiograph/X-ray",
+        "Identifying the teeth as deciduous/primary (baby) teeth or as a mixed dentition rather than the permanent dentition",
+        "Claiming it shows the full dental arch or both quadrants rather than a single (right) maxillary quadrant"
+      ],
+      "reference_caption": "A labeled hand-drawn pencil illustration of the right maxillary quadrant viewed from the occlusal/palatal aspect, naming the eight permanent teeth in order (central incisor, lateral incisor, canine, first and second premolars, and first, second, and third molars) with Arabic text labels.",
+      "source": {
+        "title": "File:Permanent maxillary Teeth - by Rokaya Yahia June 2015.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3APermanent_maxillary_Teeth_-_by_Rokaya_Yahia_June_2015.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Yahia.Mokhtar and Rokaya Yahia"
+      }
+    },
+    {
+      "id": "teeth_types_colored",
+      "image": "data/images/teeth_types_colored.png",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a schematic/illustrated dental arch diagram showing an occlusal (biting-surface) view of both the maxillary (upper) and mandibular (lower) arches, not a clinical photograph or radiograph",
+        "Teeth are color-coded by tooth type into four groups, and a correct description must convey the four-type grouping",
+        "The four types correspond to anterior-to-posterior position: incisors (front center, orange), canines (next, green), premolars (magenta/pink), and molars (back, blue)",
+        "It depicts a full/complete permanent dentition arranged in arches divided into quadrants, intended to teach tooth-type classification"
+      ],
+      "must_avoid": [
+        "Calling this a clinical intraoral photograph or an X-ray/radiograph",
+        "Interpreting the color-coding as pathology, staining, restorations, or disease (the colors are a teaching legend for tooth types, not findings)",
+        "Claiming visible text labels name the teeth when none are present"
+      ],
+      "reference_caption": "A labeled-by-color schematic occlusal-view diagram of the upper and lower dental arches showing a full permanent dentition with teeth grouped by type into incisors, canines, premolars, and molars.",
+      "source": {
+        "title": "File:Teeth types colored.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3ATeeth_types_colored.png",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Strepulah"
+      }
+    },
+    {
+      "id": "depiction_of_a_periodontitis_patient",
+      "image": "data/images/depiction_of_a_periodontitis_patient.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a labeled educational illustration/diagram, not a clinical photograph",
+        "A cross-section comparison of a healthy tooth/periodontium (left) versus a periodontitis-affected one (right half of the tooth diagram)",
+        "Periodontitis features are shown and labeled: deepening periodontal pocket, inflamed gum, plaque and calculus, and receded/lost alveolar bone (vs healthy gum and healthy bone level on the normal side)",
+        "An illustrated older man holding his cheek/jaw, conveying oral pain or discomfort associated with the condition"
+      ],
+      "must_avoid": [
+        "Calling this a real clinical photograph or radiograph/X-ray",
+        "Describing the tooth as healthy or normal, or ignoring the disease (it depicts periodontitis with bone loss and gum recession)",
+        "Misreading it as caries/a cavity, an abscess diagram, or an implant rather than periodontitis"
+      ],
+      "reference_caption": "A labeled educational illustration contrasting a normal tooth with periodontitis, showing the healthy gum and bone on one side versus a deepening periodontal pocket, inflamed gum, plaque and calculus, and receded bone on the other, alongside a drawing of an older man holding his jaw in pain.",
+      "source": {
+        "title": "File:Depiction of a Periodontitis patient.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3ADepiction_of_a_Periodontitis_patient.png",
+        "license": "CC BY-SA 4.0",
+        "attribution": "https://www.myupchar.com/en"
+      }
+    },
+    {
+      "id": "moderate_periodontitis",
+      "image": "data/images/moderate_periodontitis.png",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": "moderate periodontitis",
+      "must_identify": [
+        "This is a schematic line diagram (not a photograph or radiograph) of a single multi-rooted tooth in cross-section showing periodontal anatomy",
+        "Key periodontal structures are drawn: the gingival/soft-tissue margin (red line), the alveolar bone crest following the roots (brown/gold line), and the periodontal ligament space (hatched band between root and bone)",
+        "A periodontal pocket is depicted on one side, shown as a shaded zone with a vertical measurement scale/ruler and a horizontal reference line indicating increased probing/pocket depth",
+        "The diagram illustrates periodontal attachment loss / pocket deepening consistent with periodontitis rather than a healthy periodontium"
+      ],
+      "must_avoid": [
+        "Calling it a clinical photograph or an X-ray/radiograph instead of a line diagram",
+        "Describing it as a healthy periodontium with a normal sulcus rather than a pathological deepened pocket",
+        "Inventing specific numeric pocket-depth or attachment-loss values that are not printed on the image"
+      ],
+      "reference_caption": "Schematic line diagram of a single multi-rooted tooth in cross-section showing the gingival margin, alveolar bone crest, and periodontal ligament, with a shaded periodontal pocket and a vertical measurement scale illustrating the increased probing depth of moderate periodontitis.",
+      "source": {
+        "title": "File:Moderate periodontitis.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3AModerate_periodontitis.png",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ian Furst"
+      }
+    },
+    {
+      "id": "periodontal_terms_diagram_gingival_recessi",
+      "image": "data/images/periodontal_terms_diagram_gingival_recessi.png",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a schematic line-drawing/diagram, not a clinical photograph or radiograph",
+        "It depicts a tooth with adjacent gingiva and a vertical bracket measuring system (numbers 1, 2, 3) along the tooth/gingiva interface",
+        "It illustrates the periodontal measurement relationship where the total distance (1) is the sum of two stacked vertical segments (2 and 3)",
+        "It conveys clinical attachment loss = gingival recession + probing (pocket) depth, with the gingival margin positioned apical to the CEJ (recession present)"
+      ],
+      "must_avoid": [
+        "Calling it a radiograph/X-ray or a real clinical photograph",
+        "Describing it as a healthy periodontium with no recession or attachment loss",
+        "Inventing a specific numeric stage/grade of periodontitis that is not depicted"
+      ],
+      "reference_caption": "A schematic diagram of a tooth and adjacent gingiva with a numbered vertical bracket (1, 2, 3) illustrating that clinical attachment loss (1) equals gingival recession (2) plus probing/pocket depth (3), with the gingival margin sitting apical to the cemento-enamel junction.",
+      "source": {
+        "title": "File:Periodontal terms diagram gingival recession.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3APeriodontal_terms_diagram_gingival_recession.png",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Lesion"
+      }
+    },
+    {
+      "id": "gingival_sulcus",
+      "image": "data/images/gingival_sulcus.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a schematic cross-section (line/illustration) of a tooth and its surrounding periodontal tissues, not a photograph or radiograph",
+        "The gingival sulcus is explicitly labeled with text and an arrow, pointing to the shallow V-shaped space between the tooth surface and the free gingival margin",
+        "The diagram shows the tooth (crown/enamel and yellow dentin body) on the left meeting the pink gingiva on the right, with a stacked series of lettered structures depicting the dentogingival/attachment apparatus (e.g., sulcular and junctional epithelium, gingival connective-tissue fibers, alveolar bone)"
+      ],
+      "must_avoid": [
+        "Calling this a clinical photograph or an X-ray/radiograph instead of an illustrated schematic",
+        "Describing it as a diseased state such as a deep periodontal pocket, periodontitis with attachment loss, gingival recession, or an abscess; the labeled feature is the normal gingival sulcus",
+        "Inventing specific identities for the unlabeled single-letter keys (H, I, J, K, C, D, E) as if a legend confirmed them"
+      ],
+      "reference_caption": "A labeled schematic cross-section of a tooth and its periodontium in which the gingival sulcus, the shallow space between the tooth surface and the free gingival margin, is explicitly named with text and an arrow, with the surrounding dentogingival attachment structures (epithelium, connective-tissue fibers, and alveolar bone) shown as a lettered stack.",
+      "source": {
+        "title": "File:Gingival sulcus.PNG",
+        "url": "https://commons.wikimedia.org/wiki/File%3AGingival_sulcus.PNG",
+        "license": "Public domain",
+        "attribution": "User:Mikael H\u00e4ggstr\u00f6m"
+      }
+    },
+    {
+      "id": "line_diagram_of_gingivitis",
+      "image": "data/images/line_diagram_of_gingivitis.png",
+      "modality": "diagram",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a schematic line diagram (illustration) of a single tooth in cross-section within its supporting tissues, not a clinical photograph or radiograph",
+        "Periodontal anatomy is color-coded: the tooth (crown and single tapering root), the gingiva outlined in red, the alveolar bone outlined in brown/gold, and the periodontal ligament shown as red diagonal hatching between root and bone",
+        "The diagram depicts gingival inflammation (gingivitis): the gingival margin, especially on the right, is drawn swollen, bulbous and stippled/filled red to show edematous, inflamed marginal tissue",
+        "Crucially there is NO alveolar bone loss and NO loss of clinical attachment: the bone crest remains at a coronal/near-CEJ level and any pocket/probing depth shown by the dotted measuring scale is a shallow gingival (false/pseudo) pocket, consistent with gingivitis rather than periodontitis",
+        "A dotted vertical measuring scale on the right indicates probing/pocket depth of the marginal gingiva"
+      ],
+      "must_avoid": [
+        "Calling it a clinical photograph or a radiograph/X-ray rather than a line diagram",
+        "Diagnosing periodontitis or describing alveolar bone loss / loss of attachment, which are absent here",
+        "Describing the tissue as healthy gingiva and ignoring the inflamed, swollen red marginal gingiva"
+      ],
+      "reference_caption": "Schematic color-coded line diagram of a single tooth and its periodontium (red gingiva, gold alveolar bone, hatched periodontal ligament) depicting gingivitis, with a swollen, inflamed red gingival margin and a shallow gingival pocket shown on a measuring scale, but no bone loss or loss of attachment.",
+      "source": {
+        "title": "File:Line diagram of Gingivitis.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3ALine_diagram_of_Gingivitis.png",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Ian Furst"
+      }
+    },
+    {
+      "id": "smoothsurfacecaries05",
+      "image": "data/images/smoothsurfacecaries05.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "A schematic line-drawing cross-section of a tooth crown, with the three layers labeled in text: enamel (outer), dentin (middle), and pulp (central chamber)",
+        "A solid black carious lesion on the right side of the crown that has breached the enamel surface and penetrated into the dentin (crossed the dentinoenamel junction)",
+        "This is an advanced/later-stage caries lesion: it is no longer confined to enamel but now involves dentin, showing the characteristic spread along the DEJ",
+        "The pulp chamber is shown as not yet involved (the lesion has not reached the pulp), indicating dentinal \u2014 not pulpal \u2014 caries"
+      ],
+      "must_avoid": [
+        "Calling this a real clinical photograph or radiograph/X-ray rather than a schematic diagram",
+        "Describing the tooth as healthy or the dark area as a normal feature/filling rather than a carious lesion (decay)",
+        "Claiming the lesion has reached or involves the pulp, or calling it an early/enamel-only lesion"
+      ],
+      "reference_caption": "A labeled schematic cross-section of a tooth crown (enamel, dentin, pulp) showing a later-stage smooth-surface carious lesion (black) that has penetrated through the enamel and into the dentin but has not yet reached the pulp.",
+      "source": {
+        "title": "File:Smoothsurfacecaries05.PNG",
+        "url": "https://commons.wikimedia.org/wiki/File%3ASmoothsurfacecaries05.PNG",
+        "license": "CC BY-SA 3.0",
+        "attribution": "No machine-readable author provided. Dozenist assumed (based on copyright claims)."
+      }
+    },
+    {
+      "id": "blausen_0864_toothdecay_ar",
+      "image": "data/images/blausen_0864_toothdecay_ar.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an illustrated longitudinal cross-section (sagittal section) of a tooth, a molar, set in the jaw bone, not a real photograph or radiograph",
+        "It depicts dental caries / tooth decay: a dark brown-black carious lesion eroding the crown from the occlusal (pit-and-fissure) surface and extending inward through enamel and dentin toward the pulp",
+        "Internal anatomy is shown and labeled, including enamel, dentin, the pulp chamber with its blood vessels and nerves, the root canal, cementum, the gingiva, and the surrounding alveolar/jaw bone",
+        "Text labels are present in Arabic naming the tooth structures"
+      ],
+      "must_avoid": [
+        "Calling this a healthy or normal tooth, or failing to recognize the decay/caries",
+        "Describing it as a clinical photograph, X-ray/radiograph, or histology rather than an anatomical illustration",
+        "Misidentifying the condition (e.g. calling it an abscess, fracture, restoration/filling, or periodontal disease) instead of caries"
+      ],
+      "reference_caption": "Labeled anatomical illustration of a longitudinal cross-section through a molar tooth in the jaw, showing dental caries as a dark carious lesion eroding the crown from the occlusal surface inward toward the pulp, with the enamel, dentin, pulp (vessels and nerves), root canal, cementum, gingiva, and alveolar bone identified in Arabic labels.",
+      "source": {
+        "title": "File:Blausen 0864 ToothDecay-ar.svg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ABlausen_0864_ToothDecay-ar.svg",
+        "license": "Public domain",
+        "attribution": "Sandra Hanbo"
+      }
+    },
+    {
+      "id": "diagram_of_tooth_erosion",
+      "image": "data/images/diagram_of_tooth_erosion.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an illustrated/schematic diagram (not a photograph or radiograph), showing a cross-section of two molar-type teeth with their roots and surrounding gingiva",
+        "It is a side-by-side comparison: the left tooth is diseased (titled 'Tooth Erosion and Decay') and the right tooth is labeled 'Healthy'",
+        "The diseased tooth shows a dark/brown carious lesion in the crown labeled as plaque acid dissolving enamel (caries/decay), plus yellow plaque and tartar (calculus) buildup near the gumline",
+        "The diseased side shows gingival recession / reduced gum level due to inflammation, contrasted with the intact pink healthy gum lining on the right tooth",
+        "Visible text labels name the structures (plaque acid dissolves enamel, plaque and tartar build up, reduced gum level due to inflammation, healthy gum lining)"
+      ],
+      "must_avoid": [
+        "Calling the diagram a real clinical photograph or an X-ray/radiograph",
+        "Describing the diseased (left) tooth as healthy, or failing to recognize the decay/caries and tartar shown",
+        "Labeling the right (healthy) tooth as diseased or reversing the two sides"
+      ],
+      "reference_caption": "A labeled schematic diagram comparing a diseased tooth (left, titled 'Tooth Erosion and Decay') showing a brown carious lesion from plaque acid dissolving enamel, yellow plaque/tartar buildup, and gingival recession from inflammation, against a 'Healthy' tooth (right) with intact enamel and a normal pink gum line.",
+      "source": {
+        "title": "File:Diagram of tooth erosion.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3ADiagram_of_tooth_erosion.png",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Liz20151222"
+      }
+    },
+    {
+      "id": "overjet_overbite",
+      "image": "data/images/overjet_overbite.png",
+      "modality": "diagram",
+      "labeled": true,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is a diagram/schematic illustration (not a clinical photograph or radiograph), shown as a lateral/side-profile view of an upper and a lower incisor in occlusion",
+        "It is labeled and the labels distinguish two distinct measurements of incisor relationship: 'overbite' and 'overjet'",
+        "Overbite refers to the VERTICAL overlap of the upper incisor over the lower incisor (labeled toward the incisal edge region)",
+        "Overjet refers to the HORIZONTAL distance/protrusion between the upper and lower incisal edges (marked by the red vertical reference line)"
+      ],
+      "must_avoid": [
+        "Calling it a clinical photograph, intraoral photo, or radiograph/X-ray",
+        "Swapping the definitions: describing overbite as horizontal or overjet as vertical",
+        "Claiming a specific malocclusion diagnosis or severity (e.g., Class II, deep bite, increased overjet) that is not actually graded or quantified in the diagram"
+      ],
+      "reference_caption": "A labeled side-profile schematic diagram of an upper and lower incisor in occlusion, illustrating overbite (the vertical overlap of the incisors) and overjet (the horizontal distance between the upper and lower incisal edges, shown by the red reference line).",
+      "source": {
+        "title": "File:Overjet-overbite.png",
+        "url": "https://commons.wikimedia.org/wiki/File%3AOverjet-overbite.png",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Nielson2000"
+      }
+    },
+    {
+      "id": "sever_crowding_of_teeth",
+      "image": "data/images/sever_crowding_of_teeth.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": "severe crowding",
+      "must_identify": [
+        "This is an intraoral clinical photograph (frontal/anterior view) of the dentition with the mouth open, showing both upper and lower front teeth",
+        "Severe dental crowding / arch-length (tooth-size) discrepancy: teeth are overlapping, rotated, and malaligned with insufficient space in the arch",
+        "Ectopically erupted / displaced teeth, notably maxillary lateral incisors (and adjacent canines) blocked out high and labially out of the arch, with overlapping/rotated lower incisors",
+        "A young patient in the mixed or early permanent dentition (the teeth and proportions indicate a child/adolescent rather than an adult)"
+      ],
+      "must_avoid": [
+        "Calling this a radiograph/X-ray or a diagram/illustration instead of a clinical photograph",
+        "Describing the dentition as well-aligned, normal, or healthy occlusion (it is clearly severely crowded/malaligned)",
+        "Inventing a different diagnosis such as periodontitis, caries, abscess, or trauma as the primary finding"
+      ],
+      "reference_caption": "Frontal intraoral clinical photograph of a young patient showing severe dental crowding with marked arch-length discrepancy: the anterior teeth are overlapping and rotated, and the maxillary lateral incisors/canines are ectopically displaced (blocked out) labially because there is insufficient space in the arch.",
+      "source": {
+        "title": "File:Sever Crowding of teeth.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ASever_Crowding_of_teeth.jpg",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Challiyan"
+      }
+    },
+    {
+      "id": "dental_restoration",
+      "image": "data/images/dental_restoration.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an intraoral clinical photograph series (four panels) of a posterior tooth (molar/premolar), viewed on the occlusal/chewing surface",
+        "It depicts the sequential steps of a direct restorative procedure: occlusal caries/old lesion, cavity preparation showing discolored carious tissue, the cleaned-out prepared cavity, and the finished restoration",
+        "The final panel shows the tooth restored to anatomical occlusal form with a tooth-colored (composite resin) direct restoration"
+      ],
+      "must_avoid": [
+        "Calling this a radiograph/X-ray or a diagram instead of a clinical photograph",
+        "Describing the tooth as healthy/untreated or ignoring the caries and restorative intervention being shown",
+        "Claiming it shows a crown, implant, amalgam (metal/silver) filling, or extraction"
+      ],
+      "reference_caption": "A four-panel intraoral clinical photo series showing the direct restoration of an occlusal (Class I) caries lesion on a posterior tooth: the initial occlusal lesion, the cavity preparation with discolored carious tissue, the cleaned prepared cavity, and the final tooth-colored composite restoration rebuilt to anatomical form.",
+      "source": {
+        "title": "File:Dental Restoration.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3ADental_Restoration.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Jeffrey Dorfman"
+      }
+    },
+    {
+      "id": "zmo0594_001",
+      "image": "data/images/zmo0594_001.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "This is an intraoral clinical photograph of a posterior tooth (molar) under blue field isolation, shown at high magnification with adjacent teeth visible",
+        "The central molar shows the occlusal surface with brown discoloration/staining in the central fossa and fissures, consistent with occlusal caries or stained pits and fissures",
+        "The adjacent (left/mesial) tooth carries a silver-grey metallic restoration consistent with dental amalgam",
+        "The clinical context is restorative/pre-operative: a tooth being assessed or prepared for a tooth-coloured composite filling"
+      ],
+      "must_avoid": [
+        "Calling this an X-ray, radiograph, or an illustration/diagram rather than a real clinical photograph",
+        "Describing the tooth as completely healthy/intact with no staining, caries, or defect when brown fissure discoloration is clearly present",
+        "Misidentifying the blue field as the gingiva/soft tissue or as a pathologic lesion rather than isolation material (rubber dam / lip-cheek retractor)"
+      ],
+      "reference_caption": "High-magnification intraoral clinical photograph of a posterior molar under blue field isolation, showing brown staining and discoloration of the occlusal fissures and central fossa (occlusal caries / stained pits and fissures) in a tooth being prepared for a composite restoration, with an amalgam-restored neighbouring tooth visible.",
+      "source": {
+        "title": "File:ZMO0594-001.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AZMO0594-001.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Michael Ottenbruch"
+      }
+    },
+    {
+      "id": "zmo0594_006",
+      "image": "data/images/zmo0594_006.jpg",
+      "modality": "clinical_photo",
+      "labeled": false,
+      "is_control": false,
+      "expected_severity": null,
+      "must_identify": [
+        "Intraoral clinical photograph of a posterior tooth (mandibular molar occlusal surface, intraoral-camera close-up)",
+        "A clear/transparent matrix band isolates the tooth for a direct restorative procedure",
+        "An occlusal cavity preparation is present and being restored with tooth-colored material (composite resin or flowable liner/base)",
+        "The image shows an in-progress restorative step, not a finished/polished final restoration"
+      ],
+      "must_avoid": [
+        "Calling this a radiograph/X-ray or a diagram/illustration (it is a real clinical photo)",
+        "Describing the tooth as healthy/intact or as a fully completed final restoration when an active cavity preparation with material placement is shown",
+        "Mistaking the transparent matrix band for the tooth, gingiva, or a clear aligner/orthodontic appliance"
+      ],
+      "reference_caption": "Intraoral clinical photograph of a posterior (mandibular molar) tooth isolated with a clear matrix band, showing an occlusal cavity preparation being filled with tooth-colored restorative material during a direct restorative procedure.",
+      "source": {
+        "title": "File:ZMO0594-006.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File%3AZMO0594-006.jpg",
+        "license": "CC BY-SA 3.0",
+        "attribution": "Michael Ottenbruch"
+      }
     },
     {
       "id": "anat-01-control",
@@ -109,9 +1375,16 @@
         "crown and root",
         "surrounding gum (gingiva) and alveolar bone"
       ],
-      "must_avoid": ["calling it a radiograph (x-ray) or a clinical photograph"],
+      "must_avoid": [
+        "calling it a radiograph (x-ray) or a clinical photograph"
+      ],
       "reference_caption": "Tooth Anatomy (transformed control): cross-section showing enamel, dentin, pulp, crown, root, root canal, gums, bone, and nerves and blood vessels.",
-      "source": {"title": "Derived from File:Blausen 0863 ToothAnatomy 02.png", "url": "https://commons.wikimedia.org/wiki/File:Blausen_0863_ToothAnatomy_02.png", "license": "CC BY 3.0", "attribution": "Blausen.com staff (2014), transformed for memorization control"}
+      "source": {
+        "title": "Derived from File:Blausen 0863 ToothAnatomy 02.png",
+        "url": "https://commons.wikimedia.org/wiki/File:Blausen_0863_ToothAnatomy_02.png",
+        "license": "CC BY 3.0",
+        "attribution": "Blausen.com staff (2014), transformed for memorization control"
+      }
     }
   ]
 }
