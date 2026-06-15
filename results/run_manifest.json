@@ -1,9 +1,9 @@
 {
   "benchmark": "dental-vision-benchmark",
   "version": "v1",
-  "run_date": "2026-06-14",
+  "run_date": "2026-06-15",
   "clinician_signoff_date": "2026-06-15",
-  "results_from_commit": "81762b8",
+  "results_note": "corrected re-run on 2026-06-15 (severity soft, full judge verdicts stored)",
   "gateway": "OpenRouter (https://openrouter.ai/api/v1/chat/completions)",
   "n_items": 90,
   "control_items": 1,
@@ -27,5 +27,5 @@
     "image_transport": "inline base64 data URI",
     "scoring": "rubric pass/fail (all must_identify, no must_avoid)"
   },
-  "notes": "Published leaderboard numbers are from the 2026-06-14 signed-off run, which applied severity as a pass-gate on 11 graded items. The harness was hardened afterward (severity moved to a soft metric; both judges' full verdicts + covered/violations + provider stored per row). Re-running under the corrected harness is pending OpenRouter credits (account hit 402 Payment Required). This file pins the model IDs because 'latest of each family' will go stale."
+  "notes": "Numbers are from the corrected run (2026-06-15): severity is a soft metric (not gated), and both judges' full verdicts plus covered/violations and provider are stored per row in results.jsonl. 3 of 546 calls errored (transient) and are scored as fails. Model IDs are pinned here because 'latest of each family' goes stale."
 }

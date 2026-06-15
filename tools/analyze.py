@@ -42,7 +42,7 @@ def main() -> None:
     rank = sorted(MODELS, key=lambda m: acc([x for x in m_ if x["model"] == m]), reverse=True)
 
     L = ["# Dental Vision Benchmark — results (v1, clinician-reviewed)", ""]
-    L += [f"**{n_items} images (+ a memorization control), 6 vision models, two independent judges** "
+    L += [f"**{n_items} images (+ a transformed control item), 6 vision models, two independent judges** "
           "(primary Claude Opus 4.8, secondary GPT-5.5). Image only, no caption, no internet, temperature 0, "
           "single trial. Ground truth clinician-reviewed 2026-06-15. Scoring is rubric pass/fail (all "
           "`must_identify` satisfied, no `must_avoid`).", ""]
@@ -98,8 +98,7 @@ def main() -> None:
     if sev:
         L += [f"## Severity (soft metric; {len(set(x['item'] for x in sev))} graded items)", "",
               "How often each model's stated grade matched the expected severity (judge-assessed). "
-              "_Note: this v1 run applied severity as a pass-gate on these items; the harness now treats it "
-              "as a soft metric, which will lift the gated items' scores on the next run._", "",
+              "Severity is reported only; it does **not** gate the pass/fail score above.", "",
               "| Model | Severity match |", "|---|---:|"]
         for m in rank:
             mr = [x for x in sev if x["model"] == m]

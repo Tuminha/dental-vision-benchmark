@@ -1,17 +1,17 @@
 # Dental Vision Benchmark — results (v1, clinician-reviewed)
 
-**90 images (+ a memorization control), 6 vision models, two independent judges** (primary Claude Opus 4.8, secondary GPT-5.5). Image only, no caption, no internet, temperature 0, single trial. Ground truth clinician-reviewed 2026-06-15. Scoring is rubric pass/fail (all `must_identify` satisfied, no `must_avoid`).
+**90 images (+ a transformed control item), 6 vision models, two independent judges** (primary Claude Opus 4.8, secondary GPT-5.5). Image only, no caption, no internet, temperature 0, single trial. Ground truth clinician-reviewed 2026-06-15. Scoring is rubric pass/fail (all `must_identify` satisfied, no `must_avoid`).
 
 ## Leaderboard (primary judge, 95% Wilson CI)
 
 | Model | Score | 95% CI | Diagrams | Clinical photos | Labeled | Unlabeled |
 |---|---:|:---:|---:|---:|---:|---:|
-| Gemini 3.1 Pro | 68% (61/90) | [58, 77] | 67% | 68% | 78% | 59% |
-| Claude Opus 4.8 | 62% (56/90) | [52, 72] | 65% | 58% | 76% | 51% |
-| Qwen3.7 Plus | 60% (54/90) | [50, 70] | 67% | 50% | 71% | 51% |
-| GPT-5.5 | 51% (46/90) | [41, 61] | 63% | 34% | 61% | 43% |
-| GLM-4.6V | 31% (28/90) | [22, 41] | 38% | 21% | 44% | 20% |
-| Llama 4 Maverick | 26% (23/90) | [18, 35] | 29% | 21% | 32% | 20% |
+| Gemini 3.1 Pro | 72% (65/90) | [62, 80] | 73% | 71% | 76% | 69% |
+| Claude Opus 4.8 | 62% (56/90) | [52, 72] | 69% | 53% | 76% | 51% |
+| Qwen3.7 Plus | 59% (53/90) | [49, 68] | 65% | 50% | 71% | 49% |
+| GPT-5.5 | 56% (50/90) | [45, 65] | 63% | 45% | 68% | 45% |
+| GLM-4.6V | 32% (29/90) | [23, 42] | 37% | 26% | 41% | 24% |
+| Llama 4 Maverick | 28% (25/90) | [20, 38] | 33% | 21% | 27% | 29% |
 
 _Top cluster, overlapping CIs: Gemini 3.1 Pro, Claude Opus 4.8, Qwen3.7 Plus. The robust finding is the task split (unlabeled clinical photos are hardest), not a single winner._
 
@@ -19,12 +19,12 @@ _Top cluster, overlapping CIs: Gemini 3.1 Pro, Claude Opus 4.8, Qwen3.7 Plus. Th
 
 | Model | Full | Clean |
 |---|---:|---:|
-| Gemini 3.1 Pro | 68% | 72% |
-| Claude Opus 4.8 | 62% | 64% |
-| Qwen3.7 Plus | 60% | 66% |
-| GPT-5.5 | 51% | 56% |
-| GLM-4.6V | 31% | 35% |
-| Llama 4 Maverick | 26% | 29% |
+| Gemini 3.1 Pro | 72% | 75% |
+| Claude Opus 4.8 | 62% | 66% |
+| Qwen3.7 Plus | 59% | 64% |
+| GPT-5.5 | 56% | 60% |
+| GLM-4.6V | 32% | 35% |
+| Llama 4 Maverick | 28% | 31% |
 
 ## Judge agreement and self-preference check
 
@@ -32,24 +32,24 @@ Verdict agreement 82%, Cohen's kappa 0.65. The primary (Opus) judge is more leni
 
 | Model | Primary (Opus) | Secondary (GPT-5.5) | Delta |
 |---|---:|---:|---:|
-| Gemini 3.1 Pro | 68% | 46% | +22 |
+| Gemini 3.1 Pro | 73% | 51% | +22 |
 | Claude Opus 4.8 | 62% | 56% | +7 |
-| Qwen3.7 Plus | 60% | 51% | +9 |
-| GPT-5.5 | 51% | 33% | +18 |
-| GLM-4.6V | 31% | 17% | +15 |
-| Llama 4 Maverick | 26% | 6% | +20 |
+| Qwen3.7 Plus | 60% | 48% | +12 |
+| GPT-5.5 | 56% | 36% | +20 |
+| GLM-4.6V | 32% | 14% | +18 |
+| Llama 4 Maverick | 28% | 11% | +17 |
 
 ## Severity (soft metric; 11 graded items)
 
-How often each model's stated grade matched the expected severity (judge-assessed). _Note: this v1 run applied severity as a pass-gate on these items; the harness now treats it as a soft metric, which will lift the gated items' scores on the next run._
+How often each model's stated grade matched the expected severity (judge-assessed). Severity is reported only; it does **not** gate the pass/fail score above.
 
 | Model | Severity match |
 |---|---:|
-| Gemini 3.1 Pro | 64% |
-| Claude Opus 4.8 | 36% |
-| Qwen3.7 Plus | 64% |
-| GPT-5.5 | 45% |
-| GLM-4.6V | 18% |
+| Gemini 3.1 Pro | 82% |
+| Claude Opus 4.8 | 55% |
+| Qwen3.7 Plus | 55% |
+| GPT-5.5 | 82% |
+| GLM-4.6V | 36% |
 | Llama 4 Maverick | 45% |
 
 ## Caveats

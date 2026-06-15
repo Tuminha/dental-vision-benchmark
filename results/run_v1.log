@@ -1,563 +1,563 @@
 Running 6 models x 91 images = 546 describe calls + 1092 judge calls...
 
-  [OK ] anat-01            GPT-5.5          j1=P j2=P mod=y
   [OK ] anat-01            Llama 4 Maverick j1=P j2=P mod=y
+  [OK ] anat-01            GPT-5.5          j1=P j2=P mod=y
+  [OK ] anat-01            Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] anat-01            GLM-4.6V         j1=P j2=P mod=y
   [OK ] anat-01            Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] anat-01            Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] anat-01            Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] perio-mild-01      Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] perio-mild-01      Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] perio-mild-01      Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] perio-mild-01      GPT-5.5          j1=f j2=f mod=y
-  [OK ] perio-mild-01      Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] perio-severe-01    Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] perio-mild-01      Llama 4 Maverick j1=P j2=f mod=y
+  [OK ] perio-mild-01      Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] perio-severe-01    GPT-5.5          j1=P j2=P mod=y
   [OK ] perio-mild-01      GLM-4.6V         j1=f j2=f mod=y
-  [OK ] perio-severe-01    Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] perio-severe-01    Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] perio-severe-01    Claude Opus 4.8  j1=f j2=f mod=y
+  [ERR] perio-mild-01      Qwen3.7 Plus     j1=f j2=f mod=n
+  [OK ] perio-severe-01    Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] perio-severe-01    Llama 4 Maverick j1=P j2=f mod=y
   [OK ] caries-01          GPT-5.5          j1=P j2=P mod=y
   [OK ] perio-severe-01    GLM-4.6V         j1=f j2=f mod=y
-  [OK ] perio-mild-01      Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] caries-01          Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] perio-severe-01    Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] caries-01          Llama 4 Maverick j1=f j2=f mod=y
   [OK ] caries-01          Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] caries-01          GLM-4.6V         j1=P j2=f mod=y
+  [OK ] caries-01          Llama 4 Maverick j1=f j2=f mod=y
   [OK ] photo-intraoral-01 GPT-5.5          j1=P j2=f mod=y
   [OK ] caries-01          Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] photo-intraoral-01 Claude Opus 4.8  j1=P j2=f mod=y
-  [OK ] photo-intraoral-01 Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] photo-intraoral-01 Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] photo-intraoral-01 GLM-4.6V         j1=P j2=P mod=y
+  [OK ] caries-01          GLM-4.6V         j1=P j2=f mod=y
+  [OK ] photo-intraoral-01 Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] photo-intraoral-01 Gemini 3.1 Pro   j1=P j2=f mod=y
+  [OK ] photo-intraoral-01 Llama 4 Maverick j1=f j2=f mod=y
   [OK ] basic_anatomy_tooth GPT-5.5          j1=P j2=P mod=y
-  [OK ] basic_anatomy_tooth Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] basic_anatomy_tooth Llama 4 Maverick j1=P j2=f mod=y
+  [OK ] photo-intraoral-01 GLM-4.6V         j1=P j2=f mod=y
+  [OK ] perio-severe-01    Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] basic_anatomy_tooth Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] photo-intraoral-01 Qwen3.7 Plus     j1=P j2=f mod=y
-  [OK ] basic_anatomy_tooth GLM-4.6V         j1=P j2=P mod=y
+  [OK ] basic_anatomy_tooth Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] basic_anatomy_tooth Llama 4 Maverick j1=f j2=f mod=y
   [OK ] blausen_0864_toothdecay GPT-5.5          j1=P j2=P mod=y
   [OK ] blausen_0864_toothdecay Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] blausen_0864_toothdecay Llama 4 Maverick j1=P j2=f mod=y
+  [OK ] basic_anatomy_tooth GLM-4.6V         j1=P j2=f mod=y
+  [OK ] photo-intraoral-01 Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] blausen_0864_toothdecay Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] blausen_0864_toothdecay GLM-4.6V         j1=P j2=f mod=y
+  [OK ] blausen_0864_toothdecay Llama 4 Maverick j1=P j2=f mod=y
   [OK ] blausen_0864_toothdecay Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] blausen_0864_toothdecay_croatian_hr GPT-5.5          j1=f j2=f mod=y
+  [OK ] blausen_0864_toothdecay GLM-4.6V         j1=P j2=P mod=y
   [OK ] blausen_0864_toothdecay_croatian_hr Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] blausen_0864_toothdecay_croatian_hr Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] blausen_0864_toothdecay_croatian_hr Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] basic_anatomy_tooth Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] blausen_0864_toothdecay_croatian_hr GPT-5.5          j1=f j2=f mod=y
+  [OK ] blausen_0864_toothdecay_croatian_hr Llama 4 Maverick j1=P j2=P mod=y
+  [OK ] blausen_0864_toothdecay_croatian_hr Gemini 3.1 Pro   j1=f j2=f mod=y
   [OK ] blausen_0864_toothdecay_croatian_hr GLM-4.6V         j1=P j2=P mod=y
   [OK ] access_toothbrush_for_use_with_mini_dental Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] access_toothbrush_for_use_with_mini_dental GPT-5.5          j1=f j2=f mod=y
+  [OK ] access_toothbrush_for_use_with_mini_dental Gemini 3.1 Pro   j1=f j2=f mod=y
   [OK ] blausen_0864_toothdecay_croatian_hr Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] access_toothbrush_for_use_with_mini_dental Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] access_toothbrush_for_use_with_mini_dental Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] full_implant_restoration GPT-5.5          j1=P j2=P mod=y
-  [OK ] full_implant_restoration Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] access_toothbrush_for_use_with_mini_dental Llama 4 Maverick j1=f j2=f mod=y
   [OK ] access_toothbrush_for_use_with_mini_dental GLM-4.6V         j1=f j2=f mod=y
-  [OK ] full_implant_restoration Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] full_implant_restoration Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] basic_anatomy_tooth Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] full_implant_restoration Llama 4 Maverick j1=f j2=f mod=y
   [OK ] full_implant_restoration GLM-4.6V         j1=f j2=f mod=y
-  [OK ] 110216ek08         GPT-5.5          j1=P j2=f mod=y
+  [OK ] full_implant_restoration Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] 110216ek08         Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] access_toothbrush_for_use_with_mini_dental Qwen3.7 Plus     j1=f j2=f mod=y
-  [OK ] full_implant_restoration Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] 110216ek08         Gemini 3.1 Pro   j1=P j2=f mod=y
-  [OK ] 110216ek08         Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] 110216ek08         GPT-5.5          j1=P j2=P mod=y
+  [OK ] 110216ek08         Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] 110216ek08         Llama 4 Maverick j1=P j2=P mod=y
+  [OK ] full_implant_restoration Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] 110216ek08         GLM-4.6V         j1=f j2=f mod=y
   [OK ] zahnfehlstellung_angle_klasse_ii_1 Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] zahnfehlstellung_angle_klasse_ii_1 Gemini 3.1 Pro   j1=P j2=f mod=y
-  [OK ] zahnfehlstellung_angle_klasse_ii_1 GPT-5.5          j1=f j2=f mod=y
-  [OK ] zahnfehlstellung_angle_klasse_ii_1 Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] zahnfehlstellung_angle_klasse_ii_1 GPT-5.5          j1=P j2=P mod=y
   [OK ] 110216ek08         Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] aphthous_stomatitis_in_the_mouth GPT-5.5          j1=P j2=P mod=y
+  [OK ] zahnfehlstellung_angle_klasse_ii_1 Gemini 3.1 Pro   j1=P j2=f mod=y
+  [OK ] zahnfehlstellung_angle_klasse_ii_1 Llama 4 Maverick j1=f j2=f mod=y
   [OK ] zahnfehlstellung_angle_klasse_ii_1 GLM-4.6V         j1=f j2=f mod=y
   [OK ] aphthous_stomatitis_in_the_mouth Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] aphthous_stomatitis_in_the_mouth GPT-5.5          j1=P j2=P mod=y
+  [OK ] access_toothbrush_for_use_with_mini_dental Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] aphthous_stomatitis_in_the_mouth Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] aphthous_stomatitis_in_the_mouth Llama 4 Maverick j1=f j2=P mod=y
+  [OK ] aphthous_stomatitis_in_the_mouth Llama 4 Maverick j1=f j2=f mod=y
   [OK ] aphthous_stomatitis_in_the_mouth GLM-4.6V         j1=P j2=f mod=y
-  [OK ] aphthous_stomatitis Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] aphthous_stomatitis GPT-5.5          j1=f j2=f mod=y
-  [OK ] aphthous_stomatitis_in_the_mouth Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] aphthous_stomatitis Gemini 3.1 Pro   j1=P j2=f mod=y
-  [OK ] aphthous_stomatitis Llama 4 Maverick j1=P j2=P mod=y
-  [OK ] zahnfehlstellung_angle_klasse_ii_1 Qwen3.7 Plus     j1=f j2=f mod=y
+  [ERR] aphthous_stomatitis Gemini 3.1 Pro   j1=f j2=f mod=n
+  [OK ] aphthous_stomatitis Claude Opus 4.8  j1=f j2=P mod=n
+  [OK ] aphthous_stomatitis_in_the_mouth Qwen3.7 Plus     j1=f j2=P mod=n
+  [OK ] zahnfehlstellung_angle_klasse_ii_1 Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] calculus_2         GPT-5.5          j1=P j2=P mod=y
+  [OK ] aphthous_stomatitis Llama 4 Maverick j1=P j2=P mod=y
   [OK ] aphthous_stomatitis GLM-4.6V         j1=f j2=f mod=y
   [OK ] calculus_2         Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] calculus_2         Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] calculus_2         Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] aphthous_stomatitis Qwen3.7 Plus     j1=P j2=f mod=y
-  [OK ] calculus_2         GLM-4.6V         j1=P j2=P mod=y
+  [OK ] calculus_2         Llama 4 Maverick j1=P j2=P mod=y
+  [OK ] calculus_2         GLM-4.6V         j1=f j2=f mod=y
+  [OK ] aphthous_stomatitis Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] mandibularanteriorcalculus GPT-5.5          j1=P j2=f mod=y
-  [OK ] mandibularanteriorcalculus Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] mandibularanteriorcalculus Claude Opus 4.8  j1=P j2=f mod=y
   [OK ] mandibularanteriorcalculus Gemini 3.1 Pro   j1=P j2=f mod=y
+  [ERR] calculus_2         Qwen3.7 Plus     j1=f j2=f mod=n
   [OK ] mandibularanteriorcalculus Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] mandibularanteriorcalculus GLM-4.6V         j1=f j2=f mod=y
-  [OK ] human_tooth_diagram_en GPT-5.5          j1=P j2=f mod=y
+  [OK ] human_tooth_diagram_en GPT-5.5          j1=P j2=P mod=y
   [OK ] human_tooth_diagram_en Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] mandibularanteriorcalculus GLM-4.6V         j1=f j2=f mod=y
   [OK ] human_tooth_diagram_en Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] calculus_2         Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] human_tooth_diagram_en Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] human_tooth_diagram_en GLM-4.6V         j1=P j2=P mod=y
+  [OK ] mandibularanteriorcalculus Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] human_tooth_diagram_en GLM-4.6V         j1=P j2=f mod=y
   [OK ] human_tooth_diagram_en Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] tooth_2_psf        Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] tooth_2_psf        GPT-5.5          j1=f j2=f mod=y
   [OK ] tooth_2_psf        Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] tooth_2_psf        Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] mandibularanteriorcalculus Qwen3.7 Plus     j1=P j2=f mod=y
-  [OK ] tooth_2_psf        GLM-4.6V         j1=f j2=f mod=y
   [OK ] tooth_section_numbered GPT-5.5          j1=P j2=f mod=y
-  [OK ] tooth_section_numbered Claude Opus 4.8  j1=P j2=f mod=y
-  [OK ] tooth_section_numbered Gemini 3.1 Pro   j1=P j2=f mod=y
+  [OK ] tooth_2_psf        GLM-4.6V         j1=f j2=f mod=y
+  [OK ] tooth_section_numbered Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] tooth_section_numbered Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] tooth_section_numbered Gemini 3.1 Pro   j1=P j2=f mod=y
+  [OK ] tooth_section_numbered GLM-4.6V         j1=f j2=f mod=y
   [OK ] deciduous_permanent_teeth GPT-5.5          j1=f j2=f mod=y
   [OK ] deciduous_permanent_teeth Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] tooth_section_numbered GLM-4.6V         j1=P j2=f mod=y
-  [OK ] tooth_section_numbered Qwen3.7 Plus     j1=f j2=P mod=y
   [OK ] tooth_2_psf        Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] deciduous_permanent_teeth Gemini 3.1 Pro   j1=P j2=f mod=y
+  [OK ] tooth_section_numbered Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] deciduous_permanent_teeth Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] deciduous_permanent_teeth Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] periodontal_ligament_normal_pocket_depth Claude Opus 4.8  j1=P j2=f mod=y
+  [OK ] periodontal_ligament_normal_pocket_depth GPT-5.5          j1=f j2=f mod=y
   [OK ] deciduous_permanent_teeth GLM-4.6V         j1=f j2=f mod=y
   [OK ] deciduous_permanent_teeth Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] periodontal_ligament_normal_pocket_depth GPT-5.5          j1=f j2=f mod=y
-  [OK ] periodontal_ligament_normal_pocket_depth Claude Opus 4.8  j1=P j2=f mod=y
   [OK ] periodontal_ligament_normal_pocket_depth Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] periodontal_ligament_normal_pocket_depth Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] periodontal_ligament_normal_pocket_depth GLM-4.6V         j1=f j2=f mod=y
+  [OK ] periodontal_ligament_normal_pocket_depth Llama 4 Maverick j1=P j2=f mod=y
+  [OK ] gingivitida        GPT-5.5          j1=f j2=f mod=y
   [OK ] gingivitida        Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] gingivitida        GPT-5.5          j1=P j2=P mod=y
-  [OK ] gingivitida        Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] periodontal_ligament_normal_pocket_depth GLM-4.6V         j1=f j2=f mod=y
   [OK ] gingivitida        Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] gingivitida        Gemini 3.1 Pro   j1=P j2=f mod=y
+  [OK ] periodontal_ligament_normal_pocket_depth Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] gingivitida        Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] smoothsurfacecaries02 GPT-5.5          j1=f j2=f mod=y
   [OK ] gingivitida        GLM-4.6V         j1=P j2=f mod=y
   [OK ] smoothsurfacecaries02 Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] gingivitida        Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] smoothsurfacecaries02 Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] periodontal_ligament_normal_pocket_depth Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] smoothsurfacecaries02 Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] smoothsurfacecaries02 Llama 4 Maverick j1=f j2=f mod=y
   [OK ] smoothsurfacecaries02 Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] smoothsurfacecaries02 GLM-4.6V         j1=f j2=f mod=y
+  [OK ] smoothsurfacecaries03 Gemini 3.1 Pro   j1=f j2=f mod=y
   [OK ] smoothsurfacecaries03 GPT-5.5          j1=P j2=f mod=y
   [OK ] smoothsurfacecaries03 Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] smoothsurfacecaries03 Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] smoothsurfacecaries03 Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] smoothsurfacecaries03 Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] smoothsurfacecaries04 GPT-5.5          j1=P j2=f mod=y
-  [OK ] smoothsurfacecaries03 GLM-4.6V         j1=f j2=f mod=y
+  [OK ] smoothsurfacecaries03 Llama 4 Maverick j1=f j2=f mod=y
   [OK ] smoothsurfacecaries04 Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] smoothsurfacecaries04 Llama 4 Maverick j1=f j2=f mod=y
   [OK ] smoothsurfacecaries04 Gemini 3.1 Pro   j1=P j2=f mod=y
-  [OK ] smoothsurfacecaries04 Qwen3.7 Plus     j1=P j2=f mod=y
+  [OK ] smoothsurfacecaries03 Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] smoothsurfacecaries03 GLM-4.6V         j1=f j2=f mod=y
+  [OK ] smoothsurfacecaries04 Llama 4 Maverick j1=f j2=f mod=y
   [OK ] blausen_0774_rootcanal GPT-5.5          j1=P j2=P mod=y
   [OK ] smoothsurfacecaries04 GLM-4.6V         j1=f j2=f mod=y
   [OK ] blausen_0774_rootcanal Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] smoothsurfacecaries04 Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] blausen_0774_rootcanal Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] blausen_0774_rootcanal Llama 4 Maverick j1=P j2=f mod=y
   [OK ] root_canal_illustration_molar GPT-5.5          j1=P j2=f mod=y
-  [OK ] blausen_0774_rootcanal Llama 4 Maverick j1=f j2=f mod=y
   [OK ] blausen_0774_rootcanal GLM-4.6V         j1=P j2=f mod=y
   [OK ] blausen_0774_rootcanal Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] root_canal_illustration_molar Claude Opus 4.8  j1=P j2=f mod=y
+  [OK ] root_canal_illustration_molar Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] root_canal_illustration_molar Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] root_canal_illustration_molar Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] root_canal_illustration_molar GLM-4.6V         j1=f j2=f mod=y
   [OK ] gray1005           Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] root_canal_illustration_molar GLM-4.6V         j1=f j2=f mod=y
+  [OK ] gray1005           Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] gray1005           GPT-5.5          j1=f j2=f mod=y
-  [OK ] gray1005           Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] gray1005           Llama 4 Maverick j1=f j2=f mod=y
   [OK ] gray1005           GLM-4.6V         j1=f j2=f mod=y
-  [OK ] root_canal_illustration_molar Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] human_tooth_ku     GPT-5.5          j1=f j2=f mod=y
+  [OK ] root_canal_illustration_molar Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] human_tooth_ku     Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] human_tooth_ku     GPT-5.5          j1=f j2=f mod=y
   [OK ] human_tooth_ku     Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] human_tooth_ku     Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] human_tooth_ku     Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] human_tooth_ku     GLM-4.6V         j1=P j2=f mod=y
   [OK ] leukoplakia        Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] human_tooth_ku     Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] leukoplakia        GPT-5.5          j1=f j2=f mod=y
-  [OK ] gray1005           Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] human_tooth_ku     GLM-4.6V         j1=P j2=f mod=y
   [OK ] leukoplakia        Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] gray1005           Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] leukoplakia        Llama 4 Maverick j1=f j2=f mod=y
   [OK ] leukoplakia        GLM-4.6V         j1=f j2=f mod=y
-  [OK ] nih_doc_16_homogenousleukoplakia GPT-5.5          j1=P j2=P mod=y
-  [OK ] nih_doc_16_homogenousleukoplakia Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] leukoplakia        Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] nih_doc_16_homogenousleukoplakia Claude Opus 4.8  j1=P j2=f mod=y
+  [OK ] nih_doc_16_homogenousleukoplakia GPT-5.5          j1=P j2=f mod=y
+  [OK ] nih_doc_16_homogenousleukoplakia Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] nih_doc_16_homogenousleukoplakia Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] nih_doc_16_homogenousleukoplakia Gemini 3.1 Pro   j1=f j2=f mod=y
   [OK ] nih_doc_16_homogenousleukoplakia GLM-4.6V         j1=f j2=f mod=y
-  [OK ] caries_periodontal_disease_calculus GPT-5.5          j1=P j2=P mod=y
   [OK ] caries_periodontal_disease_calculus Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] caries_periodontal_disease_calculus Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] caries_periodontal_disease_calculus GPT-5.5          j1=P j2=P mod=y
   [OK ] caries_periodontal_disease_calculus Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] caries_periodontal_disease_calculus GLM-4.6V         j1=f j2=f mod=y
-  [OK ] amalgam            Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] amalgam            GPT-5.5          j1=P j2=f mod=y
+  [OK ] leukoplakia        Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] caries_periodontal_disease_calculus Llama 4 Maverick j1=f j2=f mod=y
   [OK ] amalgam            Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] nih_doc_16_homogenousleukoplakia Qwen3.7 Plus     j1=f j2=f mod=y
-  [OK ] caries_periodontal_disease_calculus Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] caries_periodontal_disease_calculus GLM-4.6V         j1=f j2=f mod=y
+  [OK ] amalgam            GPT-5.5          j1=f j2=f mod=y
+  [OK ] caries_periodontal_disease_calculus Qwen3.7 Plus     j1=P j2=f mod=y
+  [OK ] amalgam            Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] amalgam            Llama 4 Maverick j1=P j2=P mod=y
+  [OK ] nih_doc_16_homogenousleukoplakia Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] filling_amalgam    Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] amalgam            GLM-4.6V         j1=f j2=f mod=y
+  [OK ] amalgam            GLM-4.6V         j1=P j2=f mod=y
   [OK ] filling_amalgam    GPT-5.5          j1=f j2=f mod=y
   [OK ] filling_amalgam    Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] filling_amalgam    Llama 4 Maverick j1=P j2=P mod=y
+  [OK ] filling_amalgam    GLM-4.6V         j1=P j2=P mod=y
   [OK ] amalgam            Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] ferruleeffectdentistry GPT-5.5          j1=f j2=f mod=y
-  [OK ] filling_amalgam    GLM-4.6V         j1=P j2=P mod=y
-  [OK ] filling_amalgam    Llama 4 Maverick j1=f j2=f mod=y
   [OK ] ferruleeffectdentistry Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] ferruleeffectdentistry GLM-4.6V         j1=f j2=f mod=y
+  [OK ] ferruleeffectdentistry Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] filling_amalgam    Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] ferruleeffectdentistry Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] filling_amalgam    Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] ferruleeffectdentistry Gemini 3.1 Pro   j1=P j2=f mod=y
-  [OK ] runningroom        GPT-5.5          j1=f j2=f mod=n
-  [OK ] runningroom        Gemini 3.1 Pro   j1=f j2=f mod=n
+  [OK ] ferruleeffectdentistry GLM-4.6V         j1=f j2=f mod=y
   [OK ] runningroom        Claude Opus 4.8  j1=f j2=f mod=n
-  [OK ] runningroom        Llama 4 Maverick j1=f j2=f mod=n
-  [OK ] runningroom        GLM-4.6V         j1=f j2=f mod=n
-  [OK ] zahnimplantat      GPT-5.5          j1=f j2=f mod=y
-  [OK ] zahnimplantat      Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] runningroom        GPT-5.5          j1=f j2=f mod=n
   [OK ] ferruleeffectdentistry Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] zahnimplantat      Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] zahnimplantat      GLM-4.6V         j1=f j2=f mod=y
-  [OK ] zahnimplantat      Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] runningroom        Gemini 3.1 Pro   j1=f j2=f mod=n
+  [OK ] runningroom        Llama 4 Maverick j1=f j2=f mod=n
+  [OK ] zahnimplantat      Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] zahnimplantat      GPT-5.5          j1=f j2=P mod=y
   [OK ] runningroom        Qwen3.7 Plus     j1=f j2=f mod=n
-  [OK ] single_crown_implant GPT-5.5          j1=f j2=P mod=y
+  [OK ] runningroom        GLM-4.6V         j1=f j2=f mod=n
+  [OK ] zahnimplantat      Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] zahnimplantat      GLM-4.6V         j1=f j2=f mod=y
+  [OK ] zahnimplantat      Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] single_crown_implant GPT-5.5          j1=P j2=P mod=y
   [OK ] single_crown_implant Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] single_crown_implant Llama 4 Maverick j1=P j2=f mod=y
   [OK ] single_crown_implant Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] single_crown_implant Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] permanent_maxillary_teeth_by_rokaya_yahia_ GPT-5.5          j1=P j2=P mod=y
-  [OK ] single_crown_implant GLM-4.6V         j1=P j2=P mod=y
+  [OK ] single_crown_implant Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] zahnimplantat      Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] permanent_maxillary_teeth_by_rokaya_yahia_ Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] permanent_maxillary_teeth_by_rokaya_yahia_ GPT-5.5          j1=P j2=f mod=y
+  [OK ] single_crown_implant GLM-4.6V         j1=P j2=f mod=y
+  [OK ] single_crown_implant Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] permanent_maxillary_teeth_by_rokaya_yahia_ Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] teeth_types_colored GPT-5.5          j1=P j2=f mod=y
-  [OK ] permanent_maxillary_teeth_by_rokaya_yahia_ GLM-4.6V         j1=f j2=f mod=y
-  [OK ] teeth_types_colored Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] permanent_maxillary_teeth_by_rokaya_yahia_ Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] teeth_types_colored Llama 4 Maverick j1=P j2=P mod=y
-  [OK ] zahnimplantat      Qwen3.7 Plus     j1=f j2=P mod=y
+  [OK ] teeth_types_colored Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] teeth_types_colored GPT-5.5          j1=f j2=f mod=y
+  [OK ] permanent_maxillary_teeth_by_rokaya_yahia_ GLM-4.6V         j1=f j2=f mod=y
   [OK ] teeth_types_colored Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] teeth_types_colored GLM-4.6V         j1=f j2=f mod=y
-  [OK ] permanent_maxillary_teeth_by_rokaya_yahia_ Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] teeth_types_colored Llama 4 Maverick j1=P j2=P mod=y
   [OK ] depiction_of_a_periodontitis_patient GPT-5.5          j1=P j2=P mod=y
-  [OK ] depiction_of_a_periodontitis_patient Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] teeth_types_colored GLM-4.6V         j1=f j2=f mod=y
   [OK ] depiction_of_a_periodontitis_patient Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] depiction_of_a_periodontitis_patient Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] permanent_maxillary_teeth_by_rokaya_yahia_ Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] depiction_of_a_periodontitis_patient Gemini 3.1 Pro   j1=f j2=f mod=y
   [OK ] teeth_types_colored Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] depiction_of_a_periodontitis_patient Llama 4 Maverick j1=f j2=f mod=y
   [OK ] depiction_of_a_periodontitis_patient Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] depiction_of_a_periodontitis_patient GLM-4.6V         j1=f j2=f mod=y
-  [OK ] moderate_periodontitis Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] moderate_periodontitis GPT-5.5          j1=f j2=f mod=y
+  [OK ] moderate_periodontitis GPT-5.5          j1=P j2=f mod=y
+  [OK ] moderate_periodontitis Claude Opus 4.8  j1=P j2=f mod=y
   [OK ] moderate_periodontitis Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] moderate_periodontitis Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] moderate_periodontitis GLM-4.6V         j1=f j2=f mod=y
+  [OK ] moderate_periodontitis Llama 4 Maverick j1=f j2=f mod=y
   [OK ] periodontal_terms_diagram_gingival_recessi GPT-5.5          j1=P j2=P mod=y
   [OK ] periodontal_terms_diagram_gingival_recessi Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] periodontal_terms_diagram_gingival_recessi Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] moderate_periodontitis GLM-4.6V         j1=f j2=f mod=y
+  [OK ] moderate_periodontitis Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] periodontal_terms_diagram_gingival_recessi Llama 4 Maverick j1=f j2=f mod=y
   [OK ] periodontal_terms_diagram_gingival_recessi GLM-4.6V         j1=f j2=f mod=y
-  [OK ] gingival_sulcus    GPT-5.5          j1=P j2=f mod=y
-  [OK ] gingival_sulcus    Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] moderate_periodontitis Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] gingival_sulcus    Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] gingival_sulcus    GPT-5.5          j1=P j2=P mod=y
+  [OK ] gingival_sulcus    Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] periodontal_terms_diagram_gingival_recessi Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] gingival_sulcus    Llama 4 Maverick j1=f j2=f mod=y
   [OK ] gingival_sulcus    GLM-4.6V         j1=f j2=f mod=y
-  [OK ] line_diagram_of_gingivitis GPT-5.5          j1=f j2=f mod=y
   [OK ] line_diagram_of_gingivitis Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] line_diagram_of_gingivitis GPT-5.5          j1=P j2=f mod=y
   [OK ] line_diagram_of_gingivitis Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] line_diagram_of_gingivitis Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] smoothsurfacecaries05 GPT-5.5          j1=P j2=f mod=y
+  [OK ] smoothsurfacecaries05 GPT-5.5          j1=P j2=P mod=y
   [OK ] line_diagram_of_gingivitis GLM-4.6V         j1=f j2=f mod=y
-  [OK ] smoothsurfacecaries05 Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] smoothsurfacecaries05 Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] line_diagram_of_gingivitis Qwen3.7 Plus     j1=f j2=f mod=y
-  [OK ] gingival_sulcus    Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] smoothsurfacecaries05 Claude Opus 4.8  j1=P j2=f mod=y
+  [OK ] smoothsurfacecaries05 Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] smoothsurfacecaries05 Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] smoothsurfacecaries05 GLM-4.6V         j1=P j2=f mod=y
-  [OK ] blausen_0864_toothdecay_ar Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] line_diagram_of_gingivitis Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] smoothsurfacecaries05 GLM-4.6V         j1=f j2=f mod=y
   [OK ] blausen_0864_toothdecay_ar GPT-5.5          j1=P j2=f mod=y
-  [OK ] smoothsurfacecaries05 Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] blausen_0864_toothdecay_ar Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] blausen_0864_toothdecay_ar Gemini 3.1 Pro   j1=P j2=f mod=y
+  [OK ] smoothsurfacecaries05 Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] blausen_0864_toothdecay_ar Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] diagram_of_tooth_erosion GPT-5.5          j1=P j2=P mod=y
   [OK ] diagram_of_tooth_erosion Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] blausen_0864_toothdecay_ar GLM-4.6V         j1=f j2=f mod=y
+  [OK ] blausen_0864_toothdecay_ar Qwen3.7 Plus     j1=P j2=f mod=y
+  [OK ] diagram_of_tooth_erosion GPT-5.5          j1=P j2=P mod=y
+  [OK ] gingival_sulcus    Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] diagram_of_tooth_erosion Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] blausen_0864_toothdecay_ar Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] diagram_of_tooth_erosion Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] diagram_of_tooth_erosion Llama 4 Maverick j1=P j2=P mod=y
   [OK ] overjet_overbite   GPT-5.5          j1=P j2=P mod=y
-  [OK ] diagram_of_tooth_erosion Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] diagram_of_tooth_erosion GLM-4.6V         j1=P j2=P mod=y
-  [OK ] overjet_overbite   Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] overjet_overbite   Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] diagram_of_tooth_erosion GLM-4.6V         j1=P j2=P mod=y
+  [OK ] overjet_overbite   Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] diagram_of_tooth_erosion Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] overjet_overbite   Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] overjet_overbite   GLM-4.6V         j1=f j2=f mod=y
-  [OK ] sever_crowding_of_teeth Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] overjet_overbite   GLM-4.6V         j1=P j2=P mod=y
   [OK ] sever_crowding_of_teeth GPT-5.5          j1=f j2=f mod=y
   [OK ] sever_crowding_of_teeth Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] sever_crowding_of_teeth Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] sever_crowding_of_teeth Llama 4 Maverick j1=f j2=f mod=y
   [OK ] sever_crowding_of_teeth GLM-4.6V         j1=f j2=f mod=y
   [OK ] dental_restoration GPT-5.5          j1=f j2=f mod=y
   [OK ] dental_restoration Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] dental_restoration Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] dental_restoration Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] sever_crowding_of_teeth Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] dental_restoration Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] sever_crowding_of_teeth Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] dental_restoration GLM-4.6V         j1=f j2=f mod=y
-  [OK ] zmo0594_001        GPT-5.5          j1=f j2=f mod=y
+  [OK ] zmo0594_001        GPT-5.5          j1=P j2=P mod=y
   [OK ] zmo0594_001        Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] zmo0594_001        Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] zmo0594_001        Llama 4 Maverick j1=f j2=f mod=y
   [OK ] overjet_overbite   Qwen3.7 Plus     j1=f j2=f mod=y
-  [OK ] zmo0594_001        GLM-4.6V         j1=f j2=f mod=y
-  [OK ] zmo0594_001        Qwen3.7 Plus     j1=f j2=f mod=y
-  [OK ] dental_restoration Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] zmo0594_001        Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] zmo0594_001        Llama 4 Maverick j1=P j2=f mod=y
   [OK ] zmo0594_006        GPT-5.5          j1=f j2=f mod=y
+  [OK ] zmo0594_001        GLM-4.6V         j1=P j2=P mod=y
+  [OK ] dental_restoration Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] zmo0594_006        Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] zmo0594_006        Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] dental_quadrants   Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] zmo0594_006        GLM-4.6V         j1=f j2=f mod=y
-  [OK ] dental_quadrants   GPT-5.5          j1=P j2=P mod=y
+  [OK ] zmo0594_006        Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] zmo0594_006        Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] dental_quadrants   GPT-5.5          j1=P j2=P mod=y
+  [OK ] zmo0594_006        GLM-4.6V         j1=f j2=f mod=y
+  [OK ] dental_quadrants   Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] dental_quadrants   Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] dental_quadrants   Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] dental_quadrants   GLM-4.6V         j1=P j2=f mod=y
-  [OK ] diagram_illustrating_coronal_and_apical_fo GPT-5.5          j1=P j2=f mod=y
-  [OK ] diagram_illustrating_coronal_and_apical_fo Claude Opus 4.8  j1=P j2=f mod=y
+  [OK ] zmo0594_001        Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] dental_quadrants   Llama 4 Maverick j1=P j2=P mod=y
+  [OK ] dental_quadrants   GLM-4.6V         j1=P j2=P mod=y
   [OK ] zmo0594_006        Qwen3.7 Plus     j1=f j2=f mod=y
-  [OK ] diagram_illustrating_coronal_and_apical_fo Gemini 3.1 Pro   j1=P j2=f mod=y
-  [OK ] diagram_illustrating_coronal_and_apical_fo Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] diagram_illustrating_coronal_and_apical_fo Qwen3.7 Plus     j1=P j2=f mod=y
-  [OK ] suunad             GPT-5.5          j1=f j2=f mod=y
+  [OK ] diagram_illustrating_coronal_and_apical_fo Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] diagram_illustrating_coronal_and_apical_fo GPT-5.5          j1=P j2=f mod=y
+  [OK ] diagram_illustrating_coronal_and_apical_fo Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] diagram_illustrating_coronal_and_apical_fo Claude Opus 4.8  j1=P j2=f mod=y
+  [OK ] suunad             GPT-5.5          j1=P j2=P mod=y
   [OK ] suunad             Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] diagram_illustrating_coronal_and_apical_fo GLM-4.6V         j1=P j2=f mod=y
-  [OK ] dental_quadrants   Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] suunad             Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] dental_quadrants   Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] diagram_illustrating_coronal_and_apical_fo Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] suunad             Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] suunad             GLM-4.6V         j1=P j2=P mod=y
-  [OK ] tooth_picturewlabels GPT-5.5          j1=P j2=P mod=y
-  [OK ] suunad             Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] tooth_picturewlabels Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] suunad             GLM-4.6V         j1=P j2=f mod=y
+  [OK ] tooth_picturewlabels GPT-5.5          j1=P j2=f mod=y
+  [OK ] suunad             Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] tooth_picturewlabels Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] tooth_picturewlabels Llama 4 Maverick j1=f j2=f mod=y
   [OK ] tooth_picturewlabels GLM-4.6V         j1=P j2=f mod=y
   [OK ] acute_necrotising_ulcerative_gingivitis GPT-5.5          j1=f j2=f mod=y
-  [OK ] acute_necrotising_ulcerative_gingivitis Claude Opus 4.8  j1=P j2=f mod=y
-  [OK ] acute_necrotising_ulcerative_gingivitis Llama 4 Maverick j1=f j2=f mod=y
   [OK ] tooth_picturewlabels Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] acute_necrotising_ulcerative_gingivitis Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] acute_necrotising_ulcerative_gingivitis Llama 4 Maverick j1=f j2=f mod=y
   [OK ] acute_necrotising_ulcerative_gingivitis Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] dental_caries_cavity_2_cropped GPT-5.5          j1=P j2=P mod=y
   [OK ] dental_caries_cavity_2_cropped Claude Opus 4.8  j1=P j2=f mod=y
-  [OK ] dental_caries_cavity_2_cropped Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] dental_caries_cavity_2_cropped GPT-5.5          j1=P j2=f mod=y
   [OK ] acute_necrotising_ulcerative_gingivitis GLM-4.6V         j1=f j2=f mod=y
-  [OK ] dental_caries_cavity_2_cropped Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] dental_caries_cavity_2_cropped Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] acute_necrotising_ulcerative_gingivitis Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] dental_caries_cavity_2_cropped Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] dental_caries_cavity_1 GPT-5.5          j1=P j2=P mod=y
   [OK ] dental_caries_cavity_2_cropped Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] dental_caries_cavity_2_cropped GLM-4.6V         j1=f j2=f mod=y
-  [OK ] dental_caries_cavity_1 GPT-5.5          j1=f j2=P mod=y
   [OK ] dental_caries_cavity_1 Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] dental_caries_cavity_2_cropped GLM-4.6V         j1=f j2=f mod=y
   [OK ] dental_caries_cavity_1 Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] alveolprog         GPT-5.5          j1=f j2=f mod=y
-  [OK ] dental_caries_cavity_1 Llama 4 Maverick j1=P j2=f mod=y
   [OK ] dental_caries_cavity_1 GLM-4.6V         j1=P j2=P mod=y
-  [OK ] alveolprog         Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] dental_caries_cavity_1 Llama 4 Maverick j1=P j2=f mod=y
+  [OK ] alveolprog         GPT-5.5          j1=f j2=f mod=y
   [OK ] alveolprog         Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] dental_caries_cavity_1 Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] alveolprog         Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] erosive_lichen_planus GPT-5.5          j1=f j2=f mod=y
+  [OK ] alveolprog         Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] dental_caries_cavity_1 Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] alveolprog         GLM-4.6V         j1=f j2=f mod=y
+  [OK ] erosive_lichen_planus GPT-5.5          j1=f j2=f mod=y
   [OK ] erosive_lichen_planus Gemini 3.1 Pro   j1=f j2=f mod=y
   [OK ] erosive_lichen_planus Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] erosive_lichen_planus Llama 4 Maverick j1=f j2=f mod=y
   [OK ] erosive_lichen_planus GLM-4.6V         j1=f j2=f mod=y
-  [OK ] lichen_planus_fig7 GPT-5.5          j1=f j2=f mod=y
-  [OK ] lichen_planus_fig7 Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] lichen_planus_fig7 Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] lichen_planus_fig7 Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] alveolprog         Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] lichen_planus_fig7 GPT-5.5          j1=f j2=f mod=y
+  [OK ] lichen_planus_fig7 Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] lichen_planus_fig7 Llama 4 Maverick j1=f j2=f mod=y
   [OK ] lichen_planus_fig7 GLM-4.6V         j1=f j2=f mod=y
   [OK ] erosive_lichen_planus Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] herpes_blisters_on_lips_in_a_47_year_old_w GPT-5.5          j1=f j2=f mod=y
-  [OK ] herpes_blisters_on_lips_in_a_47_year_old_w Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] herpes_blisters_on_lips_in_a_47_year_old_w Gemini 3.1 Pro   j1=f j2=f mod=y
   [OK ] herpes_blisters_on_lips_in_a_47_year_old_w Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] herpes_blisters_on_lips_in_a_47_year_old_w Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] herpes_blisters_on_lips_in_a_47_year_old_w GLM-4.6V         j1=f j2=f mod=y
-  [OK ] bellingham_fluorosis_3 Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] bellingham_fluorosis_3 GPT-5.5          j1=f j2=f mod=y
+  [OK ] herpes_blisters_on_lips_in_a_47_year_old_w Gemini 3.1 Pro   j1=f j2=f mod=y
   [OK ] lichen_planus_fig7 Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] bellingham_fluorosis_3 Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] bellingham_fluorosis_3 GPT-5.5          j1=P j2=P mod=y
   [OK ] bellingham_fluorosis_3 Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] bellingham_fluorosis_3 Gemini 3.1 Pro   j1=P j2=f mod=y
+  [OK ] bellingham_fluorosis_3 Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] herpes_blisters_on_lips_in_a_47_year_old_w Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] nankali_post_a_fractured_tooth GPT-5.5          j1=f j2=f mod=y
   [OK ] bellingham_fluorosis_3 GLM-4.6V         j1=f j2=f mod=y
-  [OK ] nankali_post_a_fractured_tooth GPT-5.5          j1=P j2=f mod=y
   [OK ] nankali_post_a_fractured_tooth Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] nankali_post_a_fractured_tooth Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] bellingham_fluorosis_3 Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] nankali_post_a_fractured_tooth Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] bellingham_fluorosis_3 Qwen3.7 Plus     j1=P j2=f mod=y
+  [OK ] nankali_post_a_fractured_tooth Llama 4 Maverick j1=f j2=f mod=y
   [OK ] nankali_post_a_fractured_tooth GLM-4.6V         j1=f j2=f mod=y
-  [OK ] wortel_fractuur    GPT-5.5          j1=f j2=f mod=y
+  [OK ] wortel_fractuur    GPT-5.5          j1=P j2=f mod=y
   [OK ] wortel_fractuur    Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] wortel_fractuur    Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] wortel_fractuur    Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] wortel_fractuur    Llama 4 Maverick j1=f j2=f mod=y
   [OK ] wortel_fractuur    GLM-4.6V         j1=f j2=f mod=y
-  [OK ] prummelklammer     Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] prummelklammer     GPT-5.5          j1=f j2=f mod=y
-  [OK ] prummelklammer     Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] prummelklammer     Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] prummelklammer     Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] prummelklammer     Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] wortel_fractuur    Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] prummelklammer     GLM-4.6V         j1=f j2=f mod=y
+  [OK ] wortel_fractuur    Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] detached_dental_crown_flat_front Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] nankali_post_a_fractured_tooth Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] detached_dental_crown_flat_front GPT-5.5          j1=f j2=f mod=y
-  [OK ] detached_dental_crown_flat_front Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] detached_dental_crown_flat_front Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] detached_dental_crown_flat_front GLM-4.6V         j1=f j2=f mod=y
-  [OK ] treatment_steps_for_feldspathic_vm9_porcel GPT-5.5          j1=f j2=f mod=y
+  [OK ] detached_dental_crown_flat_front Gemini 3.1 Pro   j1=P j2=f mod=y
+  [OK ] prummelklammer     Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] nankali_post_a_fractured_tooth Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] treatment_steps_for_feldspathic_vm9_porcel Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] detached_dental_crown_flat_front GLM-4.6V         j1=f j2=f mod=y
+  [OK ] treatment_steps_for_feldspathic_vm9_porcel GPT-5.5          j1=P j2=P mod=y
+  [OK ] detached_dental_crown_flat_front Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] treatment_steps_for_feldspathic_vm9_porcel Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] detached_dental_crown_flat_front Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] treatment_steps_for_feldspathic_vm9_porcel Llama 4 Maverick j1=f j2=f mod=y
   [OK ] temporomandibular_joint_number GPT-5.5          j1=P j2=f mod=y
   [OK ] temporomandibular_joint_number Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] temporomandibular_joint_number Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] treatment_steps_for_feldspathic_vm9_porcel GLM-4.6V         j1=f j2=f mod=y
-  [OK ] treatment_steps_for_feldspathic_vm9_porcel Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] temporomandibular_joint_number Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] temporomandibular_joint_number Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] temporomandibular_joint_number GLM-4.6V         j1=P j2=P mod=y
-  [OK ] prummelklammer     Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] treatment_steps_for_feldspathic_vm9_porcel Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] eb1911_mouth_and_salivary_glands GPT-5.5          j1=P j2=P mod=y
   [OK ] eb1911_mouth_and_salivary_glands Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] temporomandibular_joint_number GLM-4.6V         j1=P j2=P mod=y
   [OK ] eb1911_mouth_and_salivary_glands Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] eb1911_mouth_and_salivary_glands Llama 4 Maverick j1=P j2=f mod=y
-  [OK ] eb1911_mouth_and_salivary_glands Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] eb1911_mouth_and_salivary_glands GLM-4.6V         j1=P j2=P mod=y
+  [OK ] eb1911_mouth_and_salivary_glands Llama 4 Maverick j1=P j2=f mod=y
   [OK ] geographic_tongue  GPT-5.5          j1=P j2=P mod=y
+  [OK ] eb1911_mouth_and_salivary_glands Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] geographic_tongue  Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] geographic_tongue  Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] geographic_tongue  Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] temporomandibular_joint_number Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] geographic_tongue  GLM-4.6V         j1=f j2=f mod=y
-  [OK ] mouth_parotid_gland_nih_bioart_654 GPT-5.5          j1=f j2=f mod=y
+  [OK ] geographic_tongue  Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] mouth_parotid_gland_nih_bioart_654 Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] geographic_tongue  Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] geographic_tongue  GLM-4.6V         j1=f j2=f mod=y
+  [OK ] mouth_parotid_gland_nih_bioart_654 GPT-5.5          j1=f j2=f mod=y
+  [OK ] mouth_parotid_gland_nih_bioart_654 Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] mouth_parotid_gland_nih_bioart_654 Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] mouth_parotid_gland_nih_bioart_654 Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] new_nanocomposites_may_mean_more_durable_t Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] new_nanocomposites_may_mean_more_durable_t GPT-5.5          j1=f j2=f mod=y
   [OK ] mouth_parotid_gland_nih_bioart_654 GLM-4.6V         j1=f j2=f mod=y
-  [OK ] new_nanocomposites_may_mean_more_durable_t Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] new_nanocomposites_may_mean_more_durable_t GPT-5.5          j1=f j2=f mod=y
+  [OK ] new_nanocomposites_may_mean_more_durable_t Claude Opus 4.8  j1=f j2=P mod=y
   [OK ] new_nanocomposites_may_mean_more_durable_t Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] mouth_parotid_gland_nih_bioart_654 Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] mouth_parotid_gland_nih_bioart_654 Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] new_nanocomposites_may_mean_more_durable_t GLM-4.6V         j1=f j2=f mod=y
+  [OK ] temporomandibular_joint_number Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] new_nanocomposites_may_mean_more_durable_t Gemini 3.1 Pro   j1=f j2=f mod=y
   [OK ] packable_composite_placed_in_a_lower_right GPT-5.5          j1=f j2=f mod=y
-  [OK ] new_nanocomposites_may_mean_more_durable_t Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] packable_composite_placed_in_a_lower_right Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] packable_composite_placed_in_a_lower_right Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] new_nanocomposites_may_mean_more_durable_t Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] packable_composite_placed_in_a_lower_right Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] packable_composite_placed_in_a_lower_right Gemini 3.1 Pro   j1=f j2=f mod=y
   [OK ] packable_composite_placed_in_a_lower_right GLM-4.6V         j1=f j2=f mod=y
-  [OK ] dental_veneer      Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] dental_veneer      Claude Opus 4.8  j1=P j2=P mod=y
   [OK ] dental_veneer      GPT-5.5          j1=f j2=f mod=y
+  [OK ] dental_veneer      Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] packable_composite_placed_in_a_lower_right Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] dental_veneer      Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] dental_veneer      GLM-4.6V         j1=f j2=f mod=y
+  [OK ] dental_veneer      GLM-4.6V         j1=P j2=f mod=y
   [OK ] pulp_cap           Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] pulp_cap           GPT-5.5          j1=f j2=f mod=y
   [OK ] pulp_cap           Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] dental_veneer      Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] pulp_cap           Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] connective_tissue_graft_to_implant Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] dental_veneer      Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] pulp_cap           GLM-4.6V         j1=f j2=f mod=y
-  [OK ] connective_tissue_graft_to_implant GPT-5.5          j1=f j2=f mod=y
-  [OK ] connective_tissue_graft_to_implant Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] connective_tissue_graft_to_implant Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] four_mandibular_implants_with_novaloc_abut GPT-5.5          j1=P j2=f mod=y
-  [OK ] connective_tissue_graft_to_implant GLM-4.6V         j1=f j2=f mod=y
   [OK ] pulp_cap           Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] connective_tissue_graft_to_implant Claude Opus 4.8  j1=P j2=f mod=y
+  [OK ] connective_tissue_graft_to_implant Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] connective_tissue_graft_to_implant GPT-5.5          j1=P j2=f mod=y
+  [OK ] connective_tissue_graft_to_implant Llama 4 Maverick j1=f j2=f mod=y
   [OK ] four_mandibular_implants_with_novaloc_abut Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] four_mandibular_implants_with_novaloc_abut Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] four_mandibular_implants_with_novaloc_abut GPT-5.5          j1=f j2=f mod=y
+  [OK ] connective_tissue_graft_to_implant GLM-4.6V         j1=f j2=f mod=y
+  [OK ] four_mandibular_implants_with_novaloc_abut Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] four_mandibular_implants_with_novaloc_abut Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] connective_tissue_graft_to_implant Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] examples_of_tooth_staining GPT-5.5          j1=P j2=P mod=y
   [OK ] four_mandibular_implants_with_novaloc_abut GLM-4.6V         j1=f j2=f mod=y
   [OK ] examples_of_tooth_staining Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] four_mandibular_implants_with_novaloc_abut Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] examples_of_tooth_staining GPT-5.5          j1=P j2=f mod=y
   [OK ] examples_of_tooth_staining Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] dens_evaginatus    GPT-5.5          j1=P j2=f mod=y
-  [OK ] examples_of_tooth_staining Gemini 3.1 Pro   j1=P j2=f mod=y
-  [OK ] dens_evaginatus    Claude Opus 4.8  j1=P j2=P mod=y
-  [ERR] dens_evaginatus    GLM-4.6V         j1=f j2=f mod=n
+  [OK ] examples_of_tooth_staining Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] four_mandibular_implants_with_novaloc_abut Qwen3.7 Plus     j1=P j2=P mod=y
   [OK ] examples_of_tooth_staining GLM-4.6V         j1=P j2=P mod=y
-  [OK ] dens_evaginatus    Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] examples_of_tooth_staining Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] dens_evaginatus    Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] dens_evaginatus    GPT-5.5          j1=P j2=f mod=y
+  [OK ] connective_tissue_graft_to_implant Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] dens_evaginatus    Gemini 3.1 Pro   j1=P j2=f mod=y
   [OK ] dens_evaginatus    Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] examples_of_tooth_staining Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] dens_evaginatus    GLM-4.6V         j1=f j2=f mod=y
+  [OK ] hyperdontia_genetically_inherited_developm Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] hyperdontia_genetically_inherited_developm Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] dens_evaginatus    Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] hyperdontia_genetically_inherited_developm GPT-5.5          j1=f j2=f mod=y
-  [OK ] hyperdontia_genetically_inherited_developm Llama 4 Maverick j1=f j2=f mod=y
   [OK ] hyperdontia_genetically_inherited_developm Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] hyperdontia_genetically_inherited_developm Claude Opus 4.8  j1=f j2=f mod=y
-  [OK ] maxillary_tori     Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] hyperdontia_genetically_inherited_developm GLM-4.6V         j1=f j2=f mod=y
+  [OK ] maxillary_tori     Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] maxillary_tori     Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] maxillary_tori     Llama 4 Maverick j1=f j2=f mod=y
   [OK ] maxillary_tori     GPT-5.5          j1=f j2=f mod=y
-  [OK ] maxillary_tori     GLM-4.6V         j1=f j2=f mod=y
   [OK ] hyperdontia_genetically_inherited_developm Qwen3.7 Plus     j1=f j2=f mod=y
-  [OK ] non_carious_cervical_lesion GPT-5.5          j1=f j2=f mod=y
+  [OK ] maxillary_tori     GLM-4.6V         j1=P j2=f mod=y
   [OK ] maxillary_tori     Qwen3.7 Plus     j1=f j2=f mod=y
-  [OK ] non_carious_cervical_lesion Claude Opus 4.8  j1=P j2=f mod=y
-  [OK ] non_carious_cervical_lesion Gemini 3.1 Pro   j1=f j2=f mod=y
+  [OK ] non_carious_cervical_lesion GPT-5.5          j1=f j2=f mod=y
+  [OK ] non_carious_cervical_lesion Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] non_carious_cervical_lesion Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] non_carious_cervical_lesion Gemini 3.1 Pro   j1=P j2=f mod=y
+  [OK ] non_carious_cervical_lesion GLM-4.6V         j1=f j2=f mod=y
   [OK ] periodontium       Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] periodontium       GPT-5.5          j1=P j2=f mod=y
-  [OK ] non_carious_cervical_lesion GLM-4.6V         j1=f j2=f mod=y
   [OK ] periodontium       Gemini 3.1 Pro   j1=P j2=f mod=y
-  [OK ] molar_relationship GPT-5.5          j1=P j2=P mod=y
-  [OK ] non_carious_cervical_lesion Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] periodontium       Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] molar_relationship Claude Opus 4.8  j1=f j2=P mod=y
-  [OK ] periodontium       GLM-4.6V         j1=P j2=f mod=y
-  [OK ] molar_relationship Gemini 3.1 Pro   j1=P j2=P mod=y
+  [OK ] molar_relationship GPT-5.5          j1=P j2=P mod=y
+  [OK ] molar_relationship Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] non_carious_cervical_lesion Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] molar_relationship Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] molar_relationship GLM-4.6V         j1=f j2=f mod=y
-  [OK ] molar_relationship Qwen3.7 Plus     j1=P j2=P mod=y
-  [OK ] periodontitis_01   GPT-5.5          j1=f j2=P mod=y
-  [OK ] periodontitis_01   Claude Opus 4.8  j1=f j2=f mod=y
+  [OK ] molar_relationship Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] periodontium       Qwen3.7 Plus     j1=f j2=f mod=y
-  [OK ] periodontitis_01   GLM-4.6V         j1=f j2=f mod=y
+  [OK ] periodontium       GLM-4.6V         j1=f j2=f mod=y
+  [OK ] molar_relationship GLM-4.6V         j1=P j2=P mod=y
+  [OK ] molar_relationship Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] periodontitis_01   Claude Opus 4.8  j1=f j2=f mod=y
   [OK ] periodontitis_01   Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] human_tooth_diagram_gu GPT-5.5          j1=P j2=P mod=y
+  [OK ] periodontitis_01   GPT-5.5          j1=f j2=f mod=y
+  [OK ] periodontitis_01   GLM-4.6V         j1=f j2=f mod=y
   [OK ] periodontitis_01   Llama 4 Maverick j1=f j2=f mod=y
   [OK ] human_tooth_diagram_gu Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] human_tooth_diagram_gu Llama 4 Maverick j1=f j2=f mod=y
+  [OK ] human_tooth_diagram_gu GPT-5.5          j1=f j2=f mod=y
   [OK ] human_tooth_diagram_gu Gemini 3.1 Pro   j1=f j2=f mod=y
-  [OK ] human_tooth_diagram_gu GLM-4.6V         j1=f j2=f mod=y
+  [OK ] human_tooth_diagram_gu Llama 4 Maverick j1=f j2=f mod=y
   [OK ] tooth_structure_and_dental_tissues_with_th GPT-5.5          j1=P j2=P mod=y
-  [OK ] periodontitis_01   Qwen3.7 Plus     j1=f j2=f mod=y
+  [OK ] human_tooth_diagram_gu GLM-4.6V         j1=f j2=f mod=y
   [OK ] tooth_structure_and_dental_tissues_with_th Claude Opus 4.8  j1=P j2=P mod=y
+  [OK ] periodontitis_01   Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] tooth_structure_and_dental_tissues_with_th Gemini 3.1 Pro   j1=P j2=P mod=y
   [OK ] tooth_structure_and_dental_tissues_with_th Llama 4 Maverick j1=f j2=f mod=y
-  [OK ] tooth_structure_and_dental_tissues_with_th Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] anat-01-control    GPT-5.5          j1=P j2=P mod=y
+  [OK ] tooth_structure_and_dental_tissues_with_th Qwen3.7 Plus     j1=P j2=f mod=y
   [OK ] tooth_structure_and_dental_tissues_with_th GLM-4.6V         j1=P j2=f mod=y
   [OK ] anat-01-control    Claude Opus 4.8  j1=P j2=P mod=y
-  [OK ] anat-01-control    Llama 4 Maverick j1=P j2=f mod=y
+  [OK ] human_tooth_diagram_gu Qwen3.7 Plus     j1=f j2=f mod=y
   [OK ] anat-01-control    Gemini 3.1 Pro   j1=P j2=P mod=y
-  [OK ] anat-01-control    GLM-4.6V         j1=P j2=P mod=y
-  [OK ] human_tooth_diagram_gu Qwen3.7 Plus     j1=P j2=P mod=y
+  [OK ] anat-01-control    Llama 4 Maverick j1=P j2=f mod=y
+  [OK ] anat-01-control    GLM-4.6V         j1=P j2=f mod=y
   [OK ] anat-01-control    Qwen3.7 Plus     j1=P j2=P mod=y
 
 ================ LEADERBOARD (primary judge, non-control) ================
 Model                Correct    Acc  Modality
-GPT-5.5              45/90      50%      99%
-Claude Opus 4.8      57/90      63%      99%
-Gemini 3.1 Pro       60/90      67%      99%
-Qwen3.7 Plus         54/90      60%      99%
-Llama 4 Maverick     21/90      23%      99%
-GLM-4.6V             27/90      30%      98%
+GPT-5.5              50/90      56%      99%
+Claude Opus 4.8      56/90      62%      98%
+Gemini 3.1 Pro       65/90      72%      98%
+Qwen3.7 Plus         53/90      59%      96%
+Llama 4 Maverick     25/90      28%      99%
+GLM-4.6V             29/90      32%      99%
 
 --- Dual-judge check (Claude Opus 4.8 vs GPT-5.5) ---
-verdict agreement: 83%   |   judge1 pass-rate 50%   judge2 pass-rate 35%
+verdict agreement: 82%   |   judge1 pass-rate 52%   judge2 pass-rate 36%
 
 --- Memorization control (original public image vs transformed copy) ---
 GPT-5.5            original=PASS   control=PASS
@@ -568,11 +568,11 @@ Llama 4 Maverick   original=PASS   control=PASS
 GLM-4.6V           original=PASS   control=PASS
 
 --- mild vs severe discrimination ---
-GPT-5.5            mild->moderate     severe->severe      
-Claude Opus 4.8    mild->none stated  severe->none stated 
-Gemini 3.1 Pro     mild->moderate     severe->moderate    
-Qwen3.7 Plus       mild->moderate     severe->severe      
-Llama 4 Maverick   mild->moderate     severe->moderate    
-GLM-4.6V           mild->none stated  severe->none stated 
+GPT-5.5            mild->moderate to severe severe->moderate-to-deep periodontal pocket
+Claude Opus 4.8    mild->none / indeterminate severe->none (no pathology, healthy biologic width)
+Gemini 3.1 Pro     mild->gingival enlargement / pseudopocket (not periodontitis severity) severe->moderate to severe periodontitis
+Qwen3.7 Plus       mild->None         severe->none        
+Llama 4 Maverick   mild->moderate     severe->advanced/severe
+GLM-4.6V           mild->mild (gingivitis) severe->none        
 
 Full rows -> results/results.jsonl
