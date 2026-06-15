@@ -28,10 +28,11 @@ The whole method rests on two safeguards:
    model's description against the real answer. Their agreement is reported, so the
    absolute numbers are not taken on faith.
 
-On top of that, a **private control** measures training-data memorization: a
-transformed copy of a public image (flipped and cropped) keeps the clinical content
-identical while defeating exact-image recognition. A model that truly reads the image
-scores the same on the control; a model that memorized the original drops.
+On top of that, a **transformed public control item** (a flipped-and-cropped copy of one
+public image) is a sanity check on exact-image recognition: a model that reads the picture
+should score the same on the control. It is **not** a memorization study, a real one needs
+held-out, non-public images, so treat it as a control, not a measurement of training-data
+exposure.
 
 ## What it measures
 
@@ -39,8 +40,8 @@ scores the same on the control; a model that memorized the original drops.
   clinician's `must_identify` points and commit none of the `must_avoid` errors).
 - **Modality accuracy** — does the model know a diagram from a radiograph from a
   clinical photo.
-- **Memorization gap** — accuracy on the original public image vs the transformed
-  control.
+- **Transformed-control check** — accuracy on the original public image vs a
+  flipped/cropped copy (a sanity check, not a memorization metric).
 - **Judge agreement** — primary judge vs an independent second judge.
 
 ## First results (v1, clinician-reviewed)
@@ -58,7 +59,9 @@ Numbers are clinician-reviewed (2026-06-15) and judge-dependent (Cohen's kappa 0
 
 ## The lineup
 
-The latest vision-capable model of each family (verified image-capable on OpenRouter):
+Six vision-capable models, the strongest of each family on OpenRouter as of the run date
+(2026-06-14); pinned IDs and full run settings are in
+[`results/run_manifest.json`](results/run_manifest.json):
 
 | Model | OpenRouter id |
 |---|---|
@@ -81,7 +84,7 @@ export OPENROUTER_API_KEY=...        # one key reaches every model
 python src/run_vision_eval.py
 ```
 
-To rebuild the memorization control image or the credits file:
+To rebuild the transformed control image or the credits file:
 
 ```bash
 python tools/make_control.py
@@ -91,7 +94,7 @@ python tools/build_credits.py
 ## Status
 
 **v1, clinician-reviewed (2026-06-15).**
-The dataset is 90 dental images plus a memorization control, across ~16 buckets (anatomy,
+The dataset is 90 dental images plus a transformed control item, across ~16 buckets (anatomy,
 periodontics, caries, implants, endodontics, orthodontics/occlusion, oral pathology,
 restorative, tooth wear, developmental anomalies, mucosal lesions, trauma, TMJ/salivary,
 prosthetics). Diagrams and clinical photos only; radiographs are deliberately out of scope

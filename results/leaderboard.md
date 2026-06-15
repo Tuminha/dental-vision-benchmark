@@ -15,20 +15,20 @@
 
 _Top cluster, overlapping CIs: Gemini 3.1 Pro, Claude Opus 4.8, Qwen3.7 Plus. The robust finding is the task split (unlabeled clinical photos are hardest), not a single winner._
 
-## Sensitivity (excluding 8 weak/ambiguous items, n=82)
+## Sensitivity (excluding 10 weak/ambiguous items, n=80)
 
 | Model | Full | Clean |
 |---|---:|---:|
-| Gemini 3.1 Pro | 68% | 73% |
-| Claude Opus 4.8 | 62% | 65% |
+| Gemini 3.1 Pro | 68% | 72% |
+| Claude Opus 4.8 | 62% | 64% |
 | Qwen3.7 Plus | 60% | 66% |
-| GPT-5.5 | 51% | 55% |
-| GLM-4.6V | 31% | 34% |
-| Llama 4 Maverick | 26% | 28% |
+| GPT-5.5 | 51% | 56% |
+| GLM-4.6V | 31% | 35% |
+| Llama 4 Maverick | 26% | 29% |
 
 ## Judge agreement and self-preference check
 
-Verdict agreement 82%, Cohen's kappa 0.65. The primary (Opus) judge is more lenient than the secondary (GPT-5.5) judge for every model, but shows **no own-family preference**: Claude has the *smallest* primary-vs-secondary gap, not the largest.
+Verdict agreement 82%, Cohen's kappa 0.65. The primary (Opus) judge is more lenient than the secondary (GPT-5.5) judge for every model. There is **no own-family advantage in these pass-rate deltas** (Claude has the *smallest* primary-vs-secondary gap, not the largest), though a single-pass delta cannot rule out subtler bias.
 
 | Model | Primary (Opus) | Secondary (GPT-5.5) | Delta |
 |---|---:|---:|---:|

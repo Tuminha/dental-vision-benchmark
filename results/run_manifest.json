@@ -1,0 +1,31 @@
+{
+  "benchmark": "dental-vision-benchmark",
+  "version": "v1",
+  "run_date": "2026-06-14",
+  "clinician_signoff_date": "2026-06-15",
+  "results_from_commit": "81762b8",
+  "gateway": "OpenRouter (https://openrouter.ai/api/v1/chat/completions)",
+  "n_items": 90,
+  "control_items": 1,
+  "models": [
+    {"label": "GPT-5.5", "id": "openai/gpt-5.5"},
+    {"label": "Claude Opus 4.8", "id": "anthropic/claude-opus-4.8"},
+    {"label": "Gemini 3.1 Pro", "id": "google/gemini-3.1-pro-preview"},
+    {"label": "Qwen3.7 Plus", "id": "qwen/qwen3.7-plus"},
+    {"label": "Llama 4 Maverick", "id": "meta-llama/llama-4-maverick"},
+    {"label": "GLM-4.6V", "id": "z-ai/glm-4.6v"}
+  ],
+  "judges": {
+    "primary": "anthropic/claude-opus-4.8",
+    "secondary": "openai/gpt-5.5"
+  },
+  "settings": {
+    "temperature": 0,
+    "trials": 1,
+    "max_tokens_describe": 1500,
+    "tools_enabled": false,
+    "image_transport": "inline base64 data URI",
+    "scoring": "rubric pass/fail (all must_identify, no must_avoid)"
+  },
+  "notes": "Published leaderboard numbers are from the 2026-06-14 signed-off run, which applied severity as a pass-gate on 11 graded items. The harness was hardened afterward (severity moved to a soft metric; both judges' full verdicts + covered/violations + provider stored per row). Re-running under the corrected harness is pending OpenRouter credits (account hit 402 Payment Required). This file pins the model IDs because 'latest of each family' will go stale."
+}

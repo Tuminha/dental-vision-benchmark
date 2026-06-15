@@ -14,9 +14,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MODELS = ["GPT-5.5", "Claude Opus 4.8", "Gemini 3.1 Pro", "Qwen3.7 Plus", "Llama 4 Maverick", "GLM-4.6V"]
-WEAK = {"access_toothbrush_for_use_with_mini_dental", "leukoplakia", "runningroom", "dens_evaginatus",
-        "non_carious_cervical_lesion", "new_nanocomposites_may_mean_more_durable_t", "prummelklammer",
-        "packable_composite_placed_in_a_lower_right"}
+# Weak/ambiguous items are the canonical `"weak": true` flags in data/items.json, not hard-coded.
 
 
 def wilson(k, n, z=1.96):
@@ -36,6 +34,7 @@ def acc(rows):
 def main() -> None:
     r = [json.loads(l) for l in open(ROOT / "results/results.jsonl")]
     items = {x["id"]: x for x in json.loads((ROOT / "data/items.json").read_text())["items"]}
+    WEAK = {i for i, x in items.items() if x.get("weak")}
     lab_of = lambda x: items.get(x["item"], {}).get("labeled", False)
     sev_of = lambda x: items.get(x["item"], {}).get("expected_severity")
     m_ = [x for x in r if not x["is_control"]]
@@ -84,8 +83,9 @@ def main() -> None:
     kappa = (po - pe) / (1 - pe) if pe != 1 else 1.0
     L += ["## Judge agreement and self-preference check", "",
           f"Verdict agreement {100 * po:.0f}%, Cohen's kappa {kappa:.2f}. The primary (Opus) judge is more "
-          "lenient than the secondary (GPT-5.5) judge for every model, but shows **no own-family preference**: "
-          "Claude has the *smallest* primary-vs-secondary gap, not the largest.", "",
+          "lenient than the secondary (GPT-5.5) judge for every model. There is **no own-family advantage in "
+          "these pass-rate deltas** (Claude has the *smallest* primary-vs-secondary gap, not the largest), "
+          "though a single-pass delta cannot rule out subtler bias.", "",
           "| Model | Primary (Opus) | Secondary (GPT-5.5) | Delta |", "|---|---:|---:|---:|"]
     for m in rank:
         mr = [x for x in m_ if x["model"] == m and x["ok"]]

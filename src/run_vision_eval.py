@@ -135,7 +135,8 @@ def run_one(item: dict, label: str, mid: str) -> dict:
     row = {
         "item": item["id"], "modality": item["modality"], "labeled": item.get("labeled", False),
         "is_control": item.get("is_control", False), "expected_severity": item.get("expected_severity"),
-        "model": label, "ok": gen["ok"], "error": gen.get("error"), "latency_s": gen.get("latency_s"),
+        "model": label, "model_id": mid, "provider": gen.get("provider"),
+        "ok": gen["ok"], "error": gen.get("error"), "latency_s": gen.get("latency_s"),
         "correct": c1, "correct_judge2": c2, "judges_agree": c1 == c2,
         "covered": (v1 or {}).get("must_identify_covered"), "total": len(item["must_identify"]),
         "violations": (v1 or {}).get("must_avoid_violations"),

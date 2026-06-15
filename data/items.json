@@ -227,7 +227,8 @@
         "url": "https://commons.wikimedia.org/wiki/File%3AAccess_toothbrush_for_use_with_Mini_Dental_Implants.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Roderick Dailey"
-      }
+      },
+      "weak": true
     },
     {
       "id": "full_implant_restoration",
@@ -765,7 +766,8 @@
         "url": "https://commons.wikimedia.org/wiki/File%3ALeukoplakia.jpg",
         "license": "Public domain",
         "attribution": "Unknown photographer"
-      }
+      },
+      "weak": true
     },
     {
       "id": "nih_doc_16_homogenousleukoplakia",
@@ -916,7 +918,8 @@
         "url": "https://commons.wikimedia.org/wiki/File%3ARunningroom.png",
         "license": "Attribution",
         "attribution": "Drosenbach"
-      }
+      },
+      "weak": true
     },
     {
       "id": "zahnimplantat",
@@ -1742,7 +1745,8 @@
         "url": "https://commons.wikimedia.org/wiki/File%3APrummelKlammer.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Robert Prummel"
-      }
+      },
+      "weak": true
     },
     {
       "id": "detached_dental_crown_flat_front",
@@ -1794,7 +1798,8 @@
         "url": "https://commons.wikimedia.org/wiki/File%3ATreatment_Steps_for_Feldspathic_VM9_Porcelain_Crowns.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "AmirAttallah"
-      }
+      },
+      "weak": true
     },
     {
       "id": "temporomandibular_joint_number",
@@ -1924,7 +1929,8 @@
         "url": "https://commons.wikimedia.org/wiki/File%3ANew_Nanocomposites_May_Mean_More_Durable_Tooth_Fillings.jpg",
         "license": "Public domain",
         "attribution": "National Institute of Standards and Technology"
-      }
+      },
+      "weak": true
     },
     {
       "id": "packable_composite_placed_in_a_lower_right",
@@ -1950,7 +1956,8 @@
         "url": "https://commons.wikimedia.org/wiki/File%3APackable_composite_placed_in_a_lower_right_6_%28Simple_class_1%29.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Ibrahim nooh"
-      }
+      },
+      "weak": true
     },
     {
       "id": "dental_veneer",
@@ -1976,7 +1983,8 @@
         "url": "https://commons.wikimedia.org/wiki/File%3ADental_veneer.jpg",
         "license": "CC BY-SA 3.0",
         "attribution": "Clausgast"
-      }
+      },
+      "weak": true
     },
     {
       "id": "pulp_cap",
@@ -2107,7 +2115,8 @@
         "url": "https://commons.wikimedia.org/wiki/File%3ADens_evaginatus.jpg",
         "license": "CC BY-SA 4.0",
         "attribution": "Veeresh likhitha"
-      }
+      },
+      "weak": true
     },
     {
       "id": "hyperdontia_genetically_inherited_developm",
@@ -2185,7 +2194,8 @@
         "url": "https://commons.wikimedia.org/wiki/File%3ANon_carious_cervical_lesion.jpg",
         "license": "CC BY 4.0",
         "attribution": "Tarandeep kaur"
-      }
+      },
+      "weak": true
     },
     {
       "id": "periodontium",
