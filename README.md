@@ -4,7 +4,7 @@
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-3FB6B2.svg)
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3FB6B2.svg)
-![status](https://img.shields.io/badge/status-v0.2%20draft-E0A458.svg)
+![status](https://img.shields.io/badge/status-v1%20reviewed-3FB6B2.svg)
 
 Clinicians already show AI a clinical photo, a diagram, or a figure from a paper and
 ask "what is this?". The models sound confident, but no public benchmark measures which
@@ -45,15 +45,16 @@ scores the same on the control; a model that memorized the original drops.
 
 ## First results (v1, clinician-reviewed)
 
-First full run: 90 images, six models, two independent judges. Full table and caveats in
-[`results/leaderboard.md`](results/leaderboard.md). Top line:
+First full run: 90 images, six models, two independent judges. Full table with confidence
+intervals, task splits, a sensitivity pass and judge statistics in
+[`results/leaderboard.md`](results/leaderboard.md).
 
-- **Gemini 3.1 Pro leads (68%)**, with Claude Opus 4.8 (62%) and Qwen3.7 Plus (60%) close behind.
-- **GPT-5.5 sits mid-pack (51%)**, notably not the leader even though GPT topped the sibling *text* dental benchmark. Best-at-text is not best-at-vision.
+- **A top cluster, not a single winner:** Gemini 3.1 Pro (68%), Claude Opus 4.8 (62%) and Qwen3.7 Plus (60%) overlap within their 95% confidence intervals at n=90.
+- **GPT-5.5 sits a clear step below (51%)**, even though GPT topped the sibling *text* benchmark. Best-at-text is not best-at-vision.
 - **Llama 4 Maverick (26%) and GLM-4.6V (31%) trail.**
-- The real gap is **clinical photos**: every model reads diagrams better than real mouths, and the weak models collapse on photos (21-34%) while Gemini holds (68%).
+- **The headline is the task split, not the rank.** Every model reads diagrams and *labeled* images far better than *unlabeled clinical photos* (Gemini 78% labeled vs 59% unlabeled; the weaker models fall to ~20% on photos). Reading an unlabeled real mouth is the hard, unsolved part.
 
-Ground truth was clinician-reviewed (2026-06-15); the ranking is more robust than the absolute percentages at n=90.
+Numbers are clinician-reviewed (2026-06-15) and judge-dependent (Cohen's kappa 0.65); treat the ranking as a top cluster, not an exact order.
 
 ## The lineup
 

@@ -1,6 +1,6 @@
 # Ground-Truth Validation Log
 
-The ground truth for all 54 items is **clinician-authored DRAFT** (the diagram/photo rubrics were drafted by clinician-agents and need your sign-off). Until each item is confirmed the dataset is DRAFT and results are **not for citation**.
+The ground truth for the 90 items was **clinician-reviewed and signed off on 2026-06-15** (87 of 90 confirmed as authored, 3 corrected; see the Sign-off section at the end of this file). The rubrics below were first drafted by clinician-agents; this file is the per-item record of that review. The sections below were written incrementally as the dataset grew, so the item counts in older headings reflect earlier states; the dataset is 90 items.
 
 Full rubrics (`must_identify` / `must_avoid` / caption) live in `data/items.json`; this log is the sign-off checklist plus the items that need a judgment call.
 

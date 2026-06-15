@@ -93,15 +93,16 @@ def judge_prompt(item: dict, description: str) -> str:
         f"REQUIRED points (must_identify):\n{must_id}\n\n"
         f"ERRORS to penalize (must_avoid):\n{must_av}\n\n"
         f"MODEL DESCRIPTION TO GRADE:\n\"\"\"\n{description}\n\"\"\"\n\n"
-        "When an expected severity is given above, set severity_correct to true ONLY if the "
-        "description clearly conveys that exact severity; a different severity or 'not stated' "
-        "is false. Return ONLY a JSON object:\n"
+        "Severity is a soft metric, not a gate. If an expected severity is given above, set "
+        "severity_correct true when the description's stated grade is CONSISTENT with it "
+        "(accept reasonable equivalents, e.g. advanced ~ severe), false if it clearly conflicts "
+        "or none is stated, null if no expected severity applies. Return ONLY a JSON object:\n"
         "{\n"
         '  "must_identify_covered": <int>,\n'
         f'  "must_identify_total": {len(item["must_identify"])},\n'
         '  "must_avoid_violations": <int>,\n'
         '  "modality_correct": <true|false>,\n'
-        '  "severity_claimed": "<healthy|mild|moderate|severe|none stated>",\n'
+        '  "severity_claimed": "<the severity or grade the description states, or none>",\n'
         '  "severity_correct": <true|false|null>,\n'
         '  "notes": "<one short sentence>"\n'
         "}"
@@ -109,15 +110,13 @@ def judge_prompt(item: dict, description: str) -> str:
 
 
 def score(verdict: dict | None, item: dict) -> bool:
+    # Rubric pass only: all must_identify covered, no must_avoid violations. Severity is
+    # reported as a separate SOFT metric, not a hard gate -- the judge's coarse severity
+    # scale cannot reliably support exact-grade gating on subtle/compound labels.
     if not verdict:
         return False
     total = len(item["must_identify"])
-    ok = verdict.get("must_identify_covered", 0) >= total and verdict.get("must_avoid_violations", 99) == 0
-    if item.get("expected_severity"):
-        # When the image's whole point is a diagnosis/severity (mild vs severe perio),
-        # getting it wrong or not stating it fails the item, even if structures are right.
-        ok = ok and verdict.get("severity_correct") is True
-    return ok
+    return verdict.get("must_identify_covered", 0) >= total and verdict.get("must_avoid_violations", 99) == 0
 
 
 def grade(client: VisionClient, judge_id: str, item: dict, desc: str, img: str) -> dict | None:
@@ -134,13 +133,16 @@ def run_one(item: dict, label: str, mid: str) -> dict:
     v2 = grade(client, SECOND_JUDGE[1], item, desc, img) if gen["ok"] else None
     c1, c2 = score(v1, item), score(v2, item)
     row = {
-        "item": item["id"], "modality": item["modality"], "is_control": item.get("is_control", False),
+        "item": item["id"], "modality": item["modality"], "labeled": item.get("labeled", False),
+        "is_control": item.get("is_control", False), "expected_severity": item.get("expected_severity"),
         "model": label, "ok": gen["ok"], "error": gen.get("error"), "latency_s": gen.get("latency_s"),
         "correct": c1, "correct_judge2": c2, "judges_agree": c1 == c2,
+        "covered": (v1 or {}).get("must_identify_covered"), "total": len(item["must_identify"]),
+        "violations": (v1 or {}).get("must_avoid_violations"),
         "modality_correct": bool((v1 or {}).get("modality_correct")),
         "severity_claimed": (v1 or {}).get("severity_claimed"),
         "severity_correct": (v1 or {}).get("severity_correct"),
-        "description": desc, "judge1_notes": (v1 or {}).get("notes"),
+        "description": desc, "judge1": v1, "judge2": v2,
     }
     with _print_lock:
         flag = "OK " if gen["ok"] else "ERR"
