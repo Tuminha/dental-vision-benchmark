@@ -263,16 +263,16 @@
       "is_control": false,
       "expected_severity": null,
       "must_identify": [
-        "Intraoral clinical photograph of the maxillary (upper) arch taken with cheek/lip retractors, occlusal view looking up at the palate",
-        "Mixed dentition in a child (around 7 years), with primary teeth labelled in FDI numbering (51-55 and 61-65) and erupting permanent first molars (16, 26) and a permanent central incisor (11)",
-        "Text labels are present and identify a narrow and deep/high-vaulted palate ('Palais etroit et profond') and the tongue ('Langue')"
+        "Intraoral clinical photograph of the upper (maxillary) arch taken with cheek/lip retractors, occlusal view looking up at the palate",
+        "Mixed dentition in a child: primary teeth together with erupting permanent teeth (first molars and a central incisor)",
+        "The image carries overlaid annotations (tooth numbers and text labels)"
       ],
       "must_avoid": [
         "Calling this a diagram or illustration rather than a real photograph",
         "Describing it as the mandibular/lower arch instead of the maxillary/upper arch",
-        "Claiming it shows an adult permanent dentition rather than a child's mixed dentition"
+        "Claiming it shows a complete adult permanent dentition rather than a child's mixed dentition"
       ],
-      "reference_caption": "Labelled intraoral occlusal photograph of a child's maxillary arch in mixed dentition (FDI-numbered primary teeth 51-55/61-65 with erupting permanent molars 16/26 and incisor 11), annotated to highlight a narrow and high/deep palatal vault.",
+      "reference_caption": "Intraoral occlusal clinical photograph of a child's maxillary (upper) arch in mixed dentition, taken with cheek retractors; the image carries overlaid tooth-number and text annotations.",
       "source": {
         "title": "File:110216ek08.jpg",
         "url": "https://commons.wikimedia.org/wiki/File%3A110216ek08.jpg",
@@ -1314,17 +1314,16 @@
       "is_control": false,
       "expected_severity": null,
       "must_identify": [
-        "This is an intraoral clinical photograph of a posterior tooth (molar) under blue field isolation, shown at high magnification with adjacent teeth visible",
-        "The central molar shows the occlusal surface with brown discoloration/staining in the central fossa and fissures, consistent with occlusal caries or stained pits and fissures",
-        "The adjacent (left/mesial) tooth carries a silver-grey metallic restoration consistent with dental amalgam",
-        "The clinical context is restorative/pre-operative: a tooth being assessed or prepared for a tooth-coloured composite filling"
+        "High-magnification intraoral clinical photograph of a posterior tooth (molar) occlusal surface under blue field isolation, with adjacent teeth visible",
+        "Brown staining / discoloration of the occlusal fissures and central fossa",
+        "A restorative / clinical context (a tooth being assessed or prepared)"
       ],
       "must_avoid": [
-        "Calling this an X-ray, radiograph, or an illustration/diagram rather than a real clinical photograph",
-        "Describing the tooth as completely healthy/intact with no staining, caries, or defect when brown fissure discoloration is clearly present",
-        "Misidentifying the blue field as the gingiva/soft tissue or as a pathologic lesion rather than isolation material (rubber dam / lip-cheek retractor)"
+        "Calling this an X-ray, radiograph, or a diagram/illustration rather than a real clinical photograph",
+        "Describing the occlusal surface as completely clean and unstained when brown fissure discoloration is clearly present",
+        "Misidentifying the blue field as gingiva/soft tissue or a pathologic lesion rather than isolation material"
       ],
-      "reference_caption": "High-magnification intraoral clinical photograph of a posterior molar under blue field isolation, showing brown staining and discoloration of the occlusal fissures and central fossa (occlusal caries / stained pits and fissures) in a tooth being prepared for a composite restoration, with an amalgam-restored neighbouring tooth visible.",
+      "reference_caption": "High-magnification intraoral clinical photograph of a molar occlusal surface under blue field isolation, showing brown staining and discoloration of the occlusal fissures and central fossa.",
       "source": {
         "title": "File:ZMO0594-001.jpg",
         "url": "https://commons.wikimedia.org/wiki/File%3AZMO0594-001.jpg",
@@ -1470,22 +1469,21 @@
       "is_control": false,
       "expected_severity": null,
       "must_identify": [
-        "This is a clinical intraoral photograph taken with the mouth wide open, showing the soft palate, oropharynx/uvular region, and the posterior dorsal surface of the tongue (not the marginal gingiva)",
-        "The soft palate / posterior oropharyngeal mucosa shows scattered erythematous macules or papules (small red spots, an enanthem-like change) on a reddened background",
-        "The dorsal tongue is erythematous with prominent fungiform papillae and a whitish-grey coating, indicating mucosal inflammation rather than a normal tongue",
-        "The findings are inflammatory/erythematous oropharyngeal and lingual mucosal changes (consistent with a viral pharyngitis/enanthem picture); the image does NOT show punched-out, necrotic interdental gingival ulceration"
+        "Intraoral clinical photograph (gloved hands retracting the lower lip) of the lower anterior teeth and gingiva",
+        "Inflamed, erythematous marginal gingiva with ulceration/necrosis and blunting of the interdental papillae",
+        "A greyish-white pseudomembrane / slough along the gingival margin",
+        "Findings consistent with necrotising ulcerative gingivitis (ANUG / NUG)"
       ],
       "must_avoid": [
-        "Diagnosing acute necrotising ulcerative gingivitis (ANUG/NUG) or describing necrotic, punched-out interdental papillae with a grey pseudomembrane on the gingiva \u2014 those marginal-gingiva features are not visible in this palate/oropharynx/tongue view",
-        "Calling the mucosa normal/healthy when there is clear palatal and lingual erythema with spots and a coated tongue",
-        "Misidentifying the modality as a diagram or X-ray; this is a real color clinical photograph"
+        "Calling it a diagram/illustration or a radiograph",
+        "Describing the gingiva as healthy or normal",
+        "Limiting the description to the lips/skin and missing the gingival necrosis"
       ],
-      "reference_caption": "Intraoral clinical photograph (mouth open) of the soft palate, oropharynx, and posterior dorsal tongue showing scattered erythematous spots on the palatal mucosa and an erythematous, white-coated tongue with prominent papillae, consistent with inflammatory oropharyngeal mucosal change (e.g., viral pharyngitis/enanthem) rather than necrotising ulcerative gingivitis.",
+      "reference_caption": "Intraoral clinical photograph of the retracted lower lip showing the mandibular anterior gingiva with ulcerated, blunted interdental papillae, marginal erythema and a greyish pseudomembrane, consistent with necrotising ulcerative gingivitis (ANUG).",
       "source": {
-        "title": "File:Acute necrotising ulcerative gingivitis.jpg",
-        "url": "https://commons.wikimedia.org/wiki/File%3AAcute_necrotising_ulcerative_gingivitis.jpg",
-        "license": "CC BY-SA 4.0",
-        "attribution": "Dr.mohan m.muthal"
+        "title": "File:ANUG showing pseudomembrane.jpg",
+        "url": "https://commons.wikimedia.org/wiki/File:ANUG_showing_pseudomembrane.jpg",
+        "license": "CC BY-SA 4.0"
       }
     },
     {

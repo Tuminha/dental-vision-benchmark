@@ -43,17 +43,17 @@ scores the same on the control; a model that memorized the original drops.
   control.
 - **Judge agreement** — primary judge vs an independent second judge.
 
-## First results (v1, draft ground truth)
+## First results (v1, clinician-reviewed)
 
 First full run: 90 images, six models, two independent judges. Full table and caveats in
 [`results/leaderboard.md`](results/leaderboard.md). Top line:
 
-- **Gemini 3.1 Pro leads (67%)**, with Claude Opus 4.8 (63%) and Qwen3.7 Plus (60%) close behind.
-- **GPT-5.5 sits mid-pack (50%)**, notably not the leader even though GPT topped the sibling *text* dental benchmark. Best-at-text is not best-at-vision.
-- **Llama 4 Maverick (23%) and GLM-4.6V (30%) trail.**
-- The real gap is **clinical photos**: every model reads diagrams better than real mouths, and the weak models collapse on photos (16-32%) while Gemini holds (66%).
+- **Gemini 3.1 Pro leads (68%)**, with Claude Opus 4.8 (62%) and Qwen3.7 Plus (60%) close behind.
+- **GPT-5.5 sits mid-pack (51%)**, notably not the leader even though GPT topped the sibling *text* dental benchmark. Best-at-text is not best-at-vision.
+- **Llama 4 Maverick (26%) and GLM-4.6V (31%) trail.**
+- The real gap is **clinical photos**: every model reads diagrams better than real mouths, and the weak models collapse on photos (21-34%) while Gemini holds (68%).
 
-Scores are on draft ground truth and are directional pending clinician sign-off; the ranking is more robust than the absolute percentages.
+Ground truth was clinician-reviewed (2026-06-15); the ranking is more robust than the absolute percentages at n=90.
 
 ## The lineup
 
@@ -89,16 +89,16 @@ python tools/build_credits.py
 
 ## Status
 
-**v1 candidate, ground truth still DRAFT (clinician sign-off pending). Not for citation yet.**
+**v1, clinician-reviewed (2026-06-15).**
 The dataset is 90 dental images plus a memorization control, across ~16 buckets (anatomy,
 periodontics, caries, implants, endodontics, orthodontics/occlusion, oral pathology,
 restorative, tooth wear, developmental anomalies, mucosal lesions, trauma, TMJ/salivary,
 prosthetics). Diagrams and clinical photos only; radiographs are deliberately out of scope
 for v1. Ground truth (`must_identify` / `must_avoid` / caption / severity) was authored per
-image and is being signed off in [`VALIDATION.md`](VALIDATION.md).
+image and reviewed by the periodontist author; see [`VALIDATION.md`](VALIDATION.md).
 
-Roadmap: clinician sign-off → first published leaderboard → optional expansion toward ~120
-via open-access journal figures → bootstrap confidence intervals.
+Roadmap: optional expansion toward ~120 via open-access journal figures → bootstrap
+confidence intervals → difficulty-matched contamination study.
 
 ## Dataset and licensing
 

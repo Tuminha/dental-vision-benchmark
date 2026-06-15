@@ -212,3 +212,13 @@ Full rubrics (`must_identify` / `must_avoid` / caption) live in `data/items.json
 | `periodontitis_01` | periodontitis_01.jpg | clinical_photo | advanced (severe) periodontitis |  | [ ] |
 | `human_tooth_diagram_gu` | human_tooth_diagram_gu.png | diagram | - |  | [ ] |
 | `tooth_structure_and_dental_tissues_with_th` | tooth_structure_and_dental_tissues_with_th.png | diagram | - |  | [ ] |
+
+---
+
+## Sign-off (2026-06-15)
+Clinician review complete. **87 of 90 confirmed as authored.** Corrections applied:
+- `110216ek08` (rubric): no longer requires reading the French annotations or diagnosing a narrow palate; only that it is a child's mixed-dentition maxillary occlusal photo.
+- `zmo0594_001` (rubric): softened from a firm caries/amalgam claim to brown occlusal-fissure staining under blue-field isolation.
+- `acute_necrotising_ulcerative_gingivitis` (image replaced): the previous file was mislabeled (palate/tongue erythema). Swapped for a real ANUG photo (File:ANUG showing pseudomembrane.jpg, CC BY-SA 4.0) and re-authored.
+
+Dataset is no longer DRAFT for these 90 items.

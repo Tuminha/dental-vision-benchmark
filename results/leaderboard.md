@@ -1,27 +1,21 @@
-# Dental Vision Benchmark — first results (v1)
+# Dental Vision Benchmark — results (v1, clinician-signed-off)
 
-**90 images (+ a memorization control), 6 vision models, two independent judges** (Claude Opus 4.8 primary, GPT-5.5 secondary). Image only, no caption, no internet, temperature 0.
-
-> Ground truth is **clinician-authored DRAFT** pending sign-off (`VALIDATION.md`). Treat these as **directional**, and trust the ranking over the absolute percentages.
+**90 images (+ a memorization control), 6 vision models, two independent judges** (Claude Opus 4.8 primary, GPT-5.5 secondary). Image only, no caption, no internet, temperature 0. Ground truth clinician-reviewed (2026-06-15).
 
 ## Leaderboard (primary judge)
 
 | Model | Overall | Diagrams | Clinical photos | Modality ID |
 |---|---:|---:|---:|---:|
-| Gemini 3.1 Pro | 67% | 67% | 66% | 99% |
-| Claude Opus 4.8 | 63% | 65% | 61% | 99% |
-| Qwen3.7 Plus | 60% | 67% | 50% | 99% |
-| GPT-5.5 | 50% | 63% | 32% | 99% |
-| GLM-4.6V | 30% | 38% | 18% | 98% |
-| Llama 4 Maverick | 23% | 29% | 16% | 99% |
+| Gemini 3.1 Pro | 68% | 67% | 68% | 98% |
+| Claude Opus 4.8 | 62% | 65% | 58% | 98% |
+| Qwen3.7 Plus | 60% | 67% | 50% | 97% |
+| GPT-5.5 | 51% | 63% | 34% | 99% |
+| GLM-4.6V | 31% | 38% | 21% | 97% |
+| Llama 4 Maverick | 26% | 29% | 21% | 98% |
 
-**Dual-judge agreement:** 83%  (primary pass-rate 50%, stricter secondary 35%). Absolute accuracy is judge-dependent; the ranking is the robust signal.
+**Dual-judge agreement:** 82% (primary pass-rate 50%, stricter secondary 35%).
 
-## Honest reading
-- **Top cluster:** Gemini 3.1 Pro, Claude Opus 4.8, and Qwen3.7 Plus (60-67%) overlap within the ~±10-point CI at n=90.
-- **GPT-5.5 sits mid-pack (50%)** — notably *not* the leader, even though GPT topped the sibling *text* dental benchmark. Best-at-text is not best-at-vision.
-- **Floor:** Llama 4 Maverick (23%) and GLM-4.6V (30%) are clearly weakest at reading dental images.
-- **Modality is easy (≈99%)**; the difficulty is in the content (diagnosis, severity, structures).
-- **Memorization control:** no gap on the (easy, ubiquitous) anatomy item; the probe needs harder/rarer images to bite.
-- One call errored (GLM-4.6V empty response on `dens_evaginatus`), scored as a fail.
+## Reading
+- Gemini 3.1 Pro, Claude Opus 4.8 and Qwen3.7 Plus form the top cluster; GPT-5.5 mid-pack (the text-benchmark champion is not the vision champion); Llama 4 Maverick and GLM-4.6V trail.
+- Clinical photos are markedly harder than diagrams across the board.
 

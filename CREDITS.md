@@ -63,7 +63,7 @@ licenses below. Attribution is provided as required by Creative Commons.
 | `diagram_illustrating_coronal_and_apical_fo.png` | [File:Diagram illustrating coronal and apical follicle segments of right-unerupted teeth for quantitative analysis.png](https://commons.wikimedia.org/wiki/File%3ADiagram_illustrating_coronal_and_apical_follicle_segments_of_right-unerupted_teeth_for_quantitative_analysis.png) | Sarrafpour B, Swain M, Li Q, Zoellner H | CC BY 4.0 |
 | `suunad.png` | [File:Suunad.png](https://commons.wikimedia.org/wiki/File%3ASuunad.png) | Eleri Valliste | CC BY-SA 4.0 |
 | `tooth_picturewlabels.jpg` | [File:Tooth Picturewlabels.jpg](https://commons.wikimedia.org/wiki/File%3ATooth_Picturewlabels.jpg) | Thelsmotto at en.wikipedia | Public domain |
-| `acute_necrotising_ulcerative_gingivitis.jpg` | [File:Acute necrotising ulcerative gingivitis.jpg](https://commons.wikimedia.org/wiki/File%3AAcute_necrotising_ulcerative_gingivitis.jpg) | Dr.mohan m.muthal | CC BY-SA 4.0 |
+| `acute_necrotising_ulcerative_gingivitis.jpg` | [File:ANUG showing pseudomembrane.jpg](https://commons.wikimedia.org/wiki/File:ANUG_showing_pseudomembrane.jpg) | see source page | CC BY-SA 4.0 |
 | `dental_caries_cavity_2_cropped.jpg` | [File:Dental Caries Cavity 2 (cropped).JPG](https://commons.wikimedia.org/wiki/File%3ADental_Caries_Cavity_2_%28cropped%29.JPG) | Suyash.dwivedi | CC BY-SA 4.0 |
 | `dental_caries_cavity_1.jpg` | [File:Dental Caries Cavity 1.JPG](https://commons.wikimedia.org/wiki/File%3ADental_Caries_Cavity_1.JPG) | Suyash.dwivedi | CC BY-SA 4.0 |
 | `alveolprog.jpg` | [File:Alveolprog.jpg](https://commons.wikimedia.org/wiki/File%3AAlveolprog.jpg) | Giorgio_Fiorelli ( talk ) ( Uploads ) | CC BY-SA 3.0 |
