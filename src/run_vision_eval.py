@@ -30,6 +30,9 @@ except Exception:  # noqa: BLE001
     pass
 
 ROOT = Path(__file__).resolve().parents[1]
+# Optional argv: <items_json> <results_jsonl> (defaults run the public set).
+ITEMS_FILE = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "data/items.json"
+RESULTS_FILE = Path(sys.argv[2]) if len(sys.argv) > 2 else ROOT / "results/results.jsonl"
 
 # Latest vision-capable model per family (verified image-capable on OpenRouter
 # 2026-06-14). GLM-5.2 and Rio 3.5 are text-only and cannot enter a vision test.
@@ -146,14 +149,14 @@ def run_one(item: dict, label: str, mid: str) -> dict:
 
 
 def main() -> None:
-    items = json.loads((ROOT / "data/items.json").read_text())["items"]
+    items = json.loads(ITEMS_FILE.read_text())["items"]
     tasks = [(it, label, mid) for it in items for (label, mid) in MODELS]
     print(f"Running {len(MODELS)} models x {len(items)} images = {len(tasks)} describe calls + {2*len(tasks)} judge calls...\n")
 
     with ThreadPoolExecutor(max_workers=6) as ex:
         rows = list(ex.map(lambda t: run_one(*t), tasks))
 
-    (ROOT / "results/results.jsonl").write_text("\n".join(json.dumps(r) for r in rows) + "\n")
+    RESULTS_FILE.write_text("\n".join(json.dumps(r) for r in rows) + "\n")
 
     models = [m[0] for m in MODELS]
     main_rows = [r for r in rows if not r["is_control"]]
