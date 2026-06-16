@@ -144,7 +144,11 @@ reference caption. The benchmark code is MIT; the images keep their own licenses
 
 Most dental multimodal benchmarks are radiograph-centric (for example
 [OralMLLM-Bench](https://arxiv.org/abs/2605.01333)) or text-based, and the closest vision analog
-grades atlas anatomy landmarks. This benchmark instead covers non-radiographic dental diagrams,
+grades atlas anatomy landmarks. This benchmark is complementary to
+[MetaDent](https://journals.sagepub.com/doi/10.1177/00220345261424242) (Li et al., *J Dent Res*
+2026), which is larger and VQA/classification/captioning-oriented over mostly intraoral photographs,
+whereas Dental Vision Benchmark focuses on caption-free, open-ended descriptions graded against
+clinician pass/fail rubrics. This benchmark instead covers non-radiographic dental diagrams,
 illustrations, and clinical photographs, graded against a clinician rubric, with a leakage guard
 and a transformed control, and fully public. A cited positioning against the dental, general
 medical (OmniMedVQA, GMAI-MMBench), LLM-as-judge, and contamination literature is in
