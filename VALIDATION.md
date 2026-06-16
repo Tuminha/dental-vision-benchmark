@@ -14,7 +14,7 @@ ground truth.
 ## Independent clinical validation (second reviewer)
 
 A second, independent dentist reviewed all 90 items against the same ground truth through the
-clinician validation page (`docs/validate.html`) on **2026-06-16**, against data commit `5ccc42f`
+clinician validation page (`docs/validate.html`) on **2026-06-16**, against data commit `5ccc42f` (ground truth unchanged since)
 (the pinned, released ground truth).
 
 - **Reviewer:** Daniel Robles Cantero, DDS, PhD — Dens-IA Dental Group Research, Faculty of Health

@@ -15,7 +15,7 @@ python3 tools/build_figures.py    # regenerate figures from results (needs matpl
 cd paper && tectonic main.tex     # compile main.pdf
 ```
 
-All numbers correspond to the pinned data commit `5ccc42f`.
+All numbers correspond to the pinned data commit `9fa7576`.
 
 ## Before submission (author review needed)
 

@@ -160,7 +160,7 @@ Figure~\ref{fig:split} and the right-hand columns of Table~\ref{tab:results} sho
 
 \subsection{Judge agreement}
 
-The two judges returned the same pass/fail verdict on 82\% of descriptions, with Cohen's $\kappa=0.65$ (Table~\ref{tab:judges}). The primary judge (\model{Claude Opus 4.8}) was more lenient than the secondary judge (\model{GPT-5.5}) for every model. \model{Claude Opus 4.8} had the \emph{smallest} primary-versus-secondary gap (+7 points), not the largest, which is not what a simple self-preference effect would predict. This delta is only suggestive, however: it conflates the secondary judge's overall strictness with any self-preference, and because the reported leaderboard uses the more lenient primary judge, the design cannot cleanly separate leniency from self-preference. The defensible reading is that absolute pass rates are strongly judge-dependent and should not be taken on faith.
+The two judges returned the same pass/fail verdict on 82\% of descriptions, with Cohen's $\kappa=0.65$ (Table~\ref{tab:judges}). The primary judge (\model{Claude Opus 4.8}) was more lenient than the secondary judge (\model{GPT-5.5}) for every model. \model{Claude Opus 4.8} had the \emph{smallest} primary-versus-secondary gap (+7 points), not the largest, which is not what a simple self-preference effect would predict. This delta is only suggestive, however: it conflates the secondary judge's overall strictness with any self-preference, and because the reported leaderboard uses the more lenient primary judge, the design cannot cleanly separate leniency from self-preference. The defensible reading is that absolute pass rates are strongly judge-dependent and should not be taken on faith. Under the secondary judge, \model{Claude Opus 4.8} (56\%) scores above \model{Gemini 3.1 Pro} (50\%), so even the top of the order is not stable across judges; this reinforces that the leading cluster should not be read as a resolved ranking.
 
 \begin{table}[t]
 \centering
@@ -206,7 +206,7 @@ The images, clinician rubrics, per-row results, both judges' verdicts, the run m
 \begin{center}
 \url{https://github.com/Tuminha/dental-vision-benchmark}
 \end{center}
-The released data correspond to the pinned commit \texttt{5ccc42f}. Images are openly licensed and keep their own licenses; the code is MIT. An interactive report is at \url{https://tuminha.github.io/dental-vision-benchmark/}.
+The released data correspond to the pinned commit \texttt{9fa7576}. Images are openly licensed and keep their own licenses; the code is MIT. An interactive report is at \url{https://tuminha.github.io/dental-vision-benchmark/}.
 
 \section{Ethics Statement}
 

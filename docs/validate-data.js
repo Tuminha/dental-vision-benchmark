@@ -1,12 +1,12 @@
 window.VALIDATE_DATA = {
  "meta": {
-  "data_commit": "5ccc42ffce183828a06968df1cd953cd3831be24",
+  "data_commit": "9fa75760c9e606049e100ae903994fcd483bbf85",
   "n": 90
  },
  "items": [
   {
    "id": "anat-01",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/tooth_anatomy.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/tooth_anatomy.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -24,7 +24,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "perio-mild-01",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/perio_mild.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/perio_mild.png",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -42,7 +42,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "perio-severe-01",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/perio_severe.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/perio_severe.png",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -60,7 +60,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "caries-01",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/caries.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/caries.png",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -78,7 +78,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "photo-intraoral-01",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/intraoral_photo.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/intraoral_photo.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -95,7 +95,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "basic_anatomy_tooth",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/basic_anatomy_tooth.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/basic_anatomy_tooth.jpg",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -113,7 +113,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "blausen_0864_toothdecay",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/blausen_0864_toothdecay.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/blausen_0864_toothdecay.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -131,7 +131,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "blausen_0864_toothdecay_croatian_hr",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/blausen_0864_toothdecay_croatian_hr.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/blausen_0864_toothdecay_croatian_hr.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -149,7 +149,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "access_toothbrush_for_use_with_mini_dental",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/access_toothbrush_for_use_with_mini_dental.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/access_toothbrush_for_use_with_mini_dental.jpg",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -166,7 +166,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "full_implant_restoration",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/full_implant_restoration.gif",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/full_implant_restoration.gif",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -184,7 +184,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "110216ek08",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/110216ek08.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/110216ek08.jpg",
    "modality": "clinical_photo",
    "labeled": true,
    "must_identify": [
@@ -201,7 +201,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "zahnfehlstellung_angle_klasse_ii_1",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/zahnfehlstellung_angle_klasse_ii_1.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/zahnfehlstellung_angle_klasse_ii_1.jpg",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -218,7 +218,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "aphthous_stomatitis_in_the_mouth",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/aphthous_stomatitis_in_the_mouth.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/aphthous_stomatitis_in_the_mouth.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -234,7 +234,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "aphthous_stomatitis",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/aphthous_stomatitis.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/aphthous_stomatitis.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -250,7 +250,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "calculus_2",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/calculus_2.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/calculus_2.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -266,7 +266,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "mandibularanteriorcalculus",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/mandibularanteriorcalculus.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/mandibularanteriorcalculus.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -284,7 +284,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "human_tooth_diagram_en",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/human_tooth_diagram_en.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/human_tooth_diagram_en.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -303,7 +303,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "tooth_2_psf",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/tooth_2_psf.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/tooth_2_psf.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -321,7 +321,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "tooth_section_numbered",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/tooth_section_numbered.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/tooth_section_numbered.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -339,7 +339,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "deciduous_permanent_teeth",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/deciduous_permanent_teeth.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/deciduous_permanent_teeth.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -358,7 +358,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "periodontal_ligament_normal_pocket_depth",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/periodontal_ligament_normal_pocket_depth.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/periodontal_ligament_normal_pocket_depth.png",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -375,7 +375,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "gingivitida",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/gingivitida.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/gingivitida.jpg",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -393,7 +393,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "smoothsurfacecaries02",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/smoothsurfacecaries02.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/smoothsurfacecaries02.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -411,7 +411,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "smoothsurfacecaries03",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/smoothsurfacecaries03.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/smoothsurfacecaries03.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -429,7 +429,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "smoothsurfacecaries04",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/smoothsurfacecaries04.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/smoothsurfacecaries04.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -447,7 +447,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "blausen_0774_rootcanal",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/blausen_0774_rootcanal.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/blausen_0774_rootcanal.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -465,7 +465,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "root_canal_illustration_molar",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/root_canal_illustration_molar.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/root_canal_illustration_molar.png",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -483,7 +483,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "gray1005",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/gray1005.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/gray1005.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -501,7 +501,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "human_tooth_ku",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/human_tooth_ku.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/human_tooth_ku.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -519,7 +519,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "leukoplakia",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/leukoplakia.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/leukoplakia.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -536,7 +536,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "nih_doc_16_homogenousleukoplakia",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/nih_doc_16_homogenousleukoplakia.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/nih_doc_16_homogenousleukoplakia.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -553,7 +553,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "caries_periodontal_disease_calculus",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/caries_periodontal_disease_calculus.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/caries_periodontal_disease_calculus.png",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -570,7 +570,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "amalgam",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/amalgam.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/amalgam.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -587,7 +587,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "filling_amalgam",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/filling_amalgam.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/filling_amalgam.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -604,7 +604,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "ferruleeffectdentistry",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/ferruleeffectdentistry.gif",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/ferruleeffectdentistry.gif",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -621,7 +621,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "runningroom",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/runningroom.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/runningroom.png",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -639,7 +639,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "zahnimplantat",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/zahnimplantat.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/zahnimplantat.jpg",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -656,7 +656,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "single_crown_implant",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/single_crown_implant.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/single_crown_implant.jpg",
    "modality": "clinical_photo",
    "labeled": true,
    "must_identify": [
@@ -673,7 +673,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "permanent_maxillary_teeth_by_rokaya_yahia_",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/permanent_maxillary_teeth_by_rokaya_yahia_.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/permanent_maxillary_teeth_by_rokaya_yahia_.jpg",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -691,7 +691,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "teeth_types_colored",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/teeth_types_colored.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/teeth_types_colored.png",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -709,7 +709,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "depiction_of_a_periodontitis_patient",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/depiction_of_a_periodontitis_patient.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/depiction_of_a_periodontitis_patient.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -727,7 +727,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "moderate_periodontitis",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/moderate_periodontitis.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/moderate_periodontitis.png",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -745,7 +745,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "periodontal_terms_diagram_gingival_recessi",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/periodontal_terms_diagram_gingival_recessi.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/periodontal_terms_diagram_gingival_recessi.png",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -763,7 +763,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "gingival_sulcus",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/gingival_sulcus.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/gingival_sulcus.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -780,7 +780,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "line_diagram_of_gingivitis",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/line_diagram_of_gingivitis.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/line_diagram_of_gingivitis.png",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -799,7 +799,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "smoothsurfacecaries05",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/smoothsurfacecaries05.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/smoothsurfacecaries05.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -817,7 +817,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "blausen_0864_toothdecay_ar",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/blausen_0864_toothdecay_ar.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/blausen_0864_toothdecay_ar.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -835,7 +835,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "diagram_of_tooth_erosion",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/diagram_of_tooth_erosion.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/diagram_of_tooth_erosion.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -854,7 +854,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "overjet_overbite",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/overjet_overbite.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/overjet_overbite.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -872,7 +872,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "sever_crowding_of_teeth",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/sever_crowding_of_teeth.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/sever_crowding_of_teeth.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -890,7 +890,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "dental_restoration",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/dental_restoration.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/dental_restoration.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -907,7 +907,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "zmo0594_001",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/zmo0594_001.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/zmo0594_001.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -924,7 +924,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "zmo0594_006",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/zmo0594_006.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/zmo0594_006.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -942,7 +942,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "dental_quadrants",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/dental_quadrants.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/dental_quadrants.png",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -960,7 +960,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "diagram_illustrating_coronal_and_apical_fo",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/diagram_illustrating_coronal_and_apical_fo.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/diagram_illustrating_coronal_and_apical_fo.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -978,7 +978,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "suunad",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/suunad.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/suunad.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -996,7 +996,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "tooth_picturewlabels",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/tooth_picturewlabels.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/tooth_picturewlabels.jpg",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -1014,7 +1014,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "acute_necrotising_ulcerative_gingivitis",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/acute_necrotising_ulcerative_gingivitis.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/acute_necrotising_ulcerative_gingivitis.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1032,7 +1032,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "dental_caries_cavity_2_cropped",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/dental_caries_cavity_2_cropped.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/dental_caries_cavity_2_cropped.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1050,7 +1050,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "dental_caries_cavity_1",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/dental_caries_cavity_1.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/dental_caries_cavity_1.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1068,7 +1068,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "alveolprog",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/alveolprog.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/alveolprog.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1086,7 +1086,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "erosive_lichen_planus",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/erosive_lichen_planus.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/erosive_lichen_planus.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1104,7 +1104,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "lichen_planus_fig7",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/lichen_planus_fig7.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/lichen_planus_fig7.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1121,7 +1121,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "herpes_blisters_on_lips_in_a_47_year_old_w",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/herpes_blisters_on_lips_in_a_47_year_old_w.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/herpes_blisters_on_lips_in_a_47_year_old_w.jpg",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -1138,7 +1138,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "bellingham_fluorosis_3",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/bellingham_fluorosis_3.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/bellingham_fluorosis_3.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1156,7 +1156,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "nankali_post_a_fractured_tooth",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/nankali_post_a_fractured_tooth.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/nankali_post_a_fractured_tooth.jpg",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -1174,7 +1174,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "wortel_fractuur",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/wortel_fractuur.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/wortel_fractuur.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1192,7 +1192,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "prummelklammer",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/prummelklammer.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/prummelklammer.jpg",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -1210,7 +1210,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "detached_dental_crown_flat_front",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/detached_dental_crown_flat_front.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/detached_dental_crown_flat_front.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1228,7 +1228,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "treatment_steps_for_feldspathic_vm9_porcel",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/treatment_steps_for_feldspathic_vm9_porcel.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/treatment_steps_for_feldspathic_vm9_porcel.jpg",
    "modality": "clinical_photo",
    "labeled": true,
    "must_identify": [
@@ -1246,7 +1246,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "temporomandibular_joint_number",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/temporomandibular_joint_number.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/temporomandibular_joint_number.png",
    "modality": "diagram",
    "labeled": false,
    "must_identify": [
@@ -1264,7 +1264,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "eb1911_mouth_and_salivary_glands",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/eb1911_mouth_and_salivary_glands.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/eb1911_mouth_and_salivary_glands.jpg",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -1281,7 +1281,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "geographic_tongue",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/geographic_tongue.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/geographic_tongue.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1299,7 +1299,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "mouth_parotid_gland_nih_bioart_654",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/mouth_parotid_gland_nih_bioart_654.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/mouth_parotid_gland_nih_bioart_654.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -1318,7 +1318,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "new_nanocomposites_may_mean_more_durable_t",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/new_nanocomposites_may_mean_more_durable_t.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/new_nanocomposites_may_mean_more_durable_t.jpg",
    "modality": "clinical_photo",
    "labeled": true,
    "must_identify": [
@@ -1336,7 +1336,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "packable_composite_placed_in_a_lower_right",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/packable_composite_placed_in_a_lower_right.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/packable_composite_placed_in_a_lower_right.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1354,7 +1354,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "dental_veneer",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/dental_veneer.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/dental_veneer.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1372,7 +1372,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "pulp_cap",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/pulp_cap.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/pulp_cap.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -1391,7 +1391,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "connective_tissue_graft_to_implant",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/connective_tissue_graft_to_implant.gif",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/connective_tissue_graft_to_implant.gif",
    "modality": "clinical_photo",
    "labeled": true,
    "must_identify": [
@@ -1409,7 +1409,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "four_mandibular_implants_with_novaloc_abut",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/four_mandibular_implants_with_novaloc_abut.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/four_mandibular_implants_with_novaloc_abut.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1427,7 +1427,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "examples_of_tooth_staining",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/examples_of_tooth_staining.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/examples_of_tooth_staining.jpg",
    "modality": "clinical_photo",
    "labeled": true,
    "must_identify": [
@@ -1445,7 +1445,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "dens_evaginatus",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/dens_evaginatus.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/dens_evaginatus.jpg",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -1463,7 +1463,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "hyperdontia_genetically_inherited_developm",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/hyperdontia_genetically_inherited_developm.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/hyperdontia_genetically_inherited_developm.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1481,7 +1481,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "maxillary_tori",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/maxillary_tori.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/maxillary_tori.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1499,7 +1499,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "non_carious_cervical_lesion",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/non_carious_cervical_lesion.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/non_carious_cervical_lesion.jpg",
    "modality": "clinical_photo",
    "labeled": false,
    "must_identify": [
@@ -1517,7 +1517,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "periodontium",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/periodontium.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/periodontium.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -1536,7 +1536,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "molar_relationship",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/molar_relationship.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/molar_relationship.jpg",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -1555,7 +1555,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "periodontitis_01",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/periodontitis_01.jpg",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/periodontitis_01.jpg",
    "modality": "clinical_photo",
    "labeled": true,
    "must_identify": [
@@ -1573,7 +1573,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "human_tooth_diagram_gu",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/human_tooth_diagram_gu.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/human_tooth_diagram_gu.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
@@ -1592,7 +1592,7 @@ window.VALIDATE_DATA = {
   },
   {
    "id": "tooth_structure_and_dental_tissues_with_th",
-   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@5ccc42ffce183828a06968df1cd953cd3831be24/data/images/tooth_structure_and_dental_tissues_with_th.png",
+   "image": "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@9fa75760c9e606049e100ae903994fcd483bbf85/data/images/tooth_structure_and_dental_tissues_with_th.png",
    "modality": "diagram",
    "labeled": true,
    "must_identify": [
