@@ -16,7 +16,10 @@ images and radiographs with clinical records [3]. On-device and efficiency-orien
 Pocket-Dentist benchmarks compact vision-language models for dental image understanding [4], while
 text-centric efforts such as DentalBench measure factual dentistry knowledge rather than image
 reading [5]. Dental multimodal generative models (for example OralGPT-Omni) are typically released
-with their own evaluation suites [6].
+with their own evaluation suites [6]. Most directly, MetaDent (Li et al., *Journal of Dental
+Research*, 2026; https://doi.org/10.1177/00220345261424242) released a large-scale dentistry image
+resource (60,669 images with an expert-annotated subset of intraoral photographs) and benchmark
+suites for visual question answering, multilabel classification, and captioning.
 
 The closest analog to this work evaluates **vision** rather than radiographs: a cross-sectional
 study benchmarked six model endpoints across three vendors on oral and maxillofacial anatomy,
@@ -27,7 +30,7 @@ non-carious lesions from intraoral photographs [8].
 
 This benchmark differs from all of the above on three axes. (i) **Scope:** it deliberately
 excludes radiographs and covers dental diagrams, illustrations, and clinical photographs across
-roughly sixteen categories, so it measures general dental-image *reading* rather than radiographic
+about a dozen categories, so it measures general dental-image *reading* rather than radiographic
 interpretation or a single narrow task such as landmark or lesion localization. (ii) **Task
 format:** instead of multiple-choice, label-matching, or localization, each model writes a free-text
 description that is graded against a clinician rubric, which is closer to how a clinician actually
@@ -80,9 +83,9 @@ the public set, which is identified here as the central item of future work.
 In one sentence: existing dental multimodal benchmarks are mostly large, radiograph-centric, and
 question-answering based, whereas this is a small, clinician-authored, fully public benchmark of
 non-radiographic dental image *reading*, graded by two grounded independent judges, with an explicit
-leakage guard and a transformed-control sanity check. It is complementary to OralMLLM-Bench and the
-oro-dental datasets on the radiographic side, and to OmniMedVQA and GMAI-MMBench on the
-general-medical side, filling the specific gap of open-ended, contamination-aware evaluation of how
+leakage guard and a transformed-control sanity check. It is complementary to MetaDent (larger,
+annotation- and VQA-oriented, mostly intraoral photographs), to OralMLLM-Bench and the oro-dental
+datasets on the radiographic side, and to OmniMedVQA and GMAI-MMBench on the general-medical side, filling the specific gap of open-ended, contamination-aware evaluation of how
 faithfully a model reads a dental diagram or clinical photograph.
 
 ## References

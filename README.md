@@ -8,9 +8,10 @@
 [![Interactive report](https://img.shields.io/badge/report-live-3FB6B2.svg)](https://tuminha.github.io/dental-vision-benchmark/)
 
 Clinicians already show AI a clinical photo, a diagram, or a figure from a paper and
-ask "what is this?". The models sound confident, but no public benchmark measures which
-one actually *reads* a dental image correctly. This is a small, clinician-authored,
-contamination-aware benchmark that does. Scope is dental and clinical diagrams,
+ask "what is this?". The models sound confident, but existing public dental benchmarks lean
+on radiographs, closed question-answering, or large-scale labeling. Few measure open-ended,
+caption-free *reading* of non-radiographic dental images against an explicit clinician
+pass/fail rubric. This is a small, clinician-authored, contamination-aware benchmark that does. Scope is dental and clinical diagrams,
 illustrations, and clinical images/figures from open-access articles. Radiographic
 interpretation is a separate, harder competency and is deliberately out of scope for v1.
 
@@ -25,8 +26,9 @@ The whole method rests on two safeguards:
 
 1. **Leakage guard going in.** Each model is shown the image and nothing else. The
    caption is stripped, the image is sent inline as base64, and no tools are passed,
-   so the model cannot search the web to recover the original caption. A high score
-   can only come from reading the picture.
+   so the model cannot search the web to recover the original caption. This limits
+   input-side recall, so a high score reflects reading the picture rather than recalling a
+   memorized caption (it does not by itself prove the description came from the pixels).
 2. **Grounded judging.** Two independent judges from different vendors each *see* the
    image and hold the authoritative caption plus the clinician rubric, then grade the
    model's description against the real answer. Their agreement is reported, so the
