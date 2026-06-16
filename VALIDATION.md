@@ -11,6 +11,23 @@ ground truth.
   - `zmo0594_001` — rubric softened from a firm caries/amalgam claim to brown occlusal-fissure staining under blue-field isolation.
   - `acute_necrotising_ulcerative_gingivitis` — the original file was mislabeled (palate/tongue erythema, not gingival necrosis); replaced with a real ANUG photo (CC BY-SA 4.0) and re-authored.
 
+## Independent clinical validation (second reviewer)
+
+A second, independent dentist reviewed all 90 items against the same ground truth through the
+clinician validation page (`docs/validate.html`) on **2026-06-16**, against data commit `5ccc42f`
+(the pinned, released ground truth).
+
+- **Reviewer:** Daniel Robles Cantero, DDS, PhD — Dens-IA Dental Group Research, Faculty of Health
+  Sciences, Miguel de Cervantes European University (UEMC), Valladolid, Spain. Independent of the
+  ground-truth author.
+- **Outcome:** 90 of 90 confirmed clinically fair, with 0 rubric edits and 0 exclusions.
+- **Record:** the reviewer's returned submission is preserved in
+  [`validation/independent_review_daniel_robles.md`](validation/independent_review_daniel_robles.md).
+
+This is one independent reviewer reporting no disagreements. A second independent reviewer and
+clinician adjudication of the judge-disagreement set (`validation/judge_disagreements.csv`) remain
+available to strengthen the manuscript further.
+
 ## Weak / ambiguous items (kept, reported separately)
 Ten items are flagged `"weak": true` in `data/items.json`. They remain in the dataset but
 are excluded in the sensitivity analysis (see `results/leaderboard.md`):
