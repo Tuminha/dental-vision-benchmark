@@ -1,5 +1,5 @@
 {
-  "_about": "Dental vision benchmark item set (v0.2, DRAFT ground truth pending clinician sign-off). Each item is an openly-licensed dental image with clinician-style ground truth (must_identify / must_avoid) instead of the raw web caption. Models are shown the image with NO caption and NO web access. 'modality' is the coarse image-type axis. Items with is_control=true are transformed copies of a public image used to measure training-data memorization (a model that truly reads the image should score the same on the control; a model that memorized the original should drop).",
+  "_about": "Dental vision benchmark item set (v1, clinician-reviewed and independently validated). Each item is an openly-licensed dental image with clinician-style ground truth (must_identify / must_avoid) instead of the raw web caption. Models are shown the image with NO caption and NO web access. 'modality' is the coarse image-type axis. Items with is_control=true are transformed copies of a public image used as a recognition sanity check (a model that reads the image should score the same on the control). This is a control, not a memorization measurement.",
   "items": [
     {
       "id": "anat-01",
@@ -2339,7 +2339,7 @@
       "labeled": true,
       "is_control": true,
       "control_of": "anat-01",
-      "transform": "horizontal flip + 12% center crop (defeats exact-image memorization; clinical content unchanged)",
+      "transform": "horizontal flip + 12% center crop (defeats exact-image matching; clinical content unchanged)",
       "expected_severity": null,
       "must_identify": [
         "a cross-section / internal structure of a tooth",
@@ -2357,7 +2357,7 @@
         "title": "Derived from File:Blausen 0863 ToothAnatomy 02.png",
         "url": "https://commons.wikimedia.org/wiki/File:Blausen_0863_ToothAnatomy_02.png",
         "license": "CC BY 3.0",
-        "attribution": "Blausen.com staff (2014), transformed for memorization control"
+        "attribution": "Blausen.com staff (2014), transformed for the recognition control"
       }
     }
   ]
