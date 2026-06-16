@@ -16,7 +16,7 @@ import subprocess
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CDN = "https://cdn.jsdelivr.net/gh/Tuminha/dental-vision-benchmark@main"
+REPO = "Tuminha/dental-vision-benchmark"  # jsDelivr base, pinned to the data commit in main()
 
 # Display order is by score (computed below); this map holds branding only.
 META = {
@@ -43,10 +43,14 @@ def acc(rows):
     return 100 * sum(x["correct"] for x in rows) / len(rows) if rows else 0.0
 
 
-def git_commit():
+def data_commit():
+    # The commit where the report's DATA inputs were last changed, not the working-tree
+    # HEAD. HEAD would point just before the (not-yet-made) commit that adds this report,
+    # so the footer would read older than the report; the data commit is stable and honest.
+    inputs = ["results/results.jsonl", "data/items.json", "results/run_manifest.json"]
     try:
-        return subprocess.run(["git", "rev-parse", "HEAD"], cwd=ROOT,
-                              capture_output=True, text=True, check=True).stdout.strip()
+        return subprocess.run(["git", "log", "-1", "--format=%H", "--", *inputs], cwd=ROOT,
+                              capture_output=True, text=True, check=True).stdout.strip() or "unknown"
     except Exception:  # noqa: BLE001
         return "unknown"
 
@@ -56,6 +60,8 @@ def main() -> None:
     items = {x["id"]: x for x in json.loads((ROOT / "data/items.json").read_text())["items"]}
     manifest = json.loads((ROOT / "results/run_manifest.json").read_text())
     mid_of = {m["label"]: m["id"] for m in manifest["models"]}
+    dc = data_commit()
+    cdn = f"https://cdn.jsdelivr.net/gh/{REPO}@{dc}"  # immutable: thumbnails pinned to the data commit
 
     main_rows = [x for x in rows if not x["is_control"]]
     labels = sorted(META, key=lambda m: acc([x for x in main_rows if x["model"] == m]), reverse=True)
@@ -104,7 +110,7 @@ def main() -> None:
         it = items.get(iid, {})
         outs = sorted([x for x in main_rows if x["item"] == iid], key=lambda x: order.get(x["model"], 9))
         images.append({
-            "id": iid, "image": f"{CDN}/{it.get('image', '')}",
+            "id": iid, "image": f"{cdn}/{it.get('image', '')}",
             "modality": it.get("modality", ""), "labeled": it.get("labeled", False),
             "must_identify_n": len(it.get("must_identify", [])),
             "caption": it.get("reference_caption", ""),
@@ -117,7 +123,7 @@ def main() -> None:
     verdicts = sum(isinstance(x.get("judge1"), dict) + isinstance(x.get("judge2"), dict) for x in rows)
     payload = {
         "meta": {
-            "data_commit": git_commit(),
+            "data_commit": dc,
             "run_date": manifest.get("run_date", ""),
             "gateway": "OpenRouter",
             "temperature": manifest["settings"]["temperature"],
