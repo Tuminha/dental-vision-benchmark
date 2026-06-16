@@ -53,7 +53,7 @@ The images, rubrics, per-row results, judge verdicts, and analysis code are rele
 
 Vision language models are now routinely shown medical images and asked to interpret them. General medical multimodal benchmarks have grown quickly, but they favor breadth and a closed question-answering format: OmniMedVQA spans 12 imaging modalities and more than 118{,}000 images, and reports that most models only slightly exceed random guessing \cite{hu2024omnimedvqa}; GMAI-MMBench is built from 284 datasets across 38 modalities, where even a leading proprietary model reached only 53.96\% \cite{chen2024gmaimmbench}. These suites measure option elimination at scale, not whether a model produces a clinically faithful free-text reading of a single image.
 
-Dentistry is underrepresented in this literature, and the dental work that does exist is dominated by \emph{radiographs}. OralMLLM-Bench evaluates models across periapical, panoramic, and lateral cephalometric radiographs and documents a persistent gap between models and clinicians \cite{wang2026oralmllm}. Large oro-dental datasets pair intraoral images and radiographs with clinical records \cite{huang2025orodental}, and text-centric efforts such as DentalBench measure factual dentistry knowledge rather than image reading \cite{zhu2025dentalbench}. The closest analog to the present work evaluated six model endpoints on oral and maxillofacial anatomy using landmark identification on atlas plates, where the best endpoint reached 53.1\% and the authors concluded that no model is reliable enough to serve as a stand-alone answer key \cite{omf2026anatomy}.
+Dentistry is underrepresented in this literature, and the dental work that does exist is dominated by \emph{radiographs}. OralMLLM-Bench evaluates models across periapical, panoramic, and lateral cephalometric radiographs and documents a persistent gap between models and clinicians \cite{wang2026oralmllm}. Large oro-dental datasets pair intraoral images and radiographs with clinical records \cite{lv2025orodental}, and text-centric efforts such as DentalBench measure factual dentistry knowledge rather than image reading \cite{zhu2025dentalbench}. The closest analog to the present work evaluated six model endpoints on oral and maxillofacial anatomy using landmark identification on atlas plates, where the best endpoint reached 53.1\% and the authors concluded that no model is reliable enough to serve as a stand-alone answer key \cite{nguyen2025omf}.
 
 Non-radiographic dental image reading, the diagrams, illustrations, and clinical photographs a clinician or student encounters daily, is its own competency, and it is not covered by the benchmarks above. We therefore contribute a deliberately small, fully public, clinician-authored benchmark with three design commitments that the general medical and dental benchmarks do not jointly provide: open-ended free-text grading against an explicit clinician rubric, a leakage guard that removes the caption and any web access at input, and a transformed-control check for exact-image recognition. We treat the model judge as an empirical quantity, reporting inter-judge agreement rather than assuming it, in line with work on LLM-as-judge reliability \cite{zheng2023judge,arora2025healthbench} and self-preference bias \cite{panickssery2024selfrecognition,wataoka2024selfpreference}.
 
@@ -89,7 +89,7 @@ Llama 4 Maverick & \texttt{meta-llama/llama-4-maverick} & Meta \\
 
 \subsection{Leakage guard}
 
-Each model received only the image, encoded inline as a base64 data URI, with the caption removed and with no tools or web access. Because the model cannot retrieve the original caption, a high score can only come from reading the picture rather than recalling associated text. The full pipeline is shown in Figure~\ref{fig:flow}.
+Each model received only the image, encoded inline as a base64 data URI, with the caption removed and with no tools or web access. Because the model cannot retrieve the original caption, a high score can only come from reading the picture rather than recalling associated text. The caption is withheld from the contestant but is given to the judges as ground truth, so this guard limits input-side recall; it does not by itself certify that a passing description was read from the pixels. The full pipeline is shown in Figure~\ref{fig:flow}.
 
 \begin{figure}[t]
 \centering
@@ -145,7 +145,7 @@ Llama 4 Maverick & 28\% [20, 38] & 33\% & 21\% & 27\% & 29\% \\
 \label{fig:accuracy}
 \end{figure}
 
-The top three models form a cluster whose intervals overlap substantially, and this study should not be cited as evidence of a resolved ordering among them. The more informative separation is between this leading cluster and the open-weight tail. Notably, \model{GPT-5.5} sits below the cluster here, even though the OpenAI family led a sibling \emph{text} dental benchmark by the same authors; being strongest at text did not transfer to being strongest at vision. A sensitivity analysis excluding the 10 pre-flagged weak or ambiguous items (n$=$80) shifted every model upward by 3 to 5 points and left the ranking unchanged.
+The top three models form a cluster whose intervals overlap substantially, and this study should not be cited as evidence of a resolved ordering among them. The more informative separation is between this leading cluster and the open-weight tail. Notably, \model{GPT-5.5} sits below the cluster here, even though the OpenAI family is among the strongest systems on text-based clinical question answering; strength on text need not transfer to vision. A sensitivity analysis excluding the 10 pre-flagged weak or ambiguous items (n$=$80) shifted every model upward by 3 to 5 points and left the ranking unchanged.
 
 \subsection{The task split is the headline}
 
@@ -160,7 +160,7 @@ Figure~\ref{fig:split} and the right-hand columns of Table~\ref{tab:results} sho
 
 \subsection{Judge agreement}
 
-The two judges returned the same pass/fail verdict on 82\% of descriptions, with Cohen's $\kappa=0.65$ (Table~\ref{tab:judges}). The primary judge (\model{Claude Opus 4.8}) was more lenient than the secondary judge (\model{GPT-5.5}) for every model. Critically, there was no own-family advantage in these deltas: \model{Claude Opus 4.8} had the \emph{smallest} primary-versus-secondary gap (+7 points), not the largest, which argues against a simple self-preference explanation and reinforces that absolute pass rates should be read as judge-dependent. A single-pass delta cannot rule out subtler bias.
+The two judges returned the same pass/fail verdict on 82\% of descriptions, with Cohen's $\kappa=0.65$ (Table~\ref{tab:judges}). The primary judge (\model{Claude Opus 4.8}) was more lenient than the secondary judge (\model{GPT-5.5}) for every model. \model{Claude Opus 4.8} had the \emph{smallest} primary-versus-secondary gap (+7 points), not the largest, which is not what a simple self-preference effect would predict. This delta is only suggestive, however: it conflates the secondary judge's overall strictness with any self-preference, and because the reported leaderboard uses the more lenient primary judge, the design cannot cleanly separate leniency from self-preference. The defensible reading is that absolute pass rates are strongly judge-dependent and should not be taken on faith.
 
 \begin{table}[t]
 \centering
@@ -182,15 +182,15 @@ Llama 4 Maverick & 28\% & 11\% & +17 \\
 
 \subsection{Transformed control}
 
-On the transformed control (a flipped and cropped copy of one public anatomy diagram), every model returned the same pass verdict as on the original image. This is the expected behavior for a model that reads the picture, and it provides no evidence that scores are driven by exact-image recognition of the public files.
+The transformed control is a single item, a flipped and cropped copy of one public anatomy diagram whose original is passed by all six models, so it is a weak format-robustness sanity check rather than a memorization measurement. Under the primary judge, every model returned the same pass verdict on the control as on the original; under the secondary judge, the two weakest models (\model{GLM-4.6V} and \model{Llama 4 Maverick}) flipped from pass to fail on the transformed copy. The check is consistent with image reading rather than exact-image recognition of the public files, but a single ceiling-level item cannot establish that on its own.
 
 \subsection{Contamination and held-out evaluation}
 
-The public images are openly licensed and crawlable, so training-data exposure is a genuine threat to validity. Two guards address it at the level a public dataset allows: the leakage guard at input removes the caption and any web access, and the transformed-control check found no exact-image recognition effect. Neither substitutes for a definitive contamination test, which requires a held-out set of non-public images matched in content and difficulty to the public set; constructing and running that set is the central item of future work.
+The public images are openly licensed and crawlable, so training-data exposure is a genuine threat to validity \cite{contamination2025survey}. Two guards address it at the level a public dataset allows: the leakage guard at input removes the caption and any web access, and the transformed-control check found no exact-image recognition effect. Neither substitutes for a definitive contamination test, which requires a held-out set of non-public images matched in content and difficulty to the public set; constructing and running that set is the central item of future work.
 
 \section{Discussion}
 
-Contemporary vision language models can read many dental diagrams and labeled images, but this benchmark shows why specialty-specific, open-ended evaluation remains necessary. The leading systems cluster tightly with overlapping intervals, so a ranking from 90 images would be overconfident; the defensible conclusion is that a leading cluster (\model{Gemini 3.1 Pro}, \model{Claude Opus 4.8}, \model{Qwen3.7 Plus}) performed substantially better than the open-weight tail, and that the diagram-versus-photo task split, not the rank order, is the stable signal. The same model family that led a sibling text benchmark did not lead here, which cautions against transferring text leaderboards to vision tasks.
+Contemporary vision language models can read many dental diagrams and labeled images, but this benchmark shows why specialty-specific, open-ended evaluation remains necessary. The leading systems cluster tightly with overlapping intervals, so a ranking from 90 images would be overconfident; the defensible conclusion is that a leading cluster (\model{Gemini 3.1 Pro}, \model{Claude Opus 4.8}, \model{Qwen3.7 Plus}) performed substantially better than the open-weight tail, and that the diagram-versus-photo task split, not the rank order, is the stable signal. Strength on text-based clinical question answering need not predict vision-reading rank, which cautions against transferring text leaderboards to vision tasks.
 
 The open-ended, rubric-graded design exposes failures that closed question-answering can hide. A description can be fluent and confident yet fail because it omits a required finding or commits a prohibited error, and the unlabeled clinical-photograph column is where that happens most. For a clinician or educator deciding which model to trust with an unlabeled intraoral photograph, the right summary is not a single winner but a task-conditioned expectation: reading diagrams is largely solved, reading an unlabeled real mouth is not.
 
@@ -198,7 +198,7 @@ The method is intentionally small and preliminary. The benchmark uses a single t
 
 \section{Limitations}
 
-First, the benchmark contains 90 images; the Wilson intervals are correspondingly wide and small differences should be treated as noise. Second, the run used a single trial at temperature 0; run-to-run stability was not measured. Third, ground truth was authored by one periodontist and confirmed by one independent dentist, which is stronger than single-author ground truth but is not a multi-expert consensus panel, and the independent reviewer reported agreement rather than adjudicating judge disagreements. Fourth, all pass/fail verdicts rely on model judges that agreed only moderately ($\kappa=0.65$). Fifth, contamination cannot be fully excluded for openly licensed images, and a content-matched held-out evaluation is left to future work. Sixth, results reflect model versions and OpenRouter routing on June 15, 2026, which may drift. Finally, the benchmark scores text descriptions of dental images; it does not validate clinical deployment, diagnosis, or patient outcomes, and radiographic interpretation is out of scope.
+First, the benchmark contains 90 images; the Wilson intervals are correspondingly wide and small differences should be treated as noise. Second, the run used a single trial at temperature 0; run-to-run stability was not measured. Third, ground truth was authored by one periodontist and confirmed by one independent dentist, which is stronger than single-author ground truth but is not a multi-expert consensus panel, and the independent reviewer reported agreement rather than adjudicating judge disagreements. Fourth, all pass/fail verdicts rely on model judges that, while in substantial agreement by the Landis--Koch scale ($\kappa=0.65$), are themselves evaluated models, and the two judges differ enough that absolute pass rates are judge-dependent. Fifth, contamination cannot be fully excluded for openly licensed images, and a content-matched held-out evaluation is left to future work. Sixth, results reflect model versions and OpenRouter routing on June 15, 2026, which may drift. Finally, the benchmark scores text descriptions of dental images; it does not validate clinical deployment, diagnosis, or patient outcomes, and radiographic interpretation is out of scope.
 
 \section{Data and Code Availability}
 
@@ -238,7 +238,8 @@ R.~Wang, S.~Zhou, J.~Wang, W.~Xie, and X.~Che.
 \newblock OralMLLM-Bench: Evaluating cognitive capabilities of multimodal large language models in dental practice.
 \newblock arXiv:2605.01333, 2026.
 
-\bibitem{huang2025orodental}
+\bibitem{lv2025orodental}
+H.~Lv, I.~Haq, J.~Du, J.~Ma, B.~Zhu, X.~Dang, C.~Liang, R.~Du, Y.~Zhang, and M.~Saqib.
 \newblock A benchmark multimodal oro-dental dataset for large vision-language models.
 \newblock arXiv:2511.04948, 2025.
 
@@ -247,9 +248,10 @@ H.~Zhu, Y.~Xu, Y.~Li, Z.~Meng, and Z.~Liu.
 \newblock DentalBench: Benchmarking and advancing LLMs capability for bilingual dentistry understanding.
 \newblock arXiv:2508.20416, 2025.
 
-\bibitem{omf2026anatomy}
+\bibitem{nguyen2025omf}
+V.~A. Nguyen, T.~Q.~T. Vuong, and V.~H. Nguyen.
 \newblock Benchmarking large-language-model vision capabilities in oral and maxillofacial anatomy: A cross-sectional study.
-\newblock PubMed Central PMC12561936, 2026.
+\newblock \emph{PLoS One}, 2025. PMC12561936.
 
 \bibitem{zheng2023judge}
 L.~Zheng, W.-L. Chiang, Y.~Sheng, S.~Zhuang, Z.~Wu, Y.~Zhuang, Z.~Lin, Z.~Li, D.~Li, E.~P. Xing, et~al.

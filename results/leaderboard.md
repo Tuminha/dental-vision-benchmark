@@ -28,15 +28,15 @@ _Top cluster, overlapping CIs: Gemini 3.1 Pro, Claude Opus 4.8, Qwen3.7 Plus. Th
 
 ## Judge agreement and self-preference check
 
-Verdict agreement 82%, Cohen's kappa 0.65. The primary (Opus) judge is more lenient than the secondary (GPT-5.5) judge for every model. There is **no own-family advantage in these pass-rate deltas** (Claude has the *smallest* primary-vs-secondary gap, not the largest), though a single-pass delta cannot rule out subtler bias.
+Verdict agreement 82%, Cohen's kappa 0.65 (substantial, Landis-Koch). The primary (Opus) judge is more lenient than the secondary (GPT-5.5) judge for every model. Claude has the *smallest* primary-vs-secondary gap, which is not what a simple self-preference effect would predict; but this delta conflates the secondary judge's strictness with self-preference, and the leaderboard uses the lenient primary judge, so it cannot cleanly separate the two. Absolute pass rates are judge-dependent.
 
 | Model | Primary (Opus) | Secondary (GPT-5.5) | Delta |
 |---|---:|---:|---:|
 | Gemini 3.1 Pro | 72% | 50% | +22 |
-| Claude Opus 4.8 | 63% | 56% | +8 |
+| Claude Opus 4.8 | 63% | 56% | +7 |
 | Qwen3.7 Plus | 61% | 47% | +14 |
 | GPT-5.5 | 56% | 36% | +20 |
-| GLM-4.6V | 34% | 16% | +19 |
+| GLM-4.6V | 34% | 16% | +18 |
 | Llama 4 Maverick | 28% | 11% | +17 |
 
 ## Severity (soft metric; 11 graded items)

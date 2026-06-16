@@ -72,7 +72,7 @@ def main() -> None:
         L.append(f"| {m} | {acc(full):.0f}% | {acc(clean):.0f}% |")
     L += [""]
 
-    ok = [x for x in r if x["ok"]]
+    ok = [x for x in r if x["ok"] and not x["is_control"]]  # agreement over the 540 main descriptions
     a = sum(1 for x in ok if x["correct"] and x["correct_judge2"])
     b = sum(1 for x in ok if x["correct"] and not x["correct_judge2"])
     c = sum(1 for x in ok if not x["correct"] and x["correct_judge2"])
@@ -82,16 +82,18 @@ def main() -> None:
     pe = ((a + b) / nn) * ((a + c) / nn) + ((c + d) / nn) * ((b + d) / nn)
     kappa = (po - pe) / (1 - pe) if pe != 1 else 1.0
     L += ["## Judge agreement and self-preference check", "",
-          f"Verdict agreement {100 * po:.0f}%, Cohen's kappa {kappa:.2f}. The primary (Opus) judge is more "
-          "lenient than the secondary (GPT-5.5) judge for every model. There is **no own-family advantage in "
-          "these pass-rate deltas** (Claude has the *smallest* primary-vs-secondary gap, not the largest), "
-          "though a single-pass delta cannot rule out subtler bias.", "",
+          f"Verdict agreement {100 * po:.0f}%, Cohen's kappa {kappa:.2f} (substantial, Landis-Koch). The primary "
+          "(Opus) judge is more lenient than the secondary (GPT-5.5) judge for every model. Claude has the "
+          "*smallest* primary-vs-secondary gap, which is not what a simple self-preference effect would predict; "
+          "but this delta conflates the secondary judge's strictness with self-preference, and the leaderboard "
+          "uses the lenient primary judge, so it cannot cleanly separate the two. Absolute pass rates are "
+          "judge-dependent.", "",
           "| Model | Primary (Opus) | Secondary (GPT-5.5) | Delta |", "|---|---:|---:|---:|"]
     for m in rank:
         mr = [x for x in m_ if x["model"] == m and x["ok"]]
         j1 = 100 * sum(x["correct"] for x in mr) / len(mr)
         j2 = 100 * sum(x["correct_judge2"] for x in mr) / len(mr)
-        L.append(f"| {m} | {j1:.0f}% | {j2:.0f}% | {j1 - j2:+.0f} |")
+        L.append(f"| {m} | {j1:.0f}% | {j2:.0f}% | {round(j1) - round(j2):+d} |")  # delta of rounded columns, matches the manuscript
     L += [""]
 
     sev = [x for x in m_ if sev_of(x)]
