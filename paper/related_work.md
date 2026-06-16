@@ -32,8 +32,8 @@ interpretation or a single narrow task such as landmark or lesion localization. 
 format:** instead of multiple-choice, label-matching, or localization, each model writes a free-text
 description that is graded against a clinician rubric, which is closer to how a clinician actually
 queries these systems. (iii) **Openness and contamination-awareness:** the public images are openly
-licensed and the dataset is fully released, and the design adds a leakage guard and a held-out
-probe (below), which the atlas and lesion studies do not.
+licensed and the dataset is fully released, and the design adds a leakage guard and a
+transformed-control sanity check (below), which the atlas and lesion studies do not.
 
 ## General medical multimodal benchmarks
 
