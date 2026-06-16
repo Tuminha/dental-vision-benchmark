@@ -66,7 +66,7 @@ intervals, task splits, a sensitivity pass and judge statistics in
 
 - **A top cluster, not a single winner:** Gemini 3.1 Pro, Claude Opus 4.8 and Qwen3.7 Plus overlap within their 95% confidence intervals at n=90.
 - **GPT-5.5 sits just below the cluster**, even though GPT topped the sibling *text* benchmark. Best-at-text is not best-at-vision.
-- **The headline is the task split, not the rank.** Every model reads diagrams and *labeled* images better than *unlabeled clinical photos*, where the weakest models fall below 30%. Reading an unlabeled real mouth is the hard, unsolved part.
+- **The headline is the task split, not the rank.** Diagrams and *labeled* images are read more reliably than *unlabeled clinical photos*, where the weakest models fall below 30%. Reading an unlabeled real mouth is the hard, unsolved part.
 
 Numbers are from the corrected run (2026-06-15; severity not gated, clinician-reviewed ground truth) and are judge-dependent (Cohen's kappa 0.65); treat the ranking as a top cluster, not an exact order.
 
