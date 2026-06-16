@@ -89,7 +89,7 @@ Llama 4 Maverick & \texttt{meta-llama/llama-4-maverick} & Meta \\
 
 \subsection{Leakage guard}
 
-Each model received only the image, encoded inline as a base64 data URI, with the caption removed and with no tools or web access. Because the model cannot retrieve the original caption, a high score can only come from reading the picture rather than recalling associated text. The caption is withheld from the contestant but is given to the judges as ground truth, so this guard limits input-side recall; it does not by itself certify that a passing description was read from the pixels. The full pipeline is shown in Figure~\ref{fig:flow}.
+Each model received only the image, encoded inline as a base64 data URI, with the caption removed and with no tools or web access. Because the model cannot retrieve the original caption, a high score should reflect reading the picture rather than recalling associated text. The caption is withheld from the contestant but is given to the judges as ground truth, so this guard limits input-side recall; it does not by itself certify that a passing description was read from the pixels. The full pipeline is shown in Figure~\ref{fig:flow}.
 
 \begin{figure}[t]
 \centering
