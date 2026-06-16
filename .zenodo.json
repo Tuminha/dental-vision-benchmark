@@ -1,0 +1,24 @@
+{
+  "title": "Dental Vision Benchmark",
+  "description": "A small, clinician-reviewed, contamination-aware benchmark of non-radiographic dental image reading: 90 openly licensed dental images (diagrams and clinical photographs), six vision language models, caption-free input with a leakage guard, dual independent image-grounded judges, paired statistics, and independent clinician validation. The benchmark code is MIT; images keep their own open licenses.",
+  "upload_type": "software",
+  "license": "MIT",
+  "creators": [
+    {
+      "name": "Teixeira Barbosa, Francisco",
+      "affiliation": "Periospot; Foundation for Oral Rehabilitation"
+    },
+    {
+      "name": "Robles Cantero, Daniel",
+      "affiliation": "Universidad Europea Miguel de Cervantes (UEMC), Valladolid, Spain"
+    }
+  ],
+  "keywords": [
+    "dentistry",
+    "vision language models",
+    "benchmark",
+    "clinical image understanding",
+    "LLM-as-a-judge",
+    "reproducible evaluation"
+  ]
+}

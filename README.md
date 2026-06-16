@@ -6,6 +6,7 @@
 ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3FB6B2.svg)
 ![status](https://img.shields.io/badge/status-v1%20reviewed-3FB6B2.svg)
 [![Interactive report](https://img.shields.io/badge/report-live-3FB6B2.svg)](https://tuminha.github.io/dental-vision-benchmark/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20722369.svg)](https://doi.org/10.5281/zenodo.20722369)
 
 Clinicians already show AI a clinical photo, a diagram, or a figure from a paper and
 ask "what is this?". The models sound confident, but existing public dental benchmarks lean
@@ -136,7 +137,8 @@ reference caption. The benchmark code is MIT; the images keep their own licenses
   author = {Teixeira Barbosa, Francisco and Robles Cantero, Daniel},
   title  = {Dental Vision Benchmark: Which Vision Language Model Best Reads a Dental Image?},
   year   = {2026},
-  url    = {https://github.com/Tuminha/dental-vision-benchmark}
+  url    = {https://github.com/Tuminha/dental-vision-benchmark},
+  doi    = {10.5281/zenodo.20722369}
 }
 ```
 
