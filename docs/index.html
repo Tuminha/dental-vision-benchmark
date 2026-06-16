@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dental Vision Benchmark: Interactive Report</title>
+  <meta name="description" content="Interactive report for a clinician-reviewed dental vision benchmark: which vision language model best reads a dental image, with confidence intervals, task splits, and judge agreement.">
+  <meta property="og:title" content="Dental Vision Benchmark">
+  <meta property="og:description" content="Which AI model can actually read a dental image? A clinician-authored, contamination-aware benchmark across 90 dental diagrams and clinical photos.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css?v=1">
+  <link rel="stylesheet" href="styles.css?v=1">
+</head>
+<body>
+  <a class="skip-link" href="#leaderboard">Skip to the leaderboard</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <header class="masthead">
+    <a class="wordmark" href="#top">Dental Vision Benchmark</a>
+    <a class="masthead-link" href="https://github.com/Tuminha/dental-vision-benchmark">View on GitHub ↗</a>
+  </header>
+
+  <section id="top" class="stat-hero" aria-labelledby="hero-qualifier">
+    <p class="hero-figure" aria-hidden="true"><span id="heroFigure" data-target="72.2">72.2</span><span class="unit">%</span></p>
+    <h1 id="hero-qualifier" class="qualifier">The top score on 90 clinician-reviewed dental images. The intervals overlap, so read the task split, not the ranking.</h1>
+    <p class="hero-meta">
+      Six frontier vision models read each image with the caption removed and no internet access.
+      Two independent judges, each able to see the image and the clinician rubric, grade every
+      description. Every image, rubric, and verdict is public.
+      <a href="#how">How it works</a> · <a href="#leaderboard">The leaderboard</a> ·
+      <a href="#images">The 90 images</a> · <a href="#judges">Judge agreement</a> ·
+      <a href="#reproduce">Reproduce it</a>
+    </p>
+    <a class="cta-chip" href="#leaderboard">Explore the leaderboard ↓</a>
+    <div class="stat-strip" id="metricGrid"></div>
+  </section>
+
+  <main>
+    <section class="section intro-grid" aria-labelledby="report-summary-title">
+      <div class="prose">
+        <h2 id="report-summary-title">The useful signal is the task, not the rank.</h2>
+        <p>
+          The top three systems sit inside one another's confidence intervals at 90 images.
+          The robust finding is where reading breaks down: every model handles diagrams and
+          labeled figures far better than an unlabeled clinical photo, where the weaker models
+          fall toward 20 to 29 percent. Reading an unlabeled real mouth is the hard, unsolved part.
+        </p>
+      </div>
+      <p class="aside-note">
+        <strong>Read this as a reproducible benchmark report.</strong>
+        Small score gaps are noisy. Numbers come from the corrected run, severity is reported
+        and not gated, ground truth was clinician-reviewed, and every raw file is one click away.
+      </p>
+    </section>
+
+    <section class="section" id="how" aria-labelledby="how-title">
+      <div class="section-head">
+        <div>
+          <h2 id="how-title">How it works</h2>
+          <p class="section-note">Image only going in, the real answer key at judging. <a href="assets/flow.svg" download>Download the SVG ↗</a></p>
+        </div>
+      </div>
+      <img class="infographic" id="infographicImg" src="assets/flow.svg" width="720" height="612" alt="Pipeline: open-licensed dental images plus one transformed control are shown caption-free to six vision models; two independent judges that see the image and the clinician rubric grade each description; the output is a leaderboard, a transformed-control check, and the task split.">
+    </section>
+
+    <section class="section" id="leaderboard" aria-labelledby="leaderboard-title">
+      <div class="section-head">
+        <div>
+          <h2 id="leaderboard-title">Pass rate by model</h2>
+          <p class="section-note">A pass needs every <code>must_identify</code> point covered and no <code>must_avoid</code> error. Re-rank by split; select a model for its full record.</p>
+        </div>
+        <div class="control-row" aria-label="Leaderboard split">
+          <label>
+            Split
+            <select id="splitFilter"></select>
+          </label>
+        </div>
+      </div>
+      <div class="leaderboard-layout">
+        <div>
+          <div id="leaderboardRows" class="leaderboard-rows"></div>
+        </div>
+        <aside class="detail-card" id="modelDetail" aria-live="polite"></aside>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="matrix-title">
+      <div class="section-head">
+        <div>
+          <h2 id="matrix-title">Where the task gets hard</h2>
+          <p class="section-note">Pass rate per split. The unlabeled clinical-photo column is the hardest and most informative test.</p>
+        </div>
+      </div>
+      <div class="matrix-wrap" id="splitMatrix"></div>
+    </section>
+
+    <section class="section" id="images" aria-labelledby="images-title">
+      <div class="section-head">
+        <div>
+          <h2 id="images-title">The 90 images</h2>
+          <p class="section-note">Each dot is one model's pass or fail on that image. Hardest images first.</p>
+        </div>
+        <div class="control-row">
+          <label>
+            Search
+            <input id="imageSearch" type="search" placeholder="implant, leukoplakia, diagram…">
+          </label>
+        </div>
+      </div>
+      <div class="image-grid" id="imageGrid"></div>
+      <p class="legend" aria-hidden="true">
+        <span><span class="dot correct"></span> pass</span>
+        <span><span class="dot wrong"></span> fail</span>
+      </p>
+    </section>
+
+    <section class="section" id="judges" aria-labelledby="judges-title">
+      <div class="section-head">
+        <div>
+          <h2 id="judges-title">Two judges, reported not assumed</h2>
+          <p class="section-note">Every description was graded by a primary judge (Claude Opus 4.8) and an independent secondary (GPT-5.5). Absolute pass rates are judge-dependent; the ranking is stable.</p>
+        </div>
+      </div>
+      <div class="judge-grid" id="judgeCards"></div>
+      <div class="judge-table-wrap" id="judgeTable"></div>
+    </section>
+
+    <section class="section reproduce" id="reproduce" aria-labelledby="reproduce-title">
+      <div class="prose">
+        <h2 id="reproduce-title">Reproduce it</h2>
+        <p>
+          The repository carries the image set with clinician ground truth, the raw per-row
+          results, the pinned run manifest, the runner, the analysis and this report's generator.
+          One command rebuilds every table and this page.
+        </p>
+        <div class="citation-box">
+          <button id="copyCitation" class="copy-btn" type="button">Copy BibTeX</button>
+          <pre id="citationText">@misc{teixeirabarbosa_dental_vision_benchmark_2026,
+  author = {Teixeira Barbosa, Francisco},
+  title  = {Dental Vision Benchmark: Which Vision Language Model Best Reads a Dental Image?},
+  year   = {2026},
+  url    = {https://github.com/Tuminha/dental-vision-benchmark}
+}</pre>
+        </div>
+      </div>
+      <ul class="resource-list">
+        <li><a href="https://github.com/Tuminha/dental-vision-benchmark/blob/main/data/items.json">Image set + ground truth</a></li>
+        <li><a href="https://github.com/Tuminha/dental-vision-benchmark/blob/main/results/results.jsonl">Per-row results JSONL</a></li>
+        <li><a href="https://github.com/Tuminha/dental-vision-benchmark/blob/main/results/leaderboard.md">Leaderboard + statistics</a></li>
+        <li><a href="https://github.com/Tuminha/dental-vision-benchmark/blob/main/results/run_manifest.json">Pinned run manifest</a></li>
+        <li><a href="https://github.com/Tuminha/dental-vision-benchmark/blob/main/src/run_vision_eval.py">Benchmark runner</a></li>
+        <li><a href="https://github.com/Tuminha/dental-vision-benchmark/blob/main/tools/build_pages.py">This report's generator</a></li>
+        <li><a href="https://github.com/Tuminha/dental-vision-benchmark/blob/main/VALIDATION.md">Clinician sign-off</a></li>
+        <li><a href="https://github.com/Tuminha/dental-vision-benchmark/blob/main/LICENSE">MIT license</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="colophon">
+    Dental Vision Benchmark · Francisco Teixeira Barbosa (Periospot / Foundation for Oral Rehabilitation) · June 2026<br>
+    Data commit <code id="dataCommit"></code> · 90 images · 6 models · <span id="footVerdicts">1,092</span> judge verdicts ·
+    built by <a href="https://github.com/Tuminha/dental-vision-benchmark/blob/main/tools/build_pages.py">tools/build_pages.py</a>
+    from the committed files · MIT ·
+    <a href="https://github.com/Tuminha/dental-vision-benchmark">github.com/Tuminha/dental-vision-benchmark</a>
+  </footer>
+
+  <script src="report-data.js?v=1"></script>
+  <script src="app.js?v=1"></script>
+</body>
+</html>
