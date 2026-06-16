@@ -67,7 +67,7 @@ Each image is paired with a clinician-authored rubric rather than its original w
 
 \subsection{Models and execution}
 
-We evaluated six vision-capable models, the strongest of each model family available on OpenRouter on the run date (Table~\ref{tab:models}). Two strong open-weight releases of the period, GLM-5.2 and Rio 3.5, are text-only and therefore cannot enter a vision benchmark. Each image was shown to each model once at temperature 0, with a 1{,}500-token description budget. The run produced 90 images $\times$ 6 models $=$ 540 description rows.
+We evaluated six vision-capable models, the strongest of each model family available on OpenRouter on the run date (Table~\ref{tab:models}). Two strong open-weight releases of the period, GLM-5.2 and Rio 3.5, are text-only and therefore cannot enter a vision benchmark. Each image was shown to each model once at temperature 0, with a 1{,}500-token description budget. OpenRouter routed each request to an upstream provider: \model{Claude Opus 4.8}, \model{GPT-5.5}, \model{Qwen3.7 Plus}, and \model{GLM-4.6V} resolved to a single provider each (Anthropic, OpenAI, Alibaba, and Novita respectively), \model{Gemini 3.1 Pro} was served almost entirely by Google, and \model{Llama 4 Maverick} was distributed across four providers (Parasail, Google, DeepInfra, and Novita). The per-row provider is recorded in the released results and the run manifest. The run produced 90 images $\times$ 6 models $=$ 540 description rows.
 
 \begin{table}[t]
 \centering

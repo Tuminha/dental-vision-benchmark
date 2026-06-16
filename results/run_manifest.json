@@ -15,6 +15,15 @@
     {"label": "Llama 4 Maverick", "id": "meta-llama/llama-4-maverick"},
     {"label": "GLM-4.6V", "id": "z-ai/glm-4.6v"}
   ],
+  "provider_distribution": {
+    "_note": "OpenRouter upstream provider per model across the 540 main-set rows; per-row provider is also stored in results/results.jsonl.",
+    "Gemini 3.1 Pro": {"Google": 88, "Google AI Studio": 2},
+    "Claude Opus 4.8": {"Anthropic": 90},
+    "Qwen3.7 Plus": {"Alibaba": 90},
+    "GPT-5.5": {"OpenAI": 90},
+    "GLM-4.6V": {"Novita": 90},
+    "Llama 4 Maverick": {"Parasail": 53, "Google": 18, "DeepInfra": 17, "Novita": 2}
+  },
   "judges": {
     "primary": "anthropic/claude-opus-4.8",
     "secondary": "openai/gpt-5.5"

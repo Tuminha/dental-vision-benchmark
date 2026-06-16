@@ -11,7 +11,7 @@ Draft preprint for the Dental Vision Benchmark.
 ## Build
 
 ```bash
-python tools/build_figures.py     # regenerate figures from results
+python3 tools/build_figures.py    # regenerate figures from results (needs matplotlib + cairosvg)
 cd paper && tectonic main.tex     # compile main.pdf
 ```
 

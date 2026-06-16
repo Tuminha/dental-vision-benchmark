@@ -128,8 +128,11 @@ function finish() {
 }
 
 function init() {
-  byId("vName").value = "Daniel Robles Cantero";
-  byId("vAffil").value = "Miguel de Cervantes European University (UEMC), Valladolid, Spain";
+  // Prefill the reviewer from URL params (?name=...&affil=...) so the page is reusable for any
+  // independent reviewer; default to blank otherwise.
+  const params = new URLSearchParams(location.search);
+  byId("vName").value = params.get("name") || "";
+  byId("vAffil").value = params.get("affil") || "";
   render();
   updateCounts();
   ["vAttest", "vName"].forEach((id) => byId(id).addEventListener("input", gate));

@@ -73,7 +73,7 @@ Numbers are from the corrected run (2026-06-15; severity not gated, clinician-re
 ## The lineup
 
 Six vision-capable models, the strongest of each family on OpenRouter as of the run date
-(2026-06-14); pinned IDs and full run settings are in
+(2026-06-15); pinned IDs and full run settings are in
 [`results/run_manifest.json`](results/run_manifest.json):
 
 | Model | OpenRouter id |
@@ -91,7 +91,7 @@ cannot enter a vision benchmark.
 ## Quickstart
 
 ```bash
-python -m venv .venv && source .venv/bin/activate
+python3 -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 export OPENROUTER_API_KEY=...        # one key reaches every model
 python src/run_vision_eval.py
@@ -131,7 +131,7 @@ reference caption. The benchmark code is MIT; the images keep their own licenses
 
 ```bibtex
 @misc{teixeirabarbosa_dental_vision_benchmark_2026,
-  author = {Teixeira Barbosa, Francisco},
+  author = {Teixeira Barbosa, Francisco and Robles Cantero, Daniel},
   title  = {Dental Vision Benchmark: Which Vision Language Model Best Reads a Dental Image?},
   year   = {2026},
   url    = {https://github.com/Tuminha/dental-vision-benchmark}

@@ -1,3 +1,6 @@
 requests
 python-dotenv
 pillow
+# figure / manuscript generation (tools/build_figures.py)
+matplotlib
+cairosvg
