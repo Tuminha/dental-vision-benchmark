@@ -50,9 +50,9 @@ First full run: 90 images, six models, two independent judges. Full table with c
 intervals, task splits, a sensitivity pass and judge statistics in
 [`results/leaderboard.md`](results/leaderboard.md).
 
-- **A top cluster, not a single winner:** Gemini 3.1 Pro (72%), Claude Opus 4.8 (62%) and Qwen3.7 Plus (59%) overlap within their 95% confidence intervals at n=90.
+- **A top cluster, not a single winner:** Gemini 3.1 Pro (72%), Claude Opus 4.8 (63%) and Qwen3.7 Plus (61%) overlap within their 95% confidence intervals at n=90.
 - **GPT-5.5 (56%) sits just below the cluster**, even though GPT topped the sibling *text* benchmark. Best-at-text is not best-at-vision.
-- **Llama 4 Maverick (28%) and GLM-4.6V (32%) trail.**
+- **Llama 4 Maverick (28%) and GLM-4.6V (34%) trail.**
 - **The headline is the task split, not the rank.** Every model reads diagrams and *labeled* images better than *unlabeled clinical photos*, where the weaker models fall to ~20-26%. Reading an unlabeled real mouth is the hard, unsolved part.
 
 Numbers are from the corrected run (2026-06-15; severity not gated, clinician-reviewed ground truth) and are judge-dependent (Cohen's kappa 0.65); treat the ranking as a top cluster, not an exact order.

@@ -6,11 +6,11 @@
 
 | Model | Score | 95% CI | Diagrams | Clinical photos | Labeled | Unlabeled |
 |---|---:|:---:|---:|---:|---:|---:|
-| Gemini 3.1 Pro | 72% (65/90) | [62, 80] | 73% | 71% | 76% | 69% |
-| Claude Opus 4.8 | 62% (56/90) | [52, 72] | 69% | 53% | 76% | 51% |
-| Qwen3.7 Plus | 59% (53/90) | [49, 68] | 65% | 50% | 71% | 49% |
+| Gemini 3.1 Pro | 72% (65/90) | [62, 80] | 71% | 74% | 76% | 69% |
+| Claude Opus 4.8 | 63% (57/90) | [53, 73] | 69% | 55% | 76% | 53% |
+| Qwen3.7 Plus | 61% (55/90) | [51, 71] | 67% | 53% | 71% | 53% |
 | GPT-5.5 | 56% (50/90) | [45, 65] | 63% | 45% | 68% | 45% |
-| GLM-4.6V | 32% (29/90) | [23, 42] | 37% | 26% | 41% | 24% |
+| GLM-4.6V | 34% (31/90) | [25, 45] | 38% | 29% | 41% | 29% |
 | Llama 4 Maverick | 28% (25/90) | [20, 38] | 33% | 21% | 27% | 29% |
 
 _Top cluster, overlapping CIs: Gemini 3.1 Pro, Claude Opus 4.8, Qwen3.7 Plus. The robust finding is the task split (unlabeled clinical photos are hardest), not a single winner._
@@ -20,10 +20,10 @@ _Top cluster, overlapping CIs: Gemini 3.1 Pro, Claude Opus 4.8, Qwen3.7 Plus. Th
 | Model | Full | Clean |
 |---|---:|---:|
 | Gemini 3.1 Pro | 72% | 75% |
-| Claude Opus 4.8 | 62% | 66% |
-| Qwen3.7 Plus | 59% | 64% |
+| Claude Opus 4.8 | 63% | 68% |
+| Qwen3.7 Plus | 61% | 66% |
 | GPT-5.5 | 56% | 60% |
-| GLM-4.6V | 32% | 35% |
+| GLM-4.6V | 34% | 38% |
 | Llama 4 Maverick | 28% | 31% |
 
 ## Judge agreement and self-preference check
@@ -32,11 +32,11 @@ Verdict agreement 82%, Cohen's kappa 0.65. The primary (Opus) judge is more leni
 
 | Model | Primary (Opus) | Secondary (GPT-5.5) | Delta |
 |---|---:|---:|---:|
-| Gemini 3.1 Pro | 73% | 51% | +22 |
-| Claude Opus 4.8 | 62% | 56% | +7 |
-| Qwen3.7 Plus | 60% | 48% | +12 |
+| Gemini 3.1 Pro | 72% | 50% | +22 |
+| Claude Opus 4.8 | 63% | 56% | +8 |
+| Qwen3.7 Plus | 61% | 47% | +14 |
 | GPT-5.5 | 56% | 36% | +20 |
-| GLM-4.6V | 32% | 14% | +18 |
+| GLM-4.6V | 34% | 16% | +19 |
 | Llama 4 Maverick | 28% | 11% | +17 |
 
 ## Severity (soft metric; 11 graded items)

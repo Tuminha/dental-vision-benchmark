@@ -27,5 +27,5 @@
     "image_transport": "inline base64 data URI",
     "scoring": "rubric pass/fail (all must_identify, no must_avoid)"
   },
-  "notes": "Numbers are from the corrected run (2026-06-15): severity is a soft metric (not gated), and both judges' full verdicts plus covered/violations and provider are stored per row in results.jsonl. 3 of 546 calls errored (transient) and are scored as fails. Model IDs are pinned here because 'latest of each family' goes stale."
+  "notes": "Numbers are from the corrected run (2026-06-15): severity is a soft metric (not gated), and both judges' full verdict objects plus covered/violations and provider are stored per row in results.jsonl. All 546 model-judge rows are complete: 7 rows that hit transient generation/judge hiccups in the main run were surgically re-run on 2026-06-16, so there are no errors or partial rows. Model IDs are pinned here because 'latest of each family' goes stale."
 }
