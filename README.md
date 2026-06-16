@@ -42,8 +42,8 @@ exposure.
 
 - **Leaderboard** — rubric pass-rate per model (does the description satisfy the
   clinician's `must_identify` points and commit none of the `must_avoid` errors).
-- **Modality accuracy** — does the model know a diagram from a radiograph from a
-  clinical photo.
+- **Modality accuracy** — does the model know a diagram from a clinical photo (radiographs
+  are out of scope; some rubrics also require not mislabeling an image as a radiograph).
 - **Transformed-control check** — accuracy on the original public image vs a
   flipped/cropped copy (a sanity check, not a memorization metric).
 - **Judge agreement** — primary judge vs an independent second judge.
@@ -110,7 +110,7 @@ python tools/build_adjudication.py  # validation/ judge-disagreement worklist
 ## Status
 
 **v1, clinician-reviewed (2026-06-15).**
-The dataset is 90 dental images plus a transformed control item, across ~16 buckets (anatomy,
+The dataset is 90 dental images plus a transformed control item, across the major dental categories (anatomy,
 periodontics, caries, implants, endodontics, orthodontics/occlusion, oral pathology,
 restorative, tooth wear, developmental anomalies, mucosal lesions, trauma, TMJ/salivary,
 prosthetics). Diagrams and clinical photos only; radiographs are deliberately out of scope

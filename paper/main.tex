@@ -27,7 +27,7 @@ Periospot; Foundation for Oral Rehabilitation\\
 \and
 Daniel Robles Cantero\\
 Dens-IA Dental Group Research, Faculty of Health Sciences,\\
-Universidad Europea Miguel de Cervantes (UEMC)\\
+Universidad Europea Miguel de Cervantes (UEMC), Valladolid, Spain\\
 \texttt{drobles@clinica.uemc.es}
 }
 
@@ -39,10 +39,10 @@ Universidad Europea Miguel de Cervantes (UEMC)\\
 
 \begin{abstract}
 Clinicians already show vision language models a diagram, an illustration, or a clinical photograph and ask ``what is this?'', but no public benchmark measures which model reads a dental image correctly when radiographs are excluded.
-We present a small, clinician-authored, contamination-aware benchmark of \emph{non-radiographic} dental image understanding: 90 openly licensed images (52 diagrams and 38 clinical photographs) across roughly sixteen categories, each paired with explicit \emph{must identify} and \emph{must avoid} rubric criteria and a reference caption.
+We present a small, clinician-authored, contamination-aware benchmark of \emph{non-radiographic} dental image understanding: 90 openly licensed images (52 diagrams and 38 clinical photographs) across about a dozen broad categories, each paired with explicit \emph{must identify} and \emph{must avoid} rubric criteria and a reference caption.
 Six contemporary vision models were evaluated through OpenRouter on June 15, 2026, with the caption stripped and no tool or web access (a leakage guard), and each free-text description was graded by two independent judges from different vendors that each see the image and the rubric.
 \model{Gemini 3.1 Pro} led at 72\% (95\% Wilson interval [62, 80]), followed by \model{Claude Opus 4.8} at 63\% [53, 73] and \model{Qwen3.7 Plus} at 61\% [51, 71]; these intervals overlap and the ordering is not statistically resolved.
-The robust finding is a task split rather than a ranking: every model reads diagrams and labeled images far better than unlabeled clinical photographs, where the weaker models fall to 20--29\%.
+The robust finding is a task split rather than a ranking: diagrams and labeled images are read far more reliably than unlabeled clinical photographs, where the weaker models fall to 20--29\%.
 The two judges agreed on 82\% of descriptions (Cohen's $\kappa=0.65$), so absolute pass rates are judge-dependent.
 Ground truth was reviewed by the periodontist author and independently confirmed by a second dentist (90/90 items judged clinically fair).
 A transformed-control item showed no evidence that exact-image recognition drives scores.
@@ -61,7 +61,7 @@ Non-radiographic dental image reading, the diagrams, illustrations, and clinical
 
 \subsection{Benchmark dataset}
 
-The benchmark contains 90 dental images: 52 diagrams or illustrations and 38 clinical photographs, across roughly sixteen categories (tooth and periodontal anatomy, periodontology, caries, restorative dentistry, endodontics, implants, orthodontics and occlusion, oral pathology and mucosal lesions, developmental anomalies, tooth wear, trauma, and temporomandibular or salivary structures). Radiographic interpretation is deliberately out of scope; it is a separate, harder competency and is treated as a later tier. Forty-one images carry readable text labels and 49 do not. All images are openly licensed (Wikimedia Commons or open-access sources); per-image attribution is released with the dataset.
+The benchmark contains 90 dental images: 52 diagrams or illustrations and 38 clinical photographs, across about a dozen broad categories (tooth and periodontal anatomy, periodontology, caries, restorative dentistry, endodontics, implants, orthodontics and occlusion, oral pathology and mucosal lesions, developmental anomalies, tooth wear, trauma, and temporomandibular or salivary structures). Radiographic interpretation is deliberately out of scope; it is a separate, harder competency and is treated as a later tier. Forty-one images carry readable text labels and 49 do not. All images are openly licensed (Wikimedia Commons or open-access sources); per-image attribution is released with the dataset.
 
 Each image is paired with a clinician-authored rubric rather than its original web caption: a set of \emph{must identify} points that a correct reading must cover, a set of \emph{must avoid} errors, and a reference caption. A description is scored correct only if it covers all required points and commits no prohibited error. Disease severity, when applicable, is recorded but reported as a soft metric and does not gate the pass/fail score.
 
@@ -149,7 +149,7 @@ The top three models form a cluster whose intervals overlap substantially, and t
 
 \subsection{The task split is the headline}
 
-Figure~\ref{fig:split} and the right-hand columns of Table~\ref{tab:results} show the robust result. Every model reads diagrams and labeled images better than unlabeled clinical photographs. The gap is largest for the mid and lower tier: \model{GPT-5.5} falls from 63\% on diagrams to 45\% on unlabeled images, and \model{GLM-4.6V} and \model{Llama 4 Maverick} fall to 29\% and below on unlabeled clinical photographs. \model{Gemini 3.1 Pro} is the exception, reading clinical photographs (74\%) as well as diagrams (71\%). Reading an unlabeled real mouth, rather than a textbook diagram, is the hard and still unsolved part of this task. Modality identification, by contrast, was nearly saturated: every model labeled diagram versus photograph correctly about 99\% of the time, so the failures are in clinical reading, not image-type confusion.
+Figure~\ref{fig:split} and the right-hand columns of Table~\ref{tab:results} show the robust result. Across the field, diagrams and labeled images are read more reliably than unlabeled clinical photographs. The gap is largest for the mid and lower tier: \model{GPT-5.5} falls from 63\% on diagrams to 45\% on unlabeled images, and \model{GLM-4.6V} and \model{Llama 4 Maverick} fall to 29\% and below on unlabeled images. \model{Gemini 3.1 Pro} is the exception, reading clinical photographs (74\%) as well as diagrams (71\%). Reading an unlabeled real mouth, rather than a textbook diagram, is the hard and still unsolved part of this task. Modality identification, by contrast, was nearly saturated: every model labeled diagram versus photograph correctly about 99\% of the time, so the failures are in clinical reading, not image-type confusion.
 
 \begin{figure}[t]
 \centering
@@ -192,7 +192,7 @@ The public images are openly licensed and crawlable, so training-data exposure i
 
 Contemporary vision language models can read many dental diagrams and labeled images, but this benchmark shows why specialty-specific, open-ended evaluation remains necessary. The leading systems cluster tightly with overlapping intervals, so a ranking from 90 images would be overconfident; the defensible conclusion is that a leading cluster (\model{Gemini 3.1 Pro}, \model{Claude Opus 4.8}, \model{Qwen3.7 Plus}) performed substantially better than the open-weight tail, and that the diagram-versus-photo task split, not the rank order, is the stable signal. Strength on text-based clinical question answering need not predict vision-reading rank, which cautions against transferring text leaderboards to vision tasks.
 
-The open-ended, rubric-graded design exposes failures that closed question-answering can hide. A description can be fluent and confident yet fail because it omits a required finding or commits a prohibited error, and the unlabeled clinical-photograph column is where that happens most. For a clinician or educator deciding which model to trust with an unlabeled intraoral photograph, the right summary is not a single winner but a task-conditioned expectation: reading diagrams is largely solved, reading an unlabeled real mouth is not.
+The open-ended, rubric-graded design exposes failures that closed question-answering can hide. A description can be fluent and confident yet fail because it omits a required finding or commits a prohibited error, and the unlabeled clinical-photograph column is where that happens most. For a clinician or educator deciding which model to trust with an unlabeled intraoral photograph, the right summary is not a single winner but a task-conditioned expectation: reading diagrams and labeled images is markedly easier (the best models reach about 70\% on diagrams) than reading an unlabeled real mouth, though neither is solved.
 
 The method is intentionally small and preliminary. The benchmark uses a single trial, an LLM-judge layer whose absolute scores are judge-dependent, and ground truth from two dentists rather than a large consensus panel. The secondary-judge pass and the released judge-disagreement worklist quantify the judge problem rather than solve it; prespecified human adjudication of the disagreement set is the natural next step.
 
