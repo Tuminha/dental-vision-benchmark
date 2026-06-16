@@ -140,9 +140,13 @@ reference caption. The benchmark code is MIT; the images keep their own licenses
 
 ## Related work
 
-Complementary to OralMLLM-Bench (multimodal dental radiographs) and the text-only
-dental QA benchmarks. This one is dental diagrams, illustrations, and clinical
-images/figures from open-access articles, scored by caption-match, contamination-aware,
-and fully public. Radiographic interpretation is intentionally a separate, later tier.
+Most dental multimodal benchmarks are radiograph-centric (for example
+[OralMLLM-Bench](https://arxiv.org/abs/2605.01333)) or text-based, and the closest vision analog
+grades atlas anatomy landmarks. This benchmark instead covers non-radiographic dental diagrams,
+illustrations, and clinical photographs, graded against a clinician rubric, with a leakage guard
+and a transformed control, and fully public. A cited positioning against the dental, general
+medical (OmniMedVQA, GMAI-MMBench), LLM-as-judge, and contamination literature is in
+[`paper/related_work.md`](paper/related_work.md). Radiographic interpretation is intentionally a
+separate, later tier.
 
 Author: Francisco Teixeira Barbosa (Periospot / Foundation for Oral Rehabilitation).
