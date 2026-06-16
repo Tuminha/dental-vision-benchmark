@@ -1,9 +1,14 @@
-"""Harvest figures from more modern dental PDFs in the (private) Dropbox library.
+"""Harvest figures from a local (private) dental PDF library.
 
-Searches the article folder for figure-rich clinical/implant/perio topics from
-2006+, materializes each on demand (Dropbox online-only), and extracts figures via
-extract_figures.run(), accumulating data/private/figures_manifest.json. Private and
-gitignored. Usage: python tools/harvest.py [N]
+Searches an article folder for figure-rich clinical/implant/perio topics from
+2006+, materializes each on demand (handles cloud online-only files), and extracts
+figures via extract_figures.run(), accumulating data/private/figures_manifest.json.
+The harvested figures live under data/private/ and are gitignored (never published);
+this script is public and bakes in no personal path.
+
+Point it at your library with the DENTAL_VISION_ARTICLES_DIR environment variable
+(defaults to a gitignored in-repo data/private/source_pdfs). Usage:
+    DENTAL_VISION_ARTICLES_DIR=~/path/to/pdfs python tools/harvest.py [N]
 """
 from __future__ import annotations
 
@@ -18,9 +23,10 @@ ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "tools"))
 from extract_figures import run  # noqa: E402
 
+# Source PDF library. Set DENTAL_VISION_ARTICLES_DIR to your own folder; defaults
+# to a gitignored in-repo location so no personal path is baked into this file.
 DIR = Path(os.path.expanduser(
-    "~/Library/CloudStorage/Dropbox/Science in Dentistry APP/Azure Scientific "
-    "Literature Analyser/azure_scientific_nlp/renamed_scientific_articles"))
+    os.environ.get("DENTAL_VISION_ARTICLES_DIR", str(ROOT / "data/private/source_pdfs"))))
 PAPERS = ROOT / "data/private/papers"
 PAPERS.mkdir(parents=True, exist_ok=True)
 MAN = ROOT / "data/private/figures_manifest.json"
@@ -38,6 +44,10 @@ def slugify(name: str) -> str:
 
 def main() -> None:
     N = int(sys.argv[1]) if len(sys.argv) > 1 else 14
+    if not DIR.is_dir():
+        print(f"Source dir not found: {DIR}\n"
+              "Set DENTAL_VISION_ARTICLES_DIR to your local PDF library.")
+        return
     done = {p.stem for p in PAPERS.glob("*.pdf")}
     got = 0
     for f in sorted(DIR.glob("*.pdf")):
