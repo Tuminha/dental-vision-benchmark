@@ -4,3 +4,7 @@ pillow
 # figure / manuscript generation (tools/build_figures.py)
 matplotlib
 cairosvg
+# paired statistics (tools/paired_stats.py)
+scipy
+statsmodels
+pandas
