@@ -176,7 +176,8 @@ def fig_pairwise(recs):
         sig[(i, j)] = r["p_holm"] < 0.05; sig[(j, i)] = r["p_holm"] < 0.05
     fig, ax = plt.subplots(figsize=(6.4, 5.2))
     im = ax.imshow(M, cmap="RdBu", vmin=-50, vmax=50)
-    short = [m.split()[0] for m in MODELS]
+    short = [{"Gemini 3.1 Pro": "Gemini", "Claude Opus 4.8": "Claude", "Qwen3.7 Plus": "Qwen",
+              "GPT-5.5": "GPT", "GLM-4.6V": "GLM", "Llama 4 Maverick": "Llama"}[m] for m in MODELS]
     ax.set_xticks(range(len(MODELS))); ax.set_xticklabels(short, rotation=40, ha="right")
     ax.set_yticks(range(len(MODELS))); ax.set_yticklabels(short)
     for i in range(len(MODELS)):

@@ -10,9 +10,12 @@
 
 Clinicians already show AI a clinical photo, a diagram, or a figure from a paper and
 ask "what is this?". The models sound confident, but existing public dental benchmarks lean
-on radiographs, closed question-answering, or large-scale labeling. Few measure open-ended,
-caption-free *reading* of non-radiographic dental images against an explicit clinician
-pass/fail rubric. This is a small, clinician-authored, contamination-aware benchmark that does. Scope is dental and clinical diagrams,
+on radiographs, closed question-answering, or large-scale labeling. Most directly,
+[MetaDent](https://journals.sagepub.com/doi/10.1177/00220345261424242) is a large dental
+vision-language dataset for VQA, classification, and captioning. Few benchmarks measure
+open-ended, caption-free *reading* of non-radiographic dental images against an explicit
+clinician pass/fail rubric. This is a small, clinician-authored, contamination-aware benchmark
+that does, complementary to MetaDent's larger, annotation-oriented resource. Scope is dental and clinical diagrams,
 illustrations, and clinical images/figures from open-access articles. Radiographic
 interpretation is a separate, harder competency and is deliberately out of scope for v1.
 

@@ -53,7 +53,7 @@ The images, rubrics, per-row results, judge verdicts, and analysis code are rele
 
 Vision language models are now routinely shown medical images and asked to interpret them. General medical multimodal benchmarks have grown quickly, but they favor breadth and a closed question-answering format: OmniMedVQA spans 12 imaging modalities and more than 118{,}000 images, and reports that most models only slightly exceed random guessing \cite{hu2024omnimedvqa}; GMAI-MMBench is built from 284 datasets across 38 modalities, where even a leading proprietary model reached only 53.96\% \cite{chen2024gmaimmbench}. These suites measure option elimination at scale, not whether a model produces a clinically faithful free-text reading of a single image.
 
-Dentistry is underrepresented in this literature, and the dental work that does exist is dominated by \emph{radiographs}. OralMLLM-Bench evaluates models across periapical, panoramic, and lateral cephalometric radiographs and documents a persistent gap between models and clinicians \cite{wang2026oralmllm}. Large oro-dental datasets pair intraoral images and radiographs with clinical records \cite{lv2025orodental}, and text-centric efforts such as DentalBench measure factual dentistry knowledge rather than image reading \cite{zhu2025dentalbench}. Most directly, MetaDent released a large-scale dentistry image resource (60{,}669 images with an expert-annotated subset) and benchmark suites for visual question answering, multilabel classification, and captioning, built mainly on intraoral clinical photographs with semi-structured meta-labels \cite{li2026metadent}. The closest analog to the present work evaluated six model endpoints on oral and maxillofacial anatomy using landmark identification on atlas plates, where the best endpoint reached 53.1\% and the authors concluded that no model is reliable enough to serve as a stand-alone answer key \cite{nguyen2025omf}.
+Dentistry is underrepresented in this literature, and the dental work that does exist is dominated by \emph{radiographs}. OralMLLM-Bench evaluates models across periapical, panoramic, and lateral cephalometric radiographs and documents a persistent gap between models and clinicians \cite{wang2026oralmllm}. Large oro-dental datasets pair intraoral images and radiographs with clinical records \cite{lv2026orodental}, and text-centric efforts such as DentalBench measure factual dentistry knowledge rather than image reading \cite{zhu2025dentalbench}. Most directly, MetaDent released a large-scale dentistry image resource (60{,}669 images with an expert-annotated subset) and benchmark suites for visual question answering, multilabel classification, and captioning, built mainly on intraoral clinical photographs with semi-structured meta-labels \cite{li2026metadent}. The closest analog to the present work evaluated six model endpoints on oral and maxillofacial anatomy using landmark identification on atlas plates, where the best endpoint reached 53.1\% and the authors concluded that no model is reliable enough to serve as a stand-alone answer key \cite{nguyen2025omf}.
 
 Non-radiographic dental image reading, the diagrams, illustrations, and clinical photographs a clinician or student encounters daily, remains under-served: the dental benchmarks above emphasize radiographs, closed question answering, or large-scale labeling and annotation (as in MetaDent) rather than open-ended, rubric-graded reading. We therefore contribute a deliberately small, fully public, clinician-authored benchmark with three design commitments that these resources do not jointly provide: open-ended free-text grading against an explicit clinician pass/fail rubric, a leakage guard that removes the caption and any web access at input, and a transformed-control check for exact-image recognition, with per-row dual-judge auditability. We treat the model judge as an empirical quantity, reporting inter-judge agreement rather than assuming it, in line with work on LLM-as-judge reliability \cite{zheng2023judge,arora2025healthbench} and self-preference bias \cite{panickssery2024selfrecognition,wataoka2024selfpreference}.
 
@@ -164,7 +164,7 @@ Because every model is scored on the same 90 images, model comparisons are paire
 
 \begin{figure}[t]
 \centering
-\includegraphics[width=0.7\linewidth]{figures/pairwise.pdf}
+\includegraphics[width=0.82\linewidth]{figures/pairwise.pdf}
 \caption{Pairwise pass-rate differences (row minus column, percentage points); an asterisk marks a Holm-corrected McNemar $p<0.05$.}
 \label{fig:pairwise}
 \end{figure}
@@ -225,9 +225,10 @@ The data, code, manuscript source, and figures are released at the following ver
 \toprule
 Component & Identifier \\
 \midrule
-Raw model-run data & git commit \texttt{9fa7576} \\
-Manuscript, figures, and statistics & release \texttt{v1.0.0} \\
-Archived snapshot (all versions) & Zenodo \texttt{10.5281/zenodo.20722369} \\
+Released data snapshot & git commit \texttt{9fa7576} \\
+Software release (latest) & \texttt{v1.0.1} \\
+Concept DOI (all versions) & Zenodo \texttt{10.5281/zenodo.20722369} \\
+This-version DOI & Zenodo \texttt{10.5281/zenodo.20722424} \\
 \bottomrule
 \end{tabular}
 \end{center}
@@ -235,7 +236,7 @@ Images are openly licensed and keep their own licenses; the benchmark code is MI
 
 \section{Ethics Statement}
 
-This study used openly licensed dental images and clinician-authored rubrics. It did not use patient records or protected health information. No ethics approval or consent for publication was required, because the study used only openly licensed public images and no patient records or newly collected human-subject data. The results should not be interpreted as validating any model for autonomous diagnosis, treatment planning, or patient-specific clinical decision-making.
+No new human-subject data were collected by the authors. The study used publicly available, openly licensed images and non-patient model outputs; per-image source, license, and attribution are provided. The need for ethics approval was considered not applicable under this study design, and the study did not use patient records or protected health information. The results should not be interpreted as validating any model for autonomous diagnosis, treatment planning, or patient-specific clinical decision-making.
 
 \section{Funding}
 
@@ -280,10 +281,10 @@ M.-X. Li, W.-H. Deng, Z.-X. Wu, C.-X. Jin, J.-M. Wu, Y.~Han, J.~K.~H. Tsoi, G.-S
 \newblock MetaDent: Labeling clinical images for vision-language models in dentistry.
 \newblock \emph{Journal of Dental Research}, 2026. doi:10.1177/00220345261424242.
 
-\bibitem{lv2025orodental}
+\bibitem{lv2026orodental}
 H.~Lv, I.~Haq, J.~Du, J.~Ma, B.~Zhu, X.~Dang, C.~Liang, R.~Du, Y.~Zhang, and M.~Saqib.
 \newblock A benchmark multimodal oro-dental dataset for large vision-language models.
-\newblock arXiv:2511.04948, 2025.
+\newblock \emph{Scientific Data}, 2026. doi:10.1038/s41597-026-07342-9. arXiv:2511.04948.
 
 \bibitem{zhu2025dentalbench}
 H.~Zhu, Y.~Xu, Y.~Li, Z.~Meng, and Z.~Liu.
