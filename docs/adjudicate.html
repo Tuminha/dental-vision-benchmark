@@ -58,6 +58,9 @@
     .v-actions a, .v-actions button { min-height: 44px; padding: 0.5em 1.2em; border: 1.5px solid var(--color-ink); border-radius: var(--radius-input);
       background: transparent; color: var(--color-ink); font-family: var(--font-mono); font-size: var(--text-sm); text-decoration: none; cursor: pointer; display: inline-flex; align-items: center; }
     .v-actions a.primary { background: var(--color-ink); color: var(--color-paper); }
+    .v-substatus { font-size: var(--text-sm); margin-top: var(--space-sm); min-height: 1.2em; }
+    .v-substatus.ok { color: var(--color-ok); font-weight: 600; }
+    .v-substatus.err { color: var(--color-bad); }
     .v-saved { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-ink-2); }
     @media (max-width: 40rem) { .v-card { grid-template-columns: 1fr; } .v-fields { grid-template-columns: 1fr; } .v-thumb { max-width: 280px; } }
   </style>
@@ -106,17 +109,19 @@
 
     <section class="v-finish" id="vFinish">
       <h2>Your adjudication</h2>
-      <p class="section-note">Send this back to Francisco. Use any option: email, copy, or download the JSON.</p>
+      <p class="section-note">One click sends this straight to Francisco. The other options are backups if you prefer.</p>
       <pre id="vSummary" class="prose"></pre>
       <div class="v-actions">
-        <a class="primary" id="vEmail" href="#">Email it to Francisco</a>
+        <button class="primary" id="vSubmit" type="button">Submit to Francisco</button>
+        <a id="vEmail" href="#">Email instead</a>
         <button id="vCopy" type="button">Copy summary</button>
         <button id="vDownload" type="button">Download JSON</button>
       </div>
+      <p id="vSubmitStatus" class="v-substatus"></p>
     </section>
   </div>
 
   <script src="adjudicate-data.js?v=1"></script>
-  <script src="adjudicate.js?v=1"></script>
+  <script src="adjudicate.js?v=2"></script>
 </body>
 </html>

@@ -4,6 +4,9 @@
  * localStorage (keyed per reviewer) so a 96-case pass survives a reload, and exports to send back. */
 const ADATA = window.ADJUDICATE_DATA;
 const REVIEW_TO = "cisco@periospot.com";
+// FormSubmit alias for cisco@periospot.com (random string hides the real address). One click POSTs
+// the adjudication here and FormSubmit emails it straight to Francisco's inbox.
+const SUBMIT_ENDPOINT = "https://formsubmit.co/ajax/2286b89c84ce4b027be6e2e6e6f2dcf5";
 const N = ADATA.rows.length;
 
 const byId = (id) => document.getElementById(id);
@@ -154,9 +157,49 @@ function buildSummary() {
   return { text, json };
 }
 
+async function submitOnline() {
+  const { text, json } = buildSummary();
+  const btn = byId("vSubmit");
+  const status = byId("vSubmitStatus");
+  btn.disabled = true;
+  status.className = "v-substatus";
+  status.textContent = "Sending…";
+  try {
+    const res = await fetch(SUBMIT_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({
+        _subject: `Dental Vision Benchmark adjudication — ${json.reviewer}`,
+        _captcha: "false",
+        _template: "table",
+        reviewer: json.reviewer,
+        affiliation: json.affiliation,
+        date: json.date,
+        data_commit: json.data_commit,
+        verdicts: `${json.summary.pass} pass / ${json.summary.fail} fail of ${json.summary.total}`,
+        summary_text: text,
+        results_json: JSON.stringify(json),
+      }),
+    });
+    const out = await res.json().catch(() => ({}));
+    if (res.ok && (out.success === "true" || out.success === true)) {
+      btn.textContent = "Sent ✓";
+      status.className = "v-substatus ok";
+      status.textContent = "Sent to Francisco ✓ — thank you, you are done. You can close this tab.";
+    } else {
+      throw new Error(out.message || `HTTP ${res.status}`);
+    }
+  } catch (e) {
+    btn.disabled = false;
+    status.className = "v-substatus err";
+    status.innerHTML = "Could not send automatically. Please use <b>Email instead</b>, <b>Copy summary</b>, or <b>Download JSON</b> below and send it to Francisco.";
+  }
+}
+
 function finish() {
   const { text, json } = buildSummary();
   byId("vSummary").textContent = text;
+  byId("vSubmit").onclick = submitOnline;
   const subject = `Dental Vision Benchmark adjudication — ${byId("vName").value.trim()}`;
   byId("vEmail").href = `mailto:${REVIEW_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
   byId("vCopy").onclick = async () => {
