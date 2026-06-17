@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dental Vision Benchmark: Blinded Judge Adjudication</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tokens.css?v=2">
+  <link rel="stylesheet" href="styles.css?v=2">
+  <style>
+    .v-wrap { max-width: 980px; margin: 0 auto; padding: var(--space-lg) clamp(1rem,4vw,3rem) var(--space-3xl); }
+    .v-intro h1 { font-family: var(--font-display); font-weight: 600; font-size: var(--text-2xl); margin: 0 0 var(--space-sm); }
+    .v-intro p { max-width: 70ch; color: var(--color-ink-2); margin: 0 0 var(--space-sm); }
+    .v-how { max-width: 70ch; border: var(--rule-hairline); border-left: 3px solid var(--color-accent); background: var(--color-paper-2);
+             padding: var(--space-sm) var(--space-md); margin: var(--space-md) 0; font-size: var(--text-sm); }
+    .v-how b { font-family: var(--font-mono); }
+    .v-fields { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-md); margin: var(--space-md) 0; }
+    .v-fields label { text-transform: none; letter-spacing: 0; font-family: var(--font-body); color: var(--color-ink-2); font-size: var(--text-sm); }
+    .v-fields input { min-height: 42px; }
+    .v-bar { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: var(--space-sm);
+             background: var(--color-paper); border-bottom: var(--rule-strong); padding: var(--space-sm) 0; margin-bottom: var(--space-lg); }
+    .v-bar .count { font-family: var(--font-mono); font-size: var(--text-sm); }
+    .v-bar .count b { font-size: var(--text-md); }
+    .v-prog { height: 4px; background: var(--color-rule-2); border-radius: 2px; overflow: hidden; flex-basis: 100%; }
+    .v-prog i { display: block; height: 100%; width: 0; background: var(--color-ink); transition: width .2s; }
+    .v-finishbtn { min-height: 44px; padding: 0.5em 1.3em; border: 1.5px solid var(--color-ink); border-radius: var(--radius-input);
+                   background: var(--color-ink); color: var(--color-paper); font-family: var(--font-mono); font-size: var(--text-sm); cursor: pointer; }
+    .v-finishbtn:disabled { opacity: 0.45; cursor: not-allowed; }
+    .v-card { display: grid; grid-template-columns: 230px 1fr; gap: var(--space-lg); padding: var(--space-lg) 0; border-bottom: var(--rule-hairline); }
+    .v-card.done-pass { background: oklch(96% 0.04 150 / 0.4); }
+    .v-card.done-fail { background: oklch(96% 0.04 28 / 0.45); }
+    .v-card.undecided .v-choice { box-shadow: 0 0 0 2px var(--color-accent); border-radius: var(--radius-input); }
+    .v-thumb { width: 100%; aspect-ratio: 4/3; object-fit: contain; border: var(--rule-hairline); background: var(--color-paper-2); display: block; }
+    .v-id { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-ink-2); margin-top: var(--space-2xs); display: block; }
+    .v-rubric h3 { margin: 0 0 var(--space-2xs); font-size: var(--text-sm); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-ink-2); font-family: var(--font-mono); }
+    .v-rubric dl { margin: 0 0 var(--space-sm); display: grid; grid-template-columns: max-content 1fr; gap: var(--space-3xs) var(--space-sm); }
+    .v-rubric dt { font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-ink-2); }
+    .v-rubric dd { margin: 0; font-size: var(--text-sm); }
+    .v-cap { font-size: var(--text-sm); color: var(--color-ink-2); border-left: 2px solid var(--color-accent); padding-left: var(--space-sm); margin: 0 0 var(--space-md); }
+    .v-desc { border: var(--rule-hairline); background: var(--color-paper); padding: var(--space-sm) var(--space-md); margin: 0 0 var(--space-sm); border-radius: var(--radius-input); }
+    .v-desc .lbl { font-family: var(--font-mono); font-size: var(--text-xs); text-transform: uppercase; letter-spacing: 0.04em; color: var(--color-ink-2); display: block; margin-bottom: var(--space-2xs); }
+    .v-desc p { margin: 0; font-size: var(--text-sm); line-height: 1.5; white-space: pre-wrap; }
+    .v-choice { display: inline-flex; border: 1px solid var(--color-rule-2); border-radius: var(--radius-input); overflow: hidden; margin-top: var(--space-2xs); }
+    .v-choice button { min-height: 42px; padding: 0 1.3em; border: 0; background: var(--color-paper); color: var(--color-ink); font-family: var(--font-mono); font-size: var(--text-sm); cursor: pointer; border-left: 1px solid var(--color-rule-2); }
+    .v-choice button:first-child { border-left: 0; }
+    .v-choice button[aria-pressed="true"][data-v="pass"] { background: var(--color-ok);  color: #fff; }
+    .v-choice button[aria-pressed="true"][data-v="fail"] { background: var(--color-bad); color: #fff; }
+    .v-note { width: 100%; min-height: 48px; margin-top: var(--space-sm); padding: var(--space-xs); border: 1px solid var(--color-rule-2); border-radius: var(--radius-input); font-family: var(--font-body); font-size: var(--text-sm); display: none; }
+    .v-note.show { display: block; }
+    .v-attest { display: flex; gap: var(--space-xs); align-items: flex-start; margin: var(--space-md) 0; font-size: var(--text-sm); color: var(--color-ink-2); }
+    .v-finish { display: none; border: var(--rule-strong); border-width: 2px 0 0; padding-top: var(--space-lg); margin-top: var(--space-lg); }
+    .v-finish.show { display: block; }
+    .v-finish pre { white-space: pre-wrap; }
+    .v-actions { display: flex; flex-wrap: wrap; gap: var(--space-sm); margin-top: var(--space-md); }
+    .v-actions a, .v-actions button { min-height: 44px; padding: 0.5em 1.2em; border: 1.5px solid var(--color-ink); border-radius: var(--radius-input);
+      background: transparent; color: var(--color-ink); font-family: var(--font-mono); font-size: var(--text-sm); text-decoration: none; cursor: pointer; display: inline-flex; align-items: center; }
+    .v-actions a.primary { background: var(--color-ink); color: var(--color-paper); }
+    .v-saved { font-family: var(--font-mono); font-size: var(--text-xs); color: var(--color-ink-2); }
+    @media (max-width: 40rem) { .v-card { grid-template-columns: 1fr; } .v-fields { grid-template-columns: 1fr; } .v-thumb { max-width: 280px; } }
+  </style>
+</head>
+<body>
+  <header class="masthead">
+    <a class="wordmark" href="index.html">Dental Vision Benchmark</a>
+    <a class="masthead-link" href="index.html">Back to the report ↗</a>
+  </header>
+
+  <div class="v-wrap">
+    <section class="v-intro">
+      <h1>Blinded judge adjudication</h1>
+      <p>
+        Thank you for adjudicating. Two automated judges scored every model answer in this benchmark,
+        and they disagreed on the 96 cases below. Your job is to be the human tie-breaker. For each
+        case you see a dental image, the clinical answer key it should be read against, and one AI
+        model's free-text description of that image. The model's identity and both automated judges'
+        verdicts are hidden from you on purpose.
+      </p>
+      <div class="v-how">
+        Mark each description <b>Pass</b> or <b>Fail</b> using the benchmark's own rule:
+        <b>Pass</b> if the description covers all the <b>must-identify</b> points and commits none of
+        the <b>must-avoid</b> errors. <b>Fail</b> if it misses a required point or makes a must-avoid
+        error. Add a one-line reason if you like. There is no default, please judge every case.
+        Your progress saves in this browser automatically, so you can stop and come back.
+      </p>
+      <div class="v-fields">
+        <label>Reviewer name<br><input id="vName" type="text" placeholder="Full name"></label>
+        <label>Affiliation<br><input id="vAffil" type="text" placeholder="Institution"></label>
+      </div>
+    </section>
+
+    <div class="v-bar">
+      <span class="count"><b id="vDecided">0</b>/<span id="vTotal">96</span> decided · <b id="vPass">0</b> pass · <b id="vFail">0</b> fail</span>
+      <button class="v-finishbtn" id="vFinishBtn" disabled>Finish &amp; export</button>
+      <span class="v-prog"><i id="vProgBar"></i></span>
+    </div>
+
+    <div class="v-attest">
+      <input type="checkbox" id="vAttest">
+      <label for="vAttest">I judged these cases independently, blind to the model identity, and the decisions are my own.</label>
+    </div>
+
+    <div id="vList"></div>
+
+    <section class="v-finish" id="vFinish">
+      <h2>Your adjudication</h2>
+      <p class="section-note">Send this back to Francisco. Use any option: email, copy, or download the JSON.</p>
+      <pre id="vSummary" class="prose"></pre>
+      <div class="v-actions">
+        <a class="primary" id="vEmail" href="#">Email it to Francisco</a>
+        <button id="vCopy" type="button">Copy summary</button>
+        <button id="vDownload" type="button">Download JSON</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="adjudicate-data.js?v=1"></script>
+  <script src="adjudicate.js?v=1"></script>
+</body>
+</html>
