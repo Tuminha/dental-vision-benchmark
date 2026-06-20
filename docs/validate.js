@@ -2,6 +2,9 @@
  * confirm (default) / flag / exclude each item, and exports the result to send back. */
 const VDATA = window.VALIDATE_DATA;
 const REVIEW_TO = "cisco@periospot.com";
+// FormSubmit alias for cisco@periospot.com (random string hides the real address). One click POSTs
+// the validation here and FormSubmit emails it straight to Francisco's inbox.
+const SUBMIT_ENDPOINT = "https://formsubmit.co/ajax/2286b89c84ce4b027be6e2e6e6f2dcf5";
 
 const byId = (id) => document.getElementById(id);
 const esc = (s) => String(s).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
@@ -105,9 +108,49 @@ function buildSummary() {
   return { text, json };
 }
 
+async function submitOnline() {
+  const { text, json } = buildSummary();
+  const btn = byId("vSubmit");
+  const status = byId("vSubmitStatus");
+  btn.disabled = true;
+  status.className = "v-substatus";
+  status.textContent = "Sending…";
+  try {
+    const res = await fetch(SUBMIT_ENDPOINT, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({
+        _subject: `Dental Vision Benchmark validation — ${json.reviewer}`,
+        _captcha: "false",
+        _template: "table",
+        reviewer: json.reviewer,
+        affiliation: json.affiliation,
+        date: json.date,
+        data_commit: json.data_commit,
+        decisions: `${json.summary.fair} fair / ${json.summary.edit} needs-edit / ${json.summary.exclude} exclude`,
+        summary_text: text,
+        results_json: JSON.stringify(json),
+      }),
+    });
+    const out = await res.json().catch(() => ({}));
+    if (res.ok && (out.success === "true" || out.success === true)) {
+      btn.textContent = "Sent ✓";
+      status.className = "v-substatus ok";
+      status.textContent = "Sent to Francisco ✓ — thank you, you are done. You can close this tab.";
+    } else {
+      throw new Error(out.message || `HTTP ${res.status}`);
+    }
+  } catch (e) {
+    btn.disabled = false;
+    status.className = "v-substatus err";
+    status.innerHTML = "Could not send automatically. Please use <b>Email instead</b>, <b>Copy summary</b>, or <b>Download JSON</b> below and send it to Francisco.";
+  }
+}
+
 function finish() {
   const { text, json } = buildSummary();
   byId("vSummary").textContent = text;
+  byId("vSubmit").onclick = submitOnline;
   const subject = `Dental Vision Benchmark validation — ${byId("vName").value.trim()}`;
   byId("vEmail").href = `mailto:${REVIEW_TO}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`;
   byId("vCopy").onclick = async () => {
