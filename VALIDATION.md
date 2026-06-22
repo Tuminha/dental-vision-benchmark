@@ -24,9 +24,26 @@ clinician validation page (`docs/validate.html`) on **2026-06-16**, against data
 - **Record:** the reviewer's returned submission is preserved in
   [`validation/independent_review_daniel_robles.md`](validation/independent_review_daniel_robles.md).
 
-This is one independent reviewer reporting no disagreements. A second independent reviewer and
-clinician adjudication of the judge-disagreement set (`validation/judge_disagreements.csv`) remain
-available to strengthen the manuscript further.
+## Independent clinical validation (third reviewer)
+
+A further independent dentist reviewed all 90 items against the same ground truth through the
+clinician validation page (`docs/validate.html`) on **2026-06-22**, against data commit `9fa7576`.
+
+- **Reviewer:** Dr Khalil Karam. Independent of the ground-truth author. Affiliation to be confirmed
+  for the author list.
+- **Outcome:** all 90 items confirmed clinically fair. The reviewer initially flagged 7 items for
+  edit; on review all seven were rendering artifacts of the validation page's thumbnail, which
+  centre-cropped tall and square images and hid edge labels in the small preview. Each flagged label
+  or feature is present in the full-resolution image, so no rubric edits or exclusions resulted and
+  the ground truth is unchanged. The thumbnail was switched to `object-fit: contain`
+  (commit `1b2c7b3`) to prevent the artifact.
+- **Record:** the reviewer's returned submission and the per-item resolution are preserved in
+  [`validation/independent_review_khalil_karam.md`](validation/independent_review_khalil_karam.md).
+
+Two independent reviewers (Daniel Robles Cantero and Khalil Karam) have now reviewed all 90 items
+and reported no actionable disagreements with the ground truth. Clinician adjudication of the
+judge-disagreement set (`validation/judge_disagreements.csv`) is underway to strengthen the
+manuscript further.
 
 ## Weak / ambiguous items (kept, reported separately)
 Ten items are flagged `"weak": true` in `data/items.json`. They remain in the dataset but
